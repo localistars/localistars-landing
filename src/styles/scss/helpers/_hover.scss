@@ -1,0 +1,243 @@
+.card-hover {
+    &__electric-violet-3 {
+        &:hover {
+            &:hover {
+                box-shadow: 0 8px 45px rgba(96, 1, 211, 0.25);
+                border-radius: 10px;
+                background-color: $electric-violet-3;
+                .card--services-l6__icon {
+                    background-color: $white !important;
+                }
+                .card--services-l6__heading {
+                    color: $white;
+                }
+                .card--services-l6__content {
+                    color: rgba($white, 0.9);
+                }
+            }
+        }
+    }
+    &__readical-red {
+        &:hover {
+            &:hover {
+                box-shadow: 0 8px 45px rgba(96, 1, 211, 0.25);
+                border-radius: 10px;
+                background-color: $readical-red;
+                .card--services-l6__icon {
+                    background-color: $white !important;
+                }
+                .card--services-l6__heading {
+                    color: $white;
+                }
+                .card--services-l6__content {
+                    color: rgba($white, 0.9);
+                }
+            }
+        }
+    }
+    &__java-2 {
+        &:hover {
+            &:hover {
+                box-shadow: 0 8px 45px rgba(96, 1, 211, 0.25);
+                border-radius: 10px;
+                background-color: $java-2;
+                .card--services-l6__icon {
+                    background-color: $white !important;
+                }
+                .card--services-l6__heading {
+                    color: $white;
+                }
+                .card--services-l6__content {
+                    color: rgba($white, 0.9);
+                }
+            }
+        }
+    }
+    &__yellow {
+        &:hover {
+            &:hover {
+                box-shadow: 0 8px 45px rgba(96, 1, 211, 0.25);
+                border-radius: 10px;
+                background-color: $yellow;
+                .card--services-l6__icon {
+                    background-color: $white !important;
+                }
+                .card--services-l6__heading {
+                    color: $white;
+                }
+                .card--services-l6__content {
+                    color: rgba($white, 0.9);
+                }
+            }
+        }
+    }
+    &__bittersweet {
+        &:hover {
+            &:hover {
+                box-shadow: 0 8px 45px rgba(96, 1, 211, 0.25);
+                border-radius: 10px;
+                background-color: $bittersweet;
+                .card--services-l6__icon {
+                    background-color: $white !important;
+                }
+                .card--services-l6__heading {
+                    color: $white;
+                }
+                .card--services-l6__content {
+                    color: rgba($white, 0.9);
+                }
+            }
+        }
+    }
+    &__niagara {
+        &:hover {
+            &:hover {
+                box-shadow: 0 8px 45px rgba(96, 1, 211, 0.25);
+                border-radius: 10px;
+                background-color: $niagara;
+                .card--services-l6__icon {
+                    background-color: $white !important;
+                }
+                .card--services-l6__heading {
+                    color: $white;
+                }
+                .card--services-l6__content {
+                    color: rgba($white, 0.9);
+                }
+            }
+        }
+    }
+    &__lavender {
+        &:hover {
+            &:hover {
+                box-shadow: 0 8px 45px rgba(96, 1, 211, 0.25);
+                border-radius: 10px;
+                background-color: $lavender;
+                .card--services-l6__icon {
+                    background-color: $white !important;
+                }
+                .card--services-l6__heading {
+                    color: $white;
+                }
+                .card--services-l6__content {
+                    color: rgba($white, 0.9);
+                }
+            }
+        }
+    }
+    &__coral {
+        &:hover {
+            &:hover {
+                box-shadow: 0 8px 45px rgba(96, 1, 211, 0.25);
+                border-radius: 10px;
+                background-color: $coral;
+                .card--services-l6__icon {
+                    background-color: $white !important;
+                }
+                .card--services-l6__heading {
+                    color: $white;
+                }
+                .card--services-l6__content {
+                    color: rgba($white, 0.9);
+                }
+            }
+        }
+    }
+}
+
+.hover-text,
+a.hover-text {
+    &--blue-ribbon-2 {
+        &:hover {
+            color: $blue-ribbon-2;
+        }
+    }
+    &--orange {
+        &:hover {
+            color: $orange;
+        }
+    }
+    &--torch-red {
+        &:hover {
+            color: $torch-red;
+        }
+    }
+    &--java-2 {
+        &:hover {
+            color: $java-2;
+        }
+    }
+    &--yellow {
+        &:hover {
+            color: $yellow;
+        }
+    }
+    &--electric-violet-3 {
+        &:hover {
+            color: $electric-violet-3;
+        }
+    }
+}
+
+.btn-outline-primary {
+    &:hover {
+        color: $white !important;
+    }
+}
+
+.btn-outline-readical-red {
+    &:hover {
+        color: $white !important;
+    }
+}
+
+.card-hover-bg {
+    &__electric-violet-3 {
+        &:hover {
+            .card--services-l9__icon {
+                background-color: $electric-violet-3 !important;
+                color: $white;
+                box-shadow: -6px 8px 10px rgba(96, 1, 211, 0.25);
+                i{
+                    color: $white !important;
+                }
+            }
+        }
+    }
+    &__readical-red {
+        &:hover {
+            .card--services-l9__icon {
+                background-color: $readical-red !important;
+                color: $white;
+                box-shadow: -6px 8px 10px rgba($readical-red, 0.25);
+                i{
+                    color: $white !important;
+                }
+            }
+        }
+    }
+    &__java-2 {
+        &:hover {
+            .card--services-l9__icon {
+                background-color: $java-2 !important;
+                color: $white;
+                box-shadow: -6px 8px 10px rgba($java-2, 0.25);
+                i{
+                    color: $white !important;
+                }
+            }
+        }
+    }
+    &__yellow-3 {
+        &:hover {
+            .card--services-l9__icon {
+                background-color: $yellow-3 !important;
+                color: $white;
+                box-shadow: -6px 8px 10px rgba($yellow-3, 0.25);
+                i{
+                    color: $white !important;
+                }
+            }
+        }
+    }
+}

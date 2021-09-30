@@ -1,0 +1,122 @@
+@import "helpers/theme-media-query";
+@import "bs-theming/bs-theming";
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "bs-theming/bs-theming";
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+// @import "./react-header";
+@import "bs-theming/fonts";
+span,
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+body {
+  > div {
+  overflow: hidden;
+}
+}
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* Animations Sonar */
+.sonar-emitter {
+  position: relative;
+}
+
+.sonar-emitter::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  background-color: $primary;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.sonar-emitter::after {
+  animation: sonarWave 2s linear infinite;
+}
+
+.sonar-emitter-2 {
+  position: relative;
+}
+
+.sonar-emitter-2::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  background-color: $white;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.sonar-emitter-2::after {
+  animation: sonarWave 2s linear infinite;
+}
+@-webkit-keyframes sonarWave {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+@keyframes sonarWave {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+
+.btn-rest{
+  box-shadow: none;
+  border:0px;
+  background:transparent;
+  &:focus{
+    outline: none;
+  }
+}
+
+
+
+.card{
+  &-title{
+    font-size: 18px;
+    color:red;
+  }
+  &-text{
+    color:green;
+    font-size: 14px;
+  }
+  &.card-active{
+    background:pink
+  }
+  &.text-center{
+    text-align: center;
+  }
+}

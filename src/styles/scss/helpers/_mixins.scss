@@ -1,0 +1,33 @@
+@mixin line-height-reset($line-height) {
+  &::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc((1 - #{$line-height}) * 0.5em);
+  }
+  &::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-bottom: calc((1 - #{$line-height}) * 0.5em);
+  }
+}
+
+
+
+@mixin fontSize($font-size,$letterSpacing:"initial",$lineHeight: 0){
+    font-size: font-get($font-size,"font-size");
+    @if $lineHeight == 0 {
+      line-height: font-get($font-size,"line-height");
+    } @else {
+      line-height:$lineHeight;
+    }
+    @if $letterSpacing == "initial" {
+      line-height: font-get($font-size,"letter-spacing");
+    } @else {
+      letter-spacing:$letterSpacing;
+    }
+    
+}

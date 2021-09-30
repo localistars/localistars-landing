@@ -1,0 +1,139 @@
+.h-45 {
+    height: 45px !important;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+.w-140 {
+    width: 140px !important;
+}
+.min-w-163 {
+    min-width: 163px !important;
+}
+
+.rounded-10 {
+    border-radius: 10px !important;
+}
+.rounded-25 {
+    border-radius: 25px !important;
+}
+.rounded-50 {
+    border-radius: 50px !important;
+}
+
+.rounded-55 {
+    border-radius: 55px !important;
+}
+
+.rounded-56 {
+    border-radius: 56px !important;
+}
+
+.bg-default-3 {
+    background-color: var(--bg-3);
+}
+
+.bg-default-4 {
+    background-color: var(--bg-4);
+}
+.bg-default-7 {
+    background-color: var(--bg-7);
+}
+.bg-default-8 {
+    background-color: var(--bg-8);
+}
+.bg-default-9 {
+    background-color: var(--bg-9);
+}
+
+.hover-link {
+    &--readical-red {
+        &:hover {
+            color: $readical-red !important;
+        }
+    }
+
+    &--yellow {
+        &:hover {
+            color: $yellow !important;
+        }
+    }
+
+    &--primary {
+        &:hover {
+            color: $primary !important;
+        }
+    }
+
+    &--java-2 {
+        &:hover {
+            color: $java-2 !important;
+        }
+    }
+
+    &--electric-violet-3 {
+        &:hover {
+            color: $electric-violet-3 !important;
+        }
+    }
+}
+
+.border-shark {
+    border-color: $shark;
+}
+
+.review-star {
+    margin-bottom: 40px;
+    display: flex;
+    font-size: 28px;
+    color: $tree-poppy;
+
+    &__single {
+        color: inherit;
+        margin-right: 5px;
+        font-size: inherit;
+        transition: 0.4s;
+
+        &:hover,
+        &.active {
+            text-decoration: none;
+            color: rgba($ebony-clay, 0.2);
+        }
+    }
+}
+
+.reviw-star--size-2 {
+    font-size: 15px;
+}
+
+.section-title {
+    .sub-heading {
+        &--electric-violet-3 {
+            &:before {
+                background-color: $electric-violet-3 !important;
+            }
+        }
+        &--electric-violet-2 {
+            &:before {
+                background-color: $electric-violet-2 !important;
+            }
+        }
+    }
+}
+
+.vh-md-100 {
+    @include tablet {
+        height: 100vh;
+    }
+}
+
+.section-tl-shape {
+    position: relative;
+    .shape {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 8%;
+    }
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+//-------------------------
+//--- Theme Typography
+//-------------------------
+$enable-responsive-font-sizes: true;
+$font-family-base:            'Rubik', sans-serif;
+
+//custom font-family
+$btn-font-family: $font-family-base;
+$heading-font-family: $font-family-base;
+$paragraph-font-family: $font-family-base;
+
+
+$headings-font-weight:        700;
+// $headings-line-height:        1.5;
+
+//- Display Sizes
+
+$display1-size:               6rem; // About 96px
+$display2-size:               5rem; // About 80px
+$display3-size:               3.75rem; // About 60px
+$display4-size:               3.125rem; // About 50px
+
+
+//- Font Sizes 
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25;
+$font-size-sm:                13px;
+
+$h1-font-size:                3rem; //About 48px
+$h2-font-size:                2.5rem; //About 40px
+$h3-font-size:                2.125rem;  //About 34px
+$h4-font-size:                1.5rem; //About 24px
+$h5-font-size:                1.3125rem; //About 21px
+$h6-font-size:                1rem; //About 16px
+
+
+
+$text-base:                  1.125rem; //18px
+

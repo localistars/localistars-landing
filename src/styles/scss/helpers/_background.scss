@@ -1,0 +1,60 @@
+.bg-op1 {
+    &__readical-red {
+        background-color: rgba($readical-red, 0.1);
+    }
+    &__electric-violet-3 {
+        background-color: rgba($electric-violet-3, 0.1);
+    }
+    &__java-2 {
+        background-color: rgba($java-2, 0.1);
+    }
+    &__yellow {
+        background-color: rgba($yellow, 0.1);
+    }
+    &__yellow-3{
+        background-color: rgba($yellow-3, 0.1);
+    }
+    &__bittersweet {
+        background-color: rgba($bittersweet, 0.1);
+    }
+    &__niagara{
+        background-color: rgba($niagara, 0.1);
+    }
+    &__coral {
+        background-color: rgba($coral, 0.1);
+    }
+    &__lavender {
+        background-color: rgba($lavender, 0.1);
+    }
+}
+
+.content-skew-img {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transform-origin: top left;
+    margin: 0 10px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    @include mobile-lg{
+        width: 50%;
+        transform: skewX(-15deg);
+    }
+    @include desktops {
+        margin-bottom: 0;
+        width: 40%;
+    }
+
+    img {
+        width: 100%;
+        transform-origin: top left;
+        height: 100%;
+        position: relative;
+        top: 0;
+        @include mobile-lg{
+            left: -60%;
+            width: 200%;
+            transform: skewX(15deg);
+        }
+    }
+}

@@ -1,0 +1,221 @@
+$white              :#fff;
+$black              :#000;
+$green              :green;
+$link-water         :#f2f5fb;
+$purple-heart       :#6a26da;
+$blue-ribbon        :#2b59ff;
+$blue-ribbon-2      :#0041ff;
+$green-2            :#22cc74;
+$tree-poppy         :#ff971d;
+$ebony-clay         :#25373f ;
+$golden-tainoi      :#ffd166;
+$coral              :#ff8d52;
+$anakiwaap          :#a9d2ff;
+$silver             :#adadad;
+$java               :#15cda8;
+$java-2             :#1de2cf;
+$ice-cold           :#96f7d2;
+$radical-red        :#ff4057;
+$electric-violet    :#5338fc;
+$electric-violet-2  :#5034fc;
+$electric-violet-3  :#6001d3;
+$electric-violet-4  :#4f34fc;
+$oxford-blue        :#3b4656;
+$white-lilac        :#f8f9fc;
+$victoria           :#494ca2;
+$dodger-blue        :#0f89ff;
+$royal-blue         :#3e49f3;
+$blue               :#7984ee;
+$caribbean-green    :#0cd68a;
+$gorse              :#fee856;
+$yellow             :#fcdc00;
+$yellow-2           :#ffce3e;
+$yellow-3           :#ffd700;
+$shark              :#262729;
+$athens-gray        :#F3F4F6;
+$primary            :#ff5722;
+$readical-red       :#fd346e;
+$flamingo           :#ef4339;
+$egg-blue           :#0abfbc;
+$jumbo              :#828288;
+$orange             :#ff5200;
+$torch-red          :#ff1e38;
+$watermelon         :#fd5284;
+$niagara            :#099a97;
+$bittersweet        :#ff7272;
+$lavender           :#be79df;
+$boulder            :#747474;
+$half-baked         :#82c4c3;
+$cod-gray           :#161616;
+$secondary          : $electric-violet-2;
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  //  Maps
+//+========================================================================================
+
+$theme-colors: ();
+$theme-colors:map-merge(
+  (
+    "primary"         :   $primary,
+    "secondary"       :   $secondary,
+  ),
+  $theme-colors
+);
+
+// Background and  text Colors
+$colors : (
+  "primary"           :   $primary,
+  "secondary"         :   $secondary,
+  "black"             :   $black,
+  "white"             :   $white,
+  "boulder"           :   $boulder,
+  "link-water"        :   $link-water,
+  "green"             :   $green,
+  "coral"             :   $coral,
+  "anakiwaap"         :   $anakiwaap,
+  "orange"            :   $orange,
+  "java"              :   $java,
+  "java-2"            :   $java-2,
+  "ice-cold"          :   $ice-cold,
+  "purple-heart"      :   $purple-heart,
+  "blue-ribbon"       :   $blue-ribbon,
+  "blue-ribbon-2"     :   $blue-ribbon-2,
+  "blue"              :   $blue,
+  "green-2"           :   $green-2,
+  "tree-poppy"        :   $tree-poppy,
+  "ebony-clay"        :   $ebony-clay,
+  "electric-violet"   :   $electric-violet,
+  "electric-violet-2" :   $electric-violet-2,
+  "radical-red"       :   $radical-red,
+  "golden-tainoi"     :   $golden-tainoi,
+  "oxford-blue"       :   $oxford-blue,
+  "royal-blue"        :   $royal-blue,
+  "victoria"          :   $victoria,
+  "dodger-blue"       :   $dodger-blue,
+  "caribbean-green"   :   $caribbean-green,
+  "gorse"             :   $gorse,
+  "yellow"            :   $yellow,
+  "yellow-2"          :   $yellow-2,
+  "yellow-3"          :   $yellow-3,
+  "shark"             :   $shark,
+  "torch-red"         :   $torch-red,
+  "watermelon"        :   $watermelon,
+  "niagara"           :   $niagara,
+  "bittersweet"       :   $bittersweet,
+  "lavender"          :   $lavender,
+  "cod-gray"          :   $cod-gray,
+  "half-baked"        :   $half-baked 
+);
+
+// For button color
+$btn-colors:(
+  "primary"           :   $primary,
+  "black"             :   $black,
+  "white"             :   $white,
+  "readical-red "     :   $readical-red ,
+  "torch-red"         :   $torch-red,
+  "purple-heart"      :   $purple-heart,
+  "electric-violet-2" :   $electric-violet-2,
+  "electric-violet-3" :   $electric-violet-3,
+  "bittersweet"       :   $bittersweet,
+  "niagara"           :   $niagara,
+  "yellow"            :   $yellow,
+  "shark"             :   $shark,
+  "link-water"        :   $link-water,
+  "egg-blue"          :   $egg-blue
+);
+
+
+$backgroundColors:(
+  "blue"     :   $blue,
+  "blue-ribbon"     :   $blue-ribbon,
+  "blue-ribbon-2"   :   $blue-ribbon-2,
+  "green-2"         :   $green-2,
+  "coral"           :   $coral,
+  "orange"          :   $orange,
+  "shark"             :   $shark,
+  "java"            :   $java,
+  "victoria"        :   $victoria,
+  "java-2"          :   $java-2,
+  "purple-heart"    :   $purple-heart,
+  "electric-violet" :   $electric-violet,
+  "electric-violet-2" :   $electric-violet-2,
+  "electric-violet-3" :   $electric-violet-3,
+  "dodger-blue"     :   $dodger-blue,
+  "caribbean-green" :   $caribbean-green,
+  "gorse"          :   $gorse,
+  "yellow"          :   $yellow,
+  "yellow-3"          :   $yellow-3,
+  "athens-gray"     : $athens-gray,
+  "electric-violet-4" :   $electric-violet-4,
+  "flamingo"          :   $flamingo, 
+  "egg-blue"          :   $egg-blue,
+  "tree-poppy"          :   $tree-poppy,
+  "readical-red"          :   $readical-red,
+  "bittersweet"          :   $bittersweet,
+  "niagara"          :   $niagara,
+  "torch-red"          :   $torch-red,
+  "half-baked"          :   $half-baked ,
+  "transparent"     : transparent,
+);
+$TextColors:(
+  "blue-ribbon"       :   $blue-ribbon,
+  "white"             :   $white,
+  "radical-red"       :   $radical-red,
+  "green-2"           :   $green-2,
+  "shark"             :   $shark,
+  "java"              :   $java,
+  "java-2"            :   $java-2,
+  "tree-poppy"        :   $tree-poppy,
+  "ebony-clay"        :   $ebony-clay,
+  "torch-red"         :   $torch-red,
+  "readical-red "     :   $readical-red ,
+  "victoria"          :   $victoria,
+  "dodger-blue"       :   $dodger-blue,
+  "caribbean-green"   :   $caribbean-green,
+  "electric-violet-2" :   $electric-violet-2,
+  "electric-violet-3" :   $electric-violet-3,
+  "gorse"             :   $gorse,
+  "egg-blue"          :   $egg-blue,
+  "yellow-2"          :   $yellow-2,
+  "yellow-3"          :   $yellow-3,
+  "bittersweet"       :   $bittersweet,
+  "yellow"            :   $yellow,
+  "coral"             :   $coral, 
+  "niagara"           :   $niagara, 
+  "lavender"          :   $lavender,
+  "royal-blue"        :   $royal-blue, 
+);
+
+$opacity-colors:(
+  "blue-ribbon"     :   $blue-ribbon,
+  "white"           :   $white,
+  "primary"         :   $primary,
+  "radical-red"     :   $radical-red,
+  "green-2"         :   $green-2,
+  "java-2"          :   $java-2,
+  "tree-poppy"      :   $tree-poppy,
+  "ebony-clay"      :   $ebony-clay,
+  "victoria"        :   $victoria,
+  "dodger-blue"     :   $dodger-blue,
+  "caribbean-green" :   $caribbean-green,
+  "yellow"          :   $yellow, 
+  "orange"          :   $orange, 
+  "blue-ribbon-2"   :   $blue-ribbon-2, 
+  "electric-violet-"   :   $electric-violet-3, 
+  "torch-red"       :   $torch-red 
+);
+
+// $body-bg        : var(--bg);
+$body-color     : rgba(37, 55, 63, 0.7);
+// $border-color   : var(--border-color);
+$headings-color : #25373f;
+
+// Create your own map
+$custom-colors: (
+  "custom-color": #900
+);
+
+// Merge the maps
+$theme-colors: (map-merge($theme-colors, $custom-colors))

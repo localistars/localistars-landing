@@ -1,0 +1,52 @@
+
+//Bootstrap Required
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "./bs-theming/bs-theming";
+// Layout & components
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+
+//Theme Custom Push
+// @import "./bs-theming/color-classes";
+// @import "./components/button";
+
+
+@each $color, $value in $btn-colors {
+    .btn-#{$color} {
+        @include button-variant($value, $value);
+    }
+}
+@each $color, $value in $btn-colors {
+    .btn-#{$color} {
+        @include button-variant($value, $value);
+    }
+}
+@each $color, $value in $backgroundColors {
+    .bg-#{$color} {
+        background-color: $value;
+    }
+}
+
+
+
+@each $color, $value in $btn-colors {
+    .btn-outline-#{$color} {
+        @include button-outline-variant($value);
+        &:hover{
+            background-color:$value;
+        }
+    }
+}
+
+
+.text-hover--light{
+    &:hover{
+        color: var(--bs-light)!important;
+    }
+}
+.text-hover--dark{
+    &:hover{
+        color: var(--bs-dark)!important;
+    }
+}

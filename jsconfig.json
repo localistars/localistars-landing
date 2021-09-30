@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        // "module": "commonjs",
+        // "declaration": true,
+        // "removeComments": true,
+        // "emitDecoratorMetadata": true,
+        // "experimentalDecorators": true,
+        // "allowSyntheticDefaultImports": true,
+        // "target": "es2017",
+        // "sourceMap": true,
+        // "outDir": "./dist",
+        "baseUrl": ".",
+        // "resolveJsonModule": true,
+        // "moduleResolution": "node",
+        "paths": {
+            "~next-i18next.config": ["next-i18next.config.js"],
+            "~lib/*": ["src/lib/*"],
+            "~context/*": ["src/context/*"],
+            "~components/*": ["src/components/*"],
+            "~components": ["src/components"],
+            "~fonts/*": ["src/assets/fonts/*"],
+            "~fonts": ["src/assets/fonts"],
+            "~image/*": ["src/assets/image/*"],
+            "~image": ["src/assets/image"],
+            "~sections": ["src/sections"],
+            "~sections/*": ["src/sections/*"],
+            "~styled/*": ["src/styles/*"],
+            "~styled": ["src/styles"],
+            "~data/*": ["src/data/*"],
+            "~data": ["src/data"]
+        },
+    }
+}
