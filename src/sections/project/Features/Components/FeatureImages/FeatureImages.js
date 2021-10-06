@@ -1,24 +1,20 @@
 import React from "react"
-import Image from "next/image"
 import ImageGroup from "./style"
-import featureImage from "~image/project-management/l2-feature-img-1.png"
-import FeatureImageShape from "~image/project-management/l2-feature-shape.png"
 const FeatureImages = ({ mainImage }) => {
   return (
     <>
       <ImageGroup>
         <div className="main">
-        <Image
-          src={featureImage}
-          placeholder="blur"
+        <img
+          src="/image/project-management/l2-feature-img-1.png"
           alt="feature tab"
+          className="w-100"
         />
         </div>
 
         <div className="shape">
-          <Image
-            src={FeatureImageShape}
-            placeholder="blur"
+          <img
+            src="/image/project-management/l2-feature-shape.png"
             alt="shape"
           />
         </div>

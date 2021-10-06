@@ -4,8 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from '~components';
 import About from './style'
 import SectionTitle from './Components/SectionTitle'
-import Video from '~components/VideoModal'
-import AboutusImage from "~image/home-agency/about-us-l5-img.png"
+import Video from '~components/VideoModal';
 export default function AboutSection(){
 return(
 <About>
@@ -13,7 +12,7 @@ return(
     <Row className="align-items-center justify-content-center">
       <Col xs="12" className="col-xl-6 col-lg-6 col-md-8 col-xs-10">
         <About.Image>
-          <Image className="w-100" src={AboutusImage} alt="about" placeholder="blur"/>
+          <img className="w-100" src="/image/home-agency/about-us-l5-img.png" alt="about"/>
           <Video id="LWZ7iytIA6k" className="video-btn sonar-emitter"> <i className="fa fa-play" /> </Video>
         </About.Image>
       </Col>

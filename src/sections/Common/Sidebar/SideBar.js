@@ -1,6 +1,6 @@
 import React from "react";
 // import Image from "next/image";
-import offerImage from "~image/mixed/ads-img.png";
+import offerImage from "../../../../public/image/mixed/ads-img.png";
 import SideBar from "./style";
 import { Link } from "~components";
 export default function SideBarSection() {

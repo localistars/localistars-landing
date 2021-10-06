@@ -1,12 +1,11 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "~components";
-import herol6Img from "~image/home-digital-agency/hero-l7-bg.png";
 import Hero from "./style";
 
 export default function HeroSection() {
   return (
-    <Hero backgroundImage={herol6Img.src}>
+    <Hero backgroundImage="image/home-digital-agency/hero-l7-bg.png">
       <Container>
         <Row className="align-items-center justify-content-center">
           <Col className="col-xl-9">

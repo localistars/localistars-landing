@@ -4,10 +4,10 @@ import Hero from './style'
 import { Col, Container, Row } from 'react-bootstrap';
 import { Form, Link } from '~components'
 import { SuperTag } from '~components';
-import TitleShape from "~image/project-management/l2-hero-shape.png"
-import HeroImage from "~image/project-management/l2-hero-image.png"
-import HeroShapeOne from "~image/project-management/l2-hero-shape-2.png"
-import HeroShapeTwo from "~image/project-management/l2-hero-shape-1.png"
+// import TitleShape from "~image/project-management/l2-hero-shape.png"
+// import HeroImage from "~image/project-management/l2-hero-image.png"
+import HeroShapeOne from "../../../../public/image/project-management/l2-hero-shape-2.png"
+import HeroShapeTwo from "../../../../public/image/project-management/l2-hero-shape-1.png"
 export default function HeroSection(){
   return(
 <Hero>
@@ -20,7 +20,7 @@ export default function HeroSection(){
             visitors than any website."/>
           </Hero.Text>
           <Hero.TitleShape>
-            <Image src={TitleShape} placeholder="blur"  alt="projects"/>
+            <img src="/image/project-management/l2-hero-shape.png"   alt="projects" className="w-100"/>
           </Hero.TitleShape>
         </Hero.ContentBlock>
         {/* Newsletter */}
@@ -38,16 +38,16 @@ export default function HeroSection(){
       </Col>
       <Col xs="12" className="col-lg-5 col-md-7">
         <Hero.Image>
-        <Image src={HeroImage} alt="content" placeholder="blur"/>
+        <img src="/image/project-management/l2-hero-image.png" alt="content" className="w-100"/>
         </Hero.Image>
       </Col>
     </Row>
   </Container>
   <Hero.ImageShape01>
-    <Image src={HeroShapeOne} alt="shape 1" placeholder="blur"/>
+    <img src="/image/project-management/l2-hero-shape-2.png" alt="shape 1" className="w-100"/>
   </Hero.ImageShape01>
   <Hero.ImageShape02>
-    <Image src={HeroShapeTwo} alt="shape 1" placeholder="blur"/>
+    <img src="/image/project-management/l2-hero-shape-1.png" alt="shape 1" className="w-100"/>
   </Hero.ImageShape02>
 </Hero>
 )

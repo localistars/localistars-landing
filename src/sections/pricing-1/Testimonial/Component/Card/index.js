@@ -18,7 +18,7 @@ export default function TestiomialCard({
       <Card.Top mb="20px">
         <Card.UserBlock>
           <Card.Image mr="10px">
-            <img src={image.src} alt="Testimonial" />
+            <img src={image} alt="Testimonial" />
           </Card.Image>
           <Card.Box>
             <Card.Title as="h3">{userName}</Card.Title>

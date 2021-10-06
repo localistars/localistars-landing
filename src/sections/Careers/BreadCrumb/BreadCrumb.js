@@ -1,7 +1,7 @@
 import React from "react";
 import BreadCrumb from "./style";
 import Image from "next/image";
-import BannerShape from "~image/mixed/inner-banner-shape.png";
+import BannerShape from "../../../../public/image/mixed/inner-banner-shape.png";
 import { Col, Row, Container } from "react-bootstrap";
 import { SuperTag } from "~components";
 export default function BreadCrumbSection({

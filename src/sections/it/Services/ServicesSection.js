@@ -5,7 +5,6 @@ import { Col, Container, Row } from "react-bootstrap"
 import ServicesCard from "./Components/Card"
 import ServicesCardTwo from "./Components/CardTwo"
 import { ServiceDataIt } from "~data"
-import { Link } from '~components'
 export default function ServicesSection(){
 return(
 <Services backgroundColor="#f3f4f6">

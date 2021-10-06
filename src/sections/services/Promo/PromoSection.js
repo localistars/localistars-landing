@@ -1,8 +1,6 @@
 import React from 'react'
 import Promo from './style'
 import { Col, Container, Row } from 'react-bootstrap'
-import l4promoBg from "~image/home-services/promo-l4-img.png";
-import { Link } from '~components'
  
 export default function PromoSection({...rest}){
 return(
@@ -10,7 +8,7 @@ return(
   <Container>
     <Row className="justify-content-center">
       <Col className="col-xl-12 text-center">
-        <Promo.InnerWrapper style={{backgroundImage: `url(${l4promoBg.src})`}}>
+        <Promo.InnerWrapper style={{backgroundImage: `url("image/home-services/promo-l4-img.png")`}}>
             <Promo.Subtitle fontColor="#ffce3e">Booking</Promo.Subtitle>
             <Promo.Title as="h2" fontColor="#fff">Book service online</Promo.Title>
             <Promo.Text fontColor="#fff">The fastest way to talk to one of our Customer Service<br className="d-none d-sm-block" /> agents about your bookings. Yes – any cancellation fees<br className="d-none d-sm-block" /> are determined by the property.</Promo.Text>

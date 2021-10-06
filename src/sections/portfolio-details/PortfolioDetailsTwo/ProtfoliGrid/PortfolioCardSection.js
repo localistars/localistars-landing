@@ -3,8 +3,8 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import PortfolioCard from './style'
 import Card from './Components/Card'
-import PortFoliosImg3 from "~image/portfolio/portfolio-img-3.png";
-import PortFoliosImg13 from "~image/portfolio/portfolio-mas-4.jpg";
+import PortFoliosImg3 from "../../../../../public/image/portfolio/portfolio-img-3.png";
+import PortFoliosImg13 from "../../../../../public/image/portfolio/portfolio-mas-4.jpg";
 export default function ProtfolioGridSection(){
 return(
 <PortfolioCard>

@@ -8,7 +8,7 @@ return(
     <i className={icon} />
   </Card.Icon>
   <Card.Title as="h3">{title}</Card.Title>
-  <Card.Text as="p">{text}</Card.Text>
+  <Card.Text as="p" className="text-start">{text}</Card.Text>
 </Card>
 )
 }

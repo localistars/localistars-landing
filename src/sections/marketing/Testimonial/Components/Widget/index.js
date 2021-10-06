@@ -1,5 +1,4 @@
 import React from "react"
-import Image from "next/image"
 import Widget from './style'
 export default function TestimonialWidget({ text, name, position, image, reviewStar }) {
   return (
@@ -26,8 +25,7 @@ export default function TestimonialWidget({ text, name, position, image, reviewS
       <Widget.Text>{text}</Widget.Text>
       <Widget.ProfileBlock mb="40px">
         <Widget.Image>
-        <Image className="widget--profile__image" layout="fixed"  width={67}
-          height={67} src={image} alt="testimonial user"/>
+        <img className="widget--profile__image" src={image} alt="testimonial user"/>
         </Widget.Image>
         <Widget.UserBlock>
           <Widget.Title as="h3">{name}</Widget.Title>

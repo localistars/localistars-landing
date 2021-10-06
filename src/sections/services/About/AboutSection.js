@@ -3,8 +3,6 @@ import Image from "next/image"
 import { Col, Container, Row } from 'react-bootstrap'
 import CounterBlock from './Components/CounterBlock'
 import About from './style'
-import aboutImage from "~image/home-services/about-us-image-l4-1.png"
-import aboutImageTwo from "~image/home-services/about-us-image-l4-2.png"
  
 export default function AboutSection({...rest}){
 return(
@@ -13,9 +11,9 @@ return(
     <Row className="align-items-center justify-content-center">
       <Col xs="12" className="col-xl-5 col-lg-5 col-md-7 col-xs-8">
         <About.Image mb="30px" mbLG="0">
-          <Image src={aboutImage} alt="about" placeholder="blur"/>
+          <img src="/image/home-services/about-us-image-l4-1.png" alt="about" className="w-100"/>
           <About.ImageInner>
-            <Image src={aboutImageTwo} alt="about" placeholder="blur"/>
+            <img src="/image/home-services/about-us-image-l4-2.png" alt="about" className="w-100"/>
           </About.ImageInner>
         </About.Image>
       </Col>

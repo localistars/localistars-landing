@@ -1,8 +1,5 @@
 import React from "react";
 import SectionTitle from "./components/SectionTitle";
-import Image from "next/image";
-import ContentImageOne from "~image/home-app/content-mobile-img.png";
-import ContentImageTwo from "~image/home-app/red-shape.png";
 import { Col, Container, Row } from "react-bootstrap";
 import Widget from "./components/Widget";
 import Content from "./style";
@@ -49,9 +46,9 @@ export default function ContentSectionOne() {
             className="col-xxl-6 col-lg-5 col-md-8 col-xs-10 order-1 order-lg-2"
           >
             <Content.ImageGroup>
-              <Image src={ContentImageOne} alt="content" placeholder="blur" />
+              <img src="/image/home-app/content-mobile-img.png" alt="content" className="w-100"/>
               <Content.ImageShape>
-                <Image src={ContentImageTwo} alt="content" placeholder="blur" />
+                <img src="/image/home-app/red-shape.png" alt="content"/>
               </Content.ImageShape>
             </Content.ImageGroup>
           </Col>

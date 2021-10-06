@@ -1,10 +1,10 @@
-import BlogsImg1 from "~image/blogs/blog-post-1.png";
-import BlogsImg2 from "~image/blogs/blog-post-2.png";
-import BlogsImg3 from "~image/blogs/blog-post-3.png";
-import BlogsImg4 from "~image/blogs/blog-post-4.png";
-import BlogsImg5 from "~image/blogs/blog-post-5.png";
-import BlogsImg6 from "~image/blogs/blog-post-6.png";
-import BlogsImg7 from "~image/blogs/blog-post-7.png";
+import BlogsImg1 from "../../public/image/blogs/blog-post-1.png";
+import BlogsImg2 from "../../public/image/blogs/blog-post-2.png";
+import BlogsImg3 from "../../public/image/blogs/blog-post-3.png";
+import BlogsImg4 from "../../public/image/blogs/blog-post-4.png";
+import BlogsImg5 from "../../public/image/blogs/blog-post-5.png";
+import BlogsImg6 from "../../public/image/blogs/blog-post-6.png";
+import BlogsImg7 from "../../public/image/blogs/blog-post-7.png";
 const BlogData = [
   {
     id: "bg1",

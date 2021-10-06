@@ -2,17 +2,15 @@ import React from "react"
 import Image from "next/image"
 import ImageCard from "../ImageCard"
 import Images from "./style"
-import ImageItemOne from "~image/marketing/l1-contentTwo-shape-1.png"
-import ImageItemTwo from "~image/marketing/gray-dots.png"
 export default function ImageGroup({...rest}) {
   return (
       <Images {...rest}>
         <ImageCard/>
         <Images.One>
-          <Image src={ImageItemOne} alt="content One" placeholder="blur"/>
+          <img src="/image/marketing/l1-contentTwo-shape-1.png" alt="content One" className="w-100"/>
         </Images.One>
         <Images.Two>
-          <Image src={ImageItemTwo} placeholder="blur" alt="content two"/>
+          <img src="/image/marketing/gray-dots.png" alt="content two" className="w-100"/>
         </Images.Two>
       </Images>
   )

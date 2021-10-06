@@ -4,7 +4,7 @@ import Feature from './style'
 // import Image from 'next/image'
 import SectionTitle from './Components/SectionTitle'
 import CounterBlock from './Components/CounterBlock'
-import FeatureImage from "~image/it-services/feature-l3-image.png"
+import FeatureImage from "../../../../public/image/it-services/feature-l3-image.png"
 export default function FeatureSection(){
 return(
 <Feature backgroundColor="#f3f4f6">
@@ -13,8 +13,8 @@ return(
     <Row>
       <Col className="col-xl-8 col-lg-10">
         <Feature.Box>
-        <SectionTitle 
-                subTitle="About us" 
+        <SectionTitle
+                subTitle="About us"
                 title="We will make your website <br class='d-none d-xs-block'>
                 look more elegant and stylish!"
                 titleProps={{mb:"33px"}}
@@ -71,6 +71,5 @@ return(
     {/*/ .Feature Content */}
   </Container>
 </Feature>
-
 )
 }

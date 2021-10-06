@@ -11,7 +11,7 @@ export default function TestimonialCard({
   return (
     <Card>
       <Card.Image>
-        <img src={userImage.src} alt="testomonial" />
+        <img src={userImage} alt="testomonial" />
       </Card.Image>
       <Card.Text as="p">{text}</Card.Text>
       <Card.Body>

@@ -1,9 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import Image from "next/image"
 import ContentWidget from './Components/Widget'
 import Content from './style'
-import contentImage from "~image/home-services/content-img-l4-2.png"
 export default function ContentSectionOne({...rest}){
 return(
 <Content backgroundColor="rgba(169, 210, 255, 0.1)" {...rest}>
@@ -36,7 +34,7 @@ return(
       </Col>
       <Col xs="12" className="col-xxl-7 col-xl-6 col-lg-5 col-md-9 col-xs-10 order-1 order-lg-2">
         <Content.Widget mb="30px" mbXL="0px">
-          <Image src={contentImage} alt="content" placeholder="blur"/>
+          <img src="/image/home-services/content-img-l4-2.png" alt="content" className="w-100"/>
         </Content.Widget>
       </Col>
     </Row>

@@ -56,7 +56,7 @@ return(
           {...sliderConfig1}
         >
 
-        {TestimonialData.testimonial.map(({icon, image, userName,userPosition,text })=>{
+        {TestimonialData.testimonial.map(({icon, image, userName,userPosition,text },index)=>{
 
           return(
 
@@ -66,6 +66,7 @@ return(
               userName={userName}
               userPosition={userPosition}
               text={text}
+              key={index}
             />
           )
         })}

@@ -4,17 +4,17 @@ import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import TabContentWidget from "./Component/TabContentWidget";
 import TabNavWidget from "./Component/TabNavWidget";
 import Feature from "./style";
-import featureShape2 from "~image/marketing/l1-full-circle-shape.png";
-import featureShape1 from "~image/marketing/l1-half-circle-shape.png";
+// import featureShape2 from "image/marketing/l1-full-circle-shape.png";
+// import featureShape1 from "image/marketing/l1-half-circle-shape.png";
 const FeatureSection = ({ ...rest }) => {
   return (
     <Feature className="bg-blue-ribbon">
       <Feature.Shapes>
         <Feature.ShapeOne>
-          <Image src={featureShape1} alt="shape1"/>
+          <img src="/image/marketing/l1-half-circle-shape.png" alt="shape1" className="w-100"/>
         </Feature.ShapeOne>
         <Feature.ShapeTwo>
-          <Image src={featureShape2} alt="shape1"/>
+          <img src="/image/marketing/l1-full-circle-shape.png" alt="shape1" className="w-100"/>
         </Feature.ShapeTwo> 
       </Feature.Shapes>
       

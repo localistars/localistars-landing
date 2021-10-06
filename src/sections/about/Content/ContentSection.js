@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 // import Image from 'next/image'
 import Content from './style'
 import SectionTitle from './Components/SectionTitle'
-import contentImage from '~image/home-agency/content-1-l5-img.png'
+import contentImage from '../../../../public/image/home-agency/content-1-l5-img.png'
 export default function ContentSection(){
   return(
     <Content>
@@ -12,8 +12,8 @@ export default function ContentSection(){
           <Row className="align-items-center justify-content-center">
             <Col xs="12" className="col-lg-4 col-md-10 col-xs-11 text-center text-lg-start">
               {/* Section Title */}
-              <SectionTitle 
-                    subTitle="About us" 
+              <SectionTitle
+                    subTitle="About us"
                     title="An Exceptionally unique<br class='d-none d-md-block d-lg-none'> experience Tailored to you"
                     text="In a professional context it often happens that private or corporate clients order a publication news while still not being ready."
                     titleProps={{mb:"30px"}}
@@ -54,6 +54,5 @@ export default function ContentSection(){
         </Content.InnerWrapper>
       </Container>
     </Content>
-    
     )
 }

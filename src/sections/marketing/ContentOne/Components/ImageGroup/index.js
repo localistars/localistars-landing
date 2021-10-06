@@ -1,45 +1,39 @@
-import Image from "next/image"
 import React from "react"
 import ImageCard from "../ImageCard"
 import Images from "./style"
-import imageOne from "~image/marketing/l1-contentOne-img-woman.png"
-import imageTwo from "~image/marketing/purple-dots.png"
-import imageThree from "~image/marketing/l1-contentOne-shape-1.png"
-import imageFour from "~image/marketing/l1-contentOne-shape-2.png"
 export default function ImageGroup({...rest}) {
   return (
     <>
       <Images {...rest}>
         {/* Content Image */}
-        <Image
-          
+        <img
           alt="content image"
-          src={imageOne}
-          placeholder="blur"
+          src="/image/marketing/l1-contentOne-img-woman.png"
+          className="w-100"
         />
         {/* Content Image */}
         <Images.One>
-          <Image
-            
+          <img
             alt="content image"
-            src={imageTwo}
-            placeholder="blur"
+            src="/image/marketing/purple-dots.png"
+            className="w-100"
           />
         </Images.One>
         {/* Content Image */}
         <Images.Two>
-          <Image
+          <img
             alt="content image"
-            src={imageThree}
+            src="/image/marketing/l1-contentOne-shape-1.png"
+            className="w-100"
             placeholder="blur"
           />
         </Images.Two>
         {/* Content Image */}
         <Images.Three>
-          <Image
-            src={imageFour}
+          <img
+            src="/image/marketing/l1-contentOne-shape-2.png"
+            className="w-100"
             alt="content image"
-            placeholder="blur"
           />
         </Images.Three>
         {/* Content Image */}

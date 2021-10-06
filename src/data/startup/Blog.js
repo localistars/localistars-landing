@@ -1,10 +1,7 @@
-import blogThumbImg1 from "~image/home-startup/blogs-img-1.png";
-import blogThumbImg2 from "~image/home-startup/blogs-img-2.png";
-import blogThumbImg3 from "~image/home-startup/blogs-img-3.png";
 const BlogData = [
   {
     id: "bg1",
-    image: blogThumbImg1,
+    image: "image/home-startup/blogs-img-1.png",
     badge: "Gadgets",
     date: "01 June, 2020",
     title:
@@ -14,7 +11,7 @@ const BlogData = [
   },
   {
     id: "bg2",
-    image: blogThumbImg2,
+    image: "image/home-startup/blogs-img-2.png",
     badge: "Gadgets",
     date: "01 June, 2020",
     title:
@@ -24,7 +21,7 @@ const BlogData = [
   },
   {
     id: "bg3",
-    image: blogThumbImg3,
+    image: "image/home-startup/blogs-img-3.png",
     badge: "Gadgets",
     date: "01 June, 2020",
     title:

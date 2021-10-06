@@ -1,7 +1,7 @@
 import React from 'react'
 import BreadCrumb from './style'
 // import { StaticImage as Img } from 'gatsby-plugin-image'
-import BreadcrumbImage from "~image/mixed/inner-banner-shape.png"
+import BreadcrumbImage from "../../../../../public/image/mixed/inner-banner-shape.png"
 import { Col, Row, Container  } from 'react-bootstrap'
 import { SuperTag } from '~components'
 export default function BreadCrumbSection({colClasses,title,text,...rest}){

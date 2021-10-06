@@ -1,10 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import SectionTitle from "./Components/SectionTitle";
-import Image from "next/image";
-import PortfolioImageOne from "~image/portfolio/l8-portfolio-img-4.jpg";
-import PortfolioImageTwo from "~image/portfolio/l8-portfolio-img-2.jpg";
-import PortfolioImageThree from "~image/portfolio/l8-portfolio-img-3.jpg";
 import Protfolio from "./style";
 import { Link } from "~components";
 import Slider from "react-slick";
@@ -102,7 +98,7 @@ export default function ProtfolioSection() {
           <Slide
             image={
               <img
-                src={PortfolioImageOne.src}
+                src="/image/portfolio/l8-portfolio-img-4.jpg"
                 alt="content"
                 placeholder="blur"
                 className="w-100"
@@ -117,7 +113,7 @@ export default function ProtfolioSection() {
           <Slide
             image={
               <img
-                src={PortfolioImageTwo.src}
+                src="/image/portfolio/l8-portfolio-img-2.jpg"
                 alt="content"
                 placeholder="blur"
                 className="w-100"
@@ -132,7 +128,7 @@ export default function ProtfolioSection() {
           <Slide
             image={
               <img
-                src={PortfolioImageThree.src}
+                src="/image/portfolio/l8-portfolio-img-3.jpg"
                 alt="content"
                 placeholder="blur"
                 className="w-100"

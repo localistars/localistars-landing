@@ -4,7 +4,7 @@ export default function TestimonialCard({title,text,image,icon,iconBackground,Us
 return(
   <Card backgroundColor="#fff">
   <Card.Image>
-    <img src={image.src} alt="testimonial" />
+    <img src={image} alt="testimonial" />
   </Card.Image>
   <Card.Body>
     <Card.Text>{text}</Card.Text>

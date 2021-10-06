@@ -5,7 +5,7 @@ import { Link } from "~components";
 import About from "./style";
 import SectionTitle from "./Components/SectionTitle";
 import Video from "~components/VideoModal";
-import AboutusImage from "~image/home-agency/about-us-l5-img.png";
+import AboutusImage from "../../../../public/image/home-agency/about-us-l5-img.png";
 export default function AboutSection() {
   return (
     <About>

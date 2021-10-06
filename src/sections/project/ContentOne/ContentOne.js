@@ -1,18 +1,14 @@
 import React from 'react'
-import Image from 'next/image';
 import Content from './style'
 import { SuperTag } from '~components';
 import { Col, Container, Row } from 'react-bootstrap';
-import contentShapeOne from "~image/project-management/l2-content-1-shape.png"
-import contentImage from "~image/project-management/l2-content-img-1.png"
-import contentShapeTwo from "~image/project-management/l2-content-img-2.png"
 
 export default function ContentSectionOne(){
 
 return(
 <Content>
   <Content.SectionShape>
-    <Image src={contentShapeOne} alt="content" placeholder="blurred"/>
+    <img src="/image/project-management/l2-content-1-shape.png" alt="content" className="w-100"/>
   </Content.SectionShape>
   <Container>
     <Content.Inner>
@@ -28,9 +24,9 @@ return(
       </Col>
       <Col xs="12" className="col-xl-7 col-lg-6 col-md-8 col-xs-10 order-1 order-lg-2">
         <Content.Image>
-            <Image src={contentImage} alt="content" placeholder="blur"/>
+            <img src="/image/project-management/l2-content-img-1.png" alt="content" className="w-100"/>
           <Content.ContentShape>
-            <Image src={contentShapeTwo} alt="content" placeholder="blur"/>
+            <img src="/image/project-management/l2-content-img-2.png" alt="content" className="w-100"/>
           </Content.ContentShape>
         </Content.Image>
       </Col>

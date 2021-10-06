@@ -1,6 +1,5 @@
 import { useContext } from "react";
-import Image from "next/image";
-import offer from "~image/mixed/ads-img.png";
+import offer from "../../../../public/image/mixed/ads-img.png";
 import SideBar from "./style";
 import { Link } from "~components";
 

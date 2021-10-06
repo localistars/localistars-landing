@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import HeroImage from "~image/home-startup/hero-img.png";
 import { Col, Container, Row } from "react-bootstrap";
 import Hero from "./style";
 import Video from "~components/VideoModal";
@@ -50,9 +48,8 @@ export default function HeroSection({ ...rest }) {
               mbLG="0"
             >
               <img
-                src={HeroImage.src}
+                src="/image/home-startup/hero-img.png"
                 alt="content"
-                placeholder="blur"
                 className="w-100"
               />
               {/* Video Button */}

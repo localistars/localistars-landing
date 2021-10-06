@@ -14,7 +14,7 @@ export default function BlogCard({
   return (
     <Card>
       <Card.Image>
-        <img src={image.src} alt="Blog" />
+        <img src={image} alt="Blog" className="w-100"/>
       </Card.Image>
       <Card.OvaerlayBlock>
         <Card.Top mb="20px">

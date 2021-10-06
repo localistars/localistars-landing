@@ -1,6 +1,6 @@
-import testiMonialUserImg1 from "~image/it-services/user-circle-1.png";
-import testiMonialUserImg2 from "~image/it-services/user-circle-2.png";
-import testiMonialUserImg3 from "~image/it-services/user-circle-3.png";
+import testiMonialUserImg1 from "../../../public/image/it-services/user-circle-1.png";
+import testiMonialUserImg2 from "../../../public/image/it-services/user-circle-2.png";
+import testiMonialUserImg3 from "../../../public/image/it-services/user-circle-3.png";
 const TestimonialData = {
   testimonial: [
     {

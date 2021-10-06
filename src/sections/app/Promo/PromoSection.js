@@ -2,8 +2,6 @@ import React from "react";
 import { Col, Container, Form, FormCheck, Row } from "react-bootstrap";
 import Promo from "./style";
 import SectionTitle from "./Components/SectionTitle";
-import Image from "next/image";
-import PromoImage from "~image/home-app/promo-l8-img.png";
 import { Button } from "~styled";
 export default function CtaSection() {
   return (
@@ -15,7 +13,7 @@ export default function CtaSection() {
             className="col-xxl-6 col-xl-5 col-lg-5 col-md-7 col-xs-9"
           >
             <Promo.Image>
-              <Image src={PromoImage} alt="content" placeholder="blur" />
+              <img src="/image/home-app/promo-l8-img.png" alt="content" placeholder="blur" />
             </Promo.Image>
           </Col>
           <Col className="col-xxl-6 col-xl-7 col-lg-8 col-md-10">

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ResetForm from "./style";
-import ResetBgImg from "~image/accounts/reset-pass-img.jpg";
+import ResetBgImg from "../../../../public/image/accounts/reset-pass-img.jpg";
 import { Link } from "~components";
 export default function ResetSection() {
   return (

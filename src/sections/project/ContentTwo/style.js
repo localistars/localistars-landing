@@ -75,7 +75,13 @@ Content.Image = styled(Box)`
   }
 `
 Content.ContentShape = styled(Box)`
-    width: 38%;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 3.4%;
+`
+Content.ContentShapeTwo = styled(Box)`
+     width: 38%;
     position: absolute;
     left: -1%;
     top: -7%;

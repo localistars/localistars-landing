@@ -2,8 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
 import Content from "./style";
-import ContentImageOne from "~image/home-digital-agency/1.jpg";
-import ContentImageTwo from "~image/home-digital-agency/2.jpg";
 export default function ContentSectionTwo({ ...rest }) {
   return (
     <Content {...rest}>
@@ -48,19 +46,17 @@ export default function ContentSectionTwo({ ...rest }) {
             <Content.Images>
               <Content.ImageOne>
                 <Content.ImageOneInner>
-                  <Image
-                    src={ContentImageOne}
+                  <img
+                    src="/image/home-digital-agency/1.jpg"
                     alt="content"
-                    placeholder="blur"
                   />
                 </Content.ImageOneInner>
               </Content.ImageOne>
               <Content.ImageTwo>
                 <Content.ImageTwoInner>
-                  <Image
-                    src={ContentImageTwo}
+                  <img
+                    src="/image/home-digital-agency/2.jpg"
                     alt="content"
-                    placeholder="blur"
                   />
                 </Content.ImageTwoInner>
               </Content.ImageTwo>

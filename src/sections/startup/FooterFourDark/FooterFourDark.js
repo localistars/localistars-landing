@@ -1,7 +1,7 @@
 import { Link } from "~components";
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Logowhite from "~image/logo/logo-white.png";
+import Logowhite from "../../../../public/image/logo/logo-white.png";
 import Footer from "./style";
 export default function FooterFourDark() {
   return (

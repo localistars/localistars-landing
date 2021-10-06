@@ -2,9 +2,9 @@ import React,{useRef} from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Slider from "react-slick"
 import PortfolioDetails from './style'
-import pimageOne from "~image/portfolio/portfolio-details-left-1.jpg"
-import pimageTwo from "~image/portfolio/portfolio-details-left-2.jpg"
-import pimageThree from "~image/portfolio/portfolio-details-left-3.jpg"
+import pimageOne from "../../../../../public/image/portfolio/portfolio-details-left-1.jpg"
+import pimageTwo from "../../../../../public/image/portfolio/portfolio-details-left-2.jpg"
+import pimageThree from "../../../../../public/image/portfolio/portfolio-details-left-3.jpg"
 export default function PortfolioDetailsSection(){
   const elSlider = useRef()
 
@@ -75,7 +75,7 @@ return(
           </Row>
         </PortfolioDetails.Box>
         <PortfolioDetails.SliderWrapper mt="50px" mtLG="80px">
-          <Slider 
+          <Slider
           ref={elSlider}
           className="testimonial-slider"
           {...sliderConfig1}

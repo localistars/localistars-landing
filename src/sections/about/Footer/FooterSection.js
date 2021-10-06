@@ -1,7 +1,7 @@
 import { Link, LanguageSwitchLink } from '~components'
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import LogoWhite from "~image/logo/logo-white.png";
+import LogoWhite from "../../../../public/image/logo/logo-white.png";
 import Footer from "./style"
 import i18nextConfig from '~next-i18next.config'
 import { useRouter } from 'next/router'

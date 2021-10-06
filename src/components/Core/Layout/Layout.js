@@ -1,6 +1,6 @@
 // import React from "react";
 import Head  from "next/head";
-import favicon from '~image/favicon.png';
+import favicon from '../../../../public/image/favicon.png';
 import Header from "../Header";
 export default function Layout({
   children,

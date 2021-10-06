@@ -1,8 +1,8 @@
 import { Link } from '~components'
 import React from 'react'
-import portFolioImg1 from "~image/portfolio/portfolio-l6-img-1.png";
-import portFolioImg2 from "~image/portfolio/portfolio-l6-img-2.png";
-import portFolioImg3 from "~image/portfolio/portfolio-img-1.png";
+import portFolioImg1 from "../../../../../public/image/portfolio/portfolio-l6-img-1.png";
+import portFolioImg2 from "../../../../../public/image/portfolio/portfolio-l6-img-2.png";
+import portFolioImg3 from "../../../../../public/image/portfolio/portfolio-img-1.png";
 import { Col, Container, Row } from 'react-bootstrap'
 import PortfolioCard from './style'
 import Card from './Components/Card'

@@ -2,9 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ServiceCard from "./Components/Card";
 import Service from "./style";
-import servicesIcon1 from "~image/home-digital-agency/services-icon-1.png";
-import servicesIcon2 from "~image/home-digital-agency/services-icon-2.png";
-import servicesIcon3 from "~image/home-digital-agency/services-icon-3.png";
 
 export default function ServicesSection() {
   return (
@@ -45,19 +42,19 @@ export default function ServicesSection() {
                 you are missing out on potential visitors and sales.
               </Service.Text>
               <ServiceCard
-                image={servicesIcon1.src}
+                image="image/home-digital-agency/services-icon-1.png"
                 title="Website Design & Development"
                 text="Refresh old out dated website or bring your business online with your first website."
                 mb="25px"
               />
               <ServiceCard
-                image={servicesIcon2.src}
+                image="image/home-digital-agency/services-icon-2.png"
                 title="Search Engine Optimisation (SEO)"
                 text="Start bringing new visitors to your website with an SEO campaign!"
                 mb="25px"
               />
               <ServiceCard
-                image={servicesIcon3.src}
+                image="image/home-digital-agency/services-icon-3.png"
                 title="Google Ads Management (PPC)"
                 text="Start bringing new visitors to your website with an SEO campaign!"
                 mb="25px"

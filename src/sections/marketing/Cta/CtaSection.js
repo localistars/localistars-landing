@@ -1,15 +1,13 @@
 import React from 'react';
-import Image from "next/image"
 import { Container,Row,Col } from 'react-bootstrap';
 import {Form} from '~components';
 import Cta from './style';
-import ProMoShape from "~image/marketing/footer-shape.png";
 const CtaSection = () => {
 return(
 <>
 <Cta className="cta-section cta-section--l1 bg-purple-heart dark-mode-texts">
   <Cta.Shape className="footer__shape-1">
-    <Image src={ProMoShape} alt="cta shape"/>
+    <img src="/image/marketing/footer-shape.png"  alt="cta shape" className="w-100"/>
   </Cta.Shape>
   <Container>
     <Row className="justify-content-center">

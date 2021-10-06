@@ -4,8 +4,7 @@ import Blog from "./style";
 import BlogCard from "./Comonent/Card";
 import SlimBlogCard from "./Comonent/Card/SlimCard";
 import BlogRequlerData from "~data/BlogRequlerData";
-
-import BlogsImg1 from "~image/blogs/blog-post-1.png";
+import BlogsImg1 from "../../../../public/image/blogs/blog-post-1.png";
 import SearchContext from "~context/SearchContext";
 
 export default function BlogRegular({ posts = [] }) {

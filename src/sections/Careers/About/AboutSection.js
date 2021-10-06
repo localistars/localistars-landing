@@ -1,6 +1,6 @@
 import React from "react";
 // import Image from "next/image";
-import AboutImage from "~image/mixed/career-video-bg.png";
+import AboutImage from "../../../../public/image/mixed/career-video-bg.png";
 import { Col, Container, Row } from "react-bootstrap";
 import About from "./style";
 import SectionTitle from "./Components/SectionTitle";
@@ -48,8 +48,8 @@ export default function AboutSection() {
 }
 
 {
-  /* <SectionTitleBlock 
-  subTitle="Watch video" 
+  /* <SectionTitleBlock
+  subTitle="Watch video"
   title="Consultation Trade
   Easier Than Ever"
   text="Scale up and down easily as your business demands. And make use of business-grade consultation. Book flexibly by the day, week or longer and customise the layout to reflect your brand."

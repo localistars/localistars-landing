@@ -1,8 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Video from "~components/VideoModal";
-import Image from "next/image";
-import AboutImage from "~image/home-digital-agency/about-videos-img.png";
 import CounterBlock from "./Components/CounterBlock";
 import About from "./style";
 
@@ -41,7 +39,7 @@ export default function AboutSection({ ...rest }) {
             className="col-xl-6 col-lg-6 col-md-8 col-sm-9 order-1 order-xl-2"
           >
             <About.Image>
-              <Image src={AboutImage} alt="content" placeholder="blur" />
+              <img src="/image/home-digital-agency/about-videos-img.png" alt="content" className="w-100"/>
               <Video id="LWZ7iytIA6k" className="video-btn">
                 <i className="fa fa-play" />
               </Video>

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import InnerPromoShape from "~image/mixed/inner-banner-shape.png";
+import InnerPromoShape from "../../../../public/image/mixed/inner-banner-shape.png";
 import Promo from './style'
- 
+
 export default function PromoSection({...rest}){
 return(
 <Promo backgroundColor="#5034fc">

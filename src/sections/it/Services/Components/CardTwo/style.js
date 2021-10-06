@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Box, Button, Heading,Paragraph } from '~styled';
-import cardshape from "~image/it-services/services-more-shape.png"
+import cardshape from "../../../../../../public/image/it-services/services-more-shape.png"
 import {transparentize,rgba} from "polished"
 
 const propToColor = (arg = "#1787FC" ) => transparentize(0.70, arg);

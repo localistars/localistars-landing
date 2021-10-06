@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import loaderImage from "~image/preloader.gif"
+
 const LoaderWrapper = styled.div`
   width: 100%;
   height: 100vh;
@@ -17,10 +17,10 @@ const LoaderWrapper = styled.div`
 `
 const Loader = ({show}) => {
 return(
-<LoaderWrapper display={show ? "flex" : "none"}>
-    <img src={loaderImage.src} alt="img"/>
-</LoaderWrapper>
-)
+    <LoaderWrapper display={show ? "flex" : "none"}>
+      <img src="/image/preloader.gif" alt="img"/>
+    </LoaderWrapper>
+  )
 }
- 
+
 export default Loader

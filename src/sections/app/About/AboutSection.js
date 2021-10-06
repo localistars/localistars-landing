@@ -2,9 +2,6 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import SectionTitle from "./components/SectionTitle";
 import Widget from "./components/widget";
-import Image from "next/image";
-import AboutImageOne from "~image/home-app/about-mobile-img.png";
-import AboutImageTwo from "~image/home-app/green-shape.png";
 import About from "./style";
 export default function AboutSection() {
   return (
@@ -46,9 +43,9 @@ export default function AboutSection() {
             className="col-xxl-6 col-lg-4 col-md-8 col-xs-9 order-1 order-lg-2 text-center"
           >
             <About.ImageContent>
-              <Image src={AboutImageOne} alt="content" placeholder="blur" />
+              <img src="/image/home-app/about-mobile-img.png" alt="content"/>
               <About.Shape>
-                <Image src={AboutImageTwo} alt="content" placeholder="blur" />
+                <img src="/image/home-app/green-shape.png" alt="content"/>
               </About.Shape>
             </About.ImageContent>
           </Col>

@@ -1,7 +1,7 @@
 import { Link } from '~components'
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import LogoBlack from "~image/logo/logo-black.png";
+import LogoBlack from "../../../../../public/image/logo/logo-black.png";
 import Footer from "./style"
 export default function FooterSection(){
 return(
@@ -58,7 +58,7 @@ return(
                             </Footer.AddressItem>
                             <Footer.AddressItem>
                                 <i className="fa fa-phone-alt" />
-                                
+
                                 <a href="#"><span> Phone: </span><br className="d-block" /> +99 (0) 101 0000 888</a>
                             </Footer.AddressItem>
                             <Footer.AddressItem>

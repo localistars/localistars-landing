@@ -1,64 +1,61 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { motion, usePresence, AnimatePresence } from "framer-motion";
-import portFolioImg1 from "~image/portfolio/portfolio-l6-img-1.png";
-import portFolioImg2 from "~image/portfolio/portfolio-l6-img-2.png";
-import portFolioImg3 from "~image/portfolio/portfolio-img-1.png";
 import PortfolioCard from "./Components/Card";
 import Portfolio from "./style";
 
 const portfolioData = [
   {
-    image: portFolioImg1.src,
+    image: "image/portfolio/portfolio-l6-img-1.png",
     titleSmall: "KAKTUS",
     title: "Candy Store",
     id: "1",
     tagi: ["all", "development"],
   },
   {
-    image: portFolioImg2.src,
+    image: "image/portfolio/portfolio-l6-img-2.png",
     titleSmall: "KAKTUS",
     title: "Candy Store",
     id: "2",
     tagi: ["all"],
   },
   {
-    image: portFolioImg3.src,
+    image: "image/portfolio/portfolio-img-1.png",
     titleSmall: "KAKTUS",
     title: "Candy Store",
     id: "3",
     tagi: ["all"],
   },
   {
-    image: portFolioImg3.src,
+    image: "image/portfolio/portfolio-img-1.png",
     titleSmall: "KAKTUS",
     title: "Candy Store",
     id: "4",
     tagi: ["seo"],
   },
   {
-    image: portFolioImg3.src,
+    image: "image/portfolio/portfolio-img-1.png",
     titleSmall: "KAKTUS",
     title: "Candy Store",
     id: "5",
     tagi: ["development"],
   },
   {
-    image: portFolioImg3.src,
+    image: "image/portfolio/portfolio-img-1.png",
     titleSmall: "KAKTUS",
     title: "Candy Store",
     id: "6",
     tagi: ["work"],
   },
   {
-    image: portFolioImg1.src,
+    image: "image/portfolio/portfolio-l6-img-1.png",
     titleSmall: "KAKTUS",
     title: "Candy Store",
     id: "7",
     tagi: ["marketing"],
   },
   {
-    image: portFolioImg1.src,
+    image: "image/portfolio/portfolio-l6-img-1.png",
     titleSmall: "KAKTUS",
     title: "Candy Store",
     id: "7",

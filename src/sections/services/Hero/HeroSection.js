@@ -3,12 +3,10 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Form, Link } from '~components'
 import Hero from './style'
-import herol4ImgOverlay from "~image/home-services/hero-overlay.png";
-import herol4Img from "~image/home-services/hero-l4-image.png";
 
 export default function HeroSection(){
 return(
-<Hero overlay={herol4ImgOverlay.src} style={{backgroundImage: `url(${herol4Img.src})`}}>
+<Hero overlay="image/home-services/hero-overlay.png" style={{backgroundImage: `url("image/home-services/hero-l4-image.png")`}}>
   <Container>
     <Row className="align-items-center justify-content-center justify-content-md-start">
       {/* Welcome content Area */}

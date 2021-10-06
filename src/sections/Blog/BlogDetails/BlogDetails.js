@@ -2,8 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "~components";
 import Details from "./style";
-import Image from "next/image";
-import blogImage from "~image/blogs/blog-details-img-1.png";
+import blogImage from "../../../../public/image/blogs/blog-details-img-1.png";
 import Sidebar from "~sections/Common/Sidebar";
 import {
   BlogQoute,

@@ -25,6 +25,7 @@ export const menuItems = [
                name: "#",
                label: "Blog",
                items: [
+                 { name: "blog", label: "Localistars Blog" },
                  { name: "blog/blog-regular", label: "Blog Regular" },
                  { name: "blog/blog-left-sidebar", label: "Blog Left Sidebar" },
                  { name: "blog/blog-right-sidebar", label: "Blog Right Sidebar" },

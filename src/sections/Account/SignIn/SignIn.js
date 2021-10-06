@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SignInForm from "./style";
-import SigninBgImg from "~image/accounts/sign-in.jpg";
+import SigninBgImg from "../../../../public/image/accounts/sign-in.jpg";
 export default function SignIn() {
   return (
     <SignInForm backgroundColor="#f3f4f6">

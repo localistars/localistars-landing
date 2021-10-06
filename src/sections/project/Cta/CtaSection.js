@@ -1,11 +1,11 @@
 
 import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
-import l2CtaBg from "~image/project-management/l2-cta-mask.png";
+import l2CtaBg from "../../../../public/image/project-management/l2-cta-mask.png";
 import Cta from "./style"
 
 export default function CtaSection() {
-  
+
   return (
     <Cta>
       <Container>

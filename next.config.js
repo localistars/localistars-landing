@@ -32,7 +32,7 @@ module.exports = withTM({
   },
   images: {
     loader: 'imgix',
-    path: '',
+    path: '/',
   },
   trailingSlash: true
 })

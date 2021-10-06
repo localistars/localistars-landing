@@ -1,11 +1,9 @@
 import React from "react";
-import Image from "next/image";
-import image from "~image/home-services/contact-map.png";
 import MapArea from "./style";
 export default function ContactMap() {
   return (
     <MapArea>
-      <Image src={image} alt="content" placeholder="blur" />
+      <img src="/image/home-services/contact-map.png" alt="content"/>
       <MapArea.Card className="card-1">
         <p>4 G-ral. Traian Mosoiu Street, A Building, 2nd</p>
       </MapArea.Card>

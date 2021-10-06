@@ -3,9 +3,6 @@ import Slider from "react-slick"
 import { Col, Container, Row } from 'react-bootstrap'
 import TestimonialCard from './Components/Card'
  import Testimonial from "./style"
-import testiMonialUserImg2 from "~image/it-services/user-circle-2.png";
-import testiMonialUserImg3 from "~image/it-services/user-circle-3.png";
-import testiMonialUserImg1 from "~image/it-services/user-circle-4.png";
 export default function TestimonialSection(){
 const elSlider = useRef()
 
@@ -53,9 +50,7 @@ return(
                 <Testimonial.Subtitle as="h6" fontColor="#ff5722" mb="30px">Testimonial</Testimonial.Subtitle>
                 <Testimonial.Title as="h2">We Care About Our Customers Experience Too</Testimonial.Title>
             </Testimonial.Box>
-            
         </Col>
-        
     </Row>
     <Testimonial.SliderWrapper>
         <Slider 
@@ -64,13 +59,13 @@ return(
         {...sliderConfig1}
         >
             <Col className="col-lg-4 col-md-12">
-                <TestimonialCard text="But the majorityThere are many variations passages of Lorem lpsum available,  have suffered alteration in some form, by injected or randomised." title="Snow Doe" image={testiMonialUserImg1}/>
+                <TestimonialCard text="But the majorityThere are many variations passages of Lorem lpsum available,  have suffered alteration in some form, by injected or randomised." title="Snow Doe" image="image/it-services/user-circle-4.png"/>
             </Col>
             <Col className="col-lg-4 col-md-12">
-                <TestimonialCard text="Injected or randomised. There are many variations passages of Lorem lpsum available, but the majority have suffered alteration in some form, by " title="John Doe" image={testiMonialUserImg2}/>
+                <TestimonialCard text="Injected or randomised. There are many variations passages of Lorem lpsum available, but the majority have suffered alteration in some form, by " title="John Doe" image="image/it-services/user-circle-2.png"/>
             </Col>
             <Col className="col-lg-4 col-md-12">
-                <TestimonialCard text="There are many variations passages of Lorem lpsum available, but the majority have suffered alteration in some form, by injected or randomised." title="Jack Jill" image={testiMonialUserImg3}/>
+                <TestimonialCard text="There are many variations passages of Lorem lpsum available, but the majority have suffered alteration in some form, by injected or randomised." title="Jack Jill" image="image/it-services/user-circle-3.png"/>
             </Col>
         </Slider>
     </Testimonial.SliderWrapper>

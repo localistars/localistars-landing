@@ -1,13 +1,13 @@
-import Pone from '~image/portfolio/portfolio-mas-1.jpg'
-import Ptwo from '~image/portfolio/portfolio-mas-13.jpg'
-import Pthree from '~image/portfolio/portfolio-mas-4.jpg'
-import Pfour from '~image/portfolio/portfolio-mas-6.jpg'
-import Pfive from '~image/portfolio/portfolio-mas-8.jpg'
-import Psix from '~image/portfolio/portfolio-mas-16.jpg'
-import Pseven from '~image/portfolio/portfolio-mas-10.jpg'
-import Peight from '~image/portfolio/portfolio-mas-3.jpg'
-import Pnine from '~image/portfolio/portfolio-mas-11.jpg'
-import Pten from '~image/portfolio/portfolio-mas-2.jpg'
+import Pone from '../../../../../public/image/portfolio/portfolio-mas-1.jpg'
+import Ptwo from '../../../../../public/image/portfolio/portfolio-mas-13.jpg'
+import Pthree from '../../../../../public/image/portfolio/portfolio-mas-4.jpg'
+import Pfour from '../../../../../public/image/portfolio/portfolio-mas-6.jpg'
+import Pfive from '../../../../../public/image/portfolio/portfolio-mas-8.jpg'
+import Psix from '../../../../../public/image/portfolio/portfolio-mas-16.jpg'
+import Pseven from '../../../../../public/image/portfolio/portfolio-mas-10.jpg'
+import Peight from '../../../../../public/image/portfolio/portfolio-mas-3.jpg'
+import Pnine from '../../../../../public/image/portfolio/portfolio-mas-11.jpg'
+import Pten from '../../../../../public/image/portfolio/portfolio-mas-2.jpg'
 const portfolioData = [
     {
         image:Pone,

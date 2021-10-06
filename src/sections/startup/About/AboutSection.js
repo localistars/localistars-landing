@@ -1,7 +1,5 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Image from "next/image";
-import AboutImage from "~image/home-startup/about-us-img.png";
 import SectionTitle from "./Components/SectionTitle";
 import About from "./style";
 
@@ -12,7 +10,7 @@ export default function AboutusSection() {
         <Row className="align-items-center justify-content-center g-0">
           <Col xs="12" className="col-xxl-6 col-lg-5 col-md-10">
             <About.Image>
-              <Image src={AboutImage} alt="content" placeholder="blur" />
+              <img src="/image/home-startup/about-us-img.png" alt="content" className="w-100"/>
             </About.Image>
           </Col>
           <Col className="col-xxl-6 col-lg-7 col-md-10">

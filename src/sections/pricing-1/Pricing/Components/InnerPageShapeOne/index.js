@@ -1,5 +1,5 @@
 import React from "react";
-import InnerPromoShape from "~image/mixed/inner-banner-shape.png";
+import InnerPromoShape from "../../../../../../public/image/mixed/inner-banner-shape.png";
 import Shape from "./style";
 export default function InnerShape() {
   return (

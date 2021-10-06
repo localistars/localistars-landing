@@ -1,8 +1,5 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Image from "next/image";
-import ContentImageOne from "~image/home-digital-agency/content-l7-1.png";
-import ContentImageTwo from "~image/home-digital-agency/content-l7-2.png";
 import Content from "./style";
 
 export default function ContentSectionOne() {
@@ -21,10 +18,10 @@ export default function ContentSectionOne() {
                   We are here to make your website looks more elegant
                 </Content.Title>
                 <Content.ImageOne mb="40px">
-                  <Image
-                    src={ContentImageOne}
+                  <img
+                    src="/image/home-digital-agency/content-l7-1.png"
                     alt="content"
-                    placeholder="blur"
+                    className="w-100"
                   />
                 </Content.ImageOne>
               </Content.Box>
@@ -41,7 +38,7 @@ export default function ContentSectionOne() {
                 standard dummy
               </Content.Text>
               <Content.ImageTwo mb="40px">
-                <Image src={ContentImageTwo} alt="content" placeholder="blur" />
+                <img src="/image/home-digital-agency/content-l7-2.png" alt="content" className="w-100"/>
               </Content.ImageTwo>
               <Content.Text mb="30px" ptXL="30px">
                 Everything we do is thoughtfully tied with creativity. We design

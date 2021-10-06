@@ -19,6 +19,7 @@ const Card = styled(Box).attrs({className:"card"})`
     border-color: transparent;
     display: inline-flex;
     flex-direction: column;
+    justify-content: flex-start;
     &:hover{
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     }
@@ -54,7 +55,6 @@ Card.Text = styled(Paragraph)`
     font-weight: 400;
     letter-spacing: normal;
     line-height: 28px;
-    align-self: self-end;
     margin-top: auto;
     margin-bottom: 0;
 `

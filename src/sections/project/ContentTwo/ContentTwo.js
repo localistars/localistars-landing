@@ -1,27 +1,23 @@
 import React from 'react'
-import Image from 'next/image';
 import Content from './style'
 import { Link, SuperTag } from '~components';
 import { Col, Container, Row } from 'react-bootstrap';
-import shapeOne from "~image/project-management/l2-content-2-shape.png"
-import shapeTwo from "~image/project-management/l2-content-2-shape-2.png"
-import imageTwo from "~image/project-management/l2-content-img-2.png"
 export default function ContentSectionTwo(){
 
 return(
 <Content backgrounColor="#fff">
   <Content.ContentShape>
-    <Image src={shapeOne} alt="content" placeholder="blur"/>
+    <img src="/image/project-management/l2-content-2-shape.png" alt="content"/>
   </Content.ContentShape>
   <Container>
     <Content.Block>
     <Row className="align-items-center justify-content-center justify-content-lg-start">
     <Col className="col-xl-7 col-lg-6 col-md-8 col-xs-10">
         <Content.Image>
-            <Image src={imageTwo} alt="content" placeholder="blur"/>
-          <Content.ContentShape>
-            <Image src={shapeTwo} alt="content" placeholder="blur"/>
-          </Content.ContentShape>
+            <img src="/image/project-management/l2-content-img-2.png" alt="content"/>
+          <Content.ContentShapeTwo>
+            <img src="/image/project-management/l2-content-2-shape-2.png" alt="content"/>
+          </Content.ContentShapeTwo>
         </Content.Image>
       </Col>
       <Col xs="12" className="col-xl-5 col-lg-6 col-md-8 col-xs-10">

@@ -3,7 +3,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
 import Content from "./style";
 import SectionTitle from "./Components/SectionTitle";
-import ContentImage from "~image/home-agency/content-1-l5-img.png";
 
 export default function ContentSectionOne() {
   return (
@@ -29,7 +28,7 @@ export default function ContentSectionOne() {
             </Col>
             <Col xs="12" className="col-xxl-5 col-lg-4 col-md-6 col-xs-9">
               <Content.Image mt="30px" mb="30px" mbMD="0" mtMD="0">
-                <Image src={ContentImage} alt="content" placeholder="blur" />
+                <img src="/image/home-agency/content-1-l5-img.png" alt="content"/>
               </Content.Image>
             </Col>
             <Col

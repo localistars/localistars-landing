@@ -1,5 +1,4 @@
 import React from "react"
-import Image from "next/image";
 import { SuperTag } from "~components";
 import Widget from "./style"
 export default function ServiceWidget({icon,title,text,...rest}) {
@@ -7,7 +6,7 @@ export default function ServiceWidget({icon,title,text,...rest}) {
     <Widget {...rest}>
       <Widget.Icon>
         <div>
-          <Image src={icon} alt="service icon" layout="responsive" />
+          <img src={icon} alt="service icon"/>
         </div>
       </Widget.Icon>
       <Widget.Body>

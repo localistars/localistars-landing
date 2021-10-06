@@ -1,10 +1,10 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import portfolioFullImage from '~image/portfolio/portfolio-full-img-6.jpg'
-import portfolioFullImage2 from '~image/portfolio/portfolio-full-img-1.jpg'
-import portfolioFullImage3 from '~image/portfolio/portfolio-full-img-2.jpg'
-import portfolioFullImage4 from '~image/portfolio/portfolio-full-img-3.jpg'
-import portfolioFullImage5 from '~image/portfolio/portfolio-full-img-4.jpg'
+import portfolioFullImage from '../../../../../public/image/portfolio/portfolio-full-img-6.jpg'
+import portfolioFullImage2 from '../../../../../public/image/portfolio/portfolio-full-img-1.jpg'
+import portfolioFullImage3 from '../../../../../public/image/portfolio/portfolio-full-img-2.jpg'
+import portfolioFullImage4 from '../../../../../public/image/portfolio/portfolio-full-img-3.jpg'
+import portfolioFullImage5 from '../../../../../public/image/portfolio/portfolio-full-img-4.jpg'
 import PortfolioDetails from './style'
 import { Link } from '~components';
 export default function PortfolioDetailsSection(){

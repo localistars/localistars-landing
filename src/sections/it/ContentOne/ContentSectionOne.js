@@ -1,10 +1,8 @@
 import React from 'react'
 import Content from './style'
 import SectionTitle from './Components/SectionTitle'
-import Image from 'next/image'
 import { Col, Container, Row } from 'react-bootstrap'
 import Progressbar from './Components/Progressbar'
-import contentImage from "~image/it-services/content-l3-img-1.png";
 export default function ContentSectionOne(){
 return(
 <Content backgroundColor="#f3f4f6">
@@ -29,7 +27,7 @@ return(
       </Col>
       <Col xs="12" className="col-xl-7 col-lg-6 col-md-8 col-xs-10 order-1 order-lg-2">
         <Content.Image>
-          <Image src={contentImage}  alt="content" placeholder="blur"/>
+          <img src="/image/it-services/content-l3-img-1.png"  alt="content" className="w-100"/>
         </Content.Image>
       </Col>
     </Row>

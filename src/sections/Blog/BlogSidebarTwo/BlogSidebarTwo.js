@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import BlogsImg1 from "~image/blogs/blog-post-1.png";
+import BlogsImg1 from "../../../../public/image/blogs/blog-post-1.png";
 import BlogRequlerData from "~data/BlogRequlerData";
 import Sidebar from "~sections/Blog/Sidebar";
 import BlogCard from "./Comonent/Card";

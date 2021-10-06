@@ -24,23 +24,15 @@ Feature.Shapes = styled(Box)`
     top: -7%;
     width: 25%;
     z-index: 1;
-    
-    
 `
 Feature.ShapeOne = styled(Box)`
-    > div{
-        width: 100%;
-    }
 `
-Feature.ShapeTwo =styled(Box)`
+Feature.ShapeTwo = styled(Box)`
     width: 50%;
     position: absolute;
     top: 30%;
     right: -30%;
     z-index: -1;
-    > div{
-        width: 100%;
-    }
 `
 Feature.Title = styled(Heading)`
     font-size: 50px;

@@ -7,7 +7,7 @@ import ImageGroup from "./Components/ImageGroup";
 import Hero from "./style";
 import { useTranslation } from 'next-i18next'
 
-export default function HeroSection({}) {
+export default function HeroSection() {
   const { t } = useTranslation('translations')
 
   return (

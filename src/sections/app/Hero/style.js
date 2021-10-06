@@ -79,15 +79,12 @@ Hero.Button = styled(Button)`
   height: 50px;
   border-radius: 500px;
   font-size: 14px;
+  margin-right: 18px;
+  margin-bottom: 20px;
   @media (min-width: 480px) {
     min-width: 180px;
     height: 56px;
     font-size: 15px;
-  }
-
-  &.🌱 {
-    margin-right: 18px;
-    margin-bottom: 20px;
   }
 
   &.btn-red {

@@ -1,10 +1,8 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Feature from './style'
-import Image from 'next/image'
 import SectionTitle from './Components/SectionTitle'
 import CounterBlock from './Components/CounterBlock'
-import featureMainImage from "~image/it-services/feature-l3-image.png"
 export default function FeatureSection(){
 return(
 <Feature backgroundColor="#fff">
@@ -43,7 +41,7 @@ return(
     <Row className="align-items-center justify-content-center">
       <Col xs="12" className="col-lg-6 col-md-12">
         <Feature.Image mb="30px">
-          <Image className="w-100" src={featureMainImage} alt="it-service" placeholder="blur"/>
+          <img className="w-100" src="/image/it-services/feature-l3-image.png" alt="it-service"/>
         </Feature.Image>
       </Col>
       <Col className="col-lg-6 col-md-12">

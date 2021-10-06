@@ -1,9 +1,9 @@
-import Pone from '~image/portfolio/portfolio-full-img-1.jpg'
-import Ptwo from '~image/portfolio/portfolio-full-img-2.jpg'
-import Pthree from '~image/portfolio/portfolio-full-img-10.jpg'
-import Pfour from '~image/portfolio/portfolio-full-img-4.jpg'
-import Pfive from '~image/portfolio/portfolio-full-img-3.jpg'
-import Psix from '~image/portfolio/portfolio-full-img-5.jpg'
+import Pone from '../../../../../public/image/portfolio/portfolio-full-img-1.jpg'
+import Ptwo from '../../../../../public/image/portfolio/portfolio-full-img-2.jpg'
+import Pthree from '../../../../../public/image/portfolio/portfolio-full-img-10.jpg'
+import Pfour from '../../../../../public/image/portfolio/portfolio-full-img-4.jpg'
+import Pfive from '../../../../../public/image/portfolio/portfolio-full-img-3.jpg'
+import Psix from '../../../../../public/image/portfolio/portfolio-full-img-5.jpg'
 const portfolioData = [
     {
         image:Pone,

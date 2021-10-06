@@ -1,8 +1,5 @@
 import React from "react";
 import SectionTitle from "./Components/SectionTitle";
-import Image from "next/image";
-import ImageOne from "~image/home-startup/services-img-1.png";
-import ImageTwo from "~image/home-startup/services-img-2.png";
 import { Col, Container, Row } from "react-bootstrap";
 import Service from "./style";
 export default function ServicesSectionTwo() {
@@ -41,12 +38,12 @@ export default function ServicesSectionTwo() {
               <Row>
                 <Col xs="12" className="col-lg-6 pt-lg-7 mb-5 mb-lg-0">
                   <Service.Image>
-                    <Image src={ImageOne} alt="content" placeholder="blur" />
+                    <img src="/image/home-startup/services-img-1.png" alt="content" className="w-100"/>
                   </Service.Image>
                 </Col>
                 <Col xs="12" className="col-lg-6 mb-5 mb-lg-0">
                   <Service.Image>
-                    <Image src={ImageTwo} alt="content" placeholder="blur" />
+                    <img src="/image/home-startup/services-img-2.png" alt="content" className="w-100"/>
                   </Service.Image>
                 </Col>
               </Row>

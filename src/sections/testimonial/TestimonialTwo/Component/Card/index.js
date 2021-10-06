@@ -15,7 +15,7 @@ export default function TestimonialCard({
       <Card.Body>
         <Card.UserInfo>
           <Card.Image>
-            <img src={userImage.src} alt />
+            <img src={userImage} alt />
           </Card.Image>
           <Card.UserBody>
             <Card.Title as="h3">{userName}</Card.Title>

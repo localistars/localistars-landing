@@ -1,8 +1,5 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Image from "next/image";
-import HeroImageOne from "~image/home-app/hero-l8-1.png";
-import HeroImageTwo from "~image/home-app/hero-l8-2.png";
 import { Link } from "~components";
 import Hero from "./style";
 export default function HeroSection() {
@@ -27,7 +24,7 @@ export default function HeroSection() {
                 meridian sun strikes the upper impenetroble.
               </Hero.Text>
               <Hero.ButtonGroup>
-                <Hero.Button className="btn-red 🌱" as={Link} to="/">
+                <Hero.Button className="btn-red " as={Link} to="/">
                   Watch Video
                 </Hero.Button>
                 <Hero.Button className="btn-green" as={Link} to="/">
@@ -44,10 +41,10 @@ export default function HeroSection() {
           >
             <Hero.ImageGroup>
               <Hero.ImageOne>
-                <Image src={HeroImageOne} alt="content" placeholder="blur" />
+                <img src="/image/home-app/hero-l8-1.png" alt="content"/>
               </Hero.ImageOne>
               <Hero.ImageTwo>
-                <Image src={HeroImageTwo} alt="content" placeholder="blur" />
+                <img src="/image/home-app/hero-l8-2.png" alt="content"/>
               </Hero.ImageTwo>
             </Hero.ImageGroup>
           </Col>

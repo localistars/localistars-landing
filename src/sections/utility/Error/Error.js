@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "~components";
 import { Col, Container, Row } from "react-bootstrap";
 import ErrorPage from "./style";
-import errorImage from "~image/mixed/404.png";
+import errorImage from "../../../../public/image/mixed/404.png";
 export default function Error() {
   return (
     <ErrorPage backgroundColor="#f3f4f6">

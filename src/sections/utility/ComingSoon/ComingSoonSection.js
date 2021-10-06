@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 // import { Form } from "~components"
-import counDownImage from "~image/mixed/pattern-img-1.png";
+import counDownImage from "../../../../public/image/mixed/pattern-img-1.png";
 import CountDown from "./Components/CountDownWIdget";
 import Countdown from "./style";
 
