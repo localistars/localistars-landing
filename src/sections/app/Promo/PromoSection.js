@@ -5,7 +5,7 @@ import SectionTitle from "./Components/SectionTitle";
 import { Button } from "~styled";
 export default function CtaSection() {
   return (
-    <Promo>
+   <Promo>
       <Container>
         <Row className="justify-content-center justify-content-xl-end">
           <Col
@@ -20,20 +20,16 @@ export default function CtaSection() {
             <Promo.Content>
               <Promo.Box>
                 <SectionTitle
-                  subTitle="Join our community"
-                  title="Get latest app updates<br className='d-none d-lg-block'/> right at your inbox"
+                  subTitle="Get started now"
+                  title="Find the best translator that suits your need<br className='d-none d-lg-block'/>
+"
                   subTitleProps={{ mb: "30px", className: "black" }}
                   titleProps={{ mb: "30px" }}
                 />
               </Promo.Box>
               {/* Newsletter */}
               <Promo.Newsletter>
-                <Form>
-                  <Form.Group>
-                    <Form.Control type="email" placeholder="Enter your email" />
-                    <Button type="submit">Subscribe</Button>
-                  </Form.Group>
-                </Form>
+                
               </Promo.Newsletter>
               {/*/ .Newsletter */}
             </Promo.Content>
@@ -43,3 +39,4 @@ export default function CtaSection() {
     </Promo>
   );
 }
+

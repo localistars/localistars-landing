@@ -4,31 +4,32 @@ import { Link } from "~components";
 import Hero from "./style";
 export default function HeroSection() {
   return (
-    <Hero backgroundColor="rgba(21, 205, 168, 0.2)">
+    <Hero backgroundColor="rgba(22, 92, 102, 0.5)">
       <Container>
         <Row className="align-items-center justify-content-center">
           {/* Welcome content Area */}
           <Col className="col-xxl-6 col-lg-7 col-md-9 col-xs-11 order-2 order-lg-1">
             <Hero.Content>
               <Hero.SubTitle fontColor="#ff7272" as="h3">
-                Get Started
+                Translation Marketplace
               </Hero.SubTitle>
               <Hero.Title as="h1">
-                Your fitness advisor{" "}
+                We connect clients{" "}
                 <br className="d-none d-xs-block d-lg-none d-xl-block" />
-                AIl in one place
+                with translators
               </Hero.Title>
               <Hero.Text fontColor="rgba(38, 39, 41, 0.7)">
-                When, while lovely valley teems with vapour around meand{" "}
+                localistars is the go-to marketplace for clients and translators to get translation jobs done. {" "}
                 <br className="d-none d-md-block" />
-                meridian sun strikes the upper impenetroble.
+                  As client you'll find translators and as translator you'll find translation jobs.
+                  Direct contact, no middleman – just collaborating localistars!
               </Hero.Text>
               <Hero.ButtonGroup>
-                <Hero.Button className="btn-red " as={Link} to="/">
+                <Hero.Button className="btn-red 🌱" as={Link} to="/">
                   Watch Video
                 </Hero.Button>
                 <Hero.Button className="btn-green" as={Link} to="/">
-                  Get Started
+                  Sign Up Now
                 </Hero.Button>
               </Hero.ButtonGroup>
             </Hero.Content>

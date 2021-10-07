@@ -10,8 +10,8 @@ export default function AboutSection() {
         <Row className="justify-content-center">
           <Col className="col-xl-6 col-lg-8 col-md-9 col-xs-10 text-center">
             <SectionTitle
-              subTitle="About Lupinus Group"
-              title="Innovative Building With New Materials"
+              subTitle="We are about transparency and trust."
+              title="Localization done directly with your partner"
               titleProps={{ mb: "50px" }}
               subTitleProps={{ mb: "15px" }}
             />
@@ -21,22 +21,17 @@ export default function AboutSection() {
           <Col className="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-2 order-lg-1">
             <Widget
               directionXS="row-reverse"
-              title="Optimal Choice"
-              icon="fa fa-layer-group"
-              text="The White iphone smartphone mockup counterclockwise "
+              title="Find the best offer"
+              icon="fa fa-directions"
+              text="Client: Choose the best fitting translators. Translator: Bid for suitable translation jobs of clients. As client you accept bids based on price and experience of the translator. As translator you cherry-pick the projects you want to work on."
             />
             <Widget
               directionXS="row-reverse"
-              title="Financial advice"
-              icon="fa fa-chart-pie"
-              text="The White iphone smartphone mockup counterclockwise "
+              title="Direct contact"
+              icon="fa fa-user-friends"
+              text="There is no middleman – you get direct access to the experts. No annoying text monitoring or filtering. As client you may choose to collaborate with the same translators for future projects and grow your own team."
             />
-            <Widget
-              directionXS="row-reverse"
-              title="Innovative solutions"
-              icon="fa fa-cog"
-              text="The White iphone smartphone mockup counterclockwise "
-            />
+            
           </Col>
           <Col
             xs="12"
@@ -47,27 +42,22 @@ export default function AboutSection() {
               <About.Shape>
                 <img src="/image/home-app/green-shape.png" alt="content"/>
               </About.Shape>
-            </About.ImageContent>
+           </About.ImageContent>
           </Col>
           <Col className="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-3">
             <Widget
               directionXS="row"
-              title="Optimal Choice"
-              icon="fa fa-bookmark"
-              text="The White iphone smartphone mockup counterclockwise "
+              title="Content-centric"
+              icon="fa fa-book-open"
+              text="It's all about the content. Projects are set-up with content in mind so the localistars can work together effectively. Clients want to reach their global audience while translators want to choose from diverse tasks. We heard you both."
             />
             <Widget
               directionXS="row"
-              title="Financial advice"
-              icon="fa fa-headphones"
-              text="The White iphone smartphone mockup counterclockwise "
+              title="Risk-free payment"
+              icon="fa fa-credit-card"
+              text="As a localistar you don't need to worry about your payment. Clients will only be charged if they approve the content provided by a translator. Translators always get paid on approval."
             />
-            <Widget
-              directionXS="row"
-              title="Innovative solutions"
-              icon="fa fa-bell"
-              text="The White iphone smartphone mockup counterclockwise "
-            />
+            
           </Col>
         </Row>
       </Container>

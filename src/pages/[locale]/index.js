@@ -1,48 +1,41 @@
-import React from "react"
-import { PageWrapper } from "~components/Core"
-import HeroSection from "~sections/marketing/Hero"
-import ServiceSection from "~sections/marketing/Service"
-import FeatureSection from "~sections/marketing/Features"
-import ContentSectionOne from "~sections/marketing/ContentOne"
-import ContentSectionTwo from "~sections/marketing/ContentTwo"
-import TestimonialSection from "~sections/marketing/Testimonial"
-import CounterSection from "~sections/marketing/Counter"
-import CtaSection from "~sections/marketing/Cta"
-import FooterOne from "~sections/marketing/FooterOne"
-import HeaderButton from "~sections/marketing/Header"
+import React from "react";
+import { PageWrapper } from "~components/Core";
+import HeaderButton from "~sections/index/Header";
+import HeroSection from "~sections/index/Hero";
+import AboutSection from "~sections/index/About";
+import ServiceSection from "~sections/index/Service"
+import FeatureSection from '~sections/index/Features'
+import TestimonialSection from "~sections/index/Testimonial";
+import PromoSection from "~sections/index/Promo";
+import CtaSection from "~sections/index/Cta";
+import FooterTwo from "~sections/index/FooterTwo";
 
 import { getStaticPaths, getI18nProps } from '~lib/getStatic'
 import getSlug from '~lib/getSlug'
 
 const header = {
-  headerClasses: "site-header site-header--menu-start light-header site-header--sticky",
-  containerFluid:true,
-  // customLogo: Images.HeaderLogo,
+  headerClasses:
+    "site-header site-header--menu-end light-header site-header--sticky",
+  containerFluid: false,
   buttonBlock: (
-    <HeaderButton
-      className="ms-auto d-none d-xs-inline-flex"
-      btnOneText="Login"
-      btnTwoText="Get started"
-      mr="15px"
-      mrLG="0"
-    />
+    // eslint-disable-next-line react/no-children-prop
+    <HeaderButton className="d-none d-sm-flex" children="Get started" />
   ),
-}
+};
 
-export default function Marketing() {
+export default function HomeApp() {
   return (
     <PageWrapper headerConfig={header}>
-      <HeroSection/>
-      <ServiceSection/>
-      <FeatureSection/>
-      <ContentSectionOne/>
-      <ContentSectionTwo/>
-      <TestimonialSection/>
-      <CounterSection/>
+      <HeroSection />
+      <AboutSection />
+     <ServiceSection />
+     <FeatureSection />
+      <TestimonialSection />
+      <PromoSection />
       <CtaSection />
-      <FooterOne/>
+      <FooterTwo />
     </PageWrapper>
-  )
+  );
 }
 
 
