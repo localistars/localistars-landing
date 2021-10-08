@@ -6,6 +6,7 @@ import ManageSection from "~sections/translator/Manage";
 import AboutSection1 from "~sections/translator/About1";
 import CtaSection from "~sections/translator/Cta";
 import Process from "~sections/translator/Process";
+import ContentOne from "~sections/translator/ContentOne";
 import FooterTwo from "~sections/index/FooterTwo";
 import HeaderButton from "~sections/translator/Header";
 
@@ -31,6 +32,7 @@ export default function Agency() {
     <PageWrapper headerConfig={header}>
       <HeroSection1 />
       <ServicesSection />
+      <ContentOne />
       <ManageSection />
       <AboutSection1 />
       <Process />

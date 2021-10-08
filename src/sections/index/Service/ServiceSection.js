@@ -21,7 +21,7 @@ export default function ServiceSection() {
                 <Service.Title as="h2" mb="0">
                   Your business needs a
                   <br className="d-none d-xs-block d-lg-none d-xl-block" />
-                  efficient way to localize
+                  efficient way to translate
                 </Service.Title>
             </Col>
             <Col xs="12" className="col-lg-5 col-md-12 col-xs-10">

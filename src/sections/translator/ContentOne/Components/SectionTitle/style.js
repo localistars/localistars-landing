@@ -13,15 +13,14 @@ color:inherit;
 
 `
 SectionTitle.Subtitle = styled(Heading)`
-color: ${props=>props.fontColor ? props.fontColor : "#ff5722"};
-font-size: 18px;
-font-weight: 500;
-letter-spacing: normal;
-line-height: 28px;
-position: relative;
-display: inline-block;
-&.subline{
-    padding-left:61px;
+color: #ff5722;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: 28px;
+    position: relative;
+    padding-left: 60px;
+    display: inline-block;
     &:before{
         content: "";
         position: absolute;
@@ -31,9 +30,8 @@ display: inline-block;
         bottom: 9px;
         width: 41px;
         height: 1px;
-        background-color: ${props=>props.fontColor ? props.fontColor : "#ff5722"}; 
+        background-color: #ff5722;
     }
-}
 
 `
 SectionTitle.Main = styled(Heading)`
@@ -41,12 +39,13 @@ font-size: 32px;
 font-weight: 500;
 letter-spacing: normal;
 line-height: 1.38095;
+
 @media (min-width:768px) {
     font-size: 33px;
 }
 
-@media (min-width:1200px) {
-    font-size: 45px;
+@media (min-width:1400px) {
+    font-size: 42px;
 }
 
 `

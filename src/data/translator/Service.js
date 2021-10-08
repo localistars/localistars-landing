@@ -1,9 +1,18 @@
 
 const ServiceData = [
 
+ {
+          id:"as3",
+          icon: "fas fa-vial",
+          iconColor:"#ff5722",
+          title: "Find new translators with ease",
+          text:
+            "Stay on top of your task lists and stay in touch with what's happeningMore time to get projects done, less time wasted on searching and contracting. Overall localistars is your chance to up your time to market.",
+        },
+
         {
           id:"as1",
-          icon: "fas fa-bell",
+          icon: "fas fa-envelope",
           iconColor: "#fd346e",
           title: "Direct Contact",
           text:
@@ -17,17 +26,10 @@ const ServiceData = [
           text:
             "No need to waste time managing invoices. It's all done automatically and VAT-compliant. You can download the documents for your accounting anytime. Focus on your job – not on bookkeeping.",
         },
-        {
-          id:"as3",
-          icon: "fas fa-headphones",
-          iconColor:"#ff5722",
-          title: "Find new translators with ease",
-          text:
-            "Stay on top of your task lists and stay in touch with what's happeningMore time to get projects done, less time wasted on searching and contracting. Overall localistars is your chance to up your time to market.",
-        },
+       
         {
           id:"as4",
-          icon: "fas fa-envelope",
+          icon: "fas fa-bell",
           iconColor:"#ff5722",
           title: "Keep the overview",
           text:

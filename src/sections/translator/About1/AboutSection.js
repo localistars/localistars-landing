@@ -12,23 +12,21 @@ return(
     <Row className="align-items-center justify-content-center">
       <Col xs="12" className="col-xl-6 col-lg-6 col-md-8 col-xs-10">
         <About.Image>
-          <img className="w-100" src="/image/home-agency/about-us-l5-img.png" alt="about"/>
-          <Video id="LWZ7iytIA6k" className="video-btn sonar-emitter"> <i className="fa fa-play" /> </Video>
+          <img className="w-100" src="/image/translator/versatile_API.webp" alt="about"/>
+          
         </About.Image>
       </Col>
       <Col col="12" className="col-xxl-5 offset-xxl-1 col-lg-5 col-md-8 col-xs-10">
         <About.Content mt="40px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
           <SectionTitle 
-            subTitle="Watch video" 
-            title="Consultation Trade
-            Easier Than Ever"
-            text="Scale up and down easily as your business demands. And make use of business-grade consultation. Book flexibly by the day, week or longer and customise the layout to reflect your brand."
+            subTitle="Productivity increase" 
+            title="Versatile API"
+            text="Automate your process for being more productive."
             titleProps={{mb:"30px"}}
             subTitleProps={{mb:"25px"}}
             />
           <About.ButtonGroup mt="25px">
-            <About.Button className="btn-primary btn-1" as={Link} to="/">Learn More</About.Button>
-            <About.Button className="btn-electric-violet-2 btn-2"  as={Link} to="/">Get Started</About.Button>
+            
           </About.ButtonGroup>
         </About.Content>
       </Col>

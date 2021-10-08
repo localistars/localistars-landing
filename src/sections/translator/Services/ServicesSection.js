@@ -13,8 +13,7 @@ return(
       <SectionTitle
         subTitle="Advantages" 
         title="For companies looking for a translator"
-        text="In a professional context it often happens that private or
-        corporate clients order a publication to publish news"
+        text="Let localistars marketplace do the tedious parts of your translation workflow."
         subTitleProps={{mb:"27px"}}
         titleProps={{mb:"10px",as:"h2"}}
         mb="20px" />

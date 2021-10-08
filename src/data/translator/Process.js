@@ -15,25 +15,20 @@ const ProcessData = [
     id: "sp3",
     icon: "3",
     title: "Update your personal profile",
-    text: "Time to make yourself a name - complete your personal profile.",
+    text: "Time to make yourself a name - complete your personal user profile.",
   },
    {
     id: "sp4",
     icon: "4",
-    title: "Update your personal profile",
-    text: "Time to make yourself a name - complete your personal profile.",
+    title: "Having an organization",
+    text: "Providing an organization is mandatory. A contract is legally between your organization and the service requesting organization. You can either get invited to an existing organization or create a new one.",
   },
    {
     id: "sp5",
     icon: "5",
-    title: "Update your personal profile",
+    title: "Create a project and call for bids",
     text: "Time to make yourself a name - complete your personal profile.",
   },
-   {
-    id: "sp6",
-    icon: "6",
-    title: "Update your personal profile",
-    text: "Time to make yourself a name - complete your personal profile.",
-  },
+   
 ];
 export default ProcessData;

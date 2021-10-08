@@ -1,6 +1,8 @@
 import React from "react";
 import { Col, Container, Form, FormCheck, Row } from "react-bootstrap";
 import Promo from "./style";
+import Cta from '../Cta/style'
+import { Link } from '~components'
 import SectionTitle from "./Components/SectionTitle";
 import { Button } from "~styled";
 export default function CtaSection() {
@@ -26,12 +28,10 @@ export default function CtaSection() {
                   subTitleProps={{ mb: "30px", className: "black" }}
                   titleProps={{ mb: "30px" }}
                 />
+
+                 <Cta.Button as={Link} to="/translator" alt="" className="btn btn-bittersweet text-white box-shadow-1">Find a translator</Cta.Button>
               </Promo.Box>
-              {/* Newsletter */}
-              <Promo.Newsletter>
-                
-              </Promo.Newsletter>
-              {/*/ .Newsletter */}
+
             </Promo.Content>
           </Col>
         </Row>

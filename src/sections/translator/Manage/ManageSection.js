@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import SectionTitle from "./Components/SectionTitle";
+import { Link } from '~components';
 import About from "./style";
 
 export default function ManageSection() {
@@ -33,8 +34,13 @@ Keep working with partners you trust."
                   titleProps={{ mb: "10px", as: "h2" }}
                   mb="69px"
                 />
+
               </About.Content>
+              
               {/*/ .Section Title */}
+
+
+              
             </About.Box>
           </Col>
         </Row>

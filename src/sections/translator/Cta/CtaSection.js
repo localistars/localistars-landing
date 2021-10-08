@@ -11,24 +11,23 @@ export default function CtaSection({ ...rest }) {
           <Col className="col-xl-6 col-lg-8 col-md-10">
             <Cta.InnerWrapper className="text-center">
               <Cta.Subtitle fontColor="#ffce3e" as="span">
-                NEWSLETTER
+               HELP
               </Cta.Subtitle>
               <Cta.Title as="h2" fontColor="#fff">
-                Start project with us?
+               Do you require some assistance before you register your company?
+
               </Cta.Title>
               <Cta.Text fontColor="#fff">
-                It includes Project Web App, and can,
-                <br className="d-none d-xs-block" /> depends on your
-                subscription, also project.
+                Any question you may have about our pricing or platform will be answered by one of our team members.
               </Cta.Text>
               <Cta.Button
                 className="btn-torch-red"
-                href="#"
+                href="/contact"
                 rounded={true}
                 sizeX="180px"
                 sizeY="56px"
               >
-                Start Now
+                Contact us
               </Cta.Button>
             </Cta.InnerWrapper>
           </Col>

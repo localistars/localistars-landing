@@ -25,11 +25,11 @@ export default function HeroSection() {
                   Direct contact, no middleman – just collaborating localistars!
               </Hero.Text>
               <Hero.ButtonGroup>
-                <Hero.Button className="btn-red 🌱" as={Link} to="/">
-                  Watch Video
+                <Hero.Button className="btn-red 🌱" as={Link} to="/translator">
+                  Find a translator
                 </Hero.Button>
-                <Hero.Button className="btn-green" as={Link} to="/">
-                  Sign Up Now
+                <Hero.Button className="btn-green" as={Link} to="/translationjob">
+                  Find a translation job
                 </Hero.Button>
               </Hero.ButtonGroup>
             </Hero.Content>
@@ -44,9 +44,7 @@ export default function HeroSection() {
               <Hero.ImageOne>
                 <img src="/image/home-app/hero-l8-1.png" alt="content"/>
               </Hero.ImageOne>
-              <Hero.ImageTwo>
-                <img src="/image/home-app/hero-l8-2.png" alt="content"/>
-              </Hero.ImageTwo>
+              
             </Hero.ImageGroup>
           </Col>
           {/*/ .Welcome img Area */}

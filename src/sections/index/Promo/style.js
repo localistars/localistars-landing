@@ -113,6 +113,7 @@ Promo.Newsletter = styled(Box)`
     }
   }
 `;
+
 Promo.Box = styled(Box)``;
 
 export default Promo;

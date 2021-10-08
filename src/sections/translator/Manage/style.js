@@ -48,6 +48,7 @@ z-index:-1;
     padding-bottom: 145px;
     padding-right: 90px;
 }
+
 `
 
 About.Text = styled(Paragraph)`
@@ -62,6 +63,7 @@ position: relative;
     width: 107%;
 }
 `
+
 
 About.Box = styled(Box)`
 
