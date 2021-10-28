@@ -21,9 +21,20 @@ export const menuItems = [
          },
 
          {
+            name: "how-it-works",
+            label: "How it works",
+                },
+
+         {
             name: "ecosystem",
             label: "Ecosystem",
                 },
+
+                 {
+            name: "blog/blog-regular",
+            label: "Blog",
+                },
+
 
        
        ];

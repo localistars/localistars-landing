@@ -4,6 +4,9 @@ import BreadCrumb from './style'
 import BreadcrumbImage from "/public/image/mixed/inner-banner-shape.png"
 import { Col, Row, Container  } from 'react-bootstrap'
 import { SuperTag } from '~components'
+
+
+
 export default function BreadCrumbSection({colClasses,title,text,...rest}){
 return(
 <BreadCrumb backgroundColor="#f3f4f6" {...rest}>

@@ -3,7 +3,7 @@ import { PageWrapper } from "~components/Core";
 import EcosystemSection from "~sections/ecosystem/PortfolioGridTwo";
 import BreadCrumb from "~sections/ecosystem/BreadCrumb";
 import FooterTwo from "~sections/index/FooterTwo";
-import HeaderButton from "~sections/index/Header";
+import HeaderButton from "~sections/ecosystem/Header";
 
 import { getStaticPaths, getI18nProps } from '~lib/getStatic'
 import getSlug from '~lib/getSlug'
