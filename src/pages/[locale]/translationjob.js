@@ -17,7 +17,11 @@ const header = {
   containerFluid:false,
   darkLogo:false,
   buttonBlock: (
-    <HeaderButton className="ms-auto d-none d-xs-inline-flex" btnLink="https://www.localistars.app/login" btnText="Find a translation job" mr="15px" mrLG="0"/>
+    <HeaderButton 
+    className="ms-auto d-none d-xs-inline-flex" 
+    btnLink="https://www.localistars.app/login" 
+    btnText="Find a translation job" mr="15px"
+    mrLG="0"/>
   ),
 }
 

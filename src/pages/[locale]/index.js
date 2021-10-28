@@ -8,7 +8,9 @@ import FeatureSection from '~sections/index/Features'
 import TestimonialSection from "~sections/index/Testimonial";
 import PromoSection from "~sections/index/Promo";
 import CtaSection from "~sections/index/Cta";
+import { Link } from '~components';
 import FooterTwo from "~sections/index/FooterTwo";
+
 
 import { getStaticPaths, getI18nProps } from '~lib/getStatic'
 import getSlug from '~lib/getSlug'
@@ -19,7 +21,7 @@ const header = {
   containerFluid: false,
   buttonBlock: (
     // eslint-disable-next-line react/no-children-prop
-    <HeaderButton className="d-none d-sm-flex" children="Get started" />
+    <HeaderButton className="d-none d-sm-flex" children="Login" as={Link} target="_blank" href="https://www.localistars.app/login" />
   ),
 };
 

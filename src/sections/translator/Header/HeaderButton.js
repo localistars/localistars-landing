@@ -35,7 +35,7 @@ export const HeaderButtonWrapper = styled(Box)`
 const HeaderButton = ({btnLink,btnText,...rest})=>{
     return(
         <HeaderButtonWrapper {...rest}>
-            <Link target="_blank" className="btn" to={btnLink ? btnLink : "/"}>
+            <Link target="_blank" className="btn" href={btnLink ? btnLink : "/"}>
                 {btnText}
             </Link>
         </HeaderButtonWrapper>

@@ -9,6 +9,7 @@ import Process from "~sections/translator/Process";
 import ContentOne from "~sections/translator/ContentOne";
 import FooterTwo from "~sections/index/FooterTwo";
 import HeaderButton from "~sections/translator/Header";
+import { Link } from '~components';
 
 import { getStaticPaths, getI18nProps } from '~lib/getStatic'
 import getSlug from '~lib/getSlug'
@@ -19,10 +20,11 @@ const header = {
   containerFluid: false,
   buttonBlock: (
     <HeaderButton
-      clasName="ms-auto d-none d-xs-inline-flex"
-      btnText="Find a translator"
+      className="ms-auto d-none d-xs-inline-flex"
+      btnText="Start now"
       mr="15px"
-      mrLG="0"
+      mrLG="0" 
+      btnLink="https://www.localistars.app/login"
     />
   ),
 };

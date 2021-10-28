@@ -15,7 +15,8 @@ const header = {
   buttonBlock: (
     <HeaderButton
       clasName="ms-auto d-none d-xs-inline-flex"
-      btnText="Find a translator"
+      btnText="Login"
+      btnLink="https://www.localistars.app/login"
       mr="15px"
       mrLG="0"
     />

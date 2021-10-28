@@ -13,7 +13,10 @@ const header = {
   containerFluid: false,
   buttonBlock: (
     // eslint-disable-next-line react/no-children-prop
-    <HeaderButton className="d-none d-sm-flex" children="Get started" />
+    <HeaderButton 
+    className="d-none d-sm-flex" 
+    btnText="Start now"
+    btnLink="https://www.localistars.app/login" />
   ),
 };
 
