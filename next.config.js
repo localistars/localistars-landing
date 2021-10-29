@@ -1,27 +1,6 @@
 const path = require('path')
-const withTM = require('next-transpile-modules')([ // only until next >=v11.1.2 can by used
-  'remark-gfm',
-  'micromark-extension-gfm',
-  'micromark-util-combine-extensions',
-  'micromark-util-symbol',
-  'micromark-util-encode',
-  'micromark-util-resolve-all',
-  'mdast-util-gfm',
-  'ccount',
-  'mdast-util-find-and-replace',
-  'mdast-util-to-markdown',
-  'markdown-table',
-  'rehype-slug',
-  'hast-util-has-property',
-  'hast-util-heading-rank',
-  'hast-util-to-string',
-  'rehype-code-titles',
-  'rehype-autolink-headings',
-  'hast-util-is-element',
-  'rehype-prism-plus'
-])
 // const withImages = require('next-images')
-module.exports = withTM({
+module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'src/assets/scss')],
     eslint: {
@@ -30,12 +9,12 @@ module.exports = withTM({
       ignoreDuringBuilds: true,
     },
   },
+  trailingSlash: true,
   images: {
     loader: 'imgix',
-    path: '/',
-  },
-  trailingSlash: true
-})
+    path: 'https://localistars.com',
+  }
+}
 // module.exports = withImages({
 //   webpack(config, options) {
 //     return config

@@ -11,7 +11,7 @@ import CtaSection from "~sections/marketing/Cta"
 import FooterOne from "~sections/marketing/FooterOne"
 import HeaderButton from "~sections/marketing/Header"
 import { getMDXComponent } from 'mdx-bundler/client';
-import { getStaticPaths, getI18nProps } from '~lib/getStatic'
+import { getStaticPaths, makeStaticProps } from '~lib/getStatic'
 import getSlug from '~lib/getSlug'
 import { hasCookieConsent } from '~lib/analytics';
 // import components from '~components/MDXComponents';
@@ -67,13 +67,5 @@ export default function MDXTest({ code, frontMatter }) {
   )
 }
 
-
-export async function getStaticProps(ctx) {
-  return {
-    props: {
-      ... await getI18nProps(ctx, { slug: getSlug(import.meta.url) })
-    }
-  };
-}
-
-export { getStaticPaths }
+const getStaticProps = makeStaticProps({ slug: getSlug(import.meta.url) })
+export { getStaticPaths, getStaticProps }

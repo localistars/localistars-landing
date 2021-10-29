@@ -12,8 +12,7 @@ import { Link } from '~components';
 import FooterTwo from "~sections/index/FooterTwo";
 
 
-import { getStaticPaths, getI18nProps } from '~lib/getStatic'
-import getSlug from '~lib/getSlug'
+import { getStaticPaths, makeStaticProps } from '~lib/getStatic'
 
 const header = {
   headerClasses:
@@ -30,8 +29,8 @@ export default function HomeApp() {
     <PageWrapper headerConfig={header}>
       <HeroSection />
       <AboutSection />
-     <ServiceSection />
-     <FeatureSection />
+      <ServiceSection />
+      <FeatureSection />
       <TestimonialSection />
       <PromoSection />
       <CtaSection />
@@ -41,12 +40,5 @@ export default function HomeApp() {
 }
 
 
-export async function getStaticProps(ctx) {
-  return {
-    props: {
-      ... await getI18nProps(ctx)
-    }
-  };
-}
-
-export { getStaticPaths }
+const getStaticProps = makeStaticProps()
+export { getStaticPaths, getStaticProps }

@@ -6,8 +6,7 @@ import TestimonialSection from "~sections/pricing/Testimonial";
 import Cta from "~sections/pricing/Cta";
 import FooterTwo from "~sections/index/FooterTwo";
 
-import { getStaticPaths, getI18nProps } from '~lib/getStatic'
-import getSlug from '~lib/getSlug'
+import { getStaticPaths, makeStaticProps } from '~lib/getStatic'
 
 const header = {
   headerClasses:
@@ -29,7 +28,7 @@ export default function HomeApp() {
   return (
     <PageWrapper headerConfig={header}>
       
-     <ServiceSection />
+      <ServiceSection />
       <TestimonialSection />
       
       <Cta />
@@ -38,13 +37,5 @@ export default function HomeApp() {
   );
 }
 
-
-export async function getStaticProps(ctx) {
-  return {
-    props: {
-      ... await getI18nProps(ctx)
-    }
-  };
-}
-
-export { getStaticPaths }
+const getStaticProps = makeStaticProps()
+export { getStaticPaths, getStaticProps }

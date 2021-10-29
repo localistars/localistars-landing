@@ -5,8 +5,7 @@ import BreadCrumb from "~sections/ecosystem/BreadCrumb";
 import FooterTwo from "~sections/index/FooterTwo";
 import HeaderButton from "~sections/ecosystem/Header";
 
-import { getStaticPaths, getI18nProps } from '~lib/getStatic'
-import getSlug from '~lib/getSlug'
+import { getStaticPaths, makeStaticProps } from '~lib/getStatic'
 
 const header = {
   headerClasses:
@@ -28,19 +27,10 @@ export default function Agency() {
     <PageWrapper headerConfig={header}>
     <BreadCrumb title="Localistars is part of this ecosystem" />
       <EcosystemSection />
-     
       <FooterTwo />
     </PageWrapper>
   );
 }
 
-
-export async function getStaticProps(ctx) {
-  return {
-    props: {
-      ... await getI18nProps(ctx)
-    }
-  };
-}
-
-export { getStaticPaths }
+const getStaticProps = makeStaticProps()
+export { getStaticPaths, getStaticProps }
