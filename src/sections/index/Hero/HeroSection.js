@@ -2,16 +2,23 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "~components";
 import Hero from "./style";
+import { useTranslation } from 'next-i18next'
+
+
 export default function HeroSection() {
+
+  const { t } = useTranslation('translations')
+
+
   return (
-    <Hero backgroundColor="rgba(22, 92, 102, 0.5)">
+    <Hero backgroundColor="rgba(22, 92, 102, 0.7)">
       <Container>
         <Row className="align-items-center justify-content-center">
           {/* Welcome content Area */}
           <Col className="col-xxl-6 col-lg-7 col-md-9 col-xs-11 order-2 order-lg-1">
             <Hero.Content>
-              <Hero.SubTitle fontColor="#ff7272" as="h3">
-                Translation Marketplace
+              <Hero.SubTitle fontColor="rgba(38, 39, 41, 0.7)" as="h3">
+                {t('indexHeroTitle')}
               </Hero.SubTitle>
               <Hero.Title as="h1">
                 We connect clients{" "}

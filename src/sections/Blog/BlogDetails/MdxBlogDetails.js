@@ -3,15 +3,22 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "~components";
 import Details from "./style";
 import Image from "next/image";
-import blogImage from "~image/blogs/blog-details-img-1.png";
 import Sidebar from "~sections/Common/Sidebar";
+import { useRouter } from "next/router";
+
 import {
   BlogQoute,
   CommentsBoxSection,
   CommentsFormSection,
 } from "./Component";
 
-export default function MdxBlogDetails({ mdxComponent, title, publishedAt }) {
+export default function MdxBlogDetails({ mdxComponent, title, date, image, alt, category }) {
+
+  const router = useRouter()
+  const site = "http://localhost:3000";
+  const currentURL = site + router.asPath
+  const blogURL = '/blog'
+
   return (
     <Details backgroundColor="#f9fafc">
       <Details.Box pb="60px" pbMD="80px" pbLG="130px">
@@ -23,36 +30,28 @@ export default function MdxBlogDetails({ mdxComponent, title, publishedAt }) {
                   {title}
                 </Details.Title>
                 <Details.MetaInfo>
-                  <Details.Link to="/" as={Link}>
-                    {publishedAt}
-                  </Details.Link>
+                  <Details.Text>
+                    {date}
+                  </Details.Text>
+
+                  <Details.Text>
+                  <Link href={blogURL}><a alt="Blog">Blog</a></Link>  / <Link href={blogURL}><a alt="{title}">{title}</a></Link>
+                  </Details.Text>
+
                 </Details.MetaInfo>
               </Details.Box>
+
+              <Details.Box mb="30px" mbLG="55px">
+                <Details.Image>
+                  <img src={image} alt={alt} />
+                </Details.Image>
+              </Details.Box>
+
+
               <Details.Box>
                 {mdxComponent}
 
-                <Details.Tag mt="50px">
-                  <Details.SubTitle mr="25px" mt="10px" as="h4">
-                    Tags:
-                  </Details.SubTitle>
-                  <Details.TagList>
-                    <li>
-                      <Link to="/">Freelance</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Education</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Marketing</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Job</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Freelance</Link>
-                    </li>
-                  </Details.TagList>
-                </Details.Tag>
+
                 <Details.Tag mt="30px">
                   <Details.SubTitle mr="25px" as="h4">
                     Share:

@@ -4,10 +4,9 @@ import { getMDXComponent } from 'mdx-bundler/client';
 // import BlogLayout from '~layouts/blog';
 import { getFiles, getLocaleFile } from '~lib/mdx';
 import i18nConfig from '~next-i18next.config'
-
 import MdxBlogDetails from "~sections/Blog/BlogDetails/MdxBlogDetails";
 import { PageWrapper } from "~components/Core";
-import FooterSection from "~sections/Blog/Footer";
+import FooterSection from "~sections/index/FooterTwo";
 
 
 export default function Blog({ code, frontMatter }) {
@@ -15,7 +14,7 @@ export default function Blog({ code, frontMatter }) {
 
   return (
     <PageWrapper innerPage={true}>
-      <MdxBlogDetails {...frontMatter} mdxComponent={<Component /*components={components} *//>}/>
+      <MdxBlogDetails {...frontMatter} mdxComponent={<Component /*components={components} *//>} />
       <FooterSection/>
     </PageWrapper>
   )

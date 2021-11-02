@@ -9,68 +9,15 @@ const BlogData = [
   {
     id: "bg1",
     image: BlogsImg2,
-    badge: "Gadgets",
-    date: "01 June, 2020",
+    badge: "Translation",
+    date: "November 28, 2021",
     title:
-      "We can blend colors multiple<br class='d-none d-xs-block'> ways, the most common",
-    user: "By George Lee",
+      "online translation jobs for students",
+    user: "By inweso GmbH",
     Like: "21K",
     commentCount: " 305",
   },
-  {
-    id: "bg2",
-    image: BlogsImg3,
-    badge: "Gadgets",
-    date: "01 June, 2020",
-    title:
-      "We can blend colors multiple<br class='d-none d-xs-block'> ways, the most common",
-    user: "By George Lee",
-    Like: "21K",
-    commentCount: " 2",
-  },
-  {
-    id: "bg3",
-    image: BlogsImg4,
-    badge: "Gadgets",
-    date: "01 June, 2020",
-    title:
-      "We can blend colors multiple<br class='d-none d-xs-block'> ways, the most common",
-    user: "By George Lee",
-    Like: "21K",
-    commentCount: " 3",
-  },
-  {
-    id: "bg4",
-    image: BlogsImg5,
-    badge: "Gadgets",
-    date: "01 June, 2020",
-    title:
-      "We can blend colors multiple<br class='d-none d-xs-block'> ways, the most common",
-    user: "By George Lee",
-    Like: "21K",
-    commentCount: " 3",
-  },
-  {
-    id: "bg5",
-    image: BlogsImg6,
-    badge: "Gadgets",
-    date: "01 June, 2020",
-    title:
-      "We can blend colors multiple<br class='d-none d-xs-block'> ways, the most common",
-    user: "By George Lee",
-    Like: "21K",
-    commentCount: " 3",
-  },
-  {
-    id: "bg6",
-    image: BlogsImg7,
-    badge: "Gadgets",
-    date: "01 June, 2020",
-    title:
-      "We can blend colors multiple<br class='d-none d-xs-block'> ways, the most common",
-    user: "By George Lee",
-    Like: "21K",
-    commentCount: " 3",
-  },
+  
+
 ];
 export default BlogData;

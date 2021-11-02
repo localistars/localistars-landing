@@ -2,7 +2,7 @@ import React, { useRef } from "react"
 import Slider from "react-slick"
 import TestimonialWidget from "./Components/Widget"
 import Testimonial from './style'
-import data from "~data/marketing/TestimonialSliderData"
+import data from "~data/index/TestimonialSliderData"
 import { Container } from "react-bootstrap"
 
 const TestimonialSection = ({ ...rest }) => {

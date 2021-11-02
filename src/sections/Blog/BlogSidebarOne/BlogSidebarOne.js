@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Blog from "./style";
 import BlogCard from "./Comonent/Card";
 import BlogRequlerData from "~data/BlogRequlerData";
-import BlogsImg1 from "../../../../public/image/blogs/blog-post-1.png";
+import BlogsImg1 from "../../../../public/image/blogs/translator.png";
 import Sidebar from "~sections/Blog/Sidebar";
 export default function BlogRegular() {
   return (
@@ -13,9 +13,9 @@ export default function BlogRegular() {
           <Col className="col-xl-8 text-center">
             <Blog.Box mb="63px">
               <Blog.Subtitle as="h6" fontColor="#5034fc">
-                Blog
+                Latest posts
               </Blog.Subtitle>
-              <Blog.Title as="h2">Blog left Sidebar</Blog.Title>
+              <Blog.Title as="h2">Localistars Blog</Blog.Title>
             </Blog.Box>
           </Col>
         </Row>
@@ -31,10 +31,10 @@ export default function BlogRegular() {
               <Col xs="12" className="col-xl-12 col-lg-9 col-md-12">
                 <BlogCard
                   image={BlogsImg1}
-                  badge="Gadgets"
-                  date="01 June, 2020"
-                  title="We can blend colors multiple ways, the most common"
-                  user="George Lee"
+                  badge="Translator"
+                  date="November 20, 2021"
+                  title="What is the role of translator"
+                  user="By inweso GmbH"
                   Like="21K"
                   commentCount="305"
                 />

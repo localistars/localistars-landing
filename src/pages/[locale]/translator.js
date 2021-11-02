@@ -10,7 +10,7 @@ import ContentOne from "~sections/translator/ContentOne";
 import FooterTwo from "~sections/index/FooterTwo";
 import HeaderButton from "~sections/translator/Header";
 import { Link } from '~components';
-
+import Head from 'next/head'
 import { getStaticPaths, makeStaticProps } from '~lib/getStatic'
 
 const header = {
@@ -31,6 +31,10 @@ const header = {
 export default function Agency() {
   return (
     <PageWrapper headerConfig={header}>
+            <Head>
+              <title>Translator Landingpage | localistars</title>
+              <meta name="description" content="Translator Test landingpage | localistars" />
+            </Head>
       <HeroSection1 />
       <ServicesSection />
       <ContentOne />

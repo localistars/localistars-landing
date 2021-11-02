@@ -3,86 +3,43 @@ import React from "react";
 import offerImage from "../../../../public/image/mixed/ads-img.png";
 import SideBar from "./style";
 import { Link } from "~components";
-export default function SideBarSection() {
+
+
+export default function SideBarSection( { mdxComponent, title, date, image, alt, category }) {
+
+
   return (
     <SideBar>
+      
       {/* Single Widgets */}
       <SideBar.Widgets>
-        <SideBar.Title>Search</SideBar.Title>
-        <SideBar.Search>
-          <form action="./">
-            <i className="fa fa-search" />
-            <input type="text" placeholder="Type to search" />
-          </form>
-        </SideBar.Search>
-      </SideBar.Widgets>
-      {/*/ .Single Widgets */}
-      {/* Single Widgets */}
-      <SideBar.Widgets>
-        <SideBar.Title>Recent Posts</SideBar.Title>
-        <SideBar.RecentPost>
+
+      <SideBar.Title>Recent Posts</SideBar.Title>
+
+      {/*}
+          {posts.map((info, index) => (
+
+            <SideBar.RecentPost key={"bsp" + index}>
           <SideBar.RecentPostList>
             <Link to="#">
               <SideBar.RecentPostTitle>
-                How To Blow Through Capital At An Incredible Rate
+                { title }
               </SideBar.RecentPostTitle>
-              <SideBar.RecentPostDate>Jan 14, 2020</SideBar.RecentPostDate>
+              <SideBar.RecentPostDate>{ date }</SideBar.RecentPostDate>
             </Link>
           </SideBar.RecentPostList>
-          <SideBar.RecentPostList>
-            <Link to="#">
-              <SideBar.RecentPostTitle>
-                Design Studios That Everyone Should Know About?
-              </SideBar.RecentPostTitle>
-              <SideBar.RecentPostDate>Jan 14, 2020</SideBar.RecentPostDate>
-            </Link>
-          </SideBar.RecentPostList>
-          <SideBar.RecentPostList>
-            <Link to="#">
-              <SideBar.RecentPostTitle>
-                How did we get 1M+ visitors in 30 days without anything!
-              </SideBar.RecentPostTitle>
-              <SideBar.RecentPostDate>Jan 14, 2020</SideBar.RecentPostDate>
-            </Link>
-          </SideBar.RecentPostList>
+          
+          
         </SideBar.RecentPost>
+           
+
+
+          ))}
+    */}
+        
       </SideBar.Widgets>
-      {/*/ .Single Widgets */}
-      {/* Single Widgets */}
-      <SideBar.Widgets>
-        <SideBar.Title>Recent Tweets</SideBar.Title>
-        <SideBar.Twitter>
-          <SideBar.TwitterList>
-            <Link to="#">
-              <SideBar.TwitterUser as="span">@Smith,</SideBar.TwitterUser> the
-              master-builder of human happiness. No one rejects, dislikes, or
-              avoids pleasure
-            </Link>
-          </SideBar.TwitterList>
-          <SideBar.TwitterList>
-            <Link to="#">
-              <SideBar.TwitterUser as="span">@Maurice,</SideBar.TwitterUser> the
-              master-builder of human happiness. No one rejects, dislikes, or
-              avoids pleasure
-            </Link>
-          </SideBar.TwitterList>
-          <SideBar.TwitterList>
-            <Link to="#">
-              <SideBar.TwitterUser as="span">@Stella,</SideBar.TwitterUser> the
-              master-builder of human happiness. No one rejects, dislikes, or
-              avoids pleasure
-            </Link>
-          </SideBar.TwitterList>
-          <SideBar.TwitterList>
-            <Link to="#">
-              <SideBar.TwitterUser as="span">@Howard,</SideBar.TwitterUser> the
-              master-builder of human happiness. No one rejects, dislikes, or
-              avoids pleasure
-            </Link>
-          </SideBar.TwitterList>
-        </SideBar.Twitter>
-      </SideBar.Widgets>
-      {/*/ .Single Widgets */}
+      {/*/ Single Widgets */}
+      
       {/* Single Widgets */}
       <SideBar.Widgets>
         <SideBar.Title>Categories</SideBar.Title>
@@ -136,3 +93,4 @@ export default function SideBarSection() {
     </SideBar>
   );
 }
+

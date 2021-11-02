@@ -1,4 +1,3 @@
-// import menuImage from '../assets/image/menu-image.webp'
 
 export const menuItems = [
           {
@@ -31,7 +30,7 @@ export const menuItems = [
                 },
 
                  {
-            name: "blog/blog-regular",
+            name: "blog",
             label: "Blog",
                 },
 

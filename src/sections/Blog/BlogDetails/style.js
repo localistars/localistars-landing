@@ -32,8 +32,9 @@ Details.Title = styled(Heading)`
 `;
 Details.MetaInfo = styled(Box)`
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  
 `;
 Details.Link = styled(Button)`
   padding: 0 !important;
@@ -73,6 +74,12 @@ Details.Text = styled(Paragraph)`
   letter-spacing: normal;
   line-height: 32px;
   margin-bottom: 30px;
+  a {
+    color: var(--lt-color-gray-500);
+    &:hover{
+      color: #ff5200;
+    }
+  }
 `;
 Details.SubTitle = styled(Paragraph)`
   font-size: 21px;
@@ -186,5 +193,13 @@ Details.NextButton = styled(Box)`
   }
 `;
 Details.Box = styled(Box)``;
+
+Details.Box = styled(Box)``;
+Details.Image = styled(Box)`
+  min-height: 330px;
+  img {
+    width: 100%;
+  }
+`;
 
 export default Details;

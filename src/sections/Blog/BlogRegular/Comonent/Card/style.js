@@ -28,14 +28,14 @@ Card.Title = styled(Link)`
 `;
 Card.Summary = styled(Card.Title)`
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: normal;
-  line-height: 1.7;
-  padding-right: 20px;
+  line-height: 22px;
   position: relative;
   transition: 0.4s;
   position: relative;
+  margin-left:1rem;
 `;
 Card.Badge = styled(Button)`
   background-color: #ff5722 !important;
@@ -53,14 +53,15 @@ Card.Badge = styled(Button)`
     color: #262729 !important;
   }
 `;
-Card.Date = styled(Link)`
-  margin-bottom: 0;
+Card.Date = styled(Card.Title)`
+  color: #fff;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: normal;
   line-height: 22px;
-  color: #fff;
+  position: relative;
   transition: 0.4s;
+  position: relative;
   &:hover {
     color: #ff5722;
   }

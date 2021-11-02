@@ -10,6 +10,7 @@ import PromoSection from "~sections/index/Promo";
 import CtaSection from "~sections/index/Cta";
 import { Link } from '~components';
 import FooterTwo from "~sections/index/FooterTwo";
+import Head from 'next/head'
 
 
 import { getStaticPaths, makeStaticProps } from '~lib/getStatic'
@@ -27,6 +28,10 @@ const header = {
 export default function HomeApp() {
   return (
     <PageWrapper headerConfig={header}>
+            <Head>
+              <title>Translation company for online translation services</title>
+              <meta name="description" content="Translator Test landingpage | localistars" />
+            </Head>
       <HeroSection />
       <AboutSection />
       <ServiceSection />

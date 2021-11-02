@@ -6,27 +6,31 @@ import BlogsImg7 from "~image/blogs/blog-post-7.png";
 export default function SlimBlogCard({
   title,
   date,
-  summary,
+  category,
   slug,
-  locale
+  locale, 
+  thumbnail,
+  alt
 }) {
   return (
     <Card>
       <Card.Image>
-        <img src={BlogsImg7.src} alt="Blog" />
+        <img src={thumbnail} alt={alt} />
       </Card.Image>
       <Card.OvaerlayBlock>
-        <Card.Top mb="20px">
-          <Card.Date to={`/blog/${slug}`}>{date}</Card.Date>
-        </Card.Top>
-        <Card.Title to={`/blog/${slug}`}>
+      <Card.Title to={`/blog/${slug}`}>
           {" "}
           <SuperTag value={title} />
         </Card.Title>
-        <Card.Bottom>
+        <Card.Top mb="20px">
+          <Card.Date to={`/blog/${slug}`}>{date}</Card.Date>
           <Card.Summary to={`/blog/${slug}`}>
-            <SuperTag value={summary} />
+            Details
           </Card.Summary>
+        </Card.Top>
+        
+        <Card.Bottom>
+          
         </Card.Bottom>
       </Card.OvaerlayBlock>
     </Card>
