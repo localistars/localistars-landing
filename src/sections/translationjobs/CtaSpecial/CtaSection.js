@@ -23,7 +23,7 @@ export default function HeroSection({ ...rest }) {
               <Hero.Buttons mt="30px" mtLG="50px">
                 <Hero.Button
                   className="btn-1 btn-electric-violet-2"
-                  to="/"
+                  to="/how-it-works"
                   as={Link}
                 >
                   How does it work

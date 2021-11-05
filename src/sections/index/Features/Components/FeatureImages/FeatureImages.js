@@ -6,7 +6,7 @@ const FeatureImages = ({ mainImage }) => {
       <ImageGroup>
         <div className="main">
         <img
-          src="/image/project-management/l2-feature-img-1.png"
+          src="/image/index/locize-localistars.gif"
           alt="feature tab"
           className="w-100"
         />
@@ -14,7 +14,7 @@ const FeatureImages = ({ mainImage }) => {
 
         <div className="shape">
           <img
-            src="/image/project-management/l2-feature-shape.png"
+            src="/image/index/l2-feature-shape.png"
             alt="shape"
           />
         </div>

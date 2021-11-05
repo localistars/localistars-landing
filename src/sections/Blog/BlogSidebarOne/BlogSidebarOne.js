@@ -5,6 +5,8 @@ import BlogCard from "./Comonent/Card";
 import BlogRequlerData from "~data/BlogRequlerData";
 import BlogsImg1 from "../../../../public/image/blogs/translator.png";
 import Sidebar from "~sections/Blog/Sidebar";
+
+
 export default function BlogRegular() {
   return (
     <Blog backgroundColor="#f9fafc">

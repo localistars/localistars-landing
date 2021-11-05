@@ -178,36 +178,38 @@ Footer.ListItems = styled(Box).attrs({className:"list-items", as:"li"})
         color: rgba(38, 39, 41, 0.7) !important;
     }
 `
+
 Footer.SocialShare = styled(Box).attrs({className:"footer-social-share list-unstyled", as:"ul"})
 `
     padding: 0;
     margin: 0 -10px;
-    margin-bottom: 30px;
-    @media(min-width: 992px){
-        margin-bottom: 0;
-    }
+    margin-bottom: 60px;
 
 `
 Footer.SocialShareItem = styled(Box).attrs({className:"list-items", as:"li"})
 `
     display: inline-flex;
     align-items: center;
+    padding: 0 10px;
+    
     a{
+        min-width: 36px;
+        max-width: 36px;
+        min-height: 36px;
+        max-height: 36px;
+        box-shadow: 0 2px 2px rgb(0 0 0 / 10%);
+        background-color: #fff;
+        color: #262729;
+        font-size: 1.5rem;
         display: inline-flex;
         align-items: center;
-        position: relative;
-        padding: 0 8px;
+        justify-content: center;
+        border-radius: 50%;
         transition: 0.4s;
-        color: #25373f;
-        font-size: 15px;
-        &::before {
-            content: ".";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-        }
         &:hover{
-            color: #fd346e;
+            box-shadow: 0 10px 20px rgba(253 52 110, 0.25);
+            background-color: #ff5722;
+            color: #fff;
         }
     }
     &:first-child {

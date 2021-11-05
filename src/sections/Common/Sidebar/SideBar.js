@@ -1,12 +1,23 @@
 import React from "react";
+import { useContext } from "react";
 // import Image from "next/image";
 import offerImage from "../../../../public/image/mixed/ads-img.png";
 import SideBar from "./style";
 import { Link } from "~components";
+import SearchContext from "~context/SearchContext";
 
+export default function SideBarSection({ posts = [], frontMatter }) {
+const searchContext = useContext(SearchContext);
+const searchValue = searchContext.searchValue
 
-export default function SideBarSection( { mdxComponent, title, date, image, alt, category }) {
-
+const filteredBlogPosts = posts
+    .sort(
+      (a, b) =>
+        Number(new Date(b.date)) - Number(new Date(a.date))
+    )
+    .filter((frontMatter) =>
+      (frontMatter.title || frontMatter.name).toLowerCase().includes(searchValue.toLowerCase())
+    );
 
   return (
     <SideBar>
@@ -16,26 +27,29 @@ export default function SideBarSection( { mdxComponent, title, date, image, alt,
 
       <SideBar.Title>Recent Posts</SideBar.Title>
 
-      {/*}
-          {posts.map((info, index) => (
+      {!filteredBlogPosts.length && 
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              No posts found.
+            </p>
+          }
 
-            <SideBar.RecentPost key={"bsp" + index}>
+      { filteredBlogPosts.map((post, index) => (
+
+            <SideBar.RecentPost>
           <SideBar.RecentPostList>
             <Link to="#">
               <SideBar.RecentPostTitle>
-                { title }
+                { post.title }
               </SideBar.RecentPostTitle>
-              <SideBar.RecentPostDate>{ date }</SideBar.RecentPostDate>
+              <SideBar.RecentPostDate>{ post.date }</SideBar.RecentPostDate>
             </Link>
           </SideBar.RecentPostList>
-          
+            
           
         </SideBar.RecentPost>
+         ))}
            
-
-
-          ))}
-    */}
+   
         
       </SideBar.Widgets>
       {/*/ Single Widgets */}
@@ -93,4 +107,3 @@ export default function SideBarSection( { mdxComponent, title, date, image, alt,
     </SideBar>
   );
 }
-

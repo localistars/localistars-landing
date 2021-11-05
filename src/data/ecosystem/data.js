@@ -8,7 +8,7 @@ const portfolioData = [
         title:"Localization Management Platform",
         id:"1",
         tagName: ["all","design","seo"],
-        to: "https://locize.com/",
+        href: "https://locize.com/",
     },
     {
         image:Ptwo,
@@ -16,7 +16,7 @@ const portfolioData = [
         title:"Javascript Localization Framework",
         id:"2",
         tagName: ["all","marketing","development"],
-        to: "https://locize.com/",
+        href: "https://www.i18next.com/",
     },
   
 

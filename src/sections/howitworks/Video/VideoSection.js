@@ -34,7 +34,7 @@ return(
             />
           <Video.ButtonGroup mt="25px">
             <Video.Button className="btn-primary btn-1" as={Link} target="_blank" href="https://docs.locize.com/guides-tips-and-tricks/working-with-translators/localistars">Learn more</Video.Button>
-            <Video.Button className="btn-electric-violet-2 btn-2"  as={Link} to="/blog/blog-regular/">Blog</Video.Button>
+            <Video.Button className="btn-electric-violet-2 btn-2"  as={Link} to="/blog">Blog</Video.Button>
           </Video.ButtonGroup>
         </Video.Content>
       </Col>

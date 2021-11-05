@@ -5,7 +5,6 @@ import Details from "./style";
 import Image from "next/image";
 import Sidebar from "~sections/Common/Sidebar";
 import { useRouter } from "next/router";
-
 import {
   BlogQoute,
   CommentsBoxSection,

@@ -19,18 +19,16 @@ export default function ServiceSection() {
           <Row className="align-items-end justify-content-center text-start">
             <Col xs="12" className="col-lg-7 col-md-12 col-xs-10">
                 <Service.Title as="h2" mb="0">
-                  Your business needs a
+                  Efficient translation
                   <br className="d-none d-xs-block d-lg-none d-xl-block" />
-                  efficient way to translate
+                   services company & platform
                 </Service.Title>
             </Col>
             <Col xs="12" className="col-lg-5 col-md-12 col-xs-10">
               <Service.Text>
-                    Create custom landing pages with
-                    <br className="d-none d-xs-block" /> Fastland that converts
-                    more visitors
-                    <br className="d-none d-sm-block" /> than any website. Easy
-                    &amp; Fast.
+                    Localistars is a user-friendly translation platform 
+                    <br className="d-none d-xs-block" /> enables businesses of all sizes to order 
+                    cost-effective translations from professional translators.                  
               </Service.Text>
             </Col>
           </Row>

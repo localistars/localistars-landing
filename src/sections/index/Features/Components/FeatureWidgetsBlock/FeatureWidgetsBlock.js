@@ -1,6 +1,6 @@
 import React from 'react'
 import FeatureWidget from '../FeatureWidget'
-import featureSectionData from "~data/project/features"
+import featureSectionData from "~data/index/features"
 
 const FeatureWidgetsBlock = ({widgetData}) => {
 return(

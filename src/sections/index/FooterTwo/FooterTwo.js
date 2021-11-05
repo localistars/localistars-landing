@@ -23,7 +23,7 @@ export default function FooterTwo() {
                         </Link>
                     </Footer.Box>
                     <Footer.Text mb="36px">
-                    We’re a translation marketplace for companies searching for a translatior as well as for freelance translators who are looking for a job</Footer.Text>
+                    We’re a translation marketplace for companies searching for a translatior as well as for freelance translators who are looking for a job.</Footer.Text>
 
                 </Footer.Widgets>
                 </Col>
@@ -43,7 +43,7 @@ export default function FooterTwo() {
                                 Conditions</Link>
                             </Footer.ListItems>
                             <Footer.ListItems>
-                                <Link to="/contact/contact-2">Contact</Link>
+                                <Link to="/pricing">Pricing</Link>
                             </Footer.ListItems>
                             <Footer.ListItems>
                                 <Link to="/blog">Blog</Link>
@@ -86,26 +86,27 @@ export default function FooterTwo() {
                         <Footer.Text>Get the latest trends updates right at your inbox.</Footer.Text>
                         <Footer.SocialShare>
                             <Footer.Box  pt="11px" pb="30px">
-                                <Footer.SocialShareItem>
-                                    <a target="_blank" href="https://twitter.com/localistars">
-                                        Twitter
-                                    </a>
-                                </Footer.SocialShareItem>
-                                <Footer.SocialShareItem>
-                                    <a target="_blank" href="https://www.instagram.com/localistars/">
-                                        Instagram
-                                    </a>
-                                </Footer.SocialShareItem>
-                                <Footer.SocialShareItem>
-                                    <a target="_blank" href="https://www.youtube.com/channel/UCOpWH9CMj3t_yswl_uZb4lw">
-                                        Youtube
-                                    </a>
-                                </Footer.SocialShareItem>
+                                <Footer.SocialShare>
+            
+            <Footer.SocialShareItem>
+              <a href="https://twitter.com/localistars">
+                <i className="fab fa-twitter" />
+              </a>
+            </Footer.SocialShareItem>
+            <Footer.SocialShareItem>
+              <a href="https://www.instagram.com/localistars/">
+                <i className="fab fa-instagram" />
+              </a>
+            </Footer.SocialShareItem>
+            <Footer.SocialShareItem>
+              <a href="https://www.youtube.com/channel/UCOpWH9CMj3t_yswl_uZb4lw">
+                <i className="fab fa-linkedin" />
+              </a>
+            </Footer.SocialShareItem>
+          </Footer.SocialShare>
                             </Footer.Box>
                         </Footer.SocialShare>
-                        <Footer.Payment>
-                            <img src="/image/project-management/payment-gatway.png" alt="content" placeholder="blur" />
-                        </Footer.Payment>
+                        
                     </Footer.Widgets>
                     </Col>
                 </Row>

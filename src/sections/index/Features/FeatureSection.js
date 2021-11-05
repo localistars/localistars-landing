@@ -4,8 +4,10 @@ import { Tab, Nav, Container, Col, Row} from "react-bootstrap";
 import FeatureTabPenLayout from './Components/FeatureTabPenLayout'
 import FeatureImage from './Components/FeatureImages'
 import Feature from './style'
-import featureSectionData from '~data/project/features'
+import featureSectionData from '~data/index/features'
 import FeatureWidgetsBlock from './Components/FeatureWidgetsBlock'
+
+
 export default function FeatureSection(){
 return(
 <Feature background="#0c515a">
@@ -21,18 +23,18 @@ return(
                 <Nav.Link
                   eventKey="first"
                   className="nav-link"
-                >Team Management
+                >Websites translation services
                 </Nav.Link>
 
                 <Nav.Link
                   eventKey="second"
                   className="nav-link"
-                >Increase Productivity
+                >Professional online translations
                 </Nav.Link>
                 <Nav.Link
                   eventKey="third"
                   className="nav-link"
-                >Best Price
+                >For any business 
                 </Nav.Link>
             </Nav>
         </Col>
