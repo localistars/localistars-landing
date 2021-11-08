@@ -5,5 +5,8 @@
     "Business."
   ], 
   "indexHeroTitle" : "Übersetzungsmarktplatz",
-
+  "menu": {
+    "translator": "Finde einen Übersetzer",
+    "translationjob": "Finde einen Übersetzungsauftrag"
+  }
 }

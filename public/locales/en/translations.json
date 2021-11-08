@@ -5,4 +5,8 @@
     "business."
   ],
   "indexHeroTitle" : "Translation Marketplace",
+  "menu": {
+    "translator": "Find a translator",
+    "translationjob": "Find a translation job"
+  }
 }

@@ -2,12 +2,13 @@ import React from "react";
 import { Col, Container, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
 import { menuItems } from "../../../data/menudata";
 import Link from "../Link";
-
+import { useTranslation } from 'next-i18next'
 
 const isObject = function (a) {
   return !!a && a.constructor === Object
 }
 const Menu = ({...rest}) => {
+  const { t } = useTranslation('translations')
 
   return (
     <>
@@ -34,7 +35,7 @@ const Menu = ({...rest}) => {
                     <React.Fragment key={name + index}>
                       {hasMegaMenu && (
                         <NavDropdown
-                          title={label}
+                          title={t(`menu.${name}`, label)}
                           id={name + index}
                           renderMenuOnMount={true}
                           className={`main-nav-item megadropdown `}
@@ -181,7 +182,6 @@ const Menu = ({...rest}) => {
                                     id={subItem.name + indexSub}
                                     renderMenuOnMount={true}
                                     className="drop-menu-item innerDropdown"
-                                   
                                   >
                                     {subItem.items.map(
                                       (itemInner, indexInnerMost) => (
@@ -241,7 +241,7 @@ const Menu = ({...rest}) => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
-                                {label}
+                                {t(`menu.${name}`, label)}
                               </Nav.Link>
                             </Nav.Item>
                           ) : (
@@ -252,7 +252,7 @@ const Menu = ({...rest}) => {
                                 role="button"
                                 aria-expanded="false"
                               >
-                                {label}
+                                {t(`menu.${name}`, label)}
                               </Link>
                             </Nav.Item>
                           )}
@@ -264,7 +264,7 @@ const Menu = ({...rest}) => {
               )}
             </Nav>
           </Navbar.Collapse>
-          </>
+        </>
   );
 };
 export default Menu;

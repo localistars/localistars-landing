@@ -4,11 +4,8 @@ import { Link } from "~components";
 import Hero from "./style";
 import { useTranslation } from 'next-i18next'
 
-
 export default function HeroSection() {
-
   const { t } = useTranslation('translations')
-
 
   return (
     <Hero backgroundColor="rgba(22, 92, 102, 0.7)">
