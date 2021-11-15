@@ -19,6 +19,8 @@ const filteredBlogPosts = posts
       (frontMatter.title || frontMatter.name).toLowerCase().includes(searchValue.toLowerCase())
     );
 
+
+
   return (
     <SideBar>
       
@@ -97,13 +99,7 @@ const filteredBlogPosts = posts
         </SideBar.CateGory>
       </SideBar.Widgets>
       {/*/ .Single Widgets */}
-      {/* Single Widgets */}
-      <SideBar.Ads>
-        <Link to="#">
-          <img src={offerImage.src} alt="content" className="w-100" />
-        </Link>
-      </SideBar.Ads>
-      {/*/ .Single Widgets */}
+      
     </SideBar>
   );
 }

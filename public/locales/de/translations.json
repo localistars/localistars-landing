@@ -7,6 +7,9 @@
   "indexHeroTitle" : "Übersetzungsmarktplatz",
   "menu": {
     "translator": "Finde einen Übersetzer",
-    "translationjob": "Finde einen Übersetzungsauftrag"
-  }
+    "translationjob": "Finde einen Übersetzungsauftrag",
+    "pricing": "Preise"
+    
+  }, 
+  "blogReadTime": "Lesezeit"
 }

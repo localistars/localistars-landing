@@ -53,7 +53,7 @@ Card.Badge = styled(Button)`
     color: #262729 !important;
   }
 `;
-Card.Date = styled(Card.Title)`
+Card.Date = styled(Paragraph)`
   color: #fff;
   font-size: 13px;
   font-weight: 500;
@@ -62,8 +62,7 @@ Card.Date = styled(Card.Title)`
   position: relative;
   transition: 0.4s;
   position: relative;
-  &:hover {
-    color: #ff5722;
+ 
   }
 `;
 Card.User = styled(Link)`
@@ -152,6 +151,7 @@ Card.Comment = styled(Link)`
   }
 `;
 Card.Box = styled(Box)``;
+
 Card.Image = styled(Box)`
   min-height: 330px;
   img {

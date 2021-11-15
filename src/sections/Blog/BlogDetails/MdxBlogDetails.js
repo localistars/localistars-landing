@@ -5,18 +5,27 @@ import Details from "./style";
 import Image from "next/image";
 import Sidebar from "~sections/Common/Sidebar";
 import { useRouter } from "next/router";
+import { useTranslation } from 'next-i18next'
+
 import {
   BlogQoute,
   CommentsBoxSection,
   CommentsFormSection,
 } from "./Component";
 
-export default function MdxBlogDetails({ mdxComponent, title, date, image, alt, category }) {
+export default function MdxBlogDetails({ mdxComponent, title, date, image, alt, category, readingTime }) {
 
   const router = useRouter()
-  const site = "http://localhost:3000";
+  const site = 'https://localistars.com'
   const currentURL = site + router.asPath
   const blogURL = '/blog'
+  const twittershare = 'https://twitter.com/intent/tweet?url=' + currentURL + '&text='
+  
+
+  const { t } = useTranslation('translations')
+  const minutes = readingTime.minutes
+  const readtime = minutes.toFixed(0) + 'min'
+
 
   return (
     <Details backgroundColor="#f9fafc">
@@ -29,8 +38,14 @@ export default function MdxBlogDetails({ mdxComponent, title, date, image, alt, 
                   {title}
                 </Details.Title>
                 <Details.MetaInfo>
+
+                
                   <Details.Text>
                     {date}
+                  </Details.Text>
+
+                  <Details.Text>
+                    {readtime} {t(`blogReadTime`)}
                   </Details.Text>
 
                   <Details.Text>
@@ -40,12 +55,14 @@ export default function MdxBlogDetails({ mdxComponent, title, date, image, alt, 
                 </Details.MetaInfo>
               </Details.Box>
 
+
+              
               <Details.Box mb="30px" mbLG="55px">
                 <Details.Image>
                   <img src={image} alt={alt} />
                 </Details.Image>
               </Details.Box>
-
+              
 
               <Details.Box>
                 {mdxComponent}
@@ -57,25 +74,31 @@ export default function MdxBlogDetails({ mdxComponent, title, date, image, alt, 
                   </Details.SubTitle>
                   <Details.SocialList>
                     <li>
-                      <Link to="/">
-                        <i className="fab fa-instagram" />
+                      <Link to={twittershare} target="_blank">
+                        <i className="fab fa-twitter" />
                       </Link>
                     </li>
+                    
+
+                    {/*
                     <li>
-                      <Link to="/">
+                      <Link to={linkshare} target="_blank">
                         <i className="fab fa-linkedin" />
                       </Link>
                     </li>
                     <li>
-                      <Link to="/">
+                      <Link to={fbshare} target="_blank">
                         <i className="fab fa-facebook" />
                       </Link>
                     </li>
+                    
                     <li>
-                      <Link to="/">
-                        <i className="fab fa-twitter" />
+                      <Link to={pinshare} target="_blank">
+                        <i className="fab fa-pinterest" />
                       </Link>
-                    </li>
+                    </li>*/}
+
+
                   </Details.SocialList>
                 </Details.Tag>
                 <Details.Pagination mt="30px" mtLG="75px" mb="50px">
@@ -95,7 +118,7 @@ export default function MdxBlogDetails({ mdxComponent, title, date, image, alt, 
               </Details.Box>
             </Col>
             <Col xs="12" className="col-xl-4 offset-xl-1 col-lg-5">
-              <Sidebar />
+              <Sidebar title={title} image={image} />
             </Col>
           </Row>
         </Container>

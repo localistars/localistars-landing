@@ -8,14 +8,27 @@ import MdxBlogDetails from "~sections/Blog/BlogDetails/MdxBlogDetails";
 import { PageWrapper } from "~components/Core";
 import FooterSection from "~sections/index/FooterTwo";
 import matter from 'gray-matter'
+import Head from 'next/head'
 
 
-export default function Blog({ code, frontMatter }) {
+
+export default function Blog({ code, frontMatter, posts }) {
+
+  console.log(frontMatter)
+  
+  console.log(posts)
+
   const Component = useMemo(() => getMDXComponent(code), [code]);
 
   return (
+
     <PageWrapper innerPage={true}>
-      <MdxBlogDetails {...frontMatter} mdxComponent={<Component /*components={components} *//>} />
+
+    <Head>
+   <title>{frontMatter.title}</title>
+   <meta name="description" content={frontMatter.description} />
+   </Head>
+      <MdxBlogDetails {...frontMatter} mdxComponent={<Component /*components={components} */ posts={posts} />} />
       <FooterSection/>
     </PageWrapper>
   )
@@ -31,8 +44,9 @@ export default function Blog({ code, frontMatter }) {
 
 export async function getStaticPaths() {
   const posts = await getFiles(`locales/${i18nConfig.i18n.defaultLocale}/blog`);
-  
+
   return {
+
     paths: posts.map((p) => i18nConfig.i18n.locales.map((l) => ({
       params: {
         locale: l,
@@ -48,11 +62,13 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(ctx ) {
-
+  
   return {
     props: {
+
       // if using markdown
       ...await getLocaleFile(ctx?.params?.locale, `blog/${ctx?.params?.slug}`),
+
 
 
     }

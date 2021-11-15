@@ -1,7 +1,7 @@
 export const menuItems = [
   {
     name: "translator",
-    label: "Find a translator fallback",
+    label: "Find a translator",
   },
   {
     name: "translationjob",

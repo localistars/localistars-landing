@@ -7,6 +7,11 @@
   "indexHeroTitle" : "Translation Marketplace",
   "menu": {
     "translator": "Find a translator",
-    "translationjob": "Find a translation job"
-  }
+    "translationjob": "Find a translation job",
+    "pricing": "Pricing",
+    
+  }, 
+  "blogReadTime": "readtime"
+  
+  
 }

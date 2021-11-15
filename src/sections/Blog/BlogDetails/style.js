@@ -69,7 +69,7 @@ Details.Link = styled(Button)`
 
 Details.Image = styled(Box)``;
 Details.Text = styled(Paragraph)`
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: normal;
   line-height: 32px;
@@ -80,7 +80,15 @@ Details.Text = styled(Paragraph)`
       color: #ff5200;
     }
   }
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+
+  }
+
 `;
+
+
 Details.SubTitle = styled(Paragraph)`
   font-size: 21px;
   font-weight: 500;
@@ -196,9 +204,11 @@ Details.Box = styled(Box)``;
 
 Details.Box = styled(Box)``;
 Details.Image = styled(Box)`
-  min-height: 330px;
+  min-height: 200px;
+
   img {
     width: 100%;
+    min-height: 200px;
   }
 `;
 

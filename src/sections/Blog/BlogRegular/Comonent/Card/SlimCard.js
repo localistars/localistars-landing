@@ -1,6 +1,7 @@
 import React from "react";
 import { SuperTag } from "~components";
 import Card from "./style";
+import { Link } from "~components";
 import BlogsImg7 from "~image/blogs/blog-post-7.png";
 
 export default function SlimBlogCard({
@@ -15,7 +16,9 @@ export default function SlimBlogCard({
   return (
     <Card>
       <Card.Image>
+      <Link href={`/blog/${slug}`}><a alt="Blog">
         <img src={thumbnail} alt={alt} />
+        </a></Link>
       </Card.Image>
       <Card.OvaerlayBlock>
       <Card.Title to={`/blog/${slug}`}>
@@ -23,10 +26,8 @@ export default function SlimBlogCard({
           <SuperTag value={title} />
         </Card.Title>
         <Card.Top mb="20px">
-          <Card.Date to={`/blog/${slug}`}>{date}</Card.Date>
-          <Card.Summary to={`/blog/${slug}`}>
-            Details
-          </Card.Summary>
+          <Card.Date>{date}</Card.Date>
+          
         </Card.Top>
         
         <Card.Bottom>
