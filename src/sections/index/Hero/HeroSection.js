@@ -8,7 +8,7 @@ export default function HeroSection() {
   const { t } = useTranslation('translations')
 
   return (
-    <Hero backgroundColor="rgba(22, 92, 102, 0.7)">
+    <Hero backgroundColor="rgba(22, 92, 102, 0.8)">
       <Container>
         <Row className="align-items-center justify-content-center">
           {/* Welcome content Area */}

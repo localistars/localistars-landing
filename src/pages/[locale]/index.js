@@ -7,6 +7,7 @@ import ServiceSection from "~sections/index/Service"
 import FeatureSection from '~sections/index/Features'
 import TestimonialSection from "~sections/index/Testimonial";
 import PromoSection from "~sections/index/Promo";
+import VideoSection from "~sections/index/Video";
 import CtaSection from "~sections/index/Cta";
 import { Link } from '~components';
 import FooterTwo from "~sections/index/FooterTwo";
@@ -17,8 +18,9 @@ import { getStaticPaths, makeStaticProps } from '~lib/getStatic'
 
 const header = {
   headerClasses:
-    "site-header site-header--menu-end light-header site-header--sticky",
+    "site-header site-header--menu-end dark-header site-header--sticky",
   containerFluid: false,
+  darkLogo:false,
   buttonBlock: (
     // eslint-disable-next-line react/no-children-prop
     <HeaderButton className="d-none d-sm-flex" children="Login" as={Link} target="_blank" href="https://www.localistars.app/login" />
@@ -34,8 +36,10 @@ export default function HomeApp() {
             </Head>
       <HeroSection />
       <AboutSection />
+      <VideoSection />
       <ServiceSection />
       <FeatureSection />
+
       <TestimonialSection />
       <PromoSection />
       <CtaSection />

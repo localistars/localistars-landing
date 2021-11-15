@@ -511,7 +511,7 @@ const SiteHeader = styled.div.attrs({
   /* Dark Header */
   &.dark-header {
     &.reveal-header {
-        background: #19191b;
+        background: #165c66;
     }
     &-2 {
       &.reveal-header {

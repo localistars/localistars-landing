@@ -19,23 +19,23 @@ export default function HeroSection(){
           <Hero.Text> <SuperTag value="We provide a platform that removes the tedious parts of translations."/>
           </Hero.Text>
           <Hero.TitleShape>
-            <img src="/image/project-management/l2-hero-shape.png"   alt="projects" className="w-100"/>
+            <img src="/image/translator/l2-hero-shape.png" alt="projects" className="w-100"/>
           </Hero.TitleShape>
         </Hero.ContentBlock>
        
       </Col>
       <Col xs="12" className="col-lg-5 col-md-7">
         <Hero.Image>
-        <img src="/image/project-management/l2-hero-image.png" alt="content" className="w-100"/>
+        <img src="/image/translator/l2-content-img-2.png" alt="content" className="w-100"/>
         </Hero.Image>
       </Col>
     </Row>
   </Container>
   <Hero.ImageShape01>
-    <img src="/image/project-management/l2-hero-shape-2.png" alt="shape 1" className="w-100"/>
+    <img src="/image/translator/l2-hero-shape-2.png" alt="shape 1" className="w-100"/>
   </Hero.ImageShape01>
   <Hero.ImageShape02>
-    <img src="/image/project-management/l2-hero-shape-1.png" alt="shape 1" className="w-100"/>
+    <img src="/image/translator/l2-hero-shape-1.png" alt="shape 1" className="w-100"/>
   </Hero.ImageShape02>
 </Hero>
 )

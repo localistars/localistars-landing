@@ -5,16 +5,16 @@ const featureSectionData = {
     
     tabWidget1: [
         {
-            icon:"\public\image\translationjobs\icon-grid.png",
+            icon:"/image/translationjobs/icon-grid.png",
             iconBackground:"#ff8d52",
             title:"Your language profile",
             text:"New job opportunities matching your language profile are waiting for you.",
         },
         {
-            icon:"\public\image\translationjobs\icon-message.png",
+            icon:"/image/translationjobs/icon-message.png",
             iconBackground:"#15cda8",
-            title:"Test",
-            text:"Stay on top of your task lists and stay <br class='d-none d-xs-block'> in touch with what's happening",
+            title: "Marketing",
+            text: "Expand your personal reach <br class='d-none d-xs-block'> with the free possibility to list here.",
         },
     ],
     

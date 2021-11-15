@@ -38,9 +38,9 @@ export default function AboutSection() {
             className="col-xxl-6 col-lg-4 col-md-8 col-xs-9 order-1 order-lg-2 text-center"
           >
             <About.ImageContent>
-              <img src="/image/home-app/about-mobile-img.png" alt="content"/>
+              <img src="/image/index/about-mobile-img.png" alt="content"/>
               <About.Shape>
-                <img src="/image/home-app/green-shape.png" alt="content"/>
+                <img src="/image/index/green-shape.png" alt="content"/>
               </About.Shape>
            </About.ImageContent>
           </Col>
