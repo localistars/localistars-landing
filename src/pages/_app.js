@@ -12,6 +12,7 @@ import Loader from "~components/Preloader";
 import { appWithTranslation } from 'next-i18next'
 import CookieConsent from 'react-cookie-consent';
 import { useAnalytics } from '~lib/analytics';
+import Head from 'next/head'
 
 const MyApp = ({ Component, pageProps }) => {
   const [enabled, enable] = useAnalytics();
@@ -40,6 +41,10 @@ const MyApp = ({ Component, pageProps }) => {
     <SearchProvider>
       <GlobalHeaderProvider>
         <Layout>
+        <Head>
+          
+
+        </Head>
           <Loader show={loader}/>
           <Component {...pageProps} />
           <CookieConsent

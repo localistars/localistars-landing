@@ -5,17 +5,15 @@ import { getMDXComponent } from 'mdx-bundler/client';
 import { getFiles, getLocaleFile } from '~lib/mdx';
 import i18nConfig from '~next-i18next.config'
 import MdxBlogDetails from "~sections/Blog/BlogDetails/MdxBlogDetails";
+import StructureData from "~sections/Blog/BlogDetails/StructureData";
 import { PageWrapper } from "~components/Core";
 import FooterSection from "~sections/index/FooterTwo";
 import matter from 'gray-matter'
 import Head from 'next/head'
 
-
-
 export default function Blog({ code, frontMatter, posts }) {
 
   console.log(frontMatter)
-  
   console.log(posts)
 
   const Component = useMemo(() => getMDXComponent(code), [code]);
@@ -27,8 +25,15 @@ export default function Blog({ code, frontMatter, posts }) {
     <Head>
    <title>{frontMatter.title}</title>
    <meta name="description" content={frontMatter.description} />
+     
    </Head>
-      <MdxBlogDetails {...frontMatter} mdxComponent={<Component /*components={components} */ posts={posts} />} />
+      <MdxBlogDetails 
+      {...frontMatter} 
+      mdxComponent={<Component 
+      /*components={components} */ 
+      posts={posts}
+
+       />} />
       <FooterSection/>
     </PageWrapper>
   )

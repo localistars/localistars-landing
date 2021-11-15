@@ -34,6 +34,12 @@ Details.MetaInfo = styled(Box)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
   
 `;
 Details.Link = styled(Button)`

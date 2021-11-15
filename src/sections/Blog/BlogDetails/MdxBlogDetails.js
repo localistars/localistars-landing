@@ -6,14 +6,15 @@ import Image from "next/image";
 import Sidebar from "~sections/Common/Sidebar";
 import { useRouter } from "next/router";
 import { useTranslation } from 'next-i18next'
-
+import StructureData from "~sections/Blog/BlogDetails/StructureData";
+import Head from 'next/head'
 import {
   BlogQoute,
   CommentsBoxSection,
   CommentsFormSection,
 } from "./Component";
 
-export default function MdxBlogDetails({ mdxComponent, title, date, image, alt, category, readingTime }) {
+export default function MdxBlogDetails({ mdxComponent, title, date, image, alt, category, modified, readingTime }) {
 
   const router = useRouter()
   const site = 'https://localistars.com'
@@ -28,7 +29,14 @@ export default function MdxBlogDetails({ mdxComponent, title, date, image, alt, 
 
 
   return (
+
     <Details backgroundColor="#f9fafc">
+
+    <Head>
+      <StructureData headline={title} img={image} date={date} modified={modified}/>
+
+    </Head>
+    
       <Details.Box pb="60px" pbMD="80px" pbLG="130px">
         <Container>
           <Row className="justify-content-center">
@@ -42,6 +50,7 @@ export default function MdxBlogDetails({ mdxComponent, title, date, image, alt, 
                 
                   <Details.Text>
                     {date}
+
                   </Details.Text>
 
                   <Details.Text>
@@ -123,6 +132,9 @@ export default function MdxBlogDetails({ mdxComponent, title, date, image, alt, 
           </Row>
         </Container>
       </Details.Box>
+
     </Details>
+
+   
   );
 }
