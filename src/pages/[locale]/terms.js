@@ -1,9 +1,7 @@
 import React from "react";
 import { PageWrapper } from "~components/Core";
 import HeaderButton from "~sections/pricing/Header";
-import ServiceSection from "~sections/pricing/Service"
-import TestimonialSection from "~sections/pricing/Testimonial";
-import Cta from "~sections/pricing/Cta";
+import TermsCondition from "~sections/utility/TermsCondition";
 import FooterTwo from "~sections/index/FooterTwo";
 import Head from 'next/head'
 
@@ -30,13 +28,10 @@ export default function HomeApp() {
   return (
     <PageWrapper headerConfig={header}>
       <Head>
-              <title>Pricing | localistars  </title>
-              <meta name="description" content="Pricing | localistars" />
-            </Head>
-      <ServiceSection />
-      <TestimonialSection />
-      
-      <Cta />
+      <title>Terms & Conditions | localistars</title>
+       <meta name="description" content="Terms & Conditions | localistars" />
+       </Head>
+      <TermsCondition />
       <FooterTwo />
     </PageWrapper>
   );

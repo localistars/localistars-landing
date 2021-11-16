@@ -8,6 +8,7 @@ import FeatureSection from '~sections/translationjobs/Features'
 import Process from "~sections/translationjobs/Process";
 import CtaSection from "~sections/translationjobs/CtaSpecial";
 import FooterTwo from "~sections/index/FooterTwo";
+import Head from 'next/head'
 
 import { getStaticPaths, makeStaticProps } from '~lib/getStatic'
 
@@ -27,6 +28,10 @@ const header = {
 export default function HomeApp() {
   return (
     <PageWrapper headerConfig={header}>
+    <Head>
+      <title>Freelance Translator Website: Find a job</title>
+      <meta name="description" content="On our website you will find freelance opportunities for language translation. Apply for the next translation job online." />
+    </Head>
       <HeroSection />
       <Services2 />
       <ServiceSection />

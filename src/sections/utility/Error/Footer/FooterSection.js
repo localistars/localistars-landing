@@ -3,6 +3,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import LogoBlack from "../../../../../public/image/logo/logo-black.png";
 import Footer from "./style";
+
+
 export default function FooterSection() {
   return (
     <Footer>

@@ -35,11 +35,11 @@ export default function FooterTwo() {
                         <Footer.List>
                             
                             <Footer.ListItems>
-                                <Link to="/">Privacy
+                                <Link to="/privacy">Privacy
                                 Policy</Link>
                             </Footer.ListItems>
                             <Footer.ListItems>
-                                <Link to="/innerpage/terms">Terms &amp;
+                                <Link to="/terms">Terms &amp;
                                 Conditions</Link>
                             </Footer.ListItems>
                             <Footer.ListItems>

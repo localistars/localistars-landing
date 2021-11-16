@@ -11,5 +11,10 @@
     "pricing": "Preise"
     
   }, 
-  "blogReadTime": "Lesezeit"
+  "blogReadTime": "Lesezeit",
+
+  "errortitle" : "Seite nicht gefunden",
+  "errortext" : "Es tut uns Leid, die Webseite nach der Sie gesucht haben exisiert nicht.",
+  "errorbtn" : "Zum Online Markplatz für Übersetzungen",
+  "errorbtnsec" : "Finde einen Übersetzer"
 }

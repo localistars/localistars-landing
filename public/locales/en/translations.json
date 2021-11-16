@@ -11,7 +11,12 @@
     "pricing": "Pricing",
     
   }, 
-  "blogReadTime": "readtime"
+  "blogReadTime": "readtime",
+
+  "errortitle" : "Page not found",
+  "errortext" : "The page you are looking for is not available or doesn't belong to this website!",
+  "errorbtn" : "Back to online translation services",
+  "errorbtnsec" : "Find a translator"
   
   
 }

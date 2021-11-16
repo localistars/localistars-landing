@@ -26,9 +26,9 @@ export default function ServiceSection() {
             </Col>
             <Col xs="12" className="col-lg-5 col-md-12 col-xs-10">
               <Service.Text>
-                    Localistars is a user-friendly translation platform 
-                    <br className="d-none d-xs-block" /> enables businesses of all sizes to order 
-                    cost-effective translations from professional translators.                  
+                    Localistars is a easy-to-use translation company  
+                    <br className="d-none d-xs-block" />that allows businesses of all sizes to purchase 
+                    cost-effective translations using their translation-platform.                  
               </Service.Text>
             </Col>
           </Row>

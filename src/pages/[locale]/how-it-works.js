@@ -6,6 +6,7 @@ import TableSection from "~sections/howitworks/Table";
 import VideoSection from "~sections/howitworks/Video";
 import FooterTwo from "~sections/index/FooterTwo";
 import HeaderButton from "~sections/howitworks/Header";
+import Head from 'next/head'
 
 const header = {
   headerClasses:
@@ -23,6 +24,10 @@ const header = {
 export default function Agency() {
   return (
     <PageWrapper headerConfig={header}>
+    <Head>
+              <title>How it works | localistars</title>
+              <meta name="description" content="How it works | localistars" />
+            </Head>
       <HeroSection />
      
       <TitleSection />

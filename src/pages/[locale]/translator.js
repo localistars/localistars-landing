@@ -32,8 +32,8 @@ export default function Agency() {
   return (
     <PageWrapper headerConfig={header}>
             <Head>
-              <title>Translator Landingpage | localistars</title>
-              <meta name="description" content="Translator Test landingpage | localistars" />
+              <title>Find a translator on our platform | localistars  </title>
+              <meta name="description" content="On our online platform, you can hire a professional translator for your company's language translation project." />
             </Head>
       <HeroSection1 />
       <ServicesSection />

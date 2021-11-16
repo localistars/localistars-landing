@@ -4,6 +4,7 @@ import EcosystemSection from "~sections/ecosystem/PortfolioGridTwo";
 import BreadCrumb from "~sections/ecosystem/BreadCrumb";
 import FooterTwo from "~sections/index/FooterTwo";
 import HeaderButton from "~sections/ecosystem/Header";
+import Head from 'next/head'
 
 import { getStaticPaths, makeStaticProps } from '~lib/getStatic'
 
@@ -25,6 +26,11 @@ const header = {
 export default function Agency() {
   return (
     <PageWrapper headerConfig={header}>
+      <Head>
+              <title>Ecosystem | localistars</title>
+              <meta name="description" content="Ecosystem | localistars" />
+            </Head>
+
     <BreadCrumb title="Localistars is part of this ecosystem" />
       <EcosystemSection />
       <FooterTwo />

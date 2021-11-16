@@ -1,9 +1,7 @@
 import React from "react";
 import { PageWrapper } from "~components/Core";
 import HeaderButton from "~sections/pricing/Header";
-import ServiceSection from "~sections/pricing/Service"
-import TestimonialSection from "~sections/pricing/Testimonial";
-import Cta from "~sections/pricing/Cta";
+import PrivacyPolicy from "~sections/utility/PrivacyPolicy";
 import FooterTwo from "~sections/index/FooterTwo";
 import Head from 'next/head'
 
@@ -26,17 +24,14 @@ const header = {
   ),
 };
 
-export default function HomeApp() {
+export default function Privacy() {
   return (
     <PageWrapper headerConfig={header}>
       <Head>
-              <title>Pricing | localistars  </title>
-              <meta name="description" content="Pricing | localistars" />
-            </Head>
-      <ServiceSection />
-      <TestimonialSection />
-      
-      <Cta />
+      <title>Privacy Policy | localistars</title>
+       <meta name="description" content="Privacy Policy | localistars" />
+       </Head>
+      <PrivacyPolicy />
       <FooterTwo />
     </PageWrapper>
   );

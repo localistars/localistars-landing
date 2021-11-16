@@ -26,7 +26,7 @@ export default function HeroSection() {
                 localistars is the go-to marketplace for clients and translators to get translation jobs done. {" "}
                 <br className="d-none d-md-block" />
                   As client you'll find translators and as translator you'll find translation jobs.
-                  Direct contact, no middleman – just collaborating localistars!
+                  Direct contact, no middleman – just localistars working together!
               </Hero.Text>
               <Hero.ButtonGroup>
                 <Hero.Button className="btn-red 🌱" as={Link} to="/translator">

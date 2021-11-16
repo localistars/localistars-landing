@@ -12,6 +12,7 @@ import CtaSection from "~sections/index/Cta";
 import { Link } from '~components';
 import FooterTwo from "~sections/index/FooterTwo";
 import Head from 'next/head'
+import { useTranslation } from 'next-i18next'
 
 
 import { getStaticPaths, makeStaticProps } from '~lib/getStatic'
@@ -28,11 +29,13 @@ const header = {
 };
 
 export default function HomeApp() {
+  const { t } = useTranslation('translations')
+
   return (
     <PageWrapper headerConfig={header}>
             <Head>
               <title>Translation company for online translation services</title>
-              <meta name="description" content="Translator Test landingpage | localistars" />
+              <meta name="description" content="Localistars is a website where companies can find high-quality online translation services performed by freelance translators." />
             </Head>
       <HeroSection />
       <AboutSection />

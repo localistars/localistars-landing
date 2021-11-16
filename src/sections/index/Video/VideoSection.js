@@ -28,7 +28,7 @@ return(
           <SectionTitle 
             subTitle="Watch video" 
             title="localistars teaser"
-            text="Check out how localistars works."
+            text="Check out how localistars works and you will get your translation job done with our marketplace."
             titleProps={{mb:"30px"}}
             subTitleProps={{mb:"25px"}}
             />

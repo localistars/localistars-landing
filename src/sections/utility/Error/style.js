@@ -20,7 +20,7 @@ ErrorPage.BigTitle = styled(Heading)`
     font-style: normal;
     letter-spacing: -2px;
     line-height: 1.27272;
-    color: #fd346e;
+    color: #165c66;
     margin-bottom: 0;
     @media (min-width:575px){
         font-size: 60px;
@@ -38,7 +38,7 @@ ErrorPage.Title = styled(Heading)`
     letter-spacing: normal;
     line-height: 1.3;
     margin-bottom: 15px;
-    color: #25373f;
+    color: #165c66;
     position:relative;
 
     @media (min-width:768px) {
@@ -69,23 +69,27 @@ ErrorPage.Button = styled(Button)`
     margin: 0 10px;
 
     &.btn-1{
+        background-color: #165c66;
         min-width: 142px;
         height: 56px;
         color: #fff;
         border-radius: 500px;
-        box-shadow: -12px 12px 50px rgba(255, 30, 56, 0.3);
+        box-shadow: -12px 12px 50px rgba(22, 92, 102, 0.3);
         &:hover{
-            color: #fff;
+            background-color: #fff;
+            color: #165c66;
+            border: 1px solid #165c66;
         }
     }
     &.btn-2{
+        border: 1px solid #165c66;
         min-width: 164px;
         height: 56px;
         border-radius: 500px;
         &:hover{
             color: #fff;
-            background-color: #fd346e;
-            box-shadow: -12px 12px 50px rgba(255, 30, 56, 0.3);
+            background-color: #165c66;
+            box-shadow: -12px 12px 50px rgba(22, 92, 102, 0.3);
         }
     }
 `
