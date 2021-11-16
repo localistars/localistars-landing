@@ -13,6 +13,8 @@ import { appWithTranslation } from 'next-i18next'
 import CookieConsent from 'react-cookie-consent';
 import { useAnalytics } from '~lib/analytics';
 import Head from 'next/head'
+import { useTranslation } from 'next-i18next'
+
 
 const MyApp = ({ Component, pageProps }) => {
   const [enabled, enable] = useAnalytics();
@@ -36,29 +38,31 @@ const MyApp = ({ Component, pageProps }) => {
   };
 
   if (loader) return <Loader show={loader}/>
+
+  const { t } = useTranslation('translations')
   
   return (
     <SearchProvider>
       <GlobalHeaderProvider>
         <Layout>
         <Head>
-          
-
         </Head>
           <Loader show={loader}/>
           <Component {...pageProps} />
           <CookieConsent
             enableDeclineButton
+            declineButtonText={t('cookiedecline')}
             location="bottom"
-            buttonText="Sure man!!"
+            buttonText={t('cookieaccept')}
             cookieName={process.env.NEXT_PUBLIC_COOKIE_CONSENT_NAME}
-            style={{ background: "#2B373B" }}
-            buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+            style={{ background: "#165c66" }}
+            buttonStyle={{ color: "white", fontSize: "15px", backgroundColor: "#23a432" }}
+            declineButtonStyle={{ backgroundColor: "#420d18" }}
             expires={360}
             onAccept={() => enable()}
           >
-            This website uses cookies to enhance the user experience.{" "}
-            <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
+            {t('cookietext')}{" "}
+            
           </CookieConsent>
         </Layout>
       </GlobalHeaderProvider>
