@@ -6,19 +6,7 @@ import SideBar from "./style";
 import { Link } from "~components";
 import SearchContext from "~context/SearchContext";
 
-export default function SideBarSection({ posts = [], frontMatter }) {
-const searchContext = useContext(SearchContext);
-const searchValue = searchContext.searchValue
-
-const filteredBlogPosts = posts
-    .sort(
-      (a, b) =>
-        Number(new Date(b.date)) - Number(new Date(a.date))
-    )
-    .filter((frontMatter) =>
-      (frontMatter.title || frontMatter.name).toLowerCase().includes(searchValue.toLowerCase())
-    );
-
+export default function SideBarSection({ allPosts }) {
 
 
   return (
@@ -29,27 +17,29 @@ const filteredBlogPosts = posts
 
       <SideBar.Title>Recent Posts</SideBar.Title>
 
-      {!filteredBlogPosts.length && 
+      {!allPosts.length && 
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               No posts found.
             </p>
           }
 
-      { filteredBlogPosts.map((post, index) => (
+      { allPosts.map((post, index) => (
 
             <SideBar.RecentPost>
           <SideBar.RecentPostList>
-            <Link to="#">
+           
+            <Link key={index} to={`/blog/${post.slug}`}>
               <SideBar.RecentPostTitle>
                 { post.title }
               </SideBar.RecentPostTitle>
               <SideBar.RecentPostDate>{ post.date }</SideBar.RecentPostDate>
             </Link>
+             <hr />
           </SideBar.RecentPostList>
             
           
         </SideBar.RecentPost>
-         ))}
+          ))}
            
    
         
@@ -59,10 +49,19 @@ const filteredBlogPosts = posts
       {/* Single Widgets */}
       <SideBar.Widgets>
         <SideBar.Title>Categories</SideBar.Title>
+
+        { allPosts.map((post, index) => (
+
+
         <SideBar.CateGory>
           <SideBar.CateGorySingle>
+
+
+          
+
+
             <Link to="#">
-              <SideBar.CateGoryTitle>Technology:</SideBar.CateGoryTitle>
+              <SideBar.CateGoryTitle>{post.category}</SideBar.CateGoryTitle>
               <SideBar.CateGoryCount as="span">20 posts</SideBar.CateGoryCount>
             </Link>
           </SideBar.CateGorySingle>
@@ -95,10 +94,21 @@ const filteredBlogPosts = posts
               <SideBar.CateGoryTitle>Education:</SideBar.CateGoryTitle>
               <SideBar.CateGoryCount as="span">14 posts</SideBar.CateGoryCount>
             </Link>
+
+
+            
+
           </SideBar.CateGorySingle>
         </SideBar.CateGory>
+
+              ))}
+
+       
+
       </SideBar.Widgets>
       {/*/ .Single Widgets */}
+
+
       
     </SideBar>
   );

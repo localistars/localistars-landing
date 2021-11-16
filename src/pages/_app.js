@@ -17,6 +17,9 @@ import { useTranslation } from 'next-i18next'
 
 
 const MyApp = ({ Component, pageProps }) => {
+
+  const { t } = useTranslation('translations')
+
   const [enabled, enable] = useAnalytics();
   const [loader,setLoader] = useState(false)
   
@@ -39,7 +42,7 @@ const MyApp = ({ Component, pageProps }) => {
 
   if (loader) return <Loader show={loader}/>
 
-  const { t } = useTranslation('translations')
+  
   
   return (
     <SearchProvider>

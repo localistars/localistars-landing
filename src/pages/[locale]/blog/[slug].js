@@ -3,6 +3,7 @@ import { getMDXComponent } from 'mdx-bundler/client';
 // import components from '~components/MDXComponents';
 // import BlogLayout from '~layouts/blog';
 import { getFiles, getLocaleFile } from '~lib/mdx';
+import { getAllFilesFrontMatter } from '~lib/mdx';
 import i18nConfig from '~next-i18next.config'
 import MdxBlogDetails from "~sections/Blog/BlogDetails/MdxBlogDetails";
 import StructureData from "~sections/Blog/BlogDetails/StructureData";
@@ -11,10 +12,9 @@ import FooterSection from "~sections/index/FooterTwo";
 import matter from 'gray-matter'
 import Head from 'next/head'
 
-export default function Blog({ code, frontMatter, posts }) {
+export default function Blog({ code, frontMatter, allPosts }) {
 
-  console.log(frontMatter)
-  console.log(posts)
+  console.log(allPosts)
 
   const Component = useMemo(() => getMDXComponent(code), [code]);
 
@@ -31,9 +31,10 @@ export default function Blog({ code, frontMatter, posts }) {
       {...frontMatter} 
       mdxComponent={<Component 
       /*components={components} */ 
-      posts={posts}
+      
 
-       />} />
+       />}
+       allPosts={allPosts} />
       <FooterSection/>
     </PageWrapper>
   )
@@ -66,14 +67,14 @@ export async function getStaticPaths() {
   
 }
 
-export async function getStaticProps(ctx ) {
-  
+export async function getStaticProps(ctx, allPosts ) {
+  const posts = await getAllFilesFrontMatter(`locales/${ctx?.params?.locale}/blog`);
   return {
     props: {
 
       // if using markdown
       ...await getLocaleFile(ctx?.params?.locale, `blog/${ctx?.params?.slug}`),
-
+      allPosts: posts,
 
 
     }

@@ -14,7 +14,7 @@ import {
   CommentsFormSection,
 } from "./Component";
 
-export default function MdxBlogDetails({ mdxComponent, title, date, image, alt, category, modified, readingTime }) {
+export default function MdxBlogDetails({ allPosts, mdxComponent, title, date, image, alt, category, modified, readingTime }) {
 
   const router = useRouter()
   const site = 'https://localistars.com'
@@ -127,7 +127,7 @@ export default function MdxBlogDetails({ mdxComponent, title, date, image, alt, 
               </Details.Box>
             </Col>
             <Col xs="12" className="col-xl-4 offset-xl-1 col-lg-5">
-              <Sidebar title={title} image={image} />
+              <Sidebar allPosts={allPosts} />
             </Col>
           </Row>
         </Container>

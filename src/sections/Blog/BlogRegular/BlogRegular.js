@@ -8,6 +8,7 @@ import SearchContext from "~context/SearchContext";
 
 
 export default function BlogRegular({ posts = [] }) {
+
   const searchContext = useContext(SearchContext);
   const searchValue = searchContext.searchValue
 
@@ -20,6 +21,7 @@ export default function BlogRegular({ posts = [] }) {
       (frontMatter.title || frontMatter.name).toLowerCase().includes(searchValue.toLowerCase())
     );
 
+    console.log(filteredBlogPosts)
 
   return (
     <Blog backgroundColor="#f9fafc">
@@ -46,6 +48,7 @@ export default function BlogRegular({ posts = [] }) {
               xs="12"
               className="col-lg-4 col-md-6 col-xs-9"
               key={"bsp" + index}
+              
             >
               <SlimBlogCard {...info} />
             </Col>
