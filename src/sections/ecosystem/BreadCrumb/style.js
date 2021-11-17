@@ -24,6 +24,7 @@ BreadCrumb.Title = styled(Heading)`
     letter-spacing: normal;
     line-height: 1.4423;
     margin-bottom: 17px;
+    margin-top: 2rem;
     @media (min-width:575px) {
       font-size: 35px;
     }
@@ -32,6 +33,10 @@ BreadCrumb.Title = styled(Heading)`
     }
     @media (min-width:992px) {
       font-size: 52px;
+    }
+    @media (max-width: 768px) {
+      margin-top: 5rem;
+       margin-bottom: 0;
     }
 `
 BreadCrumb.Text = styled(Paragraph)`

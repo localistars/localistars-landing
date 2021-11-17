@@ -45,6 +45,21 @@ Content.Image = styled(Box)`
         padding: 0 55px;
     }
 
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+`;
+
+Content.Image1 = styled(Box)`
+    @media (min-width:1400px) {
+        padding: 0 55px;
+    }
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
 `;
 
 

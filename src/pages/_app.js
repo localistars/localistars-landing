@@ -14,7 +14,8 @@ import CookieConsent from 'react-cookie-consent';
 import { useAnalytics } from '~lib/analytics';
 import Head from 'next/head'
 import { useTranslation } from 'next-i18next'
-
+import ScrollToTop from "react-scroll-to-top";
+import { FiArrowUp as MySVG } from 'react-icons/fi';
 
 const MyApp = ({ Component, pageProps }) => {
 
@@ -67,6 +68,18 @@ const MyApp = ({ Component, pageProps }) => {
             {t('cookietext')}{" "}
             
           </CookieConsent>
+          <ScrollToTop 
+          smooth 
+          style={{
+            backgroundColor:"#fff", 
+            width: "3rem", 
+            height: "3rem", 
+            borderRadius: "50%",
+            border: "1px solid #165c66"
+          }}
+          component={<MySVG style={{color:"#165c66", fontSize: "1.2rem",}} />}
+           >        
+          </ScrollToTop>
         </Layout>
       </GlobalHeaderProvider>
     </SearchProvider>

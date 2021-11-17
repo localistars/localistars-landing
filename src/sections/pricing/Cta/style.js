@@ -36,7 +36,12 @@ Cta.Shape = styled(Box)`
             max-width:100%;
         }
     }
+    @media (max-width: 768px) {
+        display: none;
+    }
 `
+
+
 Cta.Title = styled(Heading)`
     font-weight: 500;
     letter-spacing: -2px;

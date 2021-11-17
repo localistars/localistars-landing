@@ -27,9 +27,15 @@ export default function ContentSectionOne() {
               </Content.Button>
             </Col>
             <Col xs="12" className="col-xxl-5 col-lg-4 col-md-6 col-xs-9">
+              
               <Content.Image mt="30px" mb="30px" mbMD="0" mtMD="0">
                 <img src="/image/translator/look-for-translator.jpg" alt="Find the right translator"/>
               </Content.Image>
+
+              <Content.Image1 mt="30px" mb="30px" mbMD="0" mtMD="0">
+                <img src="/image/translator/look-for-translator-mobile.jpg" alt="Find the right translator"/>
+              </Content.Image1>
+
             </Col>
             <Col
               xs="12"

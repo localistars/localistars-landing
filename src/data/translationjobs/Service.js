@@ -5,7 +5,7 @@ const serviceData = {
   services: [
       {
         id:"ms1",
-        icon: "/image/marketing/archery-target.svg",
+        icon: "/image/translationjobs/archery-target.svg",
         iconColor: "#ffd166",
         title: "Direct Contact",
         text:
@@ -13,7 +13,7 @@ const serviceData = {
       },
       {
         id:"ms2",
-        icon: "/image/marketing/archery-target.svg",
+        icon: "/image/translationjobs/archery-target.svg",
         iconColor:"#96f7d2",
         title: "No risk",
         text:
@@ -21,7 +21,7 @@ const serviceData = {
       },
       {
         id:"ms3",
-        icon: "/image/marketing/money-coins.svg",
+        icon: "/image/translationjobs/money-coins.svg",
         iconColor:"#ffd166",
         title: "Invoicing",
         text:
@@ -29,7 +29,7 @@ const serviceData = {
       },
       {
         id:"ms3",
-        icon: "/image/marketing/money-coins.svg",
+        icon: "/image/translationjobs/money-coins.svg",
         iconColor:"#a9d2ff",
         title: "Get paid",
         text:
@@ -37,7 +37,7 @@ const serviceData = {
       },
       {
         id:"ms3",
-        icon: "/image/marketing/archery-target.svg",
+        icon: "/image/translationjobs/archery-target.svg",
         iconColor:"#ffd166",
         title: "Find new clients with ease",
         text:
@@ -45,7 +45,7 @@ const serviceData = {
       },
       {
         id:"ms3",
-        icon: "/image/marketing/money-coins.svg",
+        icon: "/image/translationjobs/money-coins.svg",
         iconColor:"#a9d2ff",
         title: "Keep the overview",
         text:

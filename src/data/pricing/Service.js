@@ -5,7 +5,7 @@ const serviceData = {
   services: [
       {
         id:"ms1",
-        icon: "/image/marketing/money-coins.svg",
+        icon: "/image/pricing/money-coins.svg",
         iconColor: "#ffd166",
         title: "For client",
         text:
@@ -13,7 +13,7 @@ const serviceData = {
       },
       {
         id:"ms2",
-        icon: "/image/marketing/money-coins.svg",
+        icon: "/image/pricing/money-coins.svg",
         iconColor:"#96f7d2",
         title: "For translators",
         text:

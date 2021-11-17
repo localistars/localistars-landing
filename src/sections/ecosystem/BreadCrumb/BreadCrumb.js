@@ -1,7 +1,7 @@
 import React from 'react'
 import BreadCrumb from './style'
 // import { StaticImage as Img } from 'gatsby-plugin-image'
-import BreadcrumbImage from "/public/image/mixed/inner-banner-shape.png"
+import BreadcrumbImage from "/public/image/ecosystem/inner-banner-shape.png"
 import { Col, Row, Container  } from 'react-bootstrap'
 import { SuperTag } from '~components'
 
@@ -19,7 +19,7 @@ return(
     </Row>
   </Container>
   <BreadCrumb.Image>
-    <img className="w-100" src={BreadcrumbImage.src} alt="shape"/>
+    <img className="w-100" src={BreadcrumbImage.src} alt="localistars ecosystem"/>
   </BreadCrumb.Image>
 </BreadCrumb>
 )

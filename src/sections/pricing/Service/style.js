@@ -5,6 +5,7 @@ const Service = styled(Box)`
     padding-top: 55px;
     padding-bottom: 55px;
     position: relative;
+    margin-top: 4rem;
 
     @media (min-width:768px) {
         padding-top: 70px;
@@ -39,7 +40,13 @@ Service.Shape = styled(Heading)`
     top: 26%;
     left: -6%;
     width: 10%;
+
+    @media (max-width:768px) {
+      display:  none;
+    }
+
 `
+
 Service.Text = styled(Paragraph)`
     font-size: 18px;
     font-weight: 400;

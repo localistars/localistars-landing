@@ -8,12 +8,16 @@ export default function ServiceSection() {
   return (
     <>
       <Service className="border-top border-default-color-2 bg-default">
+        
+
         <Service.Shape className="service-shape service-shape--l1">
           <img
-            src="/image/marketing/services-shape-l1.png"
-            alt="shape dot"
+            src="/image/pricing/localistars-pricing.png"
+            alt="localistars pricing"
           />
         </Service.Shape>
+
+
         <Container>
           {/* Section Title */}
           <Row className="align-items-end justify-content-center text-start">

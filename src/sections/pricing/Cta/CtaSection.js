@@ -9,9 +9,11 @@ const CtaSection = () => {
 return(
 <>
 <Cta className="cta-section cta-section--l1">
+
   <Cta.Shape className="footer__shape-1">
-    <img src="/image/marketing/footer-shape.png"  alt="cta shape" className="w-100"/>
+    <img src="/image/pricing/footer-shape.png"  alt="cta shape" className="w-100"/>
   </Cta.Shape>
+
   <Container>
     <Row className="justify-content-center">
       <Col className="col-lg-7 col-md-8 text-center">
