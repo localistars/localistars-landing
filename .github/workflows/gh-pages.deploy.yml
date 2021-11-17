@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
 
-    env:
-      NEXT_PUBLIC_BASE_PATH: /localistars-landing-new
+    # env:
+    #   NEXT_PUBLIC_BASE_PATH: /localistars-landing-new
 
 
     strategy:
@@ -33,6 +33,8 @@ jobs:
         run: npm run build
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
+      - name: Add CNAME file
+        run: echo new.localistars.com > ./CNAME
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
