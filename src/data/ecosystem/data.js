@@ -17,8 +17,6 @@ const portfolioData = [
         id:"2",
         tagName: ["all","marketing","development"],
         href: "https://www.i18next.com/",
-    },
-  
-
+    }
 ]
 export default portfolioData;

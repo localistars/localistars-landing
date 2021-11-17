@@ -17,13 +17,11 @@ const ProcessData = [
     title: "Update your personal profile",
     text: "To find a first translation job - fill your search criteria. Your language pairs.",
   },
-   {
+  {
     id: "sp4",
     icon: "4",
     title: "Having an organization",
     text: "Providing an organization is mandatory. A contract is legally between your organization and the service requesting organization..",
-  },
-   
-   
+  }
 ];
 export default ProcessData;

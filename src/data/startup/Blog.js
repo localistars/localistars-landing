@@ -1,7 +1,9 @@
+import prefix from '~lib/prefix';
+
 const BlogData = [
   {
     id: "bg1",
-    image: "image/home-startup/blogs-img-1.png",
+    image: `${prefix}/image/home-startup/blogs-img-1.png`,
     badge: "Gadgets",
     date: "01 June, 2020",
     title:
@@ -11,7 +13,7 @@ const BlogData = [
   },
   {
     id: "bg2",
-    image: "image/home-startup/blogs-img-2.png",
+    image: `${prefix}/image/home-startup/blogs-img-2.png`,
     badge: "Gadgets",
     date: "01 June, 2020",
     title:
@@ -21,7 +23,7 @@ const BlogData = [
   },
   {
     id: "bg3",
-    image: "image/home-startup/blogs-img-3.png",
+    image: `${prefix}/image/home-startup/blogs-img-3.png`,
     badge: "Gadgets",
     date: "01 June, 2020",
     title:

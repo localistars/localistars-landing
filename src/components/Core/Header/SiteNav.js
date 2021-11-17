@@ -3,8 +3,9 @@ import { Navbar } from "react-bootstrap"
 // import siteBrandDark from "./image/logo/logo-black.png"
 // import siteBrandLight from "./image/logo/logo-white.png"
 import Menu from "./Menu"
-const SiteNavbar = ({buttonBlock,darkLogo,customLogo,defaultLogo}) => {
+import prefix from '~lib/prefix';
 
+const SiteNavbar = ({buttonBlock,darkLogo,customLogo,defaultLogo}) => {
   return (
     <>
       <Navbar
@@ -19,7 +20,7 @@ const SiteNavbar = ({buttonBlock,darkLogo,customLogo,defaultLogo}) => {
           {defaultLogo ? (<img src={defaultLogo} alt="site-brand"/>) : customLogo ? (
             <img src={customLogo} alt="localistars logo" />
           ) : (
-            <img src={darkLogo ? "/image/logo/logo-black.png" : "/image/logo/logo-white.png"} alt="localistars logo"/>
+            <img src={darkLogo ? `${prefix}/image/logo/logo-black.png` : `${prefix}/image/logo/logo-white.png`} alt="localistars logo"/>
           )}
         </Navbar.Brand>
         <Navbar.Toggle

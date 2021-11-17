@@ -1,9 +1,10 @@
+import prefix from '~lib/prefix';
 
 const TestimonialData = {
   testimonial: [
     {
       id: "ts1",
-      image: "image/it-services/user-circle-1.png",
+      image: `${prefix}/image/it-services/user-circle-1.png`,
       icon: "fa fa-quote-left",
       userName: "Design & Vreatives",
       userPosition: "One year with us",
@@ -11,7 +12,7 @@ const TestimonialData = {
     },
     {
       id: "ts2",
-      image: "image/it-services/user-circle-2.png",
+      image: `${prefix}/image/it-services/user-circle-2.png`,
       icon: "fa fa-quote-left",
       userName: "John Doe",
       userPosition: "One year with us",
@@ -19,7 +20,7 @@ const TestimonialData = {
     },
     {
       id: "ts3",
-      image: "image/it-services/user-circle-3.png",
+      image: `${prefix}/image/it-services/user-circle-3.png`,
       icon: "fa fa-quote-left",
       userName: "Charles Patterson",
       userPosition: "One year with us",
@@ -27,7 +28,7 @@ const TestimonialData = {
     },
     {
       id: "ts3",
-      image: "image/it-services/user-circle-4.png",
+      image: `${prefix}/image/it-services/user-circle-4.png`,
       icon: "fa fa-quote-left",
       userName: "Charles Patterson",
       userPosition: "One year with us",
@@ -35,7 +36,7 @@ const TestimonialData = {
     },
     {
       id: "ts3",
-      image: "image/it-services/user-circle-5.png",
+      image: `${prefix}/image/it-services/user-circle-5.png`,
       icon: "fa fa-quote-left",
       userName: "Charles Patterson",
       userPosition: "One year with us",
@@ -43,7 +44,7 @@ const TestimonialData = {
     },
     {
       id: "ts3",
-      image: "image/it-services/user-circle-6.png",
+      image: `${prefix}/image/it-services/user-circle-6.png`,
       icon: "fa fa-quote-left",
       userName: "Charles Patterson",
       userPosition: "One year with us",

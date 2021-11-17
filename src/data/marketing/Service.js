@@ -1,11 +1,13 @@
 // import servicesIcon1 from "~image/marketing/athletics.svg";
 // import servicesIcon2 from "~image/marketing/archery-target.svg";
 // import servicesIcon3 from "~image/marketing/money-coins.svg";
+import prefix from '~lib/prefix';
+
 const serviceData = {
   services: [
       {
         id:"ms1",
-        icon: "/image/marketing/archery-target.svg",
+        icon: `${prefix}/image/marketing/archery-target.svg`,
         iconColor: "#ffd166",
         title: "Manage Smartly",
         text:
@@ -13,7 +15,7 @@ const serviceData = {
       },
       {
         id:"ms2",
-        icon: "/image/marketing/archery-target.svg",
+        icon: `${prefix}/image/marketing/archery-target.svg`,
         iconColor:"#96f7d2",
         title: "Communicate Fast",
         text:
@@ -21,7 +23,7 @@ const serviceData = {
       },
       {
         id:"ms3",
-        icon: "/image/marketing/money-coins.svg",
+        icon: `${prefix}/image/marketing/money-coins.svg`,
         iconColor:"#a9d2ff",
         title: "Influence Easily",
         text:
