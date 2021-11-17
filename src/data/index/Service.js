@@ -1,9 +1,10 @@
+import prefix from '~lib/prefix';
 
 const serviceData = {
   services: [
       {
         id:"ms1",
-        icon: "/image/index/archery-target.svg",
+        icon: `${prefix}/image/index/archery-target.svg`,
         iconColor: "#ffd166",
         title: "Competitive pricing",
         text:
@@ -11,7 +12,7 @@ const serviceData = {
       },
       {
         id:"ms2",
-        icon: "/image/index/athletics.svg",
+        icon: `${prefix}/image/index/athletics.svg`,
         iconColor:"#96f7d2",
         title: "Define your language pair",
         text:
@@ -19,7 +20,7 @@ const serviceData = {
       },
       {
         id:"ms3",
-        icon: "/image/index/money-coins.svg",
+        icon: `${prefix}/image/index/money-coins.svg`,
         iconColor:"#a9d2ff",
         title: "High quality",
         text:

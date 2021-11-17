@@ -1,12 +1,14 @@
 import React from "react"
 import ImageGroup from "./style"
+import prefix from '~lib/prefix';
+
 const FeatureImages = ({ mainImage }) => {
   return (
     <>
       <ImageGroup>
         <div className="main">
         <img
-          src="/image/index/locize-localistars.gif"
+          src={`${prefix}/image/index/locize-localistars.gif`}
           alt="feature tab"
           className="w-100"
         />
@@ -14,7 +16,7 @@ const FeatureImages = ({ mainImage }) => {
 
         <div className="shape">
           <img
-            src="/image/index/l2-feature-shape.png"
+            src={`${prefix}/image/index/l2-feature-shape.png`}
             alt="shape"
           />
         </div>
