@@ -14,15 +14,15 @@ export default function HeroSection() {
           {/* Welcome content Area */}
           <Col className="col-xxl-6 col-lg-7 col-md-9 col-xs-11 order-2 order-lg-1">
             <Hero.Content>
-              <Hero.SubTitle fontColor="rgba(38, 39, 41, 0.7)" as="h3">
+              <Hero.SubTitle fontColor="#b9b7b9" as="h3">
                 {t('indexHeroTitle')}
               </Hero.SubTitle>
-              <Hero.Title as="h1">
+              <Hero.Title fontColor="#d8d7d8" as="h1">
                 We connect clients{" "}
                 <br className="d-none d-xs-block d-lg-none d-xl-block" />
                 with translators
               </Hero.Title>
-              <Hero.Text fontColor="rgba(38, 39, 41, 0.7)">
+              <Hero.Text fontColor="#b9b7b9">
                 localistars is the go-to marketplace for clients and translators to get translation jobs done. {" "}
                 <br className="d-none d-md-block" />
                   As client you'll find translators and as translator you'll find translation jobs.
@@ -46,8 +46,12 @@ export default function HeroSection() {
           >
             <Hero.ImageGroup>
               <Hero.ImageOne>
-                <img src="/image/home-app/hero-l8-1.png" alt="content"/>
+                <img src="/image/index/translation-company.png" alt="content" />
               </Hero.ImageOne>
+
+              <Hero.ImageTwo>
+                <img src="/image/index/translation-company-300.png" alt="content" />
+              </Hero.ImageTwo>
               
             </Hero.ImageGroup>
           </Col>

@@ -139,10 +139,18 @@ Hero.ImageOne = styled(Box)`
   @media (min-width: 992px) {
     bottom: -110px !important;
   }
+
+  @media (max-width: 768px){
+    display:none;
+  }
 `;
 Hero.ImageTwo = styled(Box)`
-  width: 50% !important;
-  margin-bottom: -7px;
+  width: 100% !important;
+  margin-top: 5rem;
+
+  @media (min-width: 768px){
+    display:none;
+  }
 `;
 
 Hero.Box = styled(Box)``;

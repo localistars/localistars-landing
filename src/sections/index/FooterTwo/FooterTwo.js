@@ -4,11 +4,13 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Footer from "./style"
 import i18nextConfig from '~next-i18next.config'
 import { useRouter } from 'next/router'
+import { useTranslation } from 'next-i18next'
 
 export default function FooterTwo() {
     const router = useRouter()
     const currentLocale = router.query.locale || i18nextConfig.i18n.defaultLocale
-
+    const { t } = useTranslation('translations')
+    
     return(
      <Footer>
         <Container>
@@ -23,7 +25,8 @@ export default function FooterTwo() {
                         </Link>
                     </Footer.Box>
                     <Footer.Text mb="36px">
-                    We’re a translation marketplace for companies searching for a translatior as well as for freelance translators who are looking for a job.</Footer.Text>
+                    {t('footerDesc')}
+                    </Footer.Text>
 
                 </Footer.Widgets>
                 </Col>
@@ -31,19 +34,18 @@ export default function FooterTwo() {
                 <Row>
                     <Col xs="12" className="col-md-4 col-xs-6">
                     <Footer.Widgets>
-                        <Footer.Title>More</Footer.Title>
+                        <Footer.Title>{t('footerMore')}</Footer.Title>
                         <Footer.List>
                             
                             <Footer.ListItems>
-                                <Link to="/privacy">Privacy
-                                Policy</Link>
+                                <Link to="/privacy">
+                                 {t('footerPP')}</Link>
                             </Footer.ListItems>
                             <Footer.ListItems>
-                                <Link to="/terms">Terms &amp;
-                                Conditions</Link>
+                                <Link to="/terms"> {t('footerTerms')}</Link>
                             </Footer.ListItems>
                             <Footer.ListItems>
-                                <Link to="/pricing">Pricing</Link>
+                                <Link to="/pricing">{t('footerPricing')}</Link>
                             </Footer.ListItems>
                             <Footer.ListItems>
                                 <Link to="/blog">Blog</Link>
@@ -64,13 +66,13 @@ export default function FooterTwo() {
                     </Col>
                     <Col xs="12" className="col-md-4 col-xs-6">
                         <Footer.Widgets>
-                            <Footer.Title>Contact Details</Footer.Title>
+                            <Footer.Title>{t('footerContact')}</Footer.Title>
                             <Footer.Address className="widgets-address">
                                 <Footer.AddressItem>
                                     <i className="fa fa-map-marker-alt" />
                                     <span>inweso GmbH
                                     <br className="d-block" />
-                                    Switzerland 🇨🇭</span>
+                                    {t('footerSwiss')} 🇨🇭</span>
                                 </Footer.AddressItem>
                                 
                                 <Footer.AddressItem>
@@ -82,8 +84,8 @@ export default function FooterTwo() {
                     </Col>
                     <Col xs="12" className="col-md-4 col-xs-7">
                     <Footer.Widgets>
-                        <Footer.Title>Follow us on social media</Footer.Title>
-                        <Footer.Text>Get the latest trends updates right at your inbox.</Footer.Text>
+                        <Footer.Title>{t('footerSMTitle')}</Footer.Title>
+                        <Footer.Text>{t('footerSMText')}</Footer.Text>
                         <Footer.SocialShare>
                             <Footer.Box  pt="11px" pb="30px">
                                 <Footer.SocialShare>
@@ -114,7 +116,7 @@ export default function FooterTwo() {
             </Row>
             </Footer.Box>
             <Footer.Copyright>
-            <Footer.CopyrightText><div>©{(new Date().getFullYear())} inweso GmbH. All Rights Reserved.</div></Footer.CopyrightText>
+            <Footer.CopyrightText><div>©{(new Date().getFullYear())} inweso GmbH. {t('footerRights')}.</div></Footer.CopyrightText>
             </Footer.Copyright>
         </Container>
         </Footer>

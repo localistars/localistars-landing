@@ -1,9 +1,5 @@
 {
-  "heroStart": "Stop waiting. Grow your",
-  "heroEndings": [
-    "agency.",
-    "business."
-  ],
+  
   "indexHeroTitle" : "Translation Marketplace",
   "menu": {
     "translator": "Find a translator",
@@ -11,8 +7,7 @@
     "pricing": "Pricing",
     
   }, 
-  "blogReadTime": "readtime",
-
+  
   "errortitle" : "Page not found",
   "errortext" : "The page you are looking for is not available or doesn't belong to this website!",
   "errorbtn" : "Back to online translation services",
@@ -20,7 +15,26 @@
 
   "cookieaccept" : "Accept",
   "cookiedecline" : "Decline",
-  "cookietext" : "Diese Webseite verwendet Cookies"
+  "cookietext" : "Diese Webseite verwendet Cookies",
   
+  "sidebarTitle" : "Recent Posts",
+  "sidebarCategory" : "Categories",
+
+  "footerDesc" : "We’re a translation marketplace for companies searching for a translatior as well as for freelance translators who are looking for a job.",
+  "footerPP": "Privacy Policy",
+  "footerTerms": "Terms & Conditions",
+  "footerPricing": "Pricing",
+  "footerSMText": "Get the latest trends updates right at your inbox.",
+  "footerMore" : "More",
+  "footerContact" : "Contact", 
+  "footerSMTitle" : "Follow us on social media",
+  "footerSwiss" : "Switzerland",
+  "footerRights" : "All Rights Reserved",
+
+  "blogTitle" : "Latest posts",
+  "blogReadTime": "readtime",
+  "blogNotFound" : "No posts found",
+  "blogShare" : "Teilen"
+ 
   
 }

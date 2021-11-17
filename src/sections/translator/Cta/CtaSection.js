@@ -1,7 +1,7 @@
 import React from "react";
 import Cta from "./style";
 import { Col, Container, Row } from "react-bootstrap";
-import ctal5Img from "../../../../public/image/home-agency/promo-l5-img.png";
+import ctal5Img from "../../../../public/image/translator/signup.png";
 
 export default function CtaSection({ ...rest }) {
   return (

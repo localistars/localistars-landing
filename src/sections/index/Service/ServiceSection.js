@@ -10,7 +10,7 @@ export default function ServiceSection() {
       <Service className="border-top border-default-color-2 bg-default">
         <Service.Shape className="service-shape service-shape--l1">
           <img
-            src="/image/marketing/services-shape-l1.png"
+            src="/image/index/services-shape-l1.png"
             alt="shape dot"
           />
         </Service.Shape>

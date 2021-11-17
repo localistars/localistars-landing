@@ -128,7 +128,7 @@ Footer.AddressItem = styled(Box).attrs({className:"list-items", as:"li"})
         margin-top: 7px;
         font-size: 20px;
         width: 35px;
-        color: #ff4057;
+        color: #165c66;
     }
     span{
         color: rgba(38, 39, 41, 0.7) !important;
@@ -208,7 +208,7 @@ Footer.SocialShareItem = styled(Box).attrs({className:"list-items", as:"li"})
         transition: 0.4s;
         &:hover{
             box-shadow: 0 10px 20px rgba(253 52 110, 0.25);
-            background-color: #ff5722;
+            background-color: #165c66;
             color: #fff;
         }
     }

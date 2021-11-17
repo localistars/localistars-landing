@@ -35,10 +35,14 @@ Service.Title = styled(Heading)`
     }
 `
 Service.Shape = styled(Heading)`
-     position: absolute;
-    top: 26%;
-    left: -6%;
-    width: 10%;
+        position: absolute;
+        top: 26%;
+        left: -6%;
+        width: 10%;
+    
+    @media (max-width: 768px) {
+        display: none;
+    }
 `
 Service.Text = styled(Paragraph)`
     font-size: 18px;

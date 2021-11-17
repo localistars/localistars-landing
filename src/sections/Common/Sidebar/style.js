@@ -124,6 +124,11 @@ SideBar.TwitterList = styled(Box)`
 `
 SideBar.CateGory = styled(Box)`
 `
+SideBar.CateGoryWrapper = styled(Box)`
+    display:  flex;
+    justify-content: space-between;
+`
+
 SideBar.CateGoryTitle = styled(Heading)`
     font-size: 18px;
     font-weight: 500;

@@ -4,6 +4,7 @@ import Hero from "./style";
 import Video from "~components/VideoModal";
 import { Link } from "~components";
 
+
 export default function HeroSection({ ...rest }) {
   return (
     <Hero backgroundColor="#e6f8f9" {...rest}>
@@ -44,12 +45,12 @@ export default function HeroSection({ ...rest }) {
               mbLG="0"
             >
               <img
-                src="/image/home-startup/hero-img.png"
+                src="/image/translationjobs/teaser.png"
                 alt="content"
                 className="w-100"
               />
               {/* Video Button */}
-              <Video id="LWZ7iytIA6k" className="video-btn">
+              <Video id="e6Ede8hdU8c" className="video-btn">
                 <i className="fa fa-play" />
               </Video>
             </Hero.Video>

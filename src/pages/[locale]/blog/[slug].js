@@ -14,7 +14,7 @@ import Head from 'next/head'
 
 export default function Blog({ code, frontMatter, allPosts }) {
 
-  console.log(allPosts)
+  
 
   const Component = useMemo(() => getMDXComponent(code), [code]);
 

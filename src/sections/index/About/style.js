@@ -21,9 +21,25 @@ About.ImageContent = styled(Box)`
     margin-bottom: 30px;
     position: relative;
     z-index: 1;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `
+About.ImageContent2 = styled(Box)`
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    width: 70%;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+`
+
 About.Shape = styled(Box)`
     position: absolute;
     top: 50%;

@@ -28,13 +28,13 @@ return(
           <SectionTitle 
             subTitle="Watch video" 
             title="localistars is also integrated in locize"
-            text="Check out how the locize integrates localistars."
+            text="Check out how localistars can be integrated into our localization management platform locize visit the video or get more information about locize at the ecosystem overview."
             titleProps={{mb:"30px"}}
             subTitleProps={{mb:"25px"}}
             />
           <Video.ButtonGroup mt="25px">
             <Video.Button className="btn-primary btn-1" as={Link} target="_blank" href="https://docs.locize.com/guides-tips-and-tricks/working-with-translators/localistars">Learn more</Video.Button>
-            <Video.Button className="btn-electric-violet-2 btn-2"  as={Link} to="/blog">Blog</Video.Button>
+            <Video.Button className="btn-electric-violet-2 btn-2"  as={Link} to="/ecosystem">Ecosystem</Video.Button>
           </Video.ButtonGroup>
         </Video.Content>
       </Col>

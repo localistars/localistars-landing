@@ -5,7 +5,7 @@ import Blog from "./style";
 import BlogCard from "./Comonent/Card";
 import SlimBlogCard from "./Comonent/Card/SlimCard";
 import SearchContext from "~context/SearchContext";
-
+import { useTranslation } from 'next-i18next'
 
 export default function BlogRegular({ posts = [] }) {
 
@@ -21,6 +21,8 @@ export default function BlogRegular({ posts = [] }) {
       (frontMatter.title || frontMatter.name).toLowerCase().includes(searchValue.toLowerCase())
     );
 
+  const { t } = useTranslation('translations')
+
     console.log(filteredBlogPosts)
 
   return (
@@ -30,7 +32,7 @@ export default function BlogRegular({ posts = [] }) {
           <Col className="col-xl-8 text-center">
             <Blog.Box mb="63px">
               <Blog.Subtitle as="h6" fontColor="#5034fc">
-                Latest posts
+                {t('blogTitle')}
               </Blog.Subtitle>
               <Blog.Title as="h2">Localistars Blog</Blog.Title>
             </Blog.Box>
@@ -40,7 +42,7 @@ export default function BlogRegular({ posts = [] }) {
           
           {!filteredBlogPosts.length && 
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              No posts found.
+              {t('blogNotFound')}.
             </p>
           }
           {filteredBlogPosts.map((info, index) => (

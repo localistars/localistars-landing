@@ -38,11 +38,18 @@ export default function AboutSection() {
             className="col-xxl-6 col-lg-4 col-md-8 col-xs-9 order-1 order-lg-2 text-center"
           >
             <About.ImageContent>
-              <img src="/image/index/about-mobile-img.png" alt="content"/>
+              <img src="/image/index/about-mobile-img1.png" alt="about mobile"/>
               <About.Shape>
-                <img src="/image/index/green-shape.png" alt="content"/>
+                <img src="/image/index/green-shape.png" alt="green shape"/>
               </About.Shape>
            </About.ImageContent>
+
+           <About.ImageContent2>
+              <img src="/image/index/about-mobile-img-350.png" alt="about mobile"/>
+              <About.Shape>
+                <img src="/image/index/green-shape-300.png" alt="shape"/>
+              </About.Shape>
+           </About.ImageContent2>
           </Col>
           <Col className="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-3">
             <Widget

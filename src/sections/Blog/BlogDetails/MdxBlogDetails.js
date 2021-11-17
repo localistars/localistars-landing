@@ -79,7 +79,7 @@ export default function MdxBlogDetails({ allPosts, mdxComponent, title, date, im
 
                 <Details.Tag mt="30px">
                   <Details.SubTitle mr="25px" as="h4">
-                    Share:
+                    {t('blogShare')}:
                   </Details.SubTitle>
                   <Details.SocialList>
                     <li>
@@ -110,6 +110,9 @@ export default function MdxBlogDetails({ allPosts, mdxComponent, title, date, im
 
                   </Details.SocialList>
                 </Details.Tag>
+                
+
+                {/*
                 <Details.Pagination mt="30px" mtLG="75px" mb="50px">
                   <Details.PrevButton>
                     <Link className="btn-link" to="/">
@@ -123,7 +126,8 @@ export default function MdxBlogDetails({ allPosts, mdxComponent, title, date, im
                       <i className="fa fa-arrow-right" />
                     </Link>
                   </Details.NextButton>
-                </Details.Pagination>
+                </Details.Pagination>*/}
+
               </Details.Box>
             </Col>
             <Col xs="12" className="col-xl-4 offset-xl-1 col-lg-5">

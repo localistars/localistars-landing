@@ -19,6 +19,7 @@ return(
            
           </Cta.Box>
         </Cta.Box>
+        <hr />
       </Col>
     </Row>
   </Container>

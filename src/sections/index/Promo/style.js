@@ -28,6 +28,10 @@ const Promo = styled(Box)`
 `;
 
 Promo.Image = styled(Box)`
+  
+   @media (max-width: 768px) 
+   {display:none;}
+
   @media (min-width: 1200px) {
     position: absolute;
     bottom: -7px;
@@ -38,6 +42,20 @@ Promo.Image = styled(Box)`
     left: 10%;
   }
 `;
+
+Promo.Image1 = styled(Box)`
+  display:none;
+
+
+
+   @media (max-width: 768px) 
+   {
+    display:block;
+  }
+
+  
+`;
+
 Promo.Content = styled(Box)`
   background-image: linear-gradient(
     90deg,

@@ -1,9 +1,5 @@
 {
-  "heroStart": "Hör auf zu warten. Vergrössere dein",
-  "heroEndings": [
-    "Geschäft.",
-    "Business."
-  ], 
+  
   "indexHeroTitle" : "Übersetzungsmarktplatz",
   "menu": {
     "translator": "Finde einen Übersetzer",
@@ -11,7 +7,6 @@
     "pricing": "Preise"
     
   }, 
-  "blogReadTime": "Lesezeit",
 
   "errortitle" : "Seite nicht gefunden",
   "errortext" : "Es tut uns Leid, die Webseite nach der Sie gesucht haben exisiert nicht.",
@@ -20,5 +15,25 @@
 
   "cookieaccept" : "Akzeptieren",
   "cookiedecline" : "Ablehnen",
-  "cookietext" : "This website uses cookies to enhance the user experience"
+  "cookietext" : "This website uses cookies to enhance the user experience",
+
+  "sidebarTitle" : "Aktuelle Beiträge",
+  "sidebarCategory" : "Kategorien",
+
+  "footerDesc" : "Wir sind ein Übersetzungsmarktplatz für Unternehmen, die einen Übersetzer suchen, sowie für freiberufliche Übersetzer, die einen Job suchen.",
+  "footerPP": "Datenschutz",
+  "footerTerms": "AGB",
+  "footerPricing": "Preise",
+  "footerSMText": "Holen Sie sich die neuesten Trends direkt in Ihren Posteingang.",
+  "footerMore" : "Mehr",
+  "footerContact" : "Kontakt", 
+  "footerSMTitle" : "Folge uns auf Social Media",
+  "footerSwiss" : "Schweiz",
+  "footerRights" : "Alle Rechte vorbehalten",
+
+  "blogTitle" : "Aktuelle Beiträge",
+  "blogReadTime": "Lesezeit",
+  "blogNotFound" : "Keine aktuellen Beiträge",
+  "blogShare" : "Teilen"
+
 }

@@ -5,9 +5,23 @@ import offerImage from "../../../../public/image/mixed/ads-img.png";
 import SideBar from "./style";
 import { Link } from "~components";
 import SearchContext from "~context/SearchContext";
+import { useTranslation } from 'next-i18next'
 
 export default function SideBarSection({ allPosts }) {
 
+const categories = allPosts
+    .map(category => category.category)
+    .filter((x, index, array) => array.indexOf(x) === index );
+
+    const counts = categories
+      .map(x => ({
+      type: x,
+      count: allPosts.filter(item => item.category === x).length
+            }));
+
+console.log(counts)
+
+const { t } = useTranslation('translations')
 
   return (
     <SideBar>
@@ -15,7 +29,7 @@ export default function SideBarSection({ allPosts }) {
       {/* Single Widgets */}
       <SideBar.Widgets>
 
-      <SideBar.Title>Recent Posts</SideBar.Title>
+      <SideBar.Title>{t('sidebarTitle')}</SideBar.Title>
 
       {!allPosts.length && 
             <p className="text-gray-600 dark:text-gray-400 mb-4">
@@ -41,64 +55,26 @@ export default function SideBarSection({ allPosts }) {
         </SideBar.RecentPost>
           ))}
            
-   
-        
       </SideBar.Widgets>
       {/*/ Single Widgets */}
       
       {/* Single Widgets */}
       <SideBar.Widgets>
-        <SideBar.Title>Categories</SideBar.Title>
+        <SideBar.Title>{t('sidebarCategory')}</SideBar.Title>
 
-        { allPosts.map((post, index) => (
-
+        { counts.map((x, index) => (
 
         <SideBar.CateGory>
           <SideBar.CateGorySingle>
 
-
+            <SideBar.CateGoryWrapper>
+              <SideBar.CateGoryTitle>{x.type}</SideBar.CateGoryTitle>
+              <SideBar.CateGoryCount as="span">
+              { x.count } { x.count = 1 ? 'post' : posts }
+              </SideBar.CateGoryCount>
+            </SideBar.CateGoryWrapper>
+          </SideBar.CateGorySingle>
           
-
-
-            <Link to="#">
-              <SideBar.CateGoryTitle>{post.category}</SideBar.CateGoryTitle>
-              <SideBar.CateGoryCount as="span">20 posts</SideBar.CateGoryCount>
-            </Link>
-          </SideBar.CateGorySingle>
-          <SideBar.CateGorySingle>
-            <Link to="#">
-              <SideBar.CateGoryTitle>Freelancing:</SideBar.CateGoryTitle>
-              <SideBar.CateGoryCount as="span">07 posts</SideBar.CateGoryCount>
-            </Link>
-          </SideBar.CateGorySingle>
-          <SideBar.CateGorySingle>
-            <Link to="#">
-              <SideBar.CateGoryTitle>Writing:</SideBar.CateGoryTitle>
-              <SideBar.CateGoryCount as="span">16 posts</SideBar.CateGoryCount>
-            </Link>
-          </SideBar.CateGorySingle>
-          <SideBar.CateGorySingle>
-            <Link to="#">
-              <SideBar.CateGoryTitle>Marketing:</SideBar.CateGoryTitle>
-              <SideBar.CateGoryCount as="span">11 posts</SideBar.CateGoryCount>
-            </Link>
-          </SideBar.CateGorySingle>
-          <SideBar.CateGorySingle>
-            <Link to="#">
-              <SideBar.CateGoryTitle>Business:</SideBar.CateGoryTitle>
-              <SideBar.CateGoryCount as="span">35 posts</SideBar.CateGoryCount>
-            </Link>
-          </SideBar.CateGorySingle>
-          <SideBar.CateGorySingle>
-            <Link to="#">
-              <SideBar.CateGoryTitle>Education:</SideBar.CateGoryTitle>
-              <SideBar.CateGoryCount as="span">14 posts</SideBar.CateGoryCount>
-            </Link>
-
-
-            
-
-          </SideBar.CateGorySingle>
         </SideBar.CateGory>
 
               ))}
@@ -112,4 +88,4 @@ export default function SideBarSection({ allPosts }) {
       
     </SideBar>
   );
-}
+} 

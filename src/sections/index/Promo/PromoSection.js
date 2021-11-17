@@ -15,8 +15,14 @@ export default function CtaSection() {
             className="col-xxl-6 col-xl-5 col-lg-5 col-md-7 col-xs-9"
           >
             <Promo.Image>
-              <img src="/image/home-app/promo-l8-img.png" alt="content" placeholder="blur" />
+              <img src="/image/index/promo-l8-img.png" alt="man watch localistars" placeholder="blur" />
+
             </Promo.Image>
+
+            <Promo.Image1>
+              <img src="/image/index/man-350.png" alt="man watch localistars 350" placeholder="blur" />
+               
+            </Promo.Image1>
           </Col>
           <Col className="col-xxl-6 col-xl-7 col-lg-8 col-md-10">
             <Promo.Content>
