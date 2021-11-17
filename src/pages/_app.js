@@ -13,9 +13,10 @@ import { appWithTranslation } from 'next-i18next'
 import CookieConsent from 'react-cookie-consent';
 import { useAnalytics } from '~lib/analytics';
 import Head from 'next/head'
-import { useTranslation } from 'next-i18next'
+import { useTranslation, Trans } from 'next-i18next'
 import ScrollToTop from "react-scroll-to-top";
 import { FiArrowUp as MySVG } from 'react-icons/fi';
+import Link from "~components/Core/Link";
 
 const MyApp = ({ Component, pageProps }) => {
 
@@ -42,8 +43,6 @@ const MyApp = ({ Component, pageProps }) => {
   };
 
   if (loader) return <Loader show={loader}/>
-
-  
   
   return (
     <SearchProvider>
@@ -65,8 +64,12 @@ const MyApp = ({ Component, pageProps }) => {
             expires={360}
             onAccept={() => enable()}
           >
-            {t('cookietext')}{" "}
-            
+            <Trans i18nKey="cookietext">
+              This website uses cookies to enhance the user experience.
+              <Link to="/privacy">
+                learn more
+              </Link>
+            </Trans>
           </CookieConsent>
           <ScrollToTop 
           smooth 

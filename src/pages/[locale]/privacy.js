@@ -28,9 +28,9 @@ export default function Privacy() {
   return (
     <PageWrapper headerConfig={header}>
       <Head>
-      <title>Privacy Policy | localistars</title>
-       <meta name="description" content="Privacy Policy | localistars" />
-       </Head>
+        <title>Privacy Policy | localistars</title>
+        <meta name="description" content="Privacy Policy | localistars" />
+      </Head>
       <PrivacyPolicy />
       <FooterTwo />
     </PageWrapper>

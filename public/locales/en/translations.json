@@ -1,25 +1,19 @@
 {
-  
   "indexHeroTitle" : "Translation Marketplace",
   "menu": {
     "translator": "Find a translator",
     "translationjob": "Find a translation job",
-    "pricing": "Pricing",
-    
+    "pricing": "Pricing"
   }, 
-  
   "errortitle" : "Page not found",
   "errortext" : "The page you are looking for is not available or doesn't belong to this website!",
   "errorbtn" : "Back to online translation services",
   "errorbtnsec" : "Find a translator",
-
   "cookieaccept" : "Accept",
   "cookiedecline" : "Decline",
-  "cookietext" : "Diese Webseite verwendet Cookies",
-  
+  "cookietext" : "This website uses cookies to ensure you get the best experience on our website. <1>learn more</1>",
   "sidebarTitle" : "Recent Posts",
   "sidebarCategory" : "Categories",
-
   "footerDesc" : "We’re a translation marketplace for companies searching for a translatior as well as for freelance translators who are looking for a job.",
   "footerPP": "Privacy Policy",
   "footerTerms": "Terms & Conditions",
@@ -30,11 +24,8 @@
   "footerSMTitle" : "Follow us on social media",
   "footerSwiss" : "Switzerland",
   "footerRights" : "All Rights Reserved",
-
   "blogTitle" : "Latest posts",
   "blogReadTime": "readtime",
   "blogNotFound" : "No posts found",
   "blogShare" : "Teilen"
- 
-  
 }
