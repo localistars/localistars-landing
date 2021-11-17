@@ -19,8 +19,6 @@ const categories = allPosts
       count: allPosts.filter(item => item.category === x).length
             }));
 
-console.log(counts)
-
 const { t } = useTranslation('translations')
 
   return (

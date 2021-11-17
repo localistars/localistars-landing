@@ -104,9 +104,10 @@ Cta.NewsletterFromGroup = styled(Box)`
         background-color: #ff7043;
         border-color: #ff6838;
         border-radius:10px;
-        color:#fff;
+        color: #fff !important;
         margin-top:10px;
     }
+    
 `
 
 export default Cta;

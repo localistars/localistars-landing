@@ -23,8 +23,6 @@ export default function BlogRegular({ posts = [] }) {
 
   const { t } = useTranslation('translations')
 
-    console.log(filteredBlogPosts)
-
   return (
     <Blog backgroundColor="#f9fafc">
       <Container>
