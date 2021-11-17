@@ -35,13 +35,15 @@ export async function getFileBySlug(type, slug) {
   const fPath = slug
     ? join(process.cwd(), 'src', 'data', type, `${slug}.mdx`)
     : join(process.cwd(), 'src', 'data', `${type}.mdx`);
-  const source = readFileSync(fPath, 'utf8');
+  let source = readFileSync(fPath, 'utf8');
+  if (prefix) {
+    source = source
+      .replace(/'\/image\//g, `'${prefix}/image/`)
+      .replace(/href="\//g, `href="${prefix}/`)
+  }
 
   const { code, frontmatter } = await bundleMDX(source, {
     xdmOptions(options) {
-      if (prefix) {
-        options.baseUrl = prefix;
-      }
       options.remarkPlugins = [...(options?.remarkPlugins ?? []), remarkGfm];
       options.rehypePlugins = [
         ...(options?.rehypePlugins ?? []),
