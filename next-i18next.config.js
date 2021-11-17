@@ -3,6 +3,6 @@ module.exports = {
     defaultLocale: 'en',
     locales: ['en', 'de'],
     defaultNS: 'translations',
-    debug: true
+    // debug: true
   },
 }
