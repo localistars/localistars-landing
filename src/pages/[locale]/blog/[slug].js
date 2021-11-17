@@ -19,22 +19,21 @@ export default function Blog({ code, frontMatter, allPosts }) {
   const Component = useMemo(() => getMDXComponent(code), [code]);
 
   return (
-
     <PageWrapper innerPage={true}>
 
     <Head>
-   <title>{frontMatter.title}</title>
-   <meta name="description" content={frontMatter.description} />
-     
-   </Head>
+      <title>{frontMatter.title}</title>
+      <meta name="description" content={frontMatter.description} />
+        
+      </Head>
       <MdxBlogDetails 
-      {...frontMatter} 
-      mdxComponent={<Component 
-      /*components={components} */ 
-      
+        {...frontMatter} 
+        mdxComponent={<Component 
+        /*components={components} */ 
+        
 
-       />}
-       allPosts={allPosts} />
+        />}
+        allPosts={allPosts} />
       <FooterSection/>
     </PageWrapper>
   )
@@ -52,7 +51,6 @@ export async function getStaticPaths() {
   const posts = await getFiles(`locales/${i18nConfig.i18n.defaultLocale}/blog`);
 
   return {
-
     paths: posts.map((p) => i18nConfig.i18n.locales.map((l) => ({
       params: {
         locale: l,
@@ -64,19 +62,15 @@ export async function getStaticPaths() {
     }, []),
     fallback: false
   };
-  
 }
 
 export async function getStaticProps(ctx, allPosts ) {
   const posts = await getAllFilesFrontMatter(`locales/${ctx?.params?.locale}/blog`);
   return {
     props: {
-
       // if using markdown
       ...await getLocaleFile(ctx?.params?.locale, `blog/${ctx?.params?.slug}`),
       allPosts: posts,
-
-
     }
   }
 }

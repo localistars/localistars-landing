@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { PageWrapper } from "~components/Core";
 import HeaderButton from "~sections/pricing/Header";
-import PrivacyPolicyStyle from "~sections/utility/PrivacyPolicy/style";
+import CCPAStyle from "~sections/utility/CCPA/style";
 import { Col, Container, Row } from 'react-bootstrap'
 import FooterTwo from "~sections/index/FooterTwo";
 import Head from 'next/head'
@@ -23,7 +23,7 @@ const header = {
   ),
 };
 
-export default function Privacy({ code, frontMatter }) {
+export default function CCPA({ code, frontMatter }) {
   const Component = useMemo(() => getMDXComponent(code), [code]);
   
   return (
@@ -32,13 +32,13 @@ export default function Privacy({ code, frontMatter }) {
         <title>{frontMatter.title}</title>
         <meta name="description" content={frontMatter.description} />
       </Head>
-      <PrivacyPolicyStyle>
+      <CCPAStyle>
         <Container>
           <Row className="justify-content-center">
             <Col className="col-xl-7 col-lg-8 col-md-11 text-center">
-              <PrivacyPolicyStyle.Box>
-                <PrivacyPolicyStyle.Title as="h2">{frontMatter.title}</PrivacyPolicyStyle.Title>
-              </PrivacyPolicyStyle.Box>
+              <CCPAStyle.Box>
+                <CCPAStyle.Title as="h2">{frontMatter.title}</CCPAStyle.Title>
+              </CCPAStyle.Box>
             </Col>
           </Row>
           <Row className="justify-content-center">
@@ -47,7 +47,7 @@ export default function Privacy({ code, frontMatter }) {
             </Col>
           </Row>
         </Container>
-      </PrivacyPolicyStyle>
+      </CCPAStyle>
       <FooterTwo />
     </PageWrapper>
   );
