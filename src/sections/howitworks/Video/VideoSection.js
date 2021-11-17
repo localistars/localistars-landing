@@ -5,12 +5,7 @@ import { Link } from '~components';
 import Video from './style'
 import SectionTitle from './Components/SectionTitle'
 import VideoFile from '~components/VideoModal';
-
-
-const onClick = () => {
-  href = `https://docs.locize.com/guides-tips-and-tricks/working-with-translators/localistars`
-}
-
+import prefix from '~lib/prefix';
 
 export default function AboutSection(){
 return(
@@ -19,7 +14,7 @@ return(
     <Row className="align-items-center justify-content-center">
       <Col xs="12" className="col-xl-6 col-lg-6 col-md-8 col-xs-10">
         <Video.Image>
-          <img className="w-100" src="/image/howitworks/thumbnail.png" alt="thumbnail locize"/>
+          <img className="w-100" src={`${prefix}/image/howitworks/thumbnail.png`} alt="thumbnail locize"/>
           <VideoFile id="WobsZ_er0I4" className="video-btn sonar-emitter"> <i className="fa fa-play" /> </VideoFile>
         </Video.Image>
       </Col>

@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import serviceData from "~data/pricing/Service";
 import ServiceWidget from "./Component/Widget";
 import Service from "./style";
+import prefix from '~lib/prefix';
 
 export default function ServiceSection() {
   return (
@@ -12,7 +13,7 @@ export default function ServiceSection() {
 
         <Service.Shape className="service-shape service-shape--l1">
           <img
-            src="/image/pricing/localistars-pricing.png"
+            src={`${prefix}/image/pricing/localistars-pricing.png`}
             alt="localistars pricing"
           />
         </Service.Shape>

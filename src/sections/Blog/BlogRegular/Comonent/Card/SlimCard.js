@@ -3,6 +3,7 @@ import { SuperTag } from "~components";
 import Card from "./style";
 import { Link } from "~components";
 import BlogsImg7 from "~image/blogs/blog-post-7.png";
+import prefix from '~lib/prefix';
 
 export default function SlimBlogCard({
   title,
@@ -17,7 +18,7 @@ export default function SlimBlogCard({
     <Card>
       <Card.Image>
       <Link href={`/blog/${slug}`}><a alt="Blog">
-        <img src={thumbnail} alt={alt} />
+        <img src={`${prefix}${thumbnail}`} alt={alt} />
         </a></Link>
       </Card.Image>
       <Card.OvaerlayBlock>
