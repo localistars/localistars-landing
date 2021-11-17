@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Image from "next/image";
+import prefix from '~lib/prefix';
 import Content from "./style";
 import SectionTitle from "./Components/SectionTitle";
 
@@ -28,7 +28,7 @@ export default function ContentSectionOne() {
             </Col>
             <Col xs="12" className="col-xxl-5 col-lg-4 col-md-6 col-xs-9">
               <Content.Image mt="30px" mb="30px" mbMD="0" mtMD="0">
-                <img src="/image/home-agency/content-1-l5-img.png" alt="content"/>
+                <img src={`${prefix}/image/home-agency/content-1-l5-img.png`} alt="content"/>
               </Content.Image>
             </Col>
             <Col

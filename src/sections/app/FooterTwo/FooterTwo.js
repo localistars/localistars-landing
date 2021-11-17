@@ -4,13 +4,14 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Footer from "./style"
 import i18nextConfig from '~next-i18next.config'
 import { useRouter } from 'next/router'
+import prefix from '~lib/prefix';
 
 export default function FooterTwo() {
     const router = useRouter()
     const currentLocale = router.query.locale || i18nextConfig.i18n.defaultLocale
 
     return(
-     <Footer>
+        <Footer>
         <Container>
             <Footer.Box pbXL="95px">
             <Row>
@@ -19,7 +20,7 @@ export default function FooterTwo() {
                     {/* Brand Logo*/}
                     <Footer.Box mb="30px">
                         <Link  to="#">
-                            <img src="/image/logo/logo-black.png" alt="content" placeholder="blur" />
+                            <img src={`${prefix}/image/logo/logo-black.png`} alt="content" placeholder="blur" />
                         </Link>
                     </Footer.Box>
                     <Footer.Text mb="36px">
@@ -104,7 +105,7 @@ export default function FooterTwo() {
                             </Footer.Box>
                         </Footer.SocialShare>
                         <Footer.Payment>
-                            <img src="/image/project-management/payment-gatway.png" alt="content" placeholder="blur" />
+                            <img src={`${prefix}/image/project-management/payment-gatway.png`} alt="content" placeholder="blur" />
                         </Footer.Payment>
                     </Footer.Widgets>
                     </Col>

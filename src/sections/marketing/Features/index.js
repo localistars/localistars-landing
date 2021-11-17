@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import prefix from '~lib/prefix';
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import TabContentWidget from "./Component/TabContentWidget";
 import TabNavWidget from "./Component/TabNavWidget";
@@ -11,10 +11,10 @@ const FeatureSection = ({ ...rest }) => {
     <Feature className="bg-blue-ribbon">
       <Feature.Shapes>
         <Feature.ShapeOne>
-          <img src="/image/marketing/l1-half-circle-shape.png" alt="shape1" className="w-100"/>
+          <img src={`${prefix}/image/marketing/l1-half-circle-shape.png`} alt="shape1" className="w-100"/>
         </Feature.ShapeOne>
         <Feature.ShapeTwo>
-          <img src="/image/marketing/l1-full-circle-shape.png" alt="shape1" className="w-100"/>
+          <img src={`${prefix}/image/marketing/l1-full-circle-shape.png`} alt="shape1" className="w-100"/>
         </Feature.ShapeTwo> 
       </Feature.Shapes>
       

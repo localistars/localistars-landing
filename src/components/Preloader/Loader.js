@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import prefix from '~lib/prefix';
 
 const LoaderWrapper = styled.div`
   width: 100%;
@@ -18,7 +19,7 @@ const LoaderWrapper = styled.div`
 const Loader = ({show}) => {
 return(
     <LoaderWrapper display={show ? "flex" : "none"}>
-      <img src="/image/preloader.gif" alt="img"/>
+      <img src={`${prefix}/image/preloader.gif`} alt="img"/>
     </LoaderWrapper>
   )
 }

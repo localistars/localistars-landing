@@ -15,6 +15,10 @@ module.exports = {
     path: 'https://localistars.com',
   }
 }
+if (process.env.NEXT_PUBLIC_BASE_PATH) {
+  module.exports.basePath = process.env.NEXT_PUBLIC_BASE_PATH
+  module.exports.assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH
+}
 // module.exports = withImages({
 //   webpack(config, options) {
 //     return config

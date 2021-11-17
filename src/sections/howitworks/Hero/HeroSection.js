@@ -2,6 +2,7 @@ import React from 'react'
 import Image from "next/image";
 import Hero from './style'
 import { Col, Container, Row } from 'react-bootstrap';
+import prefix from '~lib/prefix';
 import { Form, Link } from '~components'
 import { SuperTag } from '~components';
 
@@ -17,7 +18,7 @@ export default function HeroSection(){
           <Hero.Text> <SuperTag value="Clients and translators welcome – <br className='d-none d-sm-block' />  together you get translation projects done."/>
           </Hero.Text>
           <Hero.TitleShape>
-            <img src="/image/howitworks/shape-hero.png"   alt="projects" className="w-100"/>
+            <img src={`${prefix}/image/howitworks/shape-hero.png`} alt="projects" className="w-100"/>
           </Hero.TitleShape>
         </Hero.ContentBlock>
         
@@ -30,10 +31,10 @@ export default function HeroSection(){
     </Row>
   </Container>
   <Hero.ImageShape01>
-    <img src="/image/howitworks/shape3-hero.png" alt="shape 1" className="w-100"/>
+    <img src={`${prefix}/image/howitworks/shape3-hero.png`} alt="shape 1" className="w-100"/>
   </Hero.ImageShape01>
   <Hero.ImageShape02>
-    <img src="/image/howitworks/shape2-hero.png" alt="shape 1" className="w-100"/>
+    <img src={`${prefix}/image/howitworks/shape2-hero.png`} alt="shape 1" className="w-100"/>
   </Hero.ImageShape02>
 </Hero>
 )

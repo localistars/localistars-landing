@@ -2,6 +2,8 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "~components";
 import Hero from "./style";
+import prefix from '~lib/prefix';
+
 export default function HeroSection() {
   return (
     <Hero backgroundColor="rgba(22, 92, 102, 0.5)">
@@ -42,10 +44,10 @@ export default function HeroSection() {
           >
             <Hero.ImageGroup>
               <Hero.ImageOne>
-                <img src="/image/home-app/hero-l8-1.png" alt="content"/>
+                <img src={`${prefix}/image/home-app/hero-l8-1.png`} alt="content"/>
               </Hero.ImageOne>
               <Hero.ImageTwo>
-                <img src="/image/home-app/hero-l8-2.png" alt="content"/>
+                <img src={`${prefix}/image/home-app/hero-l8-2.png`} alt="content"/>
               </Hero.ImageTwo>
             </Hero.ImageGroup>
           </Col>

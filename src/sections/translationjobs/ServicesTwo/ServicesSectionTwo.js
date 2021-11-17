@@ -2,6 +2,8 @@ import React from "react";
 import SectionTitle from "./Components/SectionTitle";
 import { Col, Container, Row } from "react-bootstrap";
 import Service from "./style";
+import prefix from '~lib/prefix';
+
 export default function ServicesSectionTwo() {
   return (
     <Service backgroundColor="rgba(230, 248, 249, 0.4)">
@@ -43,12 +45,12 @@ a localistar freelance translator or agency?"
               <Row>
                 <Col xs="12" className="col-lg-6 pt-lg-7 mb-5 mb-lg-0">
                   <Service.Image>
-                    <img src="/image/translationjobs/services-img-1.png" alt="content" className="w-100"/>
+                    <img src={`${prefix}/image/translationjobs/services-img-1.png`} alt="content" className="w-100"/>
                   </Service.Image>
                 </Col>
                 <Col xs="12" className="col-lg-6 mb-5 mb-lg-0">
                   <Service.Image>
-                    <img src="/image/translationjobs/services-img-2.png" alt="content" className="w-100"/>
+                    <img src={`${prefix}/image/translationjobs/services-img-2.png`} alt="content" className="w-100"/>
                   </Service.Image>
                 </Col>
               </Row>

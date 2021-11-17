@@ -13,8 +13,6 @@ import { Link } from '~components';
 import FooterTwo from "~sections/index/FooterTwo";
 import Head from 'next/head'
 import { useTranslation } from 'next-i18next'
-
-
 import { getStaticPaths, makeStaticProps } from '~lib/getStatic'
 
 const header = {

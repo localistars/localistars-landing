@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "~components";
 import Hero from "./style";
 import { useTranslation } from 'next-i18next'
+import prefix from '~lib/prefix';
 
 export default function HeroSection() {
   const { t } = useTranslation('translations')
@@ -46,11 +47,11 @@ export default function HeroSection() {
           >
             <Hero.ImageGroup>
               <Hero.ImageOne>
-                <img src="/image/index/translation-company.png" alt="content" />
+                <img src={`${prefix}/image/index/translation-company.png`} alt="content" />
               </Hero.ImageOne>
 
               <Hero.ImageTwo>
-                <img src="/image/index/translation-company-300.png" alt="content" />
+                <img src={`${prefix}/image/index/translation-company-300.png`} alt="content" />
               </Hero.ImageTwo>
               
             </Hero.ImageGroup>

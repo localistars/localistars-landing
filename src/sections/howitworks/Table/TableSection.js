@@ -1,9 +1,9 @@
 import React from 'react'
-import Image from 'next/image'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from '~components';
 import Table from './style'
 import SectionTitle from './Components/SectionTitle'
+import prefix from '~lib/prefix';
 
 const bg2 = {
 
@@ -27,14 +27,13 @@ return(
             subTitleProps={{mb:"5px"}}
             />
             <Table.HIWimage>
-            <img src="/image/howitworks/draft.jpg" alt="draft" className="w-100"/>
+            <img src={`${prefix}/image/howitworks/draft.jpg`} alt="draft" className="w-100"/>
           </Table.HIWimage>
           
         </Table.Content>
         
       </Col>
       <Col col="12" className="col-xxl-4 offset-xxl-1 col-lg-5 col-md-8 col-xs-10 bg-gorse">
-       
       </Col>
     </Row>
     {/*/ 1st Row end */}
@@ -46,7 +45,7 @@ return(
         
       </Col>
       <Col xs="12" className="col-xxl-4 offset-xxl-1 col-lg-5 col-md-8 col-xs-10 bg-gorse">
-       <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
+        <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
           <SectionTitle 
             
             title="Make an offer"
@@ -55,7 +54,7 @@ return(
             subTitleProps={{mb:"5px"}}
             />
             <Table.HIWimage>
-            <img src="/image/howitworks/start_bid.jpg" alt="start bid" className="w-100"/>
+            <img src={`${prefix}/image/howitworks/start_bid.jpg`} alt="start bid" className="w-100"/>
           </Table.HIWimage>
           
         </Table.Content>
@@ -66,7 +65,7 @@ return(
   {/*/ 3rd Row start */}
     <Row className="align-items-center justify-content-center">
     <Col xs="12" className="col-xl-4 col-lg-6 col-md-8 col-xs-10 bg-athens-gray">
-       <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
+      <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
           <SectionTitle 
             
             title="Choose the right partner for your project"
@@ -75,13 +74,12 @@ return(
             subTitleProps={{mb:"5px"}}
             />
             <Table.HIWimage>
-            <img src="/image/howitworks/choose_bid.jpg" alt="choose bid" className="w-100"/>
+            <img src={`${prefix}/image/howitworks/choose_bid.jpg`} alt="choose bid" className="w-100"/>
           </Table.HIWimage>
           
         </Table.Content>
       </Col>
       <Col col="12" className="col-xxl-4 offset-xxl-1 col-lg-5 col-md-8 col-xs-10 bg-gorse">
-       
       </Col>
       
     </Row>
@@ -90,7 +88,7 @@ return(
   {/*/ 4th Row start */}
     <Row className="align-items-center justify-content-center">
     <Col xs="12" className="col-xl-4 col-lg-6 col-md-8 col-xs-10 mt-7 bg-athens-gray">
-       <Table.Content mt="50px" mtLG="1" mb="50px" mbLG="0" mlLG="30px">
+        <Table.Content mt="50px" mtLG="1" mb="50px" mbLG="0" mlLG="30px">
           <SectionTitle 
             
             title="Fund the project"
@@ -99,13 +97,12 @@ return(
             subTitleProps={{mb:"5px"}}
             />
             <Table.HIWimage>
-            <img src="/image/howitworks/accounting.jpg" alt="accounting" className="w-100"/>
+            <img src={`${prefix}/image/howitworks/accounting.jpg`} alt="accounting" className="w-100"/>
           </Table.HIWimage>
           
         </Table.Content>
       </Col>
       <Col col="12" className="col-xxl-4 offset-xxl-1 col-lg-5 col-md-8 col-xs-10 mt-7 bg-gorse">
-       
       </Col>
       
     </Row>
@@ -119,8 +116,8 @@ return(
         
       </Col>
 
-       <Col xs="12" className="col-xxl-4 offset-xxl-1 col-lg-5 col-md-8 col-xs-10 bg-gorse">
-       <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
+        <Col xs="12" className="col-xxl-4 offset-xxl-1 col-lg-5 col-md-8 col-xs-10 bg-gorse">
+        <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
           <SectionTitle 
             
             title="Get down to business"
@@ -129,7 +126,7 @@ return(
             subTitleProps={{mb:"5px"}}
             />
             <Table.HIWimage>
-            <img src="/image/howitworks/upload_files.jpg" alt="start bid" className="w-100"/>
+            <img src={`${prefix}/image/howitworks/upload_files.jpg`} alt="start bid" className="w-100"/>
           </Table.HIWimage>
           
         </Table.Content>
@@ -142,7 +139,7 @@ return(
     <Row className="align-items-center justify-content-center">
     
       <Col xs="12" className="col-xl-4 col-lg-6 col-md-8 col-xs-10 border bg-athens-gray">
-       <Table.Content mt="50px" mtLG="1" mb="50px" mbLG="0" mlLG="30px">
+        <Table.Content mt="50px" mtLG="1" mb="50px" mbLG="0" mlLG="30px">
           <SectionTitle 
             
             title="Approve the work"
@@ -153,14 +150,13 @@ If there's something missing or in need of rework, give the translator a chance 
             subTitleProps={{mb:"5px"}}
             />
             <Table.HIWimage>
-            <img src="/image/howitworks/paid_project.jpg" alt="paid_project" className="w-100"/>
+            <img src={`${prefix}/image/howitworks/paid_project.jpg`} alt="paid_project" className="w-100"/>
           </Table.HIWimage>
           
         </Table.Content>
       </Col>
 
-       <Col col="12" className="col-xxl-4 offset-xxl-1 col-lg-5 col-md-8 col-xs-10 bg-gorse">
-       
+      <Col col="12" className="col-xxl-4 offset-xxl-1 col-lg-5 col-md-8 col-xs-10 bg-gorse">
       </Col>
       
     </Row>
@@ -171,7 +167,7 @@ If there's something missing or in need of rework, give the translator a chance 
     <Row className="align-items-stretch justify-content-center">
     
       <Col xs="12" className="col-xl-4 col-lg-6 col-md-8 col-xs-10 mt-7 bg-athens-gray">
-       <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
+        <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
           <SectionTitle 
             
             title="Be charged"
@@ -180,14 +176,14 @@ If there's something missing or in need of rework, give the translator a chance 
             subTitleProps={{mb:"5px"}}
             />
             <Table.HIWimage>
-            <img src="/image/howitworks/transactions.jpg" alt="transactions" className="w-100"/>
+            <img src={`${prefix}/image/howitworks/transactions.jpg`} alt="transactions" className="w-100"/>
           </Table.HIWimage>
           
         </Table.Content>
       </Col>
 
-       <Col xs="12" className="col-xxl-4 offset-xxl-1 col-lg-5 col-md-8 col-xs-10 mt-7 bg-gorse">
-       <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
+      <Col xs="12" className="col-xxl-4 offset-xxl-1 col-lg-5 col-md-8 col-xs-10 mt-7 bg-gorse">
+      <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
           <SectionTitle 
             
             title="Get paid"
@@ -196,7 +192,7 @@ If there's something missing or in need of rework, give the translator a chance 
             subTitleProps={{mb:"5px"}}
             />
             <Table.HIWimage>
-            <img src="/image/howitworks/payout.jpg" alt="payout" className="w-100"/>
+            <img src={`${prefix}/image/howitworks/payout.jpg`} alt="payout" className="w-100"/>
           </Table.HIWimage>
           
         </Table.Content>

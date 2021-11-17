@@ -3,6 +3,8 @@ import SectionTitle from "./components/SectionTitle";
 import { Col, Container, Row } from "react-bootstrap";
 import Widget from "./components/Widget";
 import Content from "./style";
+import prefix from '~lib/prefix';
+
 export default function ContentSectionOne() {
   return (
     <Content backgroundColor="#f2f5fb">
@@ -46,9 +48,9 @@ export default function ContentSectionOne() {
             className="col-xxl-6 col-lg-5 col-md-8 col-xs-10 order-1 order-lg-2"
           >
             <Content.ImageGroup>
-              <img src="/image/home-app/content-mobile-img.png" alt="content" className="w-100"/>
+            <img src={`${prefix}/image/home-app/content-mobile-img.png`} alt="content" className="w-100"/>
               <Content.ImageShape>
-                <img src="/image/home-app/red-shape.png" alt="content"/>
+              <img src={`${prefix}/image/home-app/red-shape.png`} alt="content"/>
               </Content.ImageShape>
             </Content.ImageGroup>
           </Col>
