@@ -11,6 +11,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrism from 'rehype-prism-plus';
 
 import i18nextConfig from '~next-i18next.config';
+import prefix from '~lib/prefix';
 
 export async function getFiles(type) {
   return readdirSync(join(process.cwd(), 'src', 'data', type));
@@ -34,7 +35,11 @@ export async function getFileBySlug(type, slug) {
   const fPath = slug
     ? join(process.cwd(), 'src', 'data', type, `${slug}.mdx`)
     : join(process.cwd(), 'src', 'data', `${type}.mdx`);
-  const source = readFileSync(fPath, 'utf8');
+  let source = readFileSync(fPath, 'utf8');
+  
+  if (prefix) {
+    source = source.replace(/'\/image\//g, `'${prefix}/image/`)
+  }
 
   const { code, frontmatter } = await bundleMDX(source, {
     xdmOptions(options) {
