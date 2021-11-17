@@ -3,10 +3,11 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Form, Link } from '~components'
 import Hero from './style'
+import prefix from '~lib/prefix';
 
 export default function HeroSection(){
 return(
-<Hero overlay="/image/translationjobs/hero-overlay.png" style={{backgroundImage: `url("/image/translationjobs/freelancer.webp")`}}>
+<Hero overlay={`${prefix}/image/translationjobs/hero-overlay.png`} style={{backgroundImage: `url("${prefix}/image/translationjobs/freelancer.webp")`}}>
   <Container>
     <Row className="align-items-center justify-content-center justify-content-md-start">
       {/* Welcome content Area */}

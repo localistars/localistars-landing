@@ -1,11 +1,13 @@
-// import servicesIcon1 from "~image/marketing/athletics.svg";
-// import servicesIcon2 from "~image/marketing/archery-target.svg";
-// import servicesIcon3 from "~image/marketing/money-coins.svg";
+// import servicesIcon1 from "~image/marketing/athletics.svg`;
+// import servicesIcon2 from "~image/marketing/archery-target.svg`;
+// import servicesIcon3 from "~image/marketing/money-coins.svg`;
+import prefix from '~lib/prefix';
+
 const serviceData = {
   services: [
       {
         id:"ms1",
-        icon: "/image/translationjobs/archery-target.svg",
+        icon: `${prefix}/image/translationjobs/archery-target.svg`,
         iconColor: "#ffd166",
         title: "Direct Contact",
         text:
@@ -13,7 +15,7 @@ const serviceData = {
       },
       {
         id:"ms2",
-        icon: "/image/translationjobs/archery-target.svg",
+        icon: `${prefix}/image/translationjobs/archery-target.svg`,
         iconColor:"#96f7d2",
         title: "No risk",
         text:
@@ -21,7 +23,7 @@ const serviceData = {
       },
       {
         id:"ms3",
-        icon: "/image/translationjobs/money-coins.svg",
+        icon: `${prefix}/image/translationjobs/money-coins.svg`,
         iconColor:"#ffd166",
         title: "Invoicing",
         text:
@@ -29,7 +31,7 @@ const serviceData = {
       },
       {
         id:"ms3",
-        icon: "/image/translationjobs/money-coins.svg",
+        icon: `${prefix}/image/translationjobs/money-coins.svg`,
         iconColor:"#a9d2ff",
         title: "Get paid",
         text:
@@ -37,7 +39,7 @@ const serviceData = {
       },
       {
         id:"ms3",
-        icon: "/image/translationjobs/archery-target.svg",
+        icon: `${prefix}/image/translationjobs/archery-target.svg`,
         iconColor:"#ffd166",
         title: "Find new clients with ease",
         text:
@@ -45,7 +47,7 @@ const serviceData = {
       },
       {
         id:"ms3",
-        icon: "/image/translationjobs/money-coins.svg",
+        icon: `${prefix}/image/translationjobs/money-coins.svg`,
         iconColor:"#a9d2ff",
         title: "Keep the overview",
         text:

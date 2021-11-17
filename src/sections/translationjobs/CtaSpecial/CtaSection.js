@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Hero from "./style";
 import Video from "~components/VideoModal";
 import { Link } from "~components";
-
+import prefix from '~lib/prefix';
 
 export default function HeroSection({ ...rest }) {
   return (
@@ -45,7 +45,7 @@ export default function HeroSection({ ...rest }) {
               mbLG="0"
             >
               <img
-                src="/image/translationjobs/teaser.png"
+                src={`${prefix}/image/translationjobs/teaser.png`}
                 alt="content"
                 className="w-100"
               />
