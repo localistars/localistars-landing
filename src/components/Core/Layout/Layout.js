@@ -29,8 +29,8 @@ export default function Layout({ children }) {
 
         {/* Canonical, hreflang */}
         <link rel="canonical" href={canonicalURL} />
-        <link rel="alternate" hreflang="en-US" href="/en" />
-        <link rel="alternate" hreflang="de-DE" href="/de" />
+        <link rel="alternate" hrefLang="en-US" href="/en" />
+        <link rel="alternate" hrefLang="de-DE" href="/de" />
         
         {/* Open Graph */}
         <meta property="og:url" content={currentURL} key="ogurl" />

@@ -1,14 +1,11 @@
 import { useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { getStaticProps, GetStaticPaths } from "next";
 import Blog from "./style";
-import BlogCard from "./Comonent/Card";
 import SlimBlogCard from "./Comonent/Card/SlimCard";
 import SearchContext from "~context/SearchContext";
 import { useTranslation } from 'next-i18next'
 
 export default function BlogRegular({ posts = [] }) {
-
   const searchContext = useContext(SearchContext);
   const searchValue = searchContext.searchValue
 
@@ -17,7 +14,7 @@ export default function BlogRegular({ posts = [] }) {
       (a, b) =>
         Number(new Date(b.date)) - Number(new Date(a.date))
     )
-    .filter((frontMatter) =>
+    .filter((frontMatter) => 
       (frontMatter.title || frontMatter.name).toLowerCase().includes(searchValue.toLowerCase())
     );
 
@@ -43,7 +40,7 @@ export default function BlogRegular({ posts = [] }) {
               {t('blogNotFound')}.
             </p>
           }
-          {filteredBlogPosts.map((info, index) => (
+          {filteredBlogPosts.length > 0 && filteredBlogPosts.map((info, index) => (
             <Col
               xs="12"
               className="col-lg-4 col-md-6 col-xs-9"

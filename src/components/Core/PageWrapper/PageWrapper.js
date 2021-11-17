@@ -10,13 +10,13 @@ import Header from "../Header";
         headerClasses:"light-header site-header--menu-end site-header--button-sep position-relative",
         containerFluid:false,
         darkLogo:true,
-        buttonBlock:(<HeaderButton as={Link} btnText="Login"/>)
+        buttonBlock:(<HeaderButton as={Link} btnText="Login" btnLink="https://www.localistars.app/login" />)
     }
     const activeHeader = ( innerPage ? innerPageDefault : headerDefault );  
   const sitectx = React.useContext(GlobalHeaderContext);
   
   React.useEffect(() => {
-      sitectx.changeHeader({ ...activeHeader, ...headerConfig });
+    sitectx.changeHeader({ ...activeHeader, ...headerConfig });
   },[headerConfig]);
   return (
     <>

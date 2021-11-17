@@ -6,8 +6,6 @@ import TestimonialSection from "~sections/pricing/Testimonial";
 import Cta from "~sections/pricing/Cta";
 import FooterTwo from "~sections/index/FooterTwo";
 import Head from 'next/head'
-
-
 import { getStaticPaths, makeStaticProps } from '~lib/getStatic'
 
 const header = {
@@ -17,12 +15,10 @@ const header = {
   buttonBlock: (
     // eslint-disable-next-line react/no-children-prop
     <HeaderButton 
-    className="d-none d-sm-flex" 
-    btnText="Start now"
-    btnLink="https://www.localistars.app/login"
-
+      className="d-none d-sm-flex" 
+      btnText="Start now"
+      btnLink="https://www.localistars.app/login"
     />
-
   ),
 };
 
@@ -30,12 +26,11 @@ export default function HomeApp() {
   return (
     <PageWrapper headerConfig={header}>
       <Head>
-              <title>Pricing | localistars  </title>
-              <meta name="description" content="Pricing | localistars" />
-            </Head>
+        <title>Pricing | localistars  </title>
+        <meta name="description" content="Pricing | localistars" />
+      </Head>
       <ServiceSection />
       <TestimonialSection />
-      
       <Cta />
       <FooterTwo />
     </PageWrapper>

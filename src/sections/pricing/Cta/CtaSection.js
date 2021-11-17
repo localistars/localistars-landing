@@ -21,8 +21,7 @@ return(
           <Cta.Title as="h2" >No reason to postpone <br className="d-none d-xs-block" />
             a registration now</Cta.Title>
                     
-               <Form.Button className="btn btn-primary" style={{ color: "white" }} as={Link} target="_blank" href="https://www.localistars.app/login" value="Register For Free"/>
-                        
+            <Form.Button className="btn btn-primary" style={{ color: "white" }} as={Link} target="_blank" href="https://www.localistars.app/login" value="Register For Free"/>
         </Cta.Box>
       </Col>
     </Row>
@@ -32,5 +31,5 @@ return(
 </>
 )
 }
- 
+
 export default CtaSection

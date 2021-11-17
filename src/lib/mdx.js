@@ -76,6 +76,8 @@ export async function getAllFilesFrontMatter(type) {
   const files = readdirSync(join(process.cwd(), 'src', 'data', type));
 
   return files.reduce((allPosts, postSlug) => {
+    if (!postSlug.endsWith('.mdx')) return allPosts;
+
     const source = readFileSync(
       join(process.cwd(), 'src', 'data', type, postSlug),
       'utf8'

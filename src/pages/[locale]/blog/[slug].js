@@ -6,16 +6,12 @@ import { getFiles, getLocaleFile } from '~lib/mdx';
 import { getAllFilesFrontMatter } from '~lib/mdx';
 import i18nConfig from '~next-i18next.config'
 import MdxBlogDetails from "~sections/Blog/BlogDetails/MdxBlogDetails";
-import StructureData from "~sections/Blog/BlogDetails/StructureData";
 import { PageWrapper } from "~components/Core";
 import FooterSection from "~sections/index/FooterTwo";
-import matter from 'gray-matter'
 import Head from 'next/head'
+import { getI18nProps } from '~lib/getStatic'
 
 export default function Blog({ code, frontMatter, allPosts }) {
-
-  
-
   const Component = useMemo(() => getMDXComponent(code), [code]);
 
   return (
@@ -64,10 +60,11 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps(ctx, allPosts ) {
+export async function getStaticProps(ctx) {
   const posts = await getAllFilesFrontMatter(`locales/${ctx?.params?.locale}/blog`);
   return {
     props: {
+      ...await getI18nProps(ctx),
       // if using markdown
       ...await getLocaleFile(ctx?.params?.locale, `blog/${ctx?.params?.slug}`),
       allPosts: posts,
