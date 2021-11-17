@@ -16,8 +16,6 @@ const BlogData = [
     user: "By inweso GmbH",
     Like: "21K",
     commentCount: " 305",
-  },
-  
-
+  }
 ];
 export default BlogData;

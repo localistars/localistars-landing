@@ -15,8 +15,7 @@ const SiteNavbar = ({buttonBlock,darkLogo,customLogo,defaultLogo}) => {
         variant="dark"
         className="site-navbar"
       >
-        <Navbar.Brand href="/">
-
+        <Navbar.Brand href={`${prefix}/`}>
           {defaultLogo ? (<img src={defaultLogo} alt="site-brand"/>) : customLogo ? (
             <img src={customLogo} alt="localistars logo" />
           ) : (
