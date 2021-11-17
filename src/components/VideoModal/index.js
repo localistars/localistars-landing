@@ -10,7 +10,7 @@ const Video = ({id,className,children}) => {
 
   return (
     <Fragment>
-      <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId={id} onClose={() => setOpen(false)} />
+      <ModalVideo channel='custom' isOpen={isOpen} url={`https://www.youtube-nocookie.com/embed/${id}?rel=0&controls=0&showinfo=0`} onClose={() => setOpen(false)} />
 
       <button className={`btn-reset${className?" "+className:""}`} onClick={()=> setOpen(true)}>{children}</button>
     </Fragment>
