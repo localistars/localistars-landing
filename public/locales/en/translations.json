@@ -1,11 +1,9 @@
 {
   "index": {
+    "header": "Login",
     "meta": {
       "title": "Translation company for online translation services",
       "description": "Localistars is a website where companies can find high-quality online translation services performed by freelance translators."
-    },
-    "header": {
-      "login": "Login"
     },
     "section": {
       "subTitle": "We are about transparency and trust.",
@@ -84,6 +82,93 @@
       "title": "Register as<br />translator or as translation company<br />for free below",
       "text": "*No fees for issuing tenders or bidding! No obligations!",
       "btn": "Register for free"
+    }
+  },
+  "client": {
+    "header": "Start now",
+    "meta": {
+      "title": "Find a translator on our platform",
+      "description": "On our online platform, you can hire a professional translator for your company's language translation project."
+    },
+    "hero": {
+      "title": "Why should you choose <br /> a localistar translator?",
+      "description": "We provide a platform that removes the tedious parts of translations."
+    },
+    "service": {
+      "subTitle": "Advantages",
+      "title": "For companies looking for a translator",
+      "text": "Let localistars marketplace do the tedious parts of your translation workflow.",
+      "services": {
+        "as1": {
+          "title": "Find new translators with ease",
+          "text": "Stay on top of your task lists and stay in touch with what's happeningMore time to get projects done, less time wasted on searching and contracting. Overall localistars is your chance to up your time to market."
+        },
+        "as2": {
+          "title": "Direct Contact",
+          "text": "localistars is about you. You're in direct contact with the translator – it's your project, you hold the reins. In contrast to other services we DON'T set the price and therefore we DON'T forward the contract to the cheapest translator to maximize our own profit. You choose the translator for your projects yourself, it's your contractor."
+        },
+        "as3": {
+          "title": "Invoicing",
+          "text": "No need to waste time managing invoices. It's all done automatically and VAT-compliant. You can download the documents for your accounting anytime. Focus on your job – not on bookkeeping."
+        },
+        "as4": {
+          "title": "Keep the overview",
+          "text": "Find all the information in one place. No need to skim through endless lists of emails."
+        }
+      },
+      "learnMore": "Learn more"
+    },
+    "content": {
+      "subTitle": "Few clicks away",
+      "title": "Find the right translator for your need",
+      "text": "You can post your requests in our translation marketplace for free and receive bids from translators within hours. This service is provided to you at no cost.",
+      "btn": "Register Now",
+      "widget": {
+        "title": "Freelance or agency translators",
+        "text": "Within hours, you can get a high-quality translation from a professional translator or professional translation company."
+      }
+    },
+    "manage": {
+      "subTitle": "Individual management",
+      "title": "Manage your team",
+      "text": "You can add all your team-members to your organisation. Each user can be granted individual rights so they get access to the relevant parts of your workflow. Keep working with partners you trust."
+    },
+    "about": {
+      "subTitle": "Productivity increase",
+      "title": "Versatile API",
+      "text": "Automate your process for being more productive."
+    },
+    "process": {
+      "subTitle": "Get started",
+      "title": "It's very easy to start <1/> follow this process",
+      "steps": {
+        "sp1": {
+          "title": "Sign up",
+          "text": "Complete the registration process by confirming your email address. Click on the link in the received email."
+        },
+        "sp2": {
+          "title": "Select your profile type",
+          "text": "You are searching for a translator! Choose the client profile type."
+        },
+        "sp3": {
+          "title": "Update your personal profile",
+          "text": "Time to make yourself a name - complete your personal user profile."
+        },
+        "sp4": {
+          "title": "Having an organization",
+          "text": "Providing an organization is mandatory. A contract is legally between your organization and the service requesting organization. You can either get invited to an existing organization or create a new one."
+        },
+        "sp5": {
+          "title": "Create a project and call for bids",
+          "text": "Time to make yourself a name - complete your personal profile."
+        }
+      }
+    },
+    "help": {
+      "subTitle": "HELP",
+      "title": "Do you require some assistance before you register?",
+      "text": "Any question you may have about our pricing or platform will be answered by one of our team members.",
+      "btn": "Contact us"
     }
   },
   "hero": {

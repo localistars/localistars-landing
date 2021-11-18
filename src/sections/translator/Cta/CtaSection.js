@@ -2,8 +2,11 @@ import React from 'react';
 import Cta from './style';
 import { Col, Container, Row } from 'react-bootstrap';
 import ctal5Img from '../../../../public/image/translator/signup.png';
+import { useTranslation } from 'next-i18next';
 
 export default function CtaSection({ ...rest }) {
+  const { t } = useTranslation('translations');
+
   return (
     <Cta backgroundImage={ctal5Img.src}>
       <Container>
@@ -11,14 +14,13 @@ export default function CtaSection({ ...rest }) {
           <Col className="col-xl-6 col-lg-8 col-md-10">
             <Cta.InnerWrapper className="text-center">
               <Cta.Subtitle fontColor="#ffce3e" as="span">
-                HELP
+                {t('client.help.subTitle')}
               </Cta.Subtitle>
               <Cta.Title as="h2" fontColor="#fff">
-                Do you require some assistance before you register?
+                {t('client.help.title')}
               </Cta.Title>
               <Cta.Text fontColor="#fff">
-                Any question you may have about our pricing or platform will be
-                answered by one of our team members.
+                {t('client.help.text')}
               </Cta.Text>
               <Cta.Button
                 className="btn-torch-red"
@@ -27,7 +29,7 @@ export default function CtaSection({ ...rest }) {
                 sizeX="180px"
                 sizeY="56px"
               >
-                Contact us
+                {t('client.help.btn')}
               </Cta.Button>
             </Cta.InnerWrapper>
           </Col>

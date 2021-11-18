@@ -1,11 +1,13 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import SectionTitle from './Components/SectionTitle';
-import { Link } from '~components';
 import About from './style';
 import prefix from '~lib/prefix';
+import { useTranslation } from 'next-i18next';
 
 export default function ManageSection() {
+  const { t } = useTranslation('translations');
+
   return (
     <About>
       <Container>
@@ -24,13 +26,9 @@ export default function ManageSection() {
               {/* Section Title */}
               <About.Content>
                 <SectionTitle
-                  subTitle="Individual management"
-                  title="Manage your team"
-                  text="You can add all your team-members to your organisation.
-
-Each user can be granted individual rights so they get access to the relevant parts of your workflow.
-
-Keep working with partners you trust."
+                  subTitle={t('client.manage.subTitle')}
+                  title={t('client.manage.title')}
+                  text={t('client.manage.text')}
                   subTitleProps={{
                     mb: '10px',
                     className: 'subline',

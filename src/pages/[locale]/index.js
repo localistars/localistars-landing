@@ -32,7 +32,7 @@ export default function HomeApp() {
           target="_blank"
           href="https://www.localistars.app/login"
         >
-          {t('index.header.login')}
+          {t('index.header')}
         </HeaderButton>
       )
     }}>

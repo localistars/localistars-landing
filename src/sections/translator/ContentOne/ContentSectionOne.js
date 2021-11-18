@@ -1,11 +1,13 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import Image from 'next/image';
 import Content from './style';
 import SectionTitle from './Components/SectionTitle';
 import prefix from '~lib/prefix';
+import { useTranslation } from 'next-i18next';
 
 export default function ContentSectionOne() {
+  const { t } = useTranslation('translations');
+
   return (
     <Content>
       <Container>
@@ -17,14 +19,14 @@ export default function ContentSectionOne() {
             >
               {/* Section Title */}
               <SectionTitle
-                subTitle="Few clicks away"
-                title="Find the right translator for your need"
-                text="You can post your requests in our translation marketplace for free and receive bids from translators within hours. This service is provided to you at no cost."
+                subTitle={t('client.content.subTitle')}
+                title={t('client.content.title')}
+                text={t('client.content.text')}
                 titleProps={{ mb: '30px' }}
                 subTitleProps={{ mb: '25px' }}
               />
               <Content.Button background="#ff5722" rounded={true} mt="25px">
-                Register Now
+                {t('client.content.btn')}
               </Content.Button>
             </Col>
             <Col xs="12" className="col-xxl-5 col-lg-4 col-md-6 col-xs-9">
@@ -57,11 +59,10 @@ export default function ContentSectionOne() {
                 {/* Single Services */}
                 <Content.Widget pb="10px">
                   <Content.WidgetTitle>
-                    Freelance or agency translators
+                    {t('client.content.widget.title')}
                   </Content.WidgetTitle>
                   <Content.WidgetText>
-                    Within hours, you can get a high-quality translation from a
-                    professional translator or professional translation company.
+                    {t('client.content.widget.text')}
                   </Content.WidgetText>
                 </Content.Widget>
                 {/*/ .Single Services */}

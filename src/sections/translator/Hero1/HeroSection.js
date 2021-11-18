@@ -1,16 +1,13 @@
 import React from 'react';
-import Image from 'next/image';
 import Hero from './style';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Form, Link } from '~components';
 import { SuperTag } from '~components';
-// import TitleShape from "~image/project-management/l2-hero-shape.png"
-// import HeroImage from "~image/project-management/l2-hero-image.png"
-import HeroShapeOne from '../../../../public/image/project-management/l2-hero-shape-2.png';
-import HeroShapeTwo from '../../../../public/image/project-management/l2-hero-shape-1.png';
 import prefix from '~lib/prefix';
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function HeroSection() {
+  const { t } = useTranslation('translations');
+
   return (
     <Hero>
       <Container>
@@ -18,11 +15,12 @@ export default function HeroSection() {
           <Col xs="12" className="col-xl-8 col-lg-11">
             <Hero.ContentBlock mb="35px">
               <Hero.Title as="h1">
-                Why should you choose <br /> a localistar translator?
+                <Trans i18nKey="client.hero.title">
+                  Why should you choose <br /> a localistar translator?
+                </Trans>
               </Hero.Title>
               <Hero.Text>
-                {' '}
-                <SuperTag value="We provide a platform that removes the tedious parts of translations." />
+                <SuperTag value={t('client.hero.description')} />
               </Hero.Text>
               <Hero.TitleShape>
                 <img

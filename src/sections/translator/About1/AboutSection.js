@@ -1,11 +1,12 @@
 import React from 'react';
-import Image from 'next/image';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Link } from '~components';
 import About from './style';
 import SectionTitle from './Components/SectionTitle';
-import Video from '~components/VideoModal';
+import { useTranslation } from 'next-i18next';
+
 export default function AboutSection() {
+  const { t } = useTranslation('translations');
+
   return (
     <About>
       <Container>
@@ -25,9 +26,9 @@ export default function AboutSection() {
           >
             <About.Content mt="40px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
               <SectionTitle
-                subTitle="Productivity increase"
-                title="Versatile API"
-                text="Automate your process for being more productive."
+                subTitle={t('client.about.subTitle')}
+                title={t('client.about.title')}
+                text={t('client.about.text')}
                 titleProps={{ mb: '30px' }}
                 subTitleProps={{ mb: '25px' }}
               />

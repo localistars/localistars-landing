@@ -4,7 +4,11 @@ import ServicesCard from './Components/Card';
 import ServiceData from '~data/translator/Service';
 import SectionTitle from './Components/SectionTitle';
 import Service from './style';
+import { useTranslation } from 'next-i18next';
+
 export default function ServiceSection() {
+  const { t } = useTranslation('translations');
+
   return (
     <Service backgroundColor="rgba(21, 205, 168, 0.3)">
       <Container>
@@ -14,9 +18,9 @@ export default function ServiceSection() {
             className="col-xl-4 col-lg-6 col-md-6 col-sm-9 col-xs-10"
           >
             <SectionTitle
-              subTitle="Advantages"
-              title="For companies looking for a translator"
-              text="Let localistars marketplace do the tedious parts of your translation workflow."
+              subTitle={t('client.service.subTitle')}
+              title={t('client.service.title')}
+              text={t('client.service.text')}
               subTitleProps={{ mb: '27px' }}
               titleProps={{ mb: '10px', as: 'h2' }}
               mb="20px"
@@ -30,8 +34,8 @@ export default function ServiceSection() {
                 key={id}
               >
                 <ServicesCard
-                  title={title}
-                  text={text}
+                  title={t(`client.service.services.${id}.title`, title)}
+                  text={t(`client.service.services.${id}.text`, text)}
                   icon={icon}
                   to="/"
                   iconBackground={iconColor}
