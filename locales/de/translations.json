@@ -84,7 +84,7 @@
       "btn": "Kostenlos registrieren"
     }
   },
-  "client": {
+  "consumer": {
     "header": "Jetzt anfangen",
     "meta": {
       "title": "Finden Sie einen Übersetzer auf unserer Plattform",
@@ -298,6 +298,89 @@
       "btn": "Kostenlos registrieren"
     }
   },
+  "how": {
+    "meta": {
+      "title": "Wie es funktioniert",
+      "description": "Wie es funktioniert"
+    },
+    "hero": {
+      "title": "Übersetzungsprojekte",
+      "title2": "So funktioniert localistars",
+      "text": "Kunden und Übersetzer sind willkommen – <1/> gemeinsam erledigen Sie Übersetzungsprojekte."
+    },
+    "process": {
+      "consumer": {
+        "one": {
+          "subTitle": "Übersetzer gesucht",
+          "title": "Klient",
+          "text": "Stellen Sie sicher, dass Sie <1>Ihr Konto eingerichtet haben.</1>"
+        },
+        "two": {
+          "title": "Erstellen Sie ein Projekt und rufen Sie zur Angebotsabgabe auf",
+          "text": "Erstellen Sie einen neuen Entwurf. Laden Sie die zu übersetzenden Dateien hoch. Wählen Sie die Zielsprachen für die Übersetzung und Ausschreibung. Fertig. Hinter den Kulissen ist ein Übersetzungsprojekt entstanden. Sie können sich entspannen und warten, bis Gebote angezeigt werden."
+        },
+        "three": {
+          "title": "Wählen Sie den richtigen Partner für Ihr Projekt",
+          "text": "Wählen Sie das Angebot mit dem niedrigsten Preis oder den Partner mit dem besten Ruf. Es ist deine Entscheidung. Der neue Partner wird Ihrer Übersetzerliste hinzugefügt, sodass Sie in Zukunft problemlos wieder mit denselben Personen zusammenarbeiten können."
+        },
+        "four": {
+          "title": "Das Projekt finanzieren",
+          "text": "Bevor der Übersetzer mit der Arbeit beginnen kann, müssen Sie das Projekt finanzieren. Wir halten das Geld zurück, bis Sie die bereitgestellten Übersetzungen genehmigen. Der Übersetzer kann sicher sein, dass die Kosten gedeckt sind, während Sie sicher sein können, dass Ihnen nur dann Gebühren in Rechnung gestellt werden, wenn Sie den Inhalt genehmigen."
+        },
+        "five": {
+          "title": "Genehmigen Sie die Arbeit",
+          "text": "Wenn Sie mit der Arbeit Ihres Übersetzers zufrieden sind, genehmigen Sie das Projekt. Wenn etwas fehlt oder überarbeitet werden muss, geben Sie dem Übersetzer die Möglichkeit, den Inhalt zu verbessern. Auch für Streitigkeiten haben wir einen speziellen Workflow eingeführt."
+        },
+        "six": {
+          "title": "Aufgeladen werden",
+          "text": "Bei Bewilligung des Projekts werden die bereitgestellten Fördermittel an den Übersetzer ausgezahlt. Sie erhalten eine Rechnung für Ihre Buchhaltung. Alle vergangenen Transaktionen können im Buchhaltungsbereich Ihrer Organisation eingesehen werden."
+        }
+      },
+      "creator": {
+        "one": {
+          "subTitle": "Auf der Suche nach einem Job",
+          "title": "Übersetzer",
+          "text": "Stellen Sie sicher, dass Sie <1>Ihr Konto eingerichtet haben.</1>"
+        },
+        "two": {
+          "title": "Machen Sie ein Angebot",
+          "text": "Das neue Projekt wird in Ihrer Liste neuer Stellenangebote angezeigt. Sie können basierend auf den bereitgestellten Inhalten und Messwerten bieten. Wenn etwas unklar ist oder Sie zusätzliche Details benötigen, können Sie sich jederzeit an den potenziellen Kunden wenden."
+        },
+        "three": {
+          "title": "Kommen Sie zur Sache",
+          "text": "Tun Sie, was Sie am besten können. Wenn die Übersetzungen fertig sind, laden Sie die Dateien hoch und senden Sie den Auftrag. Während des Projekts können Sie Ihren Kunden jederzeit erreichen."
+        },
+        "four": {
+          "title": "Bezahlt werden",
+          "text": "Zeit, bezahlt zu werden. Das Geld wird auf Ihr localistars-Guthaben überwiesen und kann jederzeit abgehoben werden. Alle notwendigen Berichte für Ihre Buchhaltung (Rechnungen, MwSt-Berichte, etc.) sind in Ihrem Organisationsbereich verfügbar."
+        }
+      }
+    },
+    "video": {
+      "subTitle": "Schau Video",
+      "title": "localistars ist auch in locize integriert",
+      "text": "Sehen Sie sich an, wie localistars in unsere Lokalisierungsmanagement-Plattform locize integriert werden können, besuchen Sie das Video oder erfahren Sie mehr über locize in der Ökosystemübersicht.",
+      "learnMore": "Mehr erfahren",
+      "ecosystem": "Ökosystem"
+    }
+  },
+  "ecosystem": {
+    "meta": {
+      "title": "Ökosystem",
+      "description": "Ökosystem"
+    },
+    "title": "Localistars ist Teil dieses Ökosystems",
+    "portfolio": {
+      "p1": {
+        "title": "locize",
+        "text": "Lokalisierungsmanagement-Plattform"
+      },
+      "p2": {
+        "title": "i18next",
+        "text": "JavaScript-Internationalisierungs-Framework"
+      }
+    }
+  },
   "hero": {
     "subTitle": "Übersetzungsmarktplatz",
     "title": "Wir verbinden Kunden<1/>mit Übersetzer",
@@ -327,10 +410,6 @@
     "decline": "Ablehnen",
     "text": "Diese Website verwendet Cookies, um Ihnen die beste Erfahrung auf unserer Website zu ermöglichen. <1>mehr erfahren</1>"
   },
-  "sidebar": {
-    "title": "Aktuelle Beiträge",
-    "category": "Kategorien"
-  },
   "footer": {
     "desc": "Wir sind ein Übersetzungsmarktplatz für Unternehmen und Selbstständige, die einen Übersetzer suchen, sowie für freiberufliche Übersetzer oder Übersetzungsbüros, welche einen Job suchen.",
     "privacy": "Datenschutz",
@@ -345,10 +424,20 @@
     "rights": "Alle Rechte vorbehalten"
   },
   "blog": {
+    "meta": {
+      "title": "Blog",
+      "description": "Blog"
+    },
     "title": "Aktuelle Beiträge",
+    "subTitle": "Localistars Blog",
+    "smallTitle": "Blog",
     "readTime": "Lesezeit",
     "notFound": "Keine aktuellen Beiträge",
-    "share": "Teilen"
+    "share": "Teilen",
+    "sidebar": {
+      "title": "Aktuelle Beiträge",
+      "category": "Kategorien"
+    }
   },
   "common": {
     "onlyInDefaultLanguage": "Dieser Inhalt ist in der gewünschten Sprache nicht verfügbar.",
