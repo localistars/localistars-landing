@@ -9,12 +9,14 @@ const featureSectionData = {
     "Use localistars for <br className='d-none d-xs-block' />any kind of business<br className='d-none d-xs-block' />",
   tabWidget1: [
     {
+      id: "w1",
       icon: `${prefix}/image/project-management/icon-grid.png`,
       iconBackground: '#ff8d52',
       title: 'Localistars',
       text: "Order your translations online<br class='d-none d-xs-block'>for your project or website."
     },
     {
+      id: "w2",
       icon: `${prefix}/image/project-management/icon-message.png`,
       iconBackground: '#15cda8',
       title: 'Localization',

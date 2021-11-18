@@ -15,34 +15,32 @@ import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
 import { getStaticPaths, makeStaticProps } from '~lib/getStatic';
 
-const header = {
-  headerClasses:
-    'site-header site-header--menu-end dark-header site-header--sticky',
-  containerFluid: false,
-  darkLogo: false,
-  buttonBlock: (
-    // eslint-disable-next-line react/no-children-prop
-    <HeaderButton
-      className="d-none d-sm-flex"
-      as={Link}
-      target="_blank"
-      href="https://www.localistars.app/login"
-    >
-      Login
-    </HeaderButton>
-  )
-};
-
 export default function HomeApp() {
   const { t } = useTranslation('translations');
 
   return (
-    <PageWrapper headerConfig={header}>
+    <PageWrapper headerConfig={{
+      headerClasses:
+        'site-header site-header--menu-end dark-header site-header--sticky',
+      containerFluid: false,
+      darkLogo: false,
+      buttonBlock: (
+        // eslint-disable-next-line react/no-children-prop
+        <HeaderButton
+          className="d-none d-sm-flex"
+          as={Link}
+          target="_blank"
+          href="https://www.localistars.app/login"
+        >
+          {t('index.header.login')}
+        </HeaderButton>
+      )
+    }}>
       <Head>
-        <title>Translation company for online translation services</title>
+        <title>{t('index.meta.title')}</title>
         <meta
           name="description"
-          content="Localistars is a website where companies can find high-quality online translation services performed by freelance translators."
+          content={t('index.meta.description')}
         />
       </Head>
       <HeroSection />

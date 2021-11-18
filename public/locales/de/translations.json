@@ -1,4 +1,91 @@
 {
+  "index": {
+    "meta": {
+      "title": "Übersetzungsbüro für Online-Übersetzungsdienste",
+      "description": "Localistars ist eine Website, auf der Unternehmen hochwertige Online-Übersetzungsdienste finden, die von freiberuflichen Übersetzern durchgeführt werden."
+    },
+    "header": {
+      "login": "Anmelden"
+    },
+    "section": {
+      "subTitle": "Uns geht es um Transparenz und Vertrauen.",
+      "title": "Lokalisierung direkt mit Ihrem Partner"
+    },
+    "findBest": {
+      "title": "Finden Sie das beste Angebot",
+      "text": "Kunde: Wählen Sie die am besten geeigneten Übersetzer aus.<br/>Übersetzer: Bieten Sie auf geeignete Übersetzungsaufträge von Kunden.<br/>Als Kunde akzeptieren Sie Angebote basierend auf Preis und Erfahrung des Übersetzers. Als Übersetzer wählen Sie die Projekte aus, an denen Sie arbeiten möchten."
+    },
+    "directContact": {
+      "title": "Direkten Kontakt",
+      "text": "Es gibt keinen Zwischenhändler – Sie erhalten direkten Zugang zu den Experten. Keine lästige Textüberwachung oder Filterung. Als Kunde haben Sie die Möglichkeit, bei zukünftigen Projekten mit denselben Übersetzern zusammenzuarbeiten und Ihr eigenes Team aufzubauen."
+    },
+    "contentCentric": {
+      "title": "Inhaltsorientiert",
+      "text": "Es geht um den Inhalt. Projekte werden inhaltsorientiert aufgesetzt, damit die Localistars effektiv zusammenarbeiten können. Kunden möchten ihr globales Publikum erreichen, während Übersetzer aus vielfältigen Aufgaben wählen möchten. Wir haben euch beide gehört."
+    },
+    "riskFree": {
+      "title": "Risikofreie Zahlung",
+      "text": "Als Localistar brauchen Sie sich keine Sorgen um Ihre Zahlung zu machen. Kunden werden nur dann in Rechnung gestellt, wenn sie die von einem Übersetzer bereitgestellten Inhalte genehmigen. Übersetzer werden immer nach Genehmigung bezahlt."
+    },
+    "video": {
+      "title": "Localistars-Teaser",
+      "text": "Sehen Sie sich an, wie localistars funktioniert, und Sie werden Ihre Übersetzungsaufgabe mit unserem Marktplatz erledigen.",
+      "buttonOne": "Wie es funktioniert",
+      "buttonTwo": "Preise"
+    },
+    "service": {
+      "title": "Effiziente Übersetzung<1/>Services & Plattform",
+      "text": "Localistars ist ein benutzerfreundliches Übersetzungsunternehmen,<1/>das es Unternehmen jeder Grösse ermöglicht, über ihre Übersetzungsplattform kostengünstige Übersetzungen zu erwerben.",
+      "services": {
+        "ms1": {
+          "title": "Wettbewerbsfähige Preise",
+          "text": "Wir sind kein Übersetzungsbüro - wir sind eine Plattform, also geht es auch nicht um unsere Preisgestaltung, sondern um Ihre Preisgestaltung."
+        },
+        "ms2": {
+          "title": "Definiere dein Sprachpaar",
+          "text": "Sie können ganz einfach ein Projekt erstellen, bei dem sich Übersetzer bewerben können, und dann wählen Sie einfach das Sprachpaar und localistars benachrichtigen die entsprechenden Übersetzer für Sie."
+        },
+        "ms3": {
+          "title": "Hohe Qualität",
+          "text": "Alle Ihre Übersetzungsanforderungen können mit einer einzigen einfachen Lösung erfüllt werden. Senden Sie jetzt Ihren Übersetzungsauftrag und erhalten Sie Angebote, damit Sie aus schnellen, qualitativ hochwertigen Übersetzern in fast jeder Sprache wählen können."
+        }
+      }
+    },
+    "features": {
+      "first": {
+        "menu": "Übersetzungsdienste für Websites",
+        "tabTitle": "Maximieren Sie die Internationalisierung <br className='d-none d-xs-block' /> Ihrer Website",
+        "widgets": {
+          "w1": {
+            "title": "Localistars",
+            "text": "Bestellen Sie online Ihre Übersetzungen<br class='d-none d-xs-block'>für Ihr Projekt oder Ihre Website."
+          },
+          "w2": {
+            "title": "Lokalisierung",
+            "text": "Verwalten Sie Übersetzung und Entwicklung getrennt <br class='d-none d-xs-block'> und verbessern Sie die Internationalisierung Ihres Unternehmens."
+          }
+        }
+      },
+      "second": {
+        "menu": "Professionelle Übersetzungen",
+        "tabTitle": "Unsere Plattform verarbeitet<br className='d-none d-xs-block' />alles für Sie<br className='d-none d-xs-block' />"
+      },
+      "third": {
+        "menu": "Für jedes Geschäft",
+        "tabTitle": "Verwenden Sie Localistars für <br className='d-none d-xs-block' />jede Art von Geschäft<br className='d-none d-xs-block' />"
+      }
+    },
+    "promo": {
+      "subTitle": "Jetzt loslegen",
+      "title": "Finden Sie den besten Übersetzer, der Ihren Anforderungen entspricht<br className='d-none d-lg-block'/>",
+      "cta": "Übersetzer suchen"
+    },
+    "cta": {
+      "title": "Registrieren Sie sich als<br />Übersetzer oder als Übersetzungsbüro<br />kostenlos unten",
+      "text": "*Keine Gebühren für Ausschreibungen oder Gebote! Keine Verpflichtungen!",
+      "btn": "Kostenlos registrieren"
+    }
+  },
   "hero": {
     "subTitle": "Übersetzungsmarktplatz",
     "title": "Wir verbinden Kunden<1/>mit Übersetzer",
@@ -12,7 +99,10 @@
   "menu": {
     "translator": "Finde einen Übersetzer",
     "translationjob": "Finde einen Übersetzungsauftrag",
-    "pricing": "Preise"
+    "pricing": "Preise",
+    "how-it-works": "Wie es funktioniert",
+    "ecosystem": "Ökosystem",
+    "blog": "Blog"
   },
   "error": {
     "btn": "Zum Online Markplatz für Übersetzungen",
@@ -47,11 +137,5 @@
     "readTime": "Lesezeit",
     "notFound": "Keine aktuellen Beiträge",
     "share": "Teilen"
-  },
-  "about": {
-    "findBest": {
-      "title": "Finden Sie das beste Angebot",
-      "text": "Kunde: Wählen Sie die am besten geeigneten Übersetzer aus.<br/>Übersetzer: Bieten Sie auf geeignete Übersetzungsaufträge von Kunden.<br/>Als Kunde akzeptieren Sie Angebote basierend auf Preis und Erfahrung des Übersetzers. Als Übersetzer wählen Sie die Projekte aus, an denen Sie arbeiten möchten."
-    }
   }
 }

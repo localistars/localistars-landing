@@ -4,10 +4,12 @@ import Promo from './style';
 import Cta from '../Cta/style';
 import { Link } from '~components';
 import SectionTitle from './Components/SectionTitle';
-import { Button } from '~styled';
+import { useTranslation } from 'next-i18next';
 import prefix from '~lib/prefix';
 
 export default function CtaSection() {
+  const { t } = useTranslation('translations');
+
   return (
     <Promo>
       <Container>
@@ -36,9 +38,8 @@ export default function CtaSection() {
             <Promo.Content>
               <Promo.Box>
                 <SectionTitle
-                  subTitle="Get started now"
-                  title="Find the best translator that suits your need<br className='d-none d-lg-block'/>
-"
+                  subTitle={t('index.promo.subTitle')}
+                  title={t('index.promo.title')}
                   subTitleProps={{ mb: '30px', className: 'black' }}
                   titleProps={{ mb: '30px' }}
                 />
@@ -49,7 +50,7 @@ export default function CtaSection() {
                   alt=""
                   className="btn btn-bittersweet text-white box-shadow-1"
                 >
-                  Find a translator
+                  {t('index.promo.cta')}
                 </Cta.Button>
               </Promo.Box>
             </Promo.Content>

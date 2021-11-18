@@ -15,8 +15,8 @@ export default function AboutSection() {
         <Row className="justify-content-center">
           <Col className="col-xl-6 col-lg-8 col-md-9 col-xs-10 text-center">
             <SectionTitle
-              subTitle="We are about transparency and trust."
-              title="Localization done directly with your partner"
+              subTitle={t('index.section.subTitle')}
+              title={t('index.section.title')}
               titleProps={{ mb: '50px' }}
               subTitleProps={{ mb: '15px' }}
             />
@@ -26,10 +26,10 @@ export default function AboutSection() {
           <Col className="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-2 order-lg-1">
             <Widget
               directionXS="row-reverse"
-              title={t('about.findBest.title')}
+              title={t('index.findBest.title')}
               icon="fa fa-directions"
               text={
-                <Trans i18nKey="about.findBest.text">
+                <Trans i18nKey="index.findBest.text">
                   Client: Choose the best fitting translators.
                   <br />
                   Translator: Bid for suitable translation jobs of clients.
@@ -42,9 +42,9 @@ export default function AboutSection() {
             />
             <Widget
               directionXS="row-reverse"
-              title="Direct contact"
+              title={t('index.directContact.title')}
               icon="fa fa-user-friends"
-              text="There is no middleman – you get direct access to the experts. No annoying text monitoring or filtering. As client you may choose to collaborate with the same translators for future projects and grow your own team."
+              text={t('index.directContact.text')}
             />
           </Col>
           <Col
@@ -80,15 +80,15 @@ export default function AboutSection() {
           <Col className="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-3">
             <Widget
               directionXS="row"
-              title="Content-centric"
+              title={t('index.contentCentric.title')}
               icon="fa fa-book-open"
-              text="It's all about the content. Projects are set-up with content in mind so the localistars can work together effectively. Clients want to reach their global audience while translators want to choose from diverse tasks. We heard you both."
+              text={t('index.contentCentric.text')}
             />
             <Widget
               directionXS="row"
-              title="Risk-free payment"
+              title={t('index.riskFree.title')}
               icon="fa fa-credit-card"
-              text="As a localistar you don't need to worry about your payment. Clients will only be charged if they approve the content provided by a translator. Translators always get paid on approval."
+              text={t('index.riskFree.text')}
             />
           </Col>
         </Row>
