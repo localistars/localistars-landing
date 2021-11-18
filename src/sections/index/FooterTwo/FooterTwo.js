@@ -29,26 +29,26 @@ export default function FooterTwo() {
                     />
                   </Link>
                 </Footer.Box>
-                <Footer.Text mb="36px">{t('footerDesc')}</Footer.Text>
+                <Footer.Text mb="36px">{t('footer.desc')}</Footer.Text>
               </Footer.Widgets>
             </Col>
             <Col xs="12" className="col-xl-8">
               <Row>
                 <Col xs="12" className="col-md-4 col-xs-6">
                   <Footer.Widgets>
-                    <Footer.Title>{t('footerMore')}</Footer.Title>
+                    <Footer.Title>{t('footer.more')}</Footer.Title>
                     <Footer.List>
                       <Footer.ListItems>
-                        <Link to="/privacy">{t('footerPP')}</Link>
+                        <Link to="/privacy">{t('footer.privacy')}</Link>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <Link to="/terms"> {t('footerTerms')}</Link>
+                        <Link to="/terms"> {t('footer.terms')}</Link>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <Link to="/pricing">{t('footerPricing')}</Link>
+                        <Link to="/pricing">{t('footer.pricing')}</Link>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <Link to="/blog">Blog</Link>
+                        <Link to="/blog">{t('footer.blog')}</Link>
                       </Footer.ListItems>
                       <hr />
                       {i18nextConfig.i18n.locales.map((locale) => {
@@ -66,14 +66,14 @@ export default function FooterTwo() {
                 </Col>
                 <Col xs="12" className="col-md-4 col-xs-6">
                   <Footer.Widgets>
-                    <Footer.Title>{t('footerContact')}</Footer.Title>
+                    <Footer.Title>{t('footer.contact')}</Footer.Title>
                     <Footer.Address className="widgets-address">
                       <Footer.AddressItem>
                         <i className="fa fa-map-marker-alt" />
                         <span>
                           inweso GmbH
                           <br className="d-block" />
-                          {t('footerSwiss')} 🇨🇭
+                          {t('footer.swiss')} 🇨🇭
                         </span>
                       </Footer.AddressItem>
 
@@ -88,8 +88,8 @@ export default function FooterTwo() {
                 </Col>
                 <Col xs="12" className="col-md-4 col-xs-7">
                   <Footer.Widgets>
-                    <Footer.Title>{t('footerSMTitle')}</Footer.Title>
-                    <Footer.Text>{t('footerSMText')}</Footer.Text>
+                    <Footer.Title>{t('footer.socialTitle')}</Footer.Title>
+                    <Footer.Text>{t('footer.socialText')}</Footer.Text>
                     <Footer.SocialShare>
                       <Footer.Box pt="11px" pb="30px">
                         <Footer.SocialShare>
@@ -120,7 +120,7 @@ export default function FooterTwo() {
         <Footer.Copyright>
           <Footer.CopyrightText>
             <div>
-              ©{new Date().getFullYear()} inweso GmbH. {t('footerRights')}.
+              ©{new Date().getFullYear()} inweso GmbH. {t('footer.rights')}.
             </div>
           </Footer.CopyrightText>
         </Footer.Copyright>

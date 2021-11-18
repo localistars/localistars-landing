@@ -2,9 +2,12 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from '~components';
 import Hero from './style';
+import { useTranslation, Trans } from 'next-i18next';
 import prefix from '~lib/prefix';
 
 export default function HeroSection() {
+  const { t } = useTranslation('translations');
+
   return (
     <Hero backgroundColor="rgba(22, 92, 102, 0.5)">
       <Container>
@@ -13,27 +16,31 @@ export default function HeroSection() {
           <Col className="col-xxl-6 col-lg-7 col-md-9 col-xs-11 order-2 order-lg-1">
             <Hero.Content>
               <Hero.SubTitle fontColor="#ff7272" as="h3">
-                Translation Marketplace
+                {t('hero.subTitle')}
               </Hero.SubTitle>
               <Hero.Title as="h1">
-                We connect clients{' '}
-                <br className="d-none d-xs-block d-lg-none d-xl-block" />
-                with translators
+                <Trans i18nKey="hero.title">
+                  We connect clients 
+                  <br className="d-none d-xs-block d-lg-none d-xl-block" />
+                  with translators
+                </Trans>
               </Hero.Title>
               <Hero.Text fontColor="rgba(38, 39, 41, 0.7)">
-                localistars is the go-to marketplace for clients and translators
-                to get translation jobs done.{' '}
-                <br className="d-none d-md-block" />
-                As client you'll find translators and as translator you'll find
-                translation jobs. Direct contact, no middleman – just
-                collaborating localistars!
+                <Trans i18nKey="hero.description">
+                  localistars is the go-to marketplace for clients and translators
+                  to get translation jobs done.
+                  <br className="d-none d-md-block" />
+                  As client you'll find translators and as translator you'll find
+                  translation jobs. Direct contact, no middleman – just
+                  collaborating localistars!
+                </Trans>
               </Hero.Text>
               <Hero.ButtonGroup>
                 <Hero.Button className="btn-red 🌱" as={Link} to="/">
-                  Watch Video
+                  {t('hero.watchVideo')}
                 </Hero.Button>
-                <Hero.Button className="btn-green" as={Link} to="/">
-                  Sign Up Now
+                <Hero.Button className="btn-green" as={Link} to="https://www.localistars.app/register">
+                  {t('hero.register')}
                 </Hero.Button>
               </Hero.ButtonGroup>
             </Hero.Content>

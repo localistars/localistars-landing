@@ -29,7 +29,7 @@ export default function FooterTwo() {
                     />
                   </Link>
                 </Footer.Box>
-                <Footer.Text mb="36px">{t('footerDesc')}</Footer.Text>
+                <Footer.Text mb="36px">{t('footer.desc')}</Footer.Text>
               </Footer.Widgets>
             </Col>
             <Col xs="12" className="col-xl-8">

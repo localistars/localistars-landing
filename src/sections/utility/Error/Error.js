@@ -17,14 +17,14 @@ export default function Error() {
               <img src={errorImage.src} alt />
             </ErrorPage.Image>
             <ErrorPage.BigTitle as="h1">404</ErrorPage.BigTitle>
-            <ErrorPage.Title>{t('errortitle')}</ErrorPage.Title>
-            <ErrorPage.Text>{t('errortext')}</ErrorPage.Text>
+            <ErrorPage.Title>{t('error.title')}</ErrorPage.Title>
+            <ErrorPage.Text>{t('error.text')}</ErrorPage.Text>
             <ErrorPage.ButtonGroup>
               <ErrorPage.Button className="btn-1" to="/" as={Link}>
-                {t('errorbtn')}
+                {t('error.btn')}
               </ErrorPage.Button>
               <ErrorPage.Button as={Link} className="btn-2" href="/translator">
-                {t('errorbtnsec')}
+                {t('error.btnSecondary')}
               </ErrorPage.Button>
             </ErrorPage.ButtonGroup>
           </Col>

@@ -26,7 +26,7 @@ export default function BlogRegular({ posts = [] }) {
           <Col className="col-xl-8 text-center">
             <Blog.Box mb="63px">
               <Blog.Subtitle as="h6" fontColor="#5034fc">
-                {t('blogTitle')}
+                {t('blog.title')}
               </Blog.Subtitle>
               <Blog.Title as="h2">Localistars Blog</Blog.Title>
             </Blog.Box>
@@ -35,7 +35,7 @@ export default function BlogRegular({ posts = [] }) {
         <Row className="justify-content-center">
           {!filteredBlogPosts.length && (
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              {t('blogNotFound')}.
+              {t('blog.notFound')}.
             </p>
           )}
           {filteredBlogPosts.length > 0 &&

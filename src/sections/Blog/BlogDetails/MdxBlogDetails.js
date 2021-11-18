@@ -57,7 +57,7 @@ export default function MdxBlogDetails({
                   <Details.Text>{date}</Details.Text>
 
                   <Details.Text>
-                    {readtime} {t(`blogReadTime`)}
+                    {readtime} {t(`blog.readTime`)}
                   </Details.Text>
 
                   <Details.Text>
@@ -83,7 +83,7 @@ export default function MdxBlogDetails({
 
                 <Details.Tag mt="30px">
                   <Details.SubTitle mr="25px" as="h4">
-                    {t('blogShare')}:
+                    {t('blog.share')}:
                   </Details.SubTitle>
                   <Details.SocialList>
                     <li>

@@ -54,9 +54,9 @@ const MyApp = ({ Component, pageProps }) => {
           <Component {...pageProps} />
           <CookieConsent
             enableDeclineButton
-            declineButtonText={t('cookiedecline')}
+            declineButtonText={t('cookie.decline')}
             location="bottom"
-            buttonText={t('cookieaccept')}
+            buttonText={t('cookie.accept')}
             cookieName={process.env.NEXT_PUBLIC_COOKIE_CONSENT_NAME}
             style={{ background: '#165c66' }}
             buttonStyle={{
@@ -68,7 +68,7 @@ const MyApp = ({ Component, pageProps }) => {
             expires={360}
             onAccept={() => enable()}
           >
-            <Trans i18nKey="cookietext">
+            <Trans i18nKey="cookie.text">
               This website uses cookies to enhance the user experience.
               <Link to="/privacy">learn more</Link>
             </Trans>
