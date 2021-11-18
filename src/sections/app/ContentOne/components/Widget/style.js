@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Box, Heading,Button,Paragraph } from '~styled';
+import { Box, Heading, Button, Paragraph } from '~styled';
 
 const Widget = styled(Box)`
   display: block;
@@ -7,8 +7,7 @@ const Widget = styled(Box)`
   @media (min-width: 992px) {
     margin-bottom: 0;
   }
-
-`
+`;
 
 Widget.Icon = styled(Box)`
   margin: 0 0;
@@ -22,27 +21,24 @@ Widget.Icon = styled(Box)`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:#057d7b;
-  color:#fff;
-`
+  background-color: #057d7b;
+  color: #fff;
+`;
 
 Widget.Title = styled(Heading)`
-font-size: 21px;
-font-weight: 500;
-letter-spacing: normal;
-line-height: 30px;
-margin-bottom: 5px;
-`
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 30px;
+  margin-bottom: 5px;
+`;
 Widget.Text = styled(Paragraph)`
-font-size: 16px;
-font-weight: 400;
-letter-spacing: normal;
-line-height: 30px;
-`
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 30px;
+`;
 
-Widget.Box = styled(Box)`
-
-`
-
+Widget.Box = styled(Box)``;
 
 export default Widget;

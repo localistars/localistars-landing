@@ -1,1 +1,1 @@
-export { default } from "./CounterSection";
+export { default } from './CounterSection';

@@ -1,1 +1,1 @@
-export { default } from "./ServiceWidget"
+export { default } from './ServiceWidget';

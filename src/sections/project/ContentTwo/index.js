@@ -1,1 +1,1 @@
-export {default} from "./ContentTwo"
+export { default } from './ContentTwo';

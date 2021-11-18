@@ -1,11 +1,11 @@
-import React from "react"
-import Image from "next/image";
-import { Col, Container, Row } from "react-bootstrap"
-import SectionTitle from './Components/SectionTitle'
-import Integration from "./style"
-import BrandLogoLine1 from "../../../../public/image/brand-logo/brand-line-1.png";
-import BrandLogoLine2 from "../../../../public/image/brand-logo/brand-line-2.png";
-import BrandLogoLine3 from "../../../../public/image/brand-logo/brand-line-3.png";
+import React from 'react';
+import Image from 'next/image';
+import { Col, Container, Row } from 'react-bootstrap';
+import SectionTitle from './Components/SectionTitle';
+import Integration from './style';
+import BrandLogoLine1 from '../../../../public/image/brand-logo/brand-line-1.png';
+import BrandLogoLine2 from '../../../../public/image/brand-logo/brand-line-2.png';
+import BrandLogoLine3 from '../../../../public/image/brand-logo/brand-line-3.png';
 // import BrandLogoLine4 from "~image/brand-logo/brand-line-4.png";
 // import BrandLogoLine5 from "~image/brand-logo/brand-line-5.png";
 // import BrandLogoLine6 from "~image/brand-logo/brand-line-6.png";
@@ -23,9 +23,7 @@ import BrandLogoLine3 from "../../../../public/image/brand-logo/brand-line-3.png
 
 const IntegrationSection = ({ ...rest }) => {
   return (
-    <Integration
-      backgroundColor="#f2f5fb"
-    >
+    <Integration backgroundColor="#f2f5fb">
       <Container>
         <Row className="row justify-content-center">
           <Col className="col-xl-10">
@@ -113,10 +111,9 @@ const IntegrationSection = ({ ...rest }) => {
             </div>
           </Col>
         </Row>
-
       </Container>
     </Integration>
-  )
-}
+  );
+};
 
-export default IntegrationSection
+export default IntegrationSection;

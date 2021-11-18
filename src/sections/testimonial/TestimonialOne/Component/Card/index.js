@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "~components";
-import Card from "./style";
+import React from 'react';
+import { Link } from '~components';
+import Card from './style';
 export default function TestimonialCard({
   userImage,
   userName,

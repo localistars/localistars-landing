@@ -1,8 +1,8 @@
-import React from "react";
-import SectionTitle from "./components/SectionTitle";
-import { Col, Container, Row } from "react-bootstrap";
-import Widget from "./components/Widget";
-import Content from "./style";
+import React from 'react';
+import SectionTitle from './components/SectionTitle';
+import { Col, Container, Row } from 'react-bootstrap';
+import Widget from './components/Widget';
+import Content from './style';
 import prefix from '~lib/prefix';
 
 export default function ContentSectionOne() {
@@ -19,8 +19,8 @@ export default function ContentSectionOne() {
                 text="White iPhone Mockup Templates. A collection of three mockups showing
         an iPhone on a dark leather seat. High resolution PSD files, each coming
         with a smart object."
-                subTitleProps={{ mb: "20px" }}
-                titleProps={{ mb: "10px" }}
+                subTitleProps={{ mb: '20px' }}
+                titleProps={{ mb: '10px' }}
               />
             </Content.Box>
             <Content.Box>
@@ -48,9 +48,16 @@ export default function ContentSectionOne() {
             className="col-xxl-6 col-lg-5 col-md-8 col-xs-10 order-1 order-lg-2"
           >
             <Content.ImageGroup>
-            <img src={`${prefix}/image/home-app/content-mobile-img.png`} alt="content" className="w-100"/>
+              <img
+                src={`${prefix}/image/home-app/content-mobile-img.png`}
+                alt="content"
+                className="w-100"
+              />
               <Content.ImageShape>
-              <img src={`${prefix}/image/home-app/red-shape.png`} alt="content"/>
+                <img
+                  src={`${prefix}/image/home-app/red-shape.png`}
+                  alt="content"
+                />
               </Content.ImageShape>
             </Content.ImageGroup>
           </Col>

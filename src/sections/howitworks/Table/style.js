@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Box, Heading, Button, Paragraph } from "~styled";
+import styled from 'styled-components';
+import { Box, Heading, Button, Paragraph } from '~styled';
 
 const About = styled(Box)`
   padding-top: 60px;
@@ -14,9 +14,7 @@ const About = styled(Box)`
     padding-bottom: 110px;
   }
 `;
-About.Content = styled(Box)`
-
-`;
+About.Content = styled(Box)``;
 About.Title = styled(Heading)`
   font-size: 32px;
   font-weight: 500;
@@ -77,13 +75,11 @@ About.Image = styled(Box)`
   }
 `;
 
-About.HIWimage = styled(Box)`
-
-`
+About.HIWimage = styled(Box)``;
 
 About.Button = styled(Button)`
   margin-right: 15px;
-  border-radius: 500px!important;
+  border-radius: 500px !important;
   color: #fff;
   min-width: 140px;
   height: 56px;
@@ -97,7 +93,7 @@ About.Button = styled(Button)`
     height: 60px;
   }
   &.btn-1 {
-    box-shadow: 4px 4px 56px rgba(255, 87, 34, 0.3)!important;
+    box-shadow: 4px 4px 56px rgba(255, 87, 34, 0.3) !important;
     color: #fff !important;
     &:hover {
       box-shadow: none;

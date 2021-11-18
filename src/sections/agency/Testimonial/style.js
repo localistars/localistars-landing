@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Box, Heading, Paragraph } from "~styled";
+import styled from 'styled-components';
+import { Box, Heading, Paragraph } from '~styled';
 
 const Testimonial = styled(Box)`
   padding-top: 50px;

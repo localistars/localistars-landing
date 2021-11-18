@@ -10,78 +10,77 @@ $screen-xxl: 1366px;
 $screen-xxxl: 1600px;
 
 @mixin brk-point($mw) {
-    @media(min-width: $mw) {
-        @content;
-    }
+  @media (min-width: $mw) {
+    @content;
+  }
 }
 @mixin mobile-xs {
-    @media(min-width: $screen-xxs) {
-        @content;
-    }
+  @media (min-width: $screen-xxs) {
+    @content;
+  }
 }
 
 @mixin mobile {
-    @media(min-width: $screen-xs) {
-        @content;
-    }
+  @media (min-width: $screen-xs) {
+    @content;
+  }
 }
 
 @mixin mobile-lg {
-    @media(min-width: $screen-sm) {
-        @content;
-    }
+  @media (min-width: $screen-sm) {
+    @content;
+  }
 }
 @mixin mobile-lg-only {
-    @media(min-width: $screen-sm) and (max-width:$screen-md) {
-        @content;
-    }
+  @media (min-width: $screen-sm) and (max-width: $screen-md) {
+    @content;
+  }
 }
 
 @mixin tablet {
-    @media(min-width: $screen-md) {
-        @content;
-    }
+  @media (min-width: $screen-md) {
+    @content;
+  }
 }
 
 @mixin desktops {
-    @media(min-width: $screen-lg) {
-        @content;
-    }
+  @media (min-width: $screen-lg) {
+    @content;
+  }
 }
 
 @mixin desktops-only {
-    @media(min-width: $screen-lg) and (max-width:$screen-xl) {
-        @content;
-    }
+  @media (min-width: $screen-lg) and (max-width: $screen-xl) {
+    @content;
+  }
 }
 @mixin till-desktop {
-    @media(min-width: $screen-xxs) and (max-width:$screen-lg) {
-        @content;
-    }
+  @media (min-width: $screen-xxs) and (max-width: $screen-lg) {
+    @content;
+  }
 }
 
 @mixin large-desktops {
-    @media(min-width: $screen-xl) {
-        @content;
-    }
+  @media (min-width: $screen-xl) {
+    @content;
+  }
 }
 
 @mixin large-desktops-mid {
-    @media(min-width: $screen-xxl) {
-        @content;
-    }
+  @media (min-width: $screen-xxl) {
+    @content;
+  }
 }
 
 @mixin extra-large-desktops {
-    @media(min-width: $screen-xxxl) {
-        @content;
-    }
+  @media (min-width: $screen-xxxl) {
+    @content;
+  }
 }
 
-@mixin section-padding{
-    padding: 50px 0;
-    @include tablet {
-        padding: 120px 0;
-
-    }
+@mixin section-padding {
+  padding: 50px 0;
+  @include tablet {
+    padding: 120px 0;
+  }
 }

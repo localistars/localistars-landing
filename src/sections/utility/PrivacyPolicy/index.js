@@ -1,2 +1,1 @@
-
-export { default } from "./PrivacySection";
+export { default } from './PrivacySection';

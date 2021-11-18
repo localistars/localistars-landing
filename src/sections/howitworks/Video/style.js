@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Box, Heading, Button, Paragraph } from "~styled";
+import styled from 'styled-components';
+import { Box, Heading, Button, Paragraph } from '~styled';
 
 const Video = styled(Box)`
   padding-top: 60px;
@@ -77,7 +77,7 @@ Video.Image = styled(Box)`
 
 Video.Button = styled(Button)`
   margin-right: 15px;
-  border-radius: 500px!important;
+  border-radius: 500px !important;
   color: #fff;
   min-width: 140px;
   height: 56px;
@@ -91,7 +91,7 @@ Video.Button = styled(Button)`
     height: 60px;
   }
   &.btn-1 {
-    box-shadow: 4px 4px 56px rgba(255, 87, 34, 0.3)!important;
+    box-shadow: 4px 4px 56px rgba(255, 87, 34, 0.3) !important;
     color: #fff !important;
     &:hover {
       box-shadow: none;

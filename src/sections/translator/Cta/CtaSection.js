@@ -1,7 +1,7 @@
-import React from "react";
-import Cta from "./style";
-import { Col, Container, Row } from "react-bootstrap";
-import ctal5Img from "../../../../public/image/translator/signup.png";
+import React from 'react';
+import Cta from './style';
+import { Col, Container, Row } from 'react-bootstrap';
+import ctal5Img from '../../../../public/image/translator/signup.png';
 
 export default function CtaSection({ ...rest }) {
   return (
@@ -11,14 +11,14 @@ export default function CtaSection({ ...rest }) {
           <Col className="col-xl-6 col-lg-8 col-md-10">
             <Cta.InnerWrapper className="text-center">
               <Cta.Subtitle fontColor="#ffce3e" as="span">
-               HELP
+                HELP
               </Cta.Subtitle>
               <Cta.Title as="h2" fontColor="#fff">
-               Do you require some assistance before you register your company?
-
+                Do you require some assistance before you register your company?
               </Cta.Title>
               <Cta.Text fontColor="#fff">
-                Any question you may have about our pricing or platform will be answered by one of our team members.
+                Any question you may have about our pricing or platform will be
+                answered by one of our team members.
               </Cta.Text>
               <Cta.Button
                 className="btn-torch-red"

@@ -1,11 +1,14 @@
-import React from "react";
-import MapArea from "./style";
+import React from 'react';
+import MapArea from './style';
 import prefix from '~lib/prefix';
 
 export default function ContactMap() {
   return (
     <MapArea>
-      <img src={`${prefix}/image/home-services/contact-map.png`} alt="content"/>
+      <img
+        src={`${prefix}/image/home-services/contact-map.png`}
+        alt="content"
+      />
       <MapArea.Card className="card-1">
         <p>4 G-ral. Traian Mosoiu Street, A Building, 2nd</p>
       </MapArea.Card>

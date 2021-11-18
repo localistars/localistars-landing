@@ -1,13 +1,13 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import SectionTitle from "./components/SectionTitle";
-import Widget from "./components/widget";
-import About from "./style";
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import SectionTitle from './components/SectionTitle';
+import Widget from './components/widget';
+import About from './style';
 import prefix from '~lib/prefix';
-import { useTranslation, Trans } from 'next-i18next'
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function AboutSection() {
-  const { t } = useTranslation('translations')
+  const { t } = useTranslation('translations');
 
   return (
     <About backgroundColor="#f2f5fb">
@@ -17,8 +17,8 @@ export default function AboutSection() {
             <SectionTitle
               subTitle="We are about transparency and trust."
               title="Localization done directly with your partner"
-              titleProps={{ mb: "50px" }}
-              subTitleProps={{ mb: "15px" }}
+              titleProps={{ mb: '50px' }}
+              subTitleProps={{ mb: '15px' }}
             />
           </Col>
         </Row>
@@ -28,13 +28,17 @@ export default function AboutSection() {
               directionXS="row-reverse"
               title={t('about.findBest.title')}
               icon="fa fa-directions"
-              text={<Trans i18nKey="about.findBest.text">
-                Client: Choose the best fitting translators.
-                <br/>
-                Translator: Bid for suitable translation jobs of clients.
-                <br/>
-                As client you accept bids based on price and experience of the translator. As translator you cherry-pick the projects you want to work on.
-              </Trans>}
+              text={
+                <Trans i18nKey="about.findBest.text">
+                  Client: Choose the best fitting translators.
+                  <br />
+                  Translator: Bid for suitable translation jobs of clients.
+                  <br />
+                  As client you accept bids based on price and experience of the
+                  translator. As translator you cherry-pick the projects you
+                  want to work on.
+                </Trans>
+              }
             />
             <Widget
               directionXS="row-reverse"
@@ -42,23 +46,34 @@ export default function AboutSection() {
               icon="fa fa-user-friends"
               text="There is no middleman – you get direct access to the experts. No annoying text monitoring or filtering. As client you may choose to collaborate with the same translators for future projects and grow your own team."
             />
-            
           </Col>
           <Col
             xs="12"
             className="col-xxl-6 col-lg-4 col-md-8 col-xs-9 order-1 order-lg-2 text-center"
           >
             <About.ImageContent>
-              <img src={`${prefix}/image/index/about-mobile-img1.png`} alt="about mobile"/>
+              <img
+                src={`${prefix}/image/index/about-mobile-img1.png`}
+                alt="about mobile"
+              />
               <About.Shape>
-                <img src={`${prefix}/image/index/green-shape.png`} alt="green shape"/>
+                <img
+                  src={`${prefix}/image/index/green-shape.png`}
+                  alt="green shape"
+                />
               </About.Shape>
             </About.ImageContent>
 
             <About.ImageContent2>
-              <img src={`${prefix}/image/index/about-mobile-img-350.png`} alt="about mobile"/>
+              <img
+                src={`${prefix}/image/index/about-mobile-img-350.png`}
+                alt="about mobile"
+              />
               <About.Shape>
-                <img src={`${prefix}/image/index/green-shape-300.png`} alt="shape"/>
+                <img
+                  src={`${prefix}/image/index/green-shape-300.png`}
+                  alt="shape"
+                />
               </About.Shape>
             </About.ImageContent2>
           </Col>
@@ -75,7 +90,6 @@ export default function AboutSection() {
               icon="fa fa-credit-card"
               text="As a localistar you don't need to worry about your payment. Clients will only be charged if they approve the content provided by a translator. Translators always get paid on approval."
             />
-            
           </Col>
         </Row>
       </Container>

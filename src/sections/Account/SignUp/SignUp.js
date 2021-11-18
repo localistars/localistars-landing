@@ -1,8 +1,8 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import SignUpForm from "./style";
-import SignupBgImg from "../../../../public/image/accounts/sign-up.jpg";
-import { Link } from "~components";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import SignUpForm from './style';
+import SignupBgImg from '../../../../public/image/accounts/sign-up.jpg';
+import { Link } from '~components';
 export default function SignUp() {
   return (
     <SignUpForm backgroundColor="#f3f4f6">

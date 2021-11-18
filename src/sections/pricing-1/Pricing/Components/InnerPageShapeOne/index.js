@@ -1,6 +1,6 @@
-import React from "react";
-import InnerPromoShape from "../../../../../../public/image/mixed/inner-banner-shape.png";
-import Shape from "./style";
+import React from 'react';
+import InnerPromoShape from '../../../../../../public/image/mixed/inner-banner-shape.png';
+import Shape from './style';
 export default function InnerShape() {
   return (
     <Shape>

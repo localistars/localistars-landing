@@ -1,1 +1,1 @@
-export {default} from "./FeatureTabPenLayout"
+export { default } from './FeatureTabPenLayout';

@@ -1,8 +1,8 @@
-import { Link } from "~components";
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import LogoBlack from "../../../../public/image/logo/logo-black.png";
-import Footer from "./style";
+import { Link } from '~components';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import LogoBlack from '../../../../public/image/logo/logo-black.png';
+import Footer from './style';
 
 export default function FooterFour() {
   return (
@@ -26,8 +26,8 @@ export default function FooterFour() {
                   <a href="#">Home</a>
                 </Footer.MenuItems>
                 <Footer.MenuItems>
-                  {" "}
-                  <a href="#">About Us</a>{" "}
+                  {' '}
+                  <a href="#">About Us</a>{' '}
                 </Footer.MenuItems>
                 <Footer.MenuItems>
                   <a href="#">Blog</a>

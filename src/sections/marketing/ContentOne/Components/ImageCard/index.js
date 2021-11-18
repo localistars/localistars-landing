@@ -1,6 +1,6 @@
-import React from "react"
-import Card from "./style"
-export default function ImageCard({...rest}) {
+import React from 'react';
+import Card from './style';
+export default function ImageCard({ ...rest }) {
   return (
     <Card {...rest}>
       <Card.CounterBlock>
@@ -9,9 +9,7 @@ export default function ImageCard({...rest}) {
           <i className="fa fa-arrow-up" />
         </Card.CounterBlockIcon>
       </Card.CounterBlock>
-        <Card.Text>
-          Extra growth for your company.
-        </Card.Text>
+      <Card.Text>Extra growth for your company.</Card.Text>
     </Card>
-  )
+  );
 }

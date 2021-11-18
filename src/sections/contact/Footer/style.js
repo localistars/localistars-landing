@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Link } from "~components";
-import { Box, Button, Heading, Paragraph } from "~styled";
+import styled from 'styled-components';
+import { Link } from '~components';
+import { Box, Button, Heading, Paragraph } from '~styled';
 
 const Footer = styled(Box)`
   background-color: #f3f4f6;
@@ -78,7 +78,7 @@ Footer.Text = styled(Paragraph)`
   line-height: 30px;
 `;
 
-Footer.Address = styled(Box).attrs({ className: "list-unstyled", as: "ul" })`
+Footer.Address = styled(Box).attrs({ className: 'list-unstyled', as: 'ul' })`
   padding: 0;
   margin: 0;
   margin-bottom: 30px;
@@ -86,7 +86,7 @@ Footer.Address = styled(Box).attrs({ className: "list-unstyled", as: "ul" })`
     margin-bottom: 0;
   }
 `;
-Footer.AddressItem = styled(Box).attrs({ className: "list-items", as: "li" })`
+Footer.AddressItem = styled(Box).attrs({ className: 'list-items', as: 'li' })`
   font-size: 16px;
   font-weight: 400;
   letter-spacing: normal;
@@ -121,8 +121,8 @@ Footer.AddressItem = styled(Box).attrs({ className: "list-items", as: "li" })`
 `;
 
 Footer.List = styled(Box).attrs({
-  className: "widgets-list list-unstyled",
-  as: "ul",
+  className: 'widgets-list list-unstyled',
+  as: 'ul'
 })`
   padding: 0;
   margin: 0;
@@ -131,7 +131,7 @@ Footer.List = styled(Box).attrs({
     margin-bottom: 0;
   }
 `;
-Footer.ListItems = styled(Box).attrs({ className: "list-items", as: "li" })`
+Footer.ListItems = styled(Box).attrs({ className: 'list-items', as: 'li' })`
   font-size: 16px;
   font-weight: 400;
   letter-spacing: normal;
@@ -162,8 +162,8 @@ Footer.ListItems = styled(Box).attrs({ className: "list-items", as: "li" })`
   }
 `;
 Footer.SocialShare = styled(Box).attrs({
-  className: "footer-social-share list-unstyled",
-  as: "ul",
+  className: 'footer-social-share list-unstyled',
+  as: 'ul'
 })`
   padding: 0;
   margin: 0 -10px;
@@ -173,8 +173,8 @@ Footer.SocialShare = styled(Box).attrs({
   }
 `;
 Footer.SocialShareItem = styled(Box).attrs({
-  className: "list-items",
-  as: "li",
+  className: 'list-items',
+  as: 'li'
 })`
   display: inline-block;
   padding: 0 10px;

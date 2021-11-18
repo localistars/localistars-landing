@@ -1,37 +1,43 @@
-import React from "react";
-import { PageWrapper } from "~components/Core";
-import HeaderButton from "~sections/translationjobs/Header";
-import HeroSection from "~sections/translationjobs/Hero";
-import Services2 from "~sections/translationjobs/ServicesTwo";
-import ServiceSection from "~sections/translationjobs/Service"
-import FeatureSection from '~sections/translationjobs/Features'
-import Process from "~sections/translationjobs/Process";
-import CtaSection from "~sections/translationjobs/CtaSpecial";
-import FooterTwo from "~sections/index/FooterTwo";
-import Head from 'next/head'
+import React from 'react';
+import { PageWrapper } from '~components/Core';
+import HeaderButton from '~sections/translationjobs/Header';
+import HeroSection from '~sections/translationjobs/Hero';
+import Services2 from '~sections/translationjobs/ServicesTwo';
+import ServiceSection from '~sections/translationjobs/Service';
+import FeatureSection from '~sections/translationjobs/Features';
+import Process from '~sections/translationjobs/Process';
+import CtaSection from '~sections/translationjobs/CtaSpecial';
+import FooterTwo from '~sections/index/FooterTwo';
+import Head from 'next/head';
 
-import { getStaticPaths, makeStaticProps } from '~lib/getStatic'
+import { getStaticPaths, makeStaticProps } from '~lib/getStatic';
 
 const header = {
-  headerClasses: "site-header site-header--menu-center site-header--services dark-header site-header--sticky site-header--service",
-  containerFluid:false,
-  darkLogo:false,
+  headerClasses:
+    'site-header site-header--menu-center site-header--services dark-header site-header--sticky site-header--service',
+  containerFluid: false,
+  darkLogo: false,
   buttonBlock: (
-    <HeaderButton 
-    className="ms-auto d-none d-xs-inline-flex" 
-    btnLink="https://www.localistars.app/login" 
-    btnText="Find a translation job" mr="15px"
-    mrLG="0"/>
-  ),
-}
+    <HeaderButton
+      className="ms-auto d-none d-xs-inline-flex"
+      btnLink="https://www.localistars.app/login"
+      btnText="Find a translation job"
+      mr="15px"
+      mrLG="0"
+    />
+  )
+};
 
 export default function HomeApp() {
   return (
     <PageWrapper headerConfig={header}>
-    <Head>
-      <title>Freelance Translator Website: Find a job</title>
-      <meta name="description" content="On our website you will find freelance opportunities for language translation. Apply for the next translation job online." />
-    </Head>
+      <Head>
+        <title>Freelance Translator Website: Find a job</title>
+        <meta
+          name="description"
+          content="On our website you will find freelance opportunities for language translation. Apply for the next translation job online."
+        />
+      </Head>
       <HeroSection />
       <Services2 />
       <ServiceSection />
@@ -43,5 +49,5 @@ export default function HomeApp() {
   );
 }
 
-const getStaticProps = makeStaticProps()
-export { getStaticPaths, getStaticProps }
+const getStaticProps = makeStaticProps();
+export { getStaticPaths, getStaticProps };

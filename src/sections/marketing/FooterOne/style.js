@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import { Link } from "~components"
-import { Box, Button, Heading, Paragraph } from "~styled"
+import styled from 'styled-components';
+import { Link } from '~components';
+import { Box, Button, Heading, Paragraph } from '~styled';
 
 const Footer = styled(Box)`
   padding-top: 60px;
@@ -14,8 +14,8 @@ const Footer = styled(Box)`
     padding-top: 100px;
     padding-bottom: 20px;
   }
-`
-Footer.Widgets = styled(Box)``
+`;
+Footer.Widgets = styled(Box)``;
 Footer.Newsletter = styled(Box)`
   form {
     text-align: right;
@@ -35,8 +35,8 @@ Footer.Newsletter = styled(Box)`
       }
     }
   }
-`
-Footer.Link = styled(Box)``
+`;
+Footer.Link = styled(Box)``;
 
 Footer.Title = styled(Heading)`
   font-size: 16px;
@@ -46,7 +46,7 @@ Footer.Title = styled(Heading)`
   margin-bottom: 25px;
   color: #fff;
   opacity: 0.7;
-`
+`;
 
 Footer.Text = styled(Paragraph)`
   color: rgba(255, 255, 255, 0.7);
@@ -55,17 +55,17 @@ Footer.Text = styled(Paragraph)`
   font-weight: 400;
   letter-spacing: normal;
   line-height: 1.875;
-`
+`;
 
-Footer.Address = styled(Box).attrs({ className: "list-unstyled", as: "ul" })`
+Footer.Address = styled(Box).attrs({ className: 'list-unstyled', as: 'ul' })`
   padding: 0;
   margin: 0;
   margin-bottom: 30px;
   @media (min-width: 992px) {
     margin-bottom: 0;
   }
-`
-Footer.AddressItem = styled(Box).attrs({ className: "list-items", as: "li" })`
+`;
+Footer.AddressItem = styled(Box).attrs({ className: 'list-items', as: 'li' })`
   font-size: 16px;
   font-weight: 400;
   letter-spacing: normal;
@@ -97,11 +97,11 @@ Footer.AddressItem = styled(Box).attrs({ className: "list-items", as: "li" })`
     display: inline-block;
     word-break: break-all;
   }
-`
+`;
 
 Footer.List = styled(Box).attrs({
-  className: "widgets-list list-unstyled",
-  as: "ul",
+  className: 'widgets-list list-unstyled',
+  as: 'ul'
 })`
   padding: 0;
   margin: 0;
@@ -109,8 +109,8 @@ Footer.List = styled(Box).attrs({
   @media (min-width: 992px) {
     margin-bottom: 0;
   }
-`
-Footer.ListItems = styled(Box).attrs({ className: "list-items", as: "li" })`
+`;
+Footer.ListItems = styled(Box).attrs({ className: 'list-items', as: 'li' })`
   font-size: 16px;
   font-weight: 400;
   letter-spacing: normal;
@@ -127,7 +127,7 @@ Footer.ListItems = styled(Box).attrs({ className: "list-items", as: "li" })`
     transition: 0.4s;
     &:hover {
       color: #fff;
-    text-decoration: underline;
+      text-decoration: underline;
     }
   }
   i {
@@ -140,10 +140,10 @@ Footer.ListItems = styled(Box).attrs({ className: "list-items", as: "li" })`
   span {
     color: rgba(38, 39, 41, 0.7) !important;
   }
-`
+`;
 Footer.SocialShare = styled(Box).attrs({
-  className: "footer-social-share list-unstyled",
-  as: "ul",
+  className: 'footer-social-share list-unstyled',
+  as: 'ul'
 })`
   padding: 0;
   margin: 0 -10px;
@@ -151,10 +151,10 @@ Footer.SocialShare = styled(Box).attrs({
   @media (min-width: 992px) {
     margin-top: 0;
   }
-`
+`;
 Footer.SocialShareItem = styled(Box).attrs({
-  className: "list-items",
-  as: "li",
+  className: 'list-items',
+  as: 'li'
 })`
   display: inline-flex;
   align-items: center;
@@ -167,7 +167,7 @@ Footer.SocialShareItem = styled(Box).attrs({
     color: #fff;
     font-size: 15px;
     &::before {
-      content: ".";
+      content: '.';
       position: absolute;
       left: 0;
       bottom: 0;
@@ -181,7 +181,7 @@ Footer.SocialShareItem = styled(Box).attrs({
       display: none;
     }
   }
-`
+`;
 
 Footer.Copyright = styled(Box)`
   text-align: center;
@@ -191,14 +191,14 @@ Footer.Copyright = styled(Box)`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-    justify-content: center;
+  justify-content: center;
   @media (min-width: 576px) {
-  justify-content: space-between;
+    justify-content: space-between;
   }
   @media (min-width: 992px) {
     text-align: left;
   }
-`
+`;
 
 Footer.CopyrightText = styled(Box)`
   font-size: 13px;
@@ -207,7 +207,7 @@ Footer.CopyrightText = styled(Box)`
   letter-spacing: normal;
   line-height: 22px;
   color: #fff;
-`
+`;
 
-Footer.Box = styled(Box)``
-export default Footer
+Footer.Box = styled(Box)``;
+export default Footer;

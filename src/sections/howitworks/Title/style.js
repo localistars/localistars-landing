@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Box, Heading, Button, Paragraph } from "~styled";
+import styled from 'styled-components';
+import { Box, Heading, Button, Paragraph } from '~styled';
 
 const Title = styled(Box)`
   padding-top: 60px;
@@ -14,15 +14,14 @@ const Title = styled(Box)`
     padding-bottom: 0px;
   }
 `;
-Title.Content = styled(Box)`
-`;
+Title.Content = styled(Box)``;
 Title.Title = styled(Heading)`
   font-size: 32px;
   font-weight: 500;
   letter-spacing: normal;
   line-height: 1.3;
   position: relative;
-  
+
   @media (min-width: 768px) {
     font-size: 38px;
   }
@@ -79,7 +78,7 @@ Title.Image = styled(Box)`
 
 Title.Button = styled(Button)`
   margin-right: 15px;
-  border-radius: 500px!important;
+  border-radius: 500px !important;
   color: #fff;
   min-width: 140px;
   height: 56px;
@@ -93,7 +92,7 @@ Title.Button = styled(Button)`
     height: 60px;
   }
   &.btn-1 {
-    box-shadow: 4px 4px 56px rgba(255, 87, 34, 0.3)!important;
+    box-shadow: 4px 4px 56px rgba(255, 87, 34, 0.3) !important;
     color: #fff !important;
     &:hover {
       box-shadow: none;

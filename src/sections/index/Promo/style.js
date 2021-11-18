@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Box, Heading, Button, Paragraph } from "~styled";
+import styled from 'styled-components';
+import { Box, Heading, Button, Paragraph } from '~styled';
 
 const Promo = styled(Box)`
   background-image: linear-gradient(
@@ -28,9 +28,9 @@ const Promo = styled(Box)`
 `;
 
 Promo.Image = styled(Box)`
-  
-   @media (max-width: 768px) 
-   {display:none;}
+  @media (max-width: 768px) {
+    display: none;
+  }
 
   @media (min-width: 1200px) {
     position: absolute;
@@ -44,16 +44,11 @@ Promo.Image = styled(Box)`
 `;
 
 Promo.Image1 = styled(Box)`
-  display:none;
+  display: none;
 
-
-
-   @media (max-width: 768px) 
-   {
-    display:block;
+  @media (max-width: 768px) {
+    display: block;
   }
-
-  
 `;
 
 Promo.Content = styled(Box)`

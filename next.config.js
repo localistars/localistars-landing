@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 // const withImages = require('next-images')
 module.exports = {
   sassOptions: {
@@ -6,18 +6,18 @@ module.exports = {
     eslint: {
       // Warning: Dangerously allow production builds to successfully complete even if
       // your project has ESLint errors.
-      ignoreDuringBuilds: true,
-    },
+      ignoreDuringBuilds: true
+    }
   },
   trailingSlash: true,
   images: {
     loader: 'imgix',
-    path: 'https://localistars.com',
+    path: 'https://localistars.com'
   }
-}
+};
 if (process.env.NEXT_PUBLIC_BASE_PATH) {
-  module.exports.basePath = process.env.NEXT_PUBLIC_BASE_PATH
-  module.exports.assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH
+  module.exports.basePath = process.env.NEXT_PUBLIC_BASE_PATH;
+  module.exports.assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH;
 }
 // module.exports = withImages({
 //   webpack(config, options) {

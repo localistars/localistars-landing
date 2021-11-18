@@ -1,5 +1,5 @@
-import React from "react";
-import Card from "./style";
+import React from 'react';
+import Card from './style';
 export default function TestiomialCard({
   userName,
   userPosition,

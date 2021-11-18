@@ -1,12 +1,12 @@
-import React, { useRef } from "react"
-import Slider from "react-slick"
-import TestimonialWidget from "./Components/Widget"
-import Testimonial from './style'
-import data from "~data/index/TestimonialSliderData"
-import { Container } from "react-bootstrap"
+import React, { useRef } from 'react';
+import Slider from 'react-slick';
+import TestimonialWidget from './Components/Widget';
+import Testimonial from './style';
+import data from '~data/index/TestimonialSliderData';
+import { Container } from 'react-bootstrap';
 
 const TestimonialSection = ({ ...rest }) => {
-  const elSlider = useRef()
+  const elSlider = useRef();
 
   const sliderConfig1 = {
     dots: false,
@@ -18,28 +18,28 @@ const TestimonialSection = ({ ...rest }) => {
     responsive: [
       {
         breakpoint: 200000,
-        settings: "unslick"
+        settings: 'unslick'
       },
       {
         breakpoint: 1200,
-        settings: "unslick"
+        settings: 'unslick'
       },
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-        },
+          slidesToScroll: 2
+        }
       },
       {
         breakpoint: 767,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  }
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   return (
     <Testimonial {...rest}>
       <Container>
@@ -52,23 +52,25 @@ const TestimonialSection = ({ ...rest }) => {
           >
             {data.map((item, index) => {
               return (
-                <Testimonial.Box className="col-lg-4 slide-item-inner"
-                key={"marketingts" + index}>
-                <TestimonialWidget
-                  text={item.text}
-                  name={item.name}
-                  position={item.position}
-                  image={item.image}
-                  reviewStar={item.reviewStar}
-                />
+                <Testimonial.Box
+                  className="col-lg-4 slide-item-inner"
+                  key={'marketingts' + index}
+                >
+                  <TestimonialWidget
+                    text={item.text}
+                    name={item.name}
+                    position={item.position}
+                    image={item.image}
+                    reviewStar={item.reviewStar}
+                  />
                 </Testimonial.Box>
-              )
+              );
             })}
           </Slider>
         </Testimonial.SliderWrapper>
       </Container>
     </Testimonial>
-  )
-}
+  );
+};
 
-export default TestimonialSection
+export default TestimonialSection;

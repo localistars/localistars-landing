@@ -1,1 +1,1 @@
-export {default} from "./PormoSection"
+export { default } from './PormoSection';

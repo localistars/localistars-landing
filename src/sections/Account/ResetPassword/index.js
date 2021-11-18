@@ -1,1 +1,1 @@
-export { default } from "./ResetSection";
+export { default } from './ResetSection';

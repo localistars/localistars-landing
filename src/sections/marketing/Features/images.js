@@ -5,6 +5,6 @@ import Image4 from '../../../../public/image/brand-black/l4.png';
 import Image5 from '../../../../public/image/brand-black/l5.png';
 import Image6 from '../../../../public/image/brand-black/l6.png';
 
- const BrandImages = [Image1, Image2, Image3, Image4, Image5, Image6];
+const BrandImages = [Image1, Image2, Image3, Image4, Image5, Image6];
 
-  export default BrandImages;
+export default BrandImages;

@@ -1,6 +1,6 @@
-import React from "react";
-import { SuperTag } from "~components";
-import Card from "./style";
+import React from 'react';
+import { SuperTag } from '~components';
+import Card from './style';
 export default function BlogCard({
   text,
   title,
@@ -23,7 +23,7 @@ export default function BlogCard({
           <Card.Date to="/blog/blog-details">{date}</Card.Date>
         </Card.Top>
         <Card.Title to="/blog/blog-details">
-          {" "}
+          {' '}
           <SuperTag value={title} />
         </Card.Title>
         <Card.Bottom>

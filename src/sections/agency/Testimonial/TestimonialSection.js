@@ -1,8 +1,8 @@
-import React from "react";
-import TestiomialCard from "./Components/Card";
-import SectionTitle from "./Components/SectionTitle";
-import Testimonial from "./style";
-import { Col, Container, Row } from "react-bootstrap";
+import React from 'react';
+import TestiomialCard from './Components/Card';
+import SectionTitle from './Components/SectionTitle';
+import Testimonial from './style';
+import { Col, Container, Row } from 'react-bootstrap';
 export default function TestimonialSection() {
   return (
     <Testimonial backgroundColor="#f3f4f6">
@@ -12,8 +12,8 @@ export default function TestimonialSection() {
             <SectionTitle
               subTitle="Testimonial"
               title="What The People Thinks About Us"
-              subTitleProps={{ mb: "27px" }}
-              titleProps={{ mb: "10px", as: "h2" }}
+              subTitleProps={{ mb: '27px' }}
+              titleProps={{ mb: '10px', as: 'h2' }}
               mb="50px"
             />
           </Col>

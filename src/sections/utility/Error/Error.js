@@ -1,12 +1,12 @@
-import React from "react";
-import { Link } from "~components";
-import { Col, Container, Row } from "react-bootstrap";
-import ErrorPage from "./style";
-import errorImage from "../../../../public/image/logo/logo-black.png";
-import { useTranslation } from 'next-i18next'
+import React from 'react';
+import { Link } from '~components';
+import { Col, Container, Row } from 'react-bootstrap';
+import ErrorPage from './style';
+import errorImage from '../../../../public/image/logo/logo-black.png';
+import { useTranslation } from 'next-i18next';
 
 export default function Error() {
-const { t } = useTranslation('translations')
+  const { t } = useTranslation('translations');
 
   return (
     <ErrorPage backgroundColor="#f3f4f6">
@@ -18,17 +18,12 @@ const { t } = useTranslation('translations')
             </ErrorPage.Image>
             <ErrorPage.BigTitle as="h1">404</ErrorPage.BigTitle>
             <ErrorPage.Title>{t('errortitle')}</ErrorPage.Title>
-            <ErrorPage.Text>
-             {t('errortext')}
-            </ErrorPage.Text>
+            <ErrorPage.Text>{t('errortext')}</ErrorPage.Text>
             <ErrorPage.ButtonGroup>
               <ErrorPage.Button className="btn-1" to="/" as={Link}>
                 {t('errorbtn')}
               </ErrorPage.Button>
-              <ErrorPage.Button as={Link}
-                className="btn-2"
-                href="/translator"
-              >
+              <ErrorPage.Button as={Link} className="btn-2" href="/translator">
                 {t('errorbtnsec')}
               </ErrorPage.Button>
             </ErrorPage.ButtonGroup>

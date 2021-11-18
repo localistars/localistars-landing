@@ -1,7 +1,7 @@
-import React from "react";
-import { Error } from "~sections/utility";
-import { PageWrapper } from "~components/Core";
-import FooterTwo from "~sections/index/FooterTwo";
+import React from 'react';
+import { Error } from '~sections/utility';
+import { PageWrapper } from '~components/Core';
+import FooterTwo from '~sections/index/FooterTwo';
 
 // const header = {
 //   headerClasses: "site-header site-header--menu-start light-header",
@@ -11,9 +11,8 @@ import FooterTwo from "~sections/index/FooterTwo";
 export default function errorPage() {
   return (
     <PageWrapper innerPage={true}>
-        <Error/>
-        <FooterTwo />
+      <Error />
+      <FooterTwo />
     </PageWrapper>
-  )
+  );
 }
-

@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { Box, Button, Heading, Paragraph } from "~styled";
-import { transparentize } from "polished";
-const propToColor = (arg = "#442cd6") => transparentize(0.7, arg);
-const Card = styled(Box).attrs({ className: "card" })`
+import styled from 'styled-components';
+import { Box, Button, Heading, Paragraph } from '~styled';
+import { transparentize } from 'polished';
+const propToColor = (arg = '#442cd6') => transparentize(0.7, arg);
+const Card = styled(Box).attrs({ className: 'card' })`
   padding-bottom: 45px;
   border: none;
   border-radius: 15px;
@@ -37,7 +37,7 @@ Card.Text = styled(Paragraph)`
   padding-bottom: 20px;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -48,7 +48,7 @@ Card.Text = styled(Paragraph)`
   }
 `;
 
-Card.Price = styled(Box).attrs({ className: "price-block" })`
+Card.Price = styled(Box).attrs({ className: 'price-block' })`
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -94,32 +94,32 @@ Card.ListItem = styled(Box)`
   position: relative;
   padding-left: 55px;
   &:before {
-    content: "\f00c";
-    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
     position: absolute;
     top: 0;
     left: 20px;
     font-weight: 700;
-    color: ${(props) => (props.iconColor ? props.iconColor : "#099a97")};
+    color: ${(props) => (props.iconColor ? props.iconColor : '#099a97')};
   }
 `;
 Card.Button = styled(Button)`
   border-color: ${(props) =>
-    props.backgroundColor ? props.backgroundColor : "#5034fc"} !important;
+    props.backgroundColor ? props.backgroundColor : '#5034fc'} !important;
   background: ${(props) =>
-    props.backgroundColor ? props.backgroundColor : "#099a97"} !important;
+    props.backgroundColor ? props.backgroundColor : '#099a97'} !important;
   box-shadow: ${(props) =>
-    "0 4px 4px " + propToColor(props.backgroundColor)} !important;
+    '0 4px 4px ' + propToColor(props.backgroundColor)} !important;
   color: white !important;
   transition: 0.3s !important;
   &:hover {
     transform: translateY(-5px);
     border-color: ${(props) =>
-      props.hoverBackgroundColor ? props.hoverBackgroundColor : "#099a97"};
+      props.hoverBackgroundColor ? props.hoverBackgroundColor : '#099a97'};
     background: ${(props) =>
-      props.hoverBackgroundColor ? props.hoverBackgroundColor : "#442cd6"};
+      props.hoverBackgroundColor ? props.hoverBackgroundColor : '#442cd6'};
     box-shadow: ${(props) =>
-      "0 4px 4px " + propToColor(props.hoverBackgroundColor)};
+      '0 4px 4px ' + propToColor(props.hoverBackgroundColor)};
   }
 `;
 Card.Amount = styled(Box)`

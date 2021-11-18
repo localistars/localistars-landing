@@ -1,8 +1,8 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import Hero from "./style";
-import Video from "~components/VideoModal";
-import { Link } from "~components";
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import Hero from './style';
+import Video from '~components/VideoModal';
+import { Link } from '~components';
 import prefix from '~lib/prefix';
 
 export default function HeroSection({ ...rest }) {
@@ -15,12 +15,11 @@ export default function HeroSection({ ...rest }) {
               <Hero.Subtitle as="h4" fontColor="#15cda8">
                 Next steps
               </Hero.Subtitle>
-              <Hero.Title as="h2">
-                Find out more or start for free
-              </Hero.Title>
+              <Hero.Title as="h2">Find out more or start for free</Hero.Title>
               <Hero.Text>
-                See how clients and translators can work together on our platform.
-                </Hero.Text>
+                See how clients and translators can work together on our
+                platform.
+              </Hero.Text>
               <Hero.Buttons mt="30px" mtLG="50px">
                 <Hero.Button
                   className="btn-1 btn-electric-violet-2"

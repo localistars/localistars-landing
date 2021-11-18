@@ -1,16 +1,16 @@
-import { useContext } from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import BlogsImg1 from "../../../../public/image/blogs/blog-post-1.png";
-import BlogRequlerData from "~data/BlogRequlerData";
-import Sidebar from "~sections/Blog/Sidebar";
-import BlogCard from "./Comonent/Card";
-import Blog from "./style";
-import SlimBlogCard from "./Comonent/Card/SlimCard";
-import SearchContext from "~context/SearchContext";
+import { useContext } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import BlogsImg1 from '../../../../public/image/blogs/blog-post-1.png';
+import BlogRequlerData from '~data/BlogRequlerData';
+import Sidebar from '~sections/Blog/Sidebar';
+import BlogCard from './Comonent/Card';
+import Blog from './style';
+import SlimBlogCard from './Comonent/Card/SlimCard';
+import SearchContext from '~context/SearchContext';
 
 export default function BlogSidebarTwo({ posts = [] }) {
   const searchContext = useContext(SearchContext);
-  const searchValue = searchContext.searchValue
+  const searchValue = searchContext.searchValue;
 
   const filteredBlogPosts = posts
     .sort(
@@ -18,7 +18,9 @@ export default function BlogSidebarTwo({ posts = [] }) {
         Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
     )
     .filter((frontMatter) =>
-      (frontMatter.title || frontMatter.name).toLowerCase().includes(searchValue.toLowerCase())
+      (frontMatter.title || frontMatter.name)
+        .toLowerCase()
+        .includes(searchValue.toLowerCase())
     );
 
   return (
@@ -48,16 +50,16 @@ export default function BlogSidebarTwo({ posts = [] }) {
                   commentCount="305"
                 />
               </Col>
-              {!filteredBlogPosts.length && 
+              {!filteredBlogPosts.length && (
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                   No posts found.
                 </p>
-              }
+              )}
               {filteredBlogPosts.map((info, index) => (
                 <Col
                   xs="12"
                   className="col-lg-4 col-md-6 col-xs-9"
-                  key={"bsp" + index}
+                  key={'bsp' + index}
                 >
                   <SlimBlogCard {...info} />
                 </Col>
@@ -71,7 +73,7 @@ export default function BlogSidebarTwo({ posts = [] }) {
                     <Col
                       xs="12"
                       className="col-xl-6 col-lg-9 col-md-7 col-xs-10"
-                      key={"bsp" + index}
+                      key={'bsp' + index}
                     >
                       <BlogCard
                         image={image}

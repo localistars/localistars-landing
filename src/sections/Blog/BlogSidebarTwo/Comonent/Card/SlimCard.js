@@ -1,15 +1,9 @@
-import React from "react";
-import { SuperTag } from "~components";
-import Card from "./style";
-import BlogsImg7 from "~image/blogs/blog-post-7.png";
+import React from 'react';
+import { SuperTag } from '~components';
+import Card from './style';
+import BlogsImg7 from '~image/blogs/blog-post-7.png';
 
-export default function SlimBlogCard({
-  title,
-  date,
-  summary,
-  slug,
-  locale
-}) {
+export default function SlimBlogCard({ title, date, summary, slug, locale }) {
   return (
     <Card>
       <Card.Image>
@@ -20,7 +14,7 @@ export default function SlimBlogCard({
           <Card.Date to={`/blog/${slug}`}>{date}</Card.Date>
         </Card.Top>
         <Card.Title to={`/blog/${slug}`}>
-          {" "}
+          {' '}
           <SuperTag value={title} />
         </Card.Title>
         <Card.Bottom>

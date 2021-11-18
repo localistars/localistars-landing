@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Box, Heading, Button, Paragraph } from "~styled";
+import styled from 'styled-components';
+import { Box, Heading, Button, Paragraph } from '~styled';
 
 const Promo = styled(Box)`
   background-image: linear-gradient(

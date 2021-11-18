@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Link } from "~components";
-import { Box, Heading, Button, Paragraph } from "~styled";
+import styled from 'styled-components';
+import { Link } from '~components';
+import { Box, Heading, Button, Paragraph } from '~styled';
 
 const Card = styled(Box)`
   border-radius: 15px;
@@ -81,7 +81,7 @@ Card.User = styled(Link)`
     color: #ff5722;
   }
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     width: 1px;
     height: 14px;
@@ -114,7 +114,7 @@ Card.Like = styled(Link)`
     color: #ff5722;
   }
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     width: 1px;
     height: 14px;
@@ -157,7 +157,7 @@ Card.Image = styled(Box)`
     width: 100%;
   }
 `;
-Card.Top = styled(Box).attrs({ className: "blog-top" })`
+Card.Top = styled(Box).attrs({ className: 'blog-top' })`
   display: flex;
   align-items: center;
 `;
@@ -167,7 +167,7 @@ Card.Bottom = styled(Box)`
   flex-wrap: wrap;
 `;
 
-Card.OvaerlayBlock = styled(Box).attrs({ className: "blog-bgoverlay" })`
+Card.OvaerlayBlock = styled(Box).attrs({ className: 'blog-bgoverlay' })`
   width: 100%;
   border-radius: 15px;
   background-size: cover;

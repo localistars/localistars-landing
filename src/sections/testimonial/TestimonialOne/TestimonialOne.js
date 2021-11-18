@@ -1,8 +1,8 @@
-import React from "react";
-import { Col, Row, Container } from "react-bootstrap";
-import { TestimonialPosts } from "~data";
-import TestimonialCard from "./Component/Card";
-import Testimonial from "./style";
+import React from 'react';
+import { Col, Row, Container } from 'react-bootstrap';
+import { TestimonialPosts } from '~data';
+import TestimonialCard from './Component/Card';
+import Testimonial from './style';
 export default function TestimonialOne() {
   return (
     <Testimonial backgroundColor="#f3f4f6">

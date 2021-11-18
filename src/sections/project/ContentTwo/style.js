@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import { Link } from "~components"
-import { Box, Heading, Button, Paragraph } from "~styled"
+import styled from 'styled-components';
+import { Link } from '~components';
+import { Box, Heading, Button, Paragraph } from '~styled';
 
 const Content = styled(Box)`
   padding-top: 75px;
@@ -13,7 +13,7 @@ const Content = styled(Box)`
     padding-top: 165px;
     padding-bottom: 135px;
   }
-`
+`;
 Content.Block = styled(Box)`
   border-top: 1px solid rgba(128, 138, 142, 0.2);
   padding-top: 60px;
@@ -28,14 +28,14 @@ Content.Block = styled(Box)`
     padding-top: 132px;
     padding-bottom: 135px;
   }
-`
+`;
 
 Content.Block = styled(Box)`
   /* padding-top: 80px; */
   @media (min-width: 768px) {
     padding-top: 0;
   }
-`
+`;
 Content.Title = styled(Heading)`
   font-size: 35px;
   font-weight: 500;
@@ -54,7 +54,7 @@ Content.Title = styled(Heading)`
   @media (min-width: 992px) {
     font-size: 58px;
   }
-`
+`;
 Content.Text = styled(Paragraph)`
   font-size: 18px;
   font-weight: 400;
@@ -62,7 +62,7 @@ Content.Text = styled(Paragraph)`
   letter-spacing: normal;
   line-height: 1.66666;
   margin-bottom: 12px;
-`
+`;
 
 Content.Image = styled(Box)`
   position: relative;
@@ -73,27 +73,27 @@ Content.Image = styled(Box)`
     margin-bottom: 0;
     margin-right: 55px;
   }
-`
+`;
 Content.ContentShape = styled(Box)`
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-    width: 3.4%;
-`
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  width: 3.4%;
+`;
 Content.ContentShapeTwo = styled(Box)`
-     width: 38%;
-    position: absolute;
-    left: -1%;
-    top: -7%;
-    z-index: -1;
-`
+  width: 38%;
+  position: absolute;
+  left: -1%;
+  top: -7%;
+  z-index: -1;
+`;
 Content.Button = styled(Link)`
   padding: 10px 0 !important;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: normal;
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -102,8 +102,8 @@ Content.Button = styled(Link)`
     min-width: 138px;
     max-width: 138px;
   }
-`
+`;
 
-Content.Box = styled(Box)``
+Content.Box = styled(Box)``;
 
-export default Content
+export default Content;

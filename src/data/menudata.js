@@ -1,27 +1,27 @@
 export const menuItems = [
   {
-    name: "translator",
-    label: "Find a translator",
+    name: 'translator',
+    label: 'Find a translator'
   },
   {
-    name: "translationjob",
-    label: "Find a translation job",
+    name: 'translationjob',
+    label: 'Find a translation job'
   },
   {
-    name: "pricing",
-    label: "Pricing",
+    name: 'pricing',
+    label: 'Pricing'
   },
   {
-    name: "how-it-works",
-    label: "How it works",
+    name: 'how-it-works',
+    label: 'How it works'
   },
   {
-    name: "ecosystem",
-    label: "Ecosystem",
+    name: 'ecosystem',
+    label: 'Ecosystem'
   },
   {
-    name: "blog",
-    label: "Blog",
+    name: 'blog',
+    label: 'Blog'
   }
 ];
 export default menuItems;

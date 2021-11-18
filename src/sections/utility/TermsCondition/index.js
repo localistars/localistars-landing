@@ -1,2 +1,1 @@
-
-export { default } from "./TermsConditionSection";
+export { default } from './TermsConditionSection';

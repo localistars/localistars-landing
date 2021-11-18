@@ -1,1 +1,1 @@
-export {default} from "./IntegrationSection"
+export { default } from './IntegrationSection';

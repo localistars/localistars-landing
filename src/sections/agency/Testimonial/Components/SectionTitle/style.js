@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Heading, Box, Paragraph } from "~styled";
+import styled from 'styled-components';
+import { Heading, Box, Paragraph } from '~styled';
 
 const SectionTitle = styled(Box)``;
 SectionTitle.Text = styled(Paragraph)`
@@ -19,7 +19,7 @@ SectionTitle.Subtitle = styled(Heading)`
   padding-left: 60px;
   display: inline-block;
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 50%;

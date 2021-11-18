@@ -1,7 +1,7 @@
-import React from "react"
-import ImageCard from "../ImageCard"
-import Images from "./style"
-export default function ImageGroup({...rest}) {
+import React from 'react';
+import ImageCard from '../ImageCard';
+import Images from './style';
+export default function ImageGroup({ ...rest }) {
   return (
     <>
       <Images {...rest}>
@@ -38,11 +38,9 @@ export default function ImageGroup({...rest}) {
         </Images.Three>
         {/* Content Image */}
         <Images.Four>
-          <ImageCard backgroundColor="#ff5722"/>
+          <ImageCard backgroundColor="#ff5722" />
         </Images.Four>
       </Images>
     </>
-  )
+  );
 }
-
-

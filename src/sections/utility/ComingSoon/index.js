@@ -1,1 +1,1 @@
-export { default } from "./ComingSoonSection";
+export { default } from './ComingSoonSection';

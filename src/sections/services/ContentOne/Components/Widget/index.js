@@ -1,5 +1,5 @@
-import React from "react"
-import Widget from "./style"
+import React from 'react';
+import Widget from './style';
 export default function ContentWidget({
   icon,
   title,
@@ -17,5 +17,5 @@ export default function ContentWidget({
         <Widget.Text fontColor="#667378">{text}</Widget.Text>
       </Widget.Box>
     </Widget>
-  )
+  );
 }

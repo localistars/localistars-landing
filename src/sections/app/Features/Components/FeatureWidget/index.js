@@ -1,1 +1,1 @@
-export { default } from "./FeatureWidget";
+export { default } from './FeatureWidget';

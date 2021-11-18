@@ -1,8 +1,8 @@
-import { Link } from "~components";
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import LogoBlack from "../../../../public/image/logo/logo-black.png";
-import Footer from "./style";
+import { Link } from '~components';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import LogoBlack from '../../../../public/image/logo/logo-black.png';
+import Footer from './style';
 export default function FooterFive() {
   return (
     <Footer backgroundColor="#f3f4f6">

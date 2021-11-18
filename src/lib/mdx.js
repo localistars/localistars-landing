@@ -18,7 +18,14 @@ export async function getFiles(type) {
 }
 
 export async function getLocaleFile(locale, slug) {
-  const fPath = join(process.cwd(), 'src', 'data', 'locales', locale, `${slug}.mdx`);
+  const fPath = join(
+    process.cwd(),
+    'src',
+    'data',
+    'locales',
+    locale,
+    `${slug}.mdx`
+  );
   let isInRequestedLanguage = true;
   try {
     await accessSync(fPath, constants.R_OK);
@@ -39,7 +46,7 @@ export async function getFileBySlug(type, slug) {
   if (prefix) {
     source = source
       .replace(/'\/image\//g, `'${prefix}/image/`)
-      .replace(/href="\//g, `href="${prefix}/`)
+      .replace(/href="\//g, `href="${prefix}/`);
   }
 
   const { code, frontmatter } = await bundleMDX(source, {

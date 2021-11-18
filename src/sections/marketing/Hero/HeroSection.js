@@ -1,14 +1,14 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import ReactTypingEffect from 'react-typing-effect';
-import { Link } from "~components";
-import { Button } from "~styled";
-import ImageGroup from "./Components/ImageGroup";
-import Hero from "./style";
-import { useTranslation } from 'next-i18next'
+import { Link } from '~components';
+import { Button } from '~styled';
+import ImageGroup from './Components/ImageGroup';
+import Hero from './style';
+import { useTranslation } from 'next-i18next';
 
 export default function HeroSection() {
-  const { t } = useTranslation('translations')
+  const { t } = useTranslation('translations');
 
   return (
     <Hero className="position-relative bg-default">
@@ -35,33 +35,47 @@ export default function HeroSection() {
               </Hero.Title>
               <Hero.Text>
                 Create custom landing pages with Fastland
-                <br className="d-none d-xs-block" /> that converts more
-                visitors than any website.
+                <br className="d-none d-xs-block" /> that converts more visitors
+                than any website.
               </Hero.Text>
               {/* Newsletter */}
               <Row>
                 <Col xs="12" className="col-xxl-10">
                   <Hero.Newsletter>
-                  <form>
-                    <input type={"email"} name={"email"} placeholder="Enter your email" className="form-control"/>
-                    <Button className="btn-purple-heart"textTransform="capitalized">Start For Free</Button>
-                  </form>
-                </Hero.Newsletter>
-                <Hero.NewsletterText>
-                  By clicking the button, you are agreeing with our <Link to="/innerpage/terms">Terms & Conditions.</Link>
-                </Hero.NewsletterText>
+                    <form>
+                      <input
+                        type={'email'}
+                        name={'email'}
+                        placeholder="Enter your email"
+                        className="form-control"
+                      />
+                      <Button
+                        className="btn-purple-heart"
+                        textTransform="capitalized"
+                      >
+                        Start For Free
+                      </Button>
+                    </form>
+                  </Hero.Newsletter>
+                  <Hero.NewsletterText>
+                    By clicking the button, you are agreeing with our{' '}
+                    <Link to="/innerpage/terms">Terms & Conditions.</Link>
+                  </Hero.NewsletterText>
                 </Col>
               </Row>
             </Hero.Content>
           </Col>
           {/*/ .Welcome Content Area */}
           {/*Welcome Image Area */}
-          <Col xs={12} className="col-xl-6 col-lg-5 col-md-10 order-1 order-lg-2 position-static">
-            <ImageGroup/>
+          <Col
+            xs={12}
+            className="col-xl-6 col-lg-5 col-md-10 order-1 order-lg-2 position-static"
+          >
+            <ImageGroup />
           </Col>
           {/*/ .Welcome Image Area */}
         </Row>
       </Container>
     </Hero>
-  )
+  );
 }

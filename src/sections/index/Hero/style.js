@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Box, Heading, Button, Paragraph } from "~styled";
+import styled from 'styled-components';
+import { Box, Heading, Button, Paragraph } from '~styled';
 
 const Hero = styled(Box)`
   padding-top: 0;
@@ -140,16 +140,16 @@ Hero.ImageOne = styled(Box)`
     bottom: -110px !important;
   }
 
-  @media (max-width: 768px){
-    display:none;
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 Hero.ImageTwo = styled(Box)`
   width: 100% !important;
   margin-top: 5rem;
 
-  @media (min-width: 768px){
-    display:none;
+  @media (min-width: 768px) {
+    display: none;
   }
 `;
 

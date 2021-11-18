@@ -1,9 +1,9 @@
-import React from "react";
-import commentsUserImg1 from "~image/mixed/user-img-1.png";
-import commentsUserImg2 from "~image/mixed/user-img-2.png";
-import commentsUserImg3 from "~image/mixed/user-img-3.png";
-import Widgets from "../Widgets";
-import CommentsBox from "./style";
+import React from 'react';
+import commentsUserImg1 from '~image/mixed/user-img-1.png';
+import commentsUserImg2 from '~image/mixed/user-img-2.png';
+import commentsUserImg3 from '~image/mixed/user-img-3.png';
+import Widgets from '../Widgets';
+import CommentsBox from './style';
 export default function CommentsBoxSection({ UserName, ...rest }) {
   return (
     <CommentsBox>

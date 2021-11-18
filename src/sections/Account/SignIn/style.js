@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Box, Heading, Button, Paragraph } from "~styled";
+import styled from 'styled-components';
+import { Box, Heading, Button, Paragraph } from '~styled';
 
 const SignInForm = styled(Box)`
   min-height: 100vh;
@@ -31,7 +31,7 @@ SignInForm.Image = styled(Box)`
   }
   &:before {
     background: #000;
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
@@ -139,7 +139,7 @@ SignInForm.FromSection = styled(Box)`
         border-radius: 3px;
         border: 0;
 
-        &:checked[type="checkbox"] {
+        &:checked[type='checkbox'] {
           background-color: #5034fc !important;
           box-shadow: none;
         }

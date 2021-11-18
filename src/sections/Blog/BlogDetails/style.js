@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Box, Heading, Button, Paragraph } from "~styled";
+import styled from 'styled-components';
+import { Box, Heading, Button, Paragraph } from '~styled';
 
 const Details = styled(Box)`
   padding-top: 50px;
@@ -40,7 +40,6 @@ Details.MetaInfo = styled(Box)`
     justify-content: flex-start;
     align-items: stretch;
   }
-  
 `;
 Details.Link = styled(Button)`
   padding: 0 !important;
@@ -63,7 +62,7 @@ Details.Link = styled(Button)`
   }
   position: relative;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 41px;
     height: 1px;
@@ -82,18 +81,15 @@ Details.Text = styled(Paragraph)`
   margin-bottom: 30px;
   a {
     color: var(--lt-color-gray-500);
-    &:hover{
+    &:hover {
       color: #ff5200;
     }
   }
 
   @media (max-width: 768px) {
     font-size: 0.8rem;
-
   }
-
 `;
-
 
 Details.SubTitle = styled(Paragraph)`
   font-size: 21px;

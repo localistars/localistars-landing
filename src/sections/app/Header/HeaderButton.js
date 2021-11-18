@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Button } from "~styled";
+import React from 'react';
+import styled from 'styled-components';
+import { Button } from '~styled';
 const HeaderButton = styled(Button)`
   min-width: 172px !important;
   height: 42px !important;

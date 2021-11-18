@@ -1,5 +1,5 @@
-import React from "react"
-import ImageGroup from "./style"
+import React from 'react';
+import ImageGroup from './style';
 import prefix from '~lib/prefix';
 
 const FeatureImages = ({ mainImage }) => {
@@ -7,11 +7,11 @@ const FeatureImages = ({ mainImage }) => {
     <>
       <ImageGroup>
         <div className="main">
-        <img
-          src={`${prefix}/image/translationjobs/l2-feature-img-1.png`}
-          alt="feature tab"
-          className="w-100"
-        />
+          <img
+            src={`${prefix}/image/translationjobs/l2-feature-img-1.png`}
+            alt="feature tab"
+            className="w-100"
+          />
         </div>
 
         <div className="shape">
@@ -22,7 +22,7 @@ const FeatureImages = ({ mainImage }) => {
         </div>
       </ImageGroup>
     </>
-  )
-}
+  );
+};
 
-export default FeatureImages
+export default FeatureImages;

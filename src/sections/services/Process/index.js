@@ -1,2 +1,1 @@
-export { default } from "./ProcessSection";
-
+export { default } from './ProcessSection';

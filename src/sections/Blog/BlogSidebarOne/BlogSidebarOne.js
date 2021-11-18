@@ -1,11 +1,10 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Blog from "./style";
-import BlogCard from "./Comonent/Card";
-import BlogRequlerData from "~data/BlogRequlerData";
-import BlogsImg1 from "../../../../public/image/blogs/translator.png";
-import Sidebar from "~sections/Blog/Sidebar";
-
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import Blog from './style';
+import BlogCard from './Comonent/Card';
+import BlogRequlerData from '~data/BlogRequlerData';
+import BlogsImg1 from '../../../../public/image/blogs/translator.png';
+import Sidebar from '~sections/Blog/Sidebar';
 
 export default function BlogRegular() {
   return (
@@ -50,7 +49,7 @@ export default function BlogRegular() {
                     <Col
                       xs="12"
                       className="col-xl-6 col-lg-9 col-md-6"
-                      key={"bsp" + index}
+                      key={'bsp' + index}
                     >
                       <BlogCard
                         image={image}

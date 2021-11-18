@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import { Box } from "~styled";
+import styled from 'styled-components';
+import { Box } from '~styled';
 
 const MapArea = styled(Box)``;
-MapArea.Card = styled(Box).attrs({ className: "card" })`
+MapArea.Card = styled(Box).attrs({ className: 'card' })`
   &::before {
-    content: "" !important;
+    content: '' !important;
     position: absolute !important;
     top: -7px !important;
     left: 50% !important;

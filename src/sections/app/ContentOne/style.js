@@ -1,29 +1,28 @@
 import styled from 'styled-components';
-import { Box, Heading,Button,Paragraph } from '~styled';
+import { Box, Heading, Button, Paragraph } from '~styled';
 
 const Content = styled(Box)`
-    border-bottom: 1px solid #dee2e6;
-    padding-top: 35px;
-    padding-bottom: 25px;
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 35px;
+  padding-bottom: 25px;
 
-    @media (min-width: 768px) {
-        padding-top: 75px;
-        padding-bottom: 45px;
-    }
+  @media (min-width: 768px) {
+    padding-top: 75px;
+    padding-bottom: 45px;
+  }
 
-    @media (min-width: 992px) {
-        padding-top: 80px;
-        padding-bottom: 0px;
-    }
-
-`
+  @media (min-width: 992px) {
+    padding-top: 80px;
+    padding-bottom: 0px;
+  }
+`;
 
 Content.ImageGroup = styled(Box)`
-    position: relative;
-    z-index: 1;
-    width: 80%;
-    margin: 0 auto;
-`
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  margin: 0 auto;
+`;
 
 Content.ImageShape = styled(Heading)`
     position: absolute;
@@ -39,11 +38,8 @@ Content.ImageShape = styled(Heading)`
     @media (min-width: 992px) {
     margin-left: 30px;
     }
-`
+`;
 
-Content.Box = styled(Box)`
-
-`
-
+Content.Box = styled(Box)``;
 
 export default Content;

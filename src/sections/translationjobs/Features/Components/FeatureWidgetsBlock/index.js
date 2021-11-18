@@ -1,1 +1,1 @@
-export { default } from "./FeatureWidgetsBlock"
+export { default } from './FeatureWidgetsBlock';

@@ -1,8 +1,8 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import prefix from '~lib/prefix';
-import Content from "./style";
-import SectionTitle from "./Components/SectionTitle";
+import Content from './style';
+import SectionTitle from './Components/SectionTitle';
 
 export default function ContentSectionOne() {
   return (
@@ -19,8 +19,8 @@ export default function ContentSectionOne() {
                 subTitle="About us"
                 title="An Exceptionally unique experience Tailored to you"
                 text="In a professional context it often happens that private or corporate clients order a publication news while still not being ready."
-                titleProps={{ mb: "30px" }}
-                subTitleProps={{ mb: "25px" }}
+                titleProps={{ mb: '30px' }}
+                subTitleProps={{ mb: '25px' }}
               />
               <Content.Button background="#ff5722" rounded={true} mt="25px">
                 Learn More
@@ -28,7 +28,10 @@ export default function ContentSectionOne() {
             </Col>
             <Col xs="12" className="col-xxl-5 col-lg-4 col-md-6 col-xs-9">
               <Content.Image mt="30px" mb="30px" mbMD="0" mtMD="0">
-                <img src={`${prefix}/image/home-agency/content-1-l5-img.png`} alt="content"/>
+                <img
+                  src={`${prefix}/image/home-agency/content-1-l5-img.png`}
+                  alt="content"
+                />
               </Content.Image>
             </Col>
             <Col

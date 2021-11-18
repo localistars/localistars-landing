@@ -1,13 +1,13 @@
-import { useContext } from "react";
-import offer from "../../../../public/image/mixed/ads-img.png";
-import SideBar from "./style";
-import { Link } from "~components";
+import { useContext } from 'react';
+import offer from '../../../../public/image/mixed/ads-img.png';
+import SideBar from './style';
+import { Link } from '~components';
 
-import SearchContext from "~context/SearchContext";
+import SearchContext from '~context/SearchContext';
 
 export default function SideBarSection() {
   const searchContext = useContext(SearchContext);
-  const setSearchValue = searchContext.setSearchValue
+  const setSearchValue = searchContext.setSearchValue;
 
   return (
     <SideBar>
@@ -17,7 +17,11 @@ export default function SideBarSection() {
         <SideBar.Search>
           <form action="./">
             <i className="fa fa-search" />
-            <input type="text" placeholder="Type to search" onChange={(e) => setSearchValue(e.target.value)} />
+            <input
+              type="text"
+              placeholder="Type to search"
+              onChange={(e) => setSearchValue(e.target.value)}
+            />
           </form>
         </SideBar.Search>
       </SideBar.Widgets>
@@ -134,7 +138,7 @@ export default function SideBarSection() {
       {/* Single Widgets */}
       <SideBar.Ads mb="50px" mbLG="0">
         <Link to="#">
-          <img src={offer.src} alt="content" className="w-100"/>
+          <img src={offer.src} alt="content" className="w-100" />
         </Link>
       </SideBar.Ads>
       {/*/ .Single Widgets */}

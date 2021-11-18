@@ -1,7 +1,7 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { Link } from "~components";
-import Hero from "./style";
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from '~components';
+import Hero from './style';
 import prefix from '~lib/prefix';
 
 export default function HeroSection() {
@@ -16,15 +16,17 @@ export default function HeroSection() {
                 Translation Marketplace
               </Hero.SubTitle>
               <Hero.Title as="h1">
-                We connect clients{" "}
+                We connect clients{' '}
                 <br className="d-none d-xs-block d-lg-none d-xl-block" />
                 with translators
               </Hero.Title>
               <Hero.Text fontColor="rgba(38, 39, 41, 0.7)">
-                localistars is the go-to marketplace for clients and translators to get translation jobs done. {" "}
+                localistars is the go-to marketplace for clients and translators
+                to get translation jobs done.{' '}
                 <br className="d-none d-md-block" />
-                  As client you'll find translators and as translator you'll find translation jobs.
-                  Direct contact, no middleman – just collaborating localistars!
+                As client you'll find translators and as translator you'll find
+                translation jobs. Direct contact, no middleman – just
+                collaborating localistars!
               </Hero.Text>
               <Hero.ButtonGroup>
                 <Hero.Button className="btn-red 🌱" as={Link} to="/">
@@ -44,10 +46,16 @@ export default function HeroSection() {
           >
             <Hero.ImageGroup>
               <Hero.ImageOne>
-                <img src={`${prefix}/image/home-app/hero-l8-1.png`} alt="content"/>
+                <img
+                  src={`${prefix}/image/home-app/hero-l8-1.png`}
+                  alt="content"
+                />
               </Hero.ImageOne>
               <Hero.ImageTwo>
-                <img src={`${prefix}/image/home-app/hero-l8-2.png`} alt="content"/>
+                <img
+                  src={`${prefix}/image/home-app/hero-l8-2.png`}
+                  alt="content"
+                />
               </Hero.ImageTwo>
             </Hero.ImageGroup>
           </Col>

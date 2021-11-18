@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Box, Heading, Button, Paragraph } from "~styled";
+import styled from 'styled-components';
+import { Box, Heading, Button, Paragraph } from '~styled';
 
 const Contact = styled(Box)`
   padding-top: 50px;
@@ -86,7 +86,7 @@ Contact.From = styled(Box)`
       border-radius: 3px;
       border: 0;
 
-      &:checked[type="checkbox"] {
+      &:checked[type='checkbox'] {
         background-color: #5034fc !important;
         box-shadow: none;
       }
@@ -130,7 +130,7 @@ Contact.Widgets = styled(Box)`
 `;
 Contact.WidgetsBoxTitle = styled(Heading)`
   color: #ffffff;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 32px;
   font-weight: 500;
   font-style: normal;

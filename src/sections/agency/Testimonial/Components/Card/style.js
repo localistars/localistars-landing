@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { Box, Heading, Paragraph } from "~styled";
+import { Box, Heading, Paragraph } from '~styled';
 
-const Card = styled(Box).attrs({ className: "testimonial-card card" })`
+const Card = styled(Box).attrs({ className: 'testimonial-card card' })`
   background: #fff;
   border: 0;
   color: #262729;
@@ -10,7 +10,7 @@ const Card = styled(Box).attrs({ className: "testimonial-card card" })`
   padding-right: 30px;
   padding-top: 25px;
   padding-bottom: 0;
-  border-radius: 15px!important;
+  border-radius: 15px !important;
   transition: 0.4s;
   margin: 0 15px;
   margin-bottom: 30px;
@@ -74,7 +74,7 @@ Card.Rating = styled(Box)`
   display: flex;
 `;
 Card.RatingSingle = styled(Box)`
-  color: ${(props) => (props ? "#ff971d" : "inherit")};
+  color: ${(props) => (props ? '#ff971d' : 'inherit')};
   font-size: inherit;
 `;
 Card.UserPosition = styled(Paragraph)`

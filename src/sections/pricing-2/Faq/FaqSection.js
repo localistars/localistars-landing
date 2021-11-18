@@ -1,9 +1,9 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import FaqWidget from "./components/FaqWidget";
-import FaqSectionData from "~data/pricing/pricing-2";
-import Faq from "./style";
-import { Link } from "~components/Core";
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import FaqWidget from './components/FaqWidget';
+import FaqSectionData from '~data/pricing/pricing-2';
+import Faq from './style';
+import { Link } from '~components/Core';
 const FaqSection = () => {
   return (
     <Faq>
@@ -22,7 +22,7 @@ const FaqSection = () => {
               <Col
                 xs="12"
                 className="col-lg-6 col-md-9 col-xs-11"
-                key={"ppf" + index}
+                key={'ppf' + index}
               >
                 <FaqWidget icon={icon} title={title} text={text} />
               </Col>

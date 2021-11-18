@@ -1,1 +1,1 @@
-export { default } from "./PromoSection";
+export { default } from './PromoSection';

@@ -1,5 +1,5 @@
-import React from "react";
-import { Button } from "~styled";
+import React from 'react';
+import { Button } from '~styled';
 
 const Form = ({ children, hname, hvalue, ...rest }) => {
   return (

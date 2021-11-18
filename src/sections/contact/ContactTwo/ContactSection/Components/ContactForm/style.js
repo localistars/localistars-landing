@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Box } from "~styled";
+import styled from 'styled-components';
+import { Box } from '~styled';
 
 const Form = styled(Box)`
   .form-title {
@@ -82,7 +82,7 @@ const Form = styled(Box)`
       border-radius: 3px;
       border: 0;
 
-      &:checked[type="checkbox"] {
+      &:checked[type='checkbox'] {
         background-color: var(--bs-secondary) !important;
         box-shadow: none;
       }

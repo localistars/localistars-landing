@@ -1,1 +1,1 @@
-export { default } from "./ManageSection";
+export { default } from './ManageSection';

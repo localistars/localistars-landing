@@ -1,15 +1,15 @@
-import { Link, LanguageSwitchLink } from "~components";
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import LogoBlack from "../../../../public/image/logo/logo-black.png";
-import Footer from "./style";
-import i18nextConfig from '~next-i18next.config'
-import { useRouter } from 'next/router'
+import { Link, LanguageSwitchLink } from '~components';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import LogoBlack from '../../../../public/image/logo/logo-black.png';
+import Footer from './style';
+import i18nextConfig from '~next-i18next.config';
+import { useRouter } from 'next/router';
 
 export default function FooterSection() {
-  const router = useRouter()
-  const currentLocale = router.query.locale || i18nextConfig.i18n.defaultLocale
-  
+  const router = useRouter();
+  const currentLocale = router.query.locale || i18nextConfig.i18n.defaultLocale;
+
   return (
     <Footer>
       <Container>
@@ -109,14 +109,14 @@ export default function FooterSection() {
                       </Footer.ListItems>
                       <hr />
                       {i18nextConfig.i18n.locales.map((locale) => {
-                          if (locale === currentLocale) return null;
-                          return (
-                              <Footer.ListItems key={locale}>
-                                  <LanguageSwitchLink key={locale} locale={locale}>
-                                      {locale}
-                                  </LanguageSwitchLink>
-                              </Footer.ListItems>
-                          )
+                        if (locale === currentLocale) return null;
+                        return (
+                          <Footer.ListItems key={locale}>
+                            <LanguageSwitchLink key={locale} locale={locale}>
+                              {locale}
+                            </LanguageSwitchLink>
+                          </Footer.ListItems>
+                        );
                       })}
                     </Footer.List>
                   </Footer.Widgets>

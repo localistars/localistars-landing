@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import { Box, Heading, Paragraph } from "~styled";
+import styled from 'styled-components';
+import { Box, Heading, Paragraph } from '~styled';
 
-import { transparentize, rgba } from "polished";
-const propToColor = (arg = "#1787FC") => transparentize(0.7, arg);
+import { transparentize, rgba } from 'polished';
+const propToColor = (arg = '#1787FC') => transparentize(0.7, arg);
 
-const Card = styled(Box).attrs({ className: "card card--testimonial" })`
+const Card = styled(Box).attrs({ className: 'card card--testimonial' })`
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
@@ -88,7 +88,7 @@ Card.Button = styled(Box)`
   color: inherit;
   transition: 0.4s;
 `;
-Card.Icon = styled(Box).attrs({ className: "card__icon", as: "span" })`
+Card.Icon = styled(Box).attrs({ className: 'card__icon', as: 'span' })`
   color: #6001d3;
   font-size: 36px;
   font-weight: 400;

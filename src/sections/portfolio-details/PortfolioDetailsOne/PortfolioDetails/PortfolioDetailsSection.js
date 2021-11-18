@@ -1,19 +1,19 @@
-import React from "react"
-import { Col, Container, Row } from "react-bootstrap"
-import Masonry from "react-masonry-css"
-import PortfolioDetails from "./style"
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import Masonry from 'react-masonry-css';
+import PortfolioDetails from './style';
 // import { StaticImage as Img } from "gatsby-plugin-image"
-import portfolioData from "./data"
-import ModalImage from "react-modal-image";
-import PortfolioDetailsLeft from "../../../../../public/image/portfolio/portfolio-details-left.jpg"
+import portfolioData from './data';
+import ModalImage from 'react-modal-image';
+import PortfolioDetailsLeft from '../../../../../public/image/portfolio/portfolio-details-left.jpg';
 
 const breakpointColumnsObj = {
   default: 2,
   1200: 2,
   992: 2,
   768: 1,
-  576: 1,
-}
+  576: 1
+};
 export default function PortfolioDetailsSection() {
   return (
     <PortfolioDetails background="#f3f4f6">
@@ -21,10 +21,7 @@ export default function PortfolioDetailsSection() {
         <Row className="align-items-center justify-content-center">
           <Col xs="12" className="col-xl-5 col-lg-6 col-md-8 col-xs-10">
             <PortfolioDetails.Image mb="30px" mbLG="0">
-              <img
-                src={PortfolioDetailsLeft.src}
-                alt="portfolio"
-              />
+              <img src={PortfolioDetailsLeft.src} alt="portfolio" />
             </PortfolioDetails.Image>
           </Col>
           <Col xs="12" className="col-lg-6 offset-xl-1">
@@ -80,30 +77,30 @@ export default function PortfolioDetailsSection() {
             </PortfolioDetails.Box>
           </Col>
         </Row>
-          <Row className="justify-content-center">
-            <Col xs="12" className="col-md-12 col-xs-10">
-                <PortfolioDetails.MasonryWrapper mt="40px" mtLG="60px">
-                  <Masonry
-                    breakpointCols={breakpointColumnsObj}
-                    className={`masonry-grid`}
-                    columnClassName="masonry-grid_column"
-                  >
-                    {portfolioData.map(
-                      ({ image, id }, index) => {
-                        return (
-                          <PortfolioDetails.MasonrySingle key={"pd1" + index}>
-
-                              <ModalImage small={image.src} large={image.src} alt="portfolio image"/>
-
-                          </PortfolioDetails.MasonrySingle>
-                        )
-                      }
-                    )}
-                  </Masonry>
-                </PortfolioDetails.MasonryWrapper>
-            </Col>
-          </Row>
+        <Row className="justify-content-center">
+          <Col xs="12" className="col-md-12 col-xs-10">
+            <PortfolioDetails.MasonryWrapper mt="40px" mtLG="60px">
+              <Masonry
+                breakpointCols={breakpointColumnsObj}
+                className={`masonry-grid`}
+                columnClassName="masonry-grid_column"
+              >
+                {portfolioData.map(({ image, id }, index) => {
+                  return (
+                    <PortfolioDetails.MasonrySingle key={'pd1' + index}>
+                      <ModalImage
+                        small={image.src}
+                        large={image.src}
+                        alt="portfolio image"
+                      />
+                    </PortfolioDetails.MasonrySingle>
+                  );
+                })}
+              </Masonry>
+            </PortfolioDetails.MasonryWrapper>
+          </Col>
+        </Row>
       </Container>
     </PortfolioDetails>
-  )
+  );
 }

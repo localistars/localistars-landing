@@ -1,14 +1,14 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { Link } from "~components";
-import Details from "./style";
-import blogImage from "../../../../public/image/blogs/blog-details-img-1.png";
-import Sidebar from "~sections/Common/Sidebar";
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from '~components';
+import Details from './style';
+import blogImage from '../../../../public/image/blogs/blog-details-img-1.png';
+import Sidebar from '~sections/Common/Sidebar';
 import {
   BlogQoute,
   CommentsBoxSection,
-  CommentsFormSection,
-} from "./Component";
+  CommentsFormSection
+} from './Component';
 
 export default function BlogDetails() {
   return (

@@ -1,1 +1,1 @@
-export {default} from "./FaqSection"
+export { default } from './FaqSection';

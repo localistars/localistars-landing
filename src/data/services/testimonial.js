@@ -3,53 +3,53 @@ import prefix from '~lib/prefix';
 const TestimonialData = {
   testimonial: [
     {
-      id: "ts1",
+      id: 'ts1',
       image: `${prefix}/image/it-services/user-circle-1.png`,
-      icon: "fa fa-quote-left",
-      userName: "Design & Vreatives",
-      userPosition: "One year with us",
-      text: "consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.",
+      icon: 'fa fa-quote-left',
+      userName: 'Design & Vreatives',
+      userPosition: 'One year with us',
+      text: 'consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.'
     },
     {
-      id: "ts2",
+      id: 'ts2',
       image: `${prefix}/image/it-services/user-circle-2.png`,
-      icon: "fa fa-quote-left",
-      userName: "John Doe",
-      userPosition: "One year with us",
-      text: "consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.",
+      icon: 'fa fa-quote-left',
+      userName: 'John Doe',
+      userPosition: 'One year with us',
+      text: 'consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.'
     },
     {
-      id: "ts3",
+      id: 'ts3',
       image: `${prefix}/image/it-services/user-circle-3.png`,
-      icon: "fa fa-quote-left",
-      userName: "Charles Patterson",
-      userPosition: "One year with us",
-      text: "consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.",
+      icon: 'fa fa-quote-left',
+      userName: 'Charles Patterson',
+      userPosition: 'One year with us',
+      text: 'consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.'
     },
     {
-      id: "ts3",
+      id: 'ts3',
       image: `${prefix}/image/it-services/user-circle-4.png`,
-      icon: "fa fa-quote-left",
-      userName: "Charles Patterson",
-      userPosition: "One year with us",
-      text: "consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.",
+      icon: 'fa fa-quote-left',
+      userName: 'Charles Patterson',
+      userPosition: 'One year with us',
+      text: 'consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.'
     },
     {
-      id: "ts3",
+      id: 'ts3',
       image: `${prefix}/image/it-services/user-circle-5.png`,
-      icon: "fa fa-quote-left",
-      userName: "Charles Patterson",
-      userPosition: "One year with us",
-      text: "consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.",
+      icon: 'fa fa-quote-left',
+      userName: 'Charles Patterson',
+      userPosition: 'One year with us',
+      text: 'consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.'
     },
     {
-      id: "ts3",
+      id: 'ts3',
       image: `${prefix}/image/it-services/user-circle-6.png`,
-      icon: "fa fa-quote-left",
-      userName: "Charles Patterson",
-      userPosition: "One year with us",
-      text: "consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.",
-    },
-  ],
+      icon: 'fa fa-quote-left',
+      userName: 'Charles Patterson',
+      userPosition: 'One year with us',
+      text: 'consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyamerat, sed dlam voluptua.'
+    }
+  ]
 };
 export default TestimonialData;
