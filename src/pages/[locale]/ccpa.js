@@ -8,26 +8,26 @@ import Head from 'next/head';
 import getSlug from '~lib/getSlug';
 import { getStaticPaths, makeStaticProps } from '~lib/getStatic';
 import { getMDXComponent } from 'mdx-bundler/client';
+import { useTranslation } from 'next-i18next';
 
-const header = {
-  headerClasses:
-    'site-header site-header--menu-end light-header site-header--sticky',
-  containerFluid: false,
-  buttonBlock: (
-    // eslint-disable-next-line react/no-children-prop
-    <HeaderButton
-      className="d-none d-sm-flex"
-      btnText="Start now"
-      btnLink="https://www.localistars.app/login"
-    />
-  )
-};
-
-export default function CCPA({ code, frontMatter }) {
+export default function CCPA({ code, frontMatter, isInRequestedLanguage }) {
   const Component = useMemo(() => getMDXComponent(code), [code]);
+  const { t } = useTranslation('translations');
 
   return (
-    <PageWrapper headerConfig={header}>
+    <PageWrapper headerConfig={{
+      headerClasses:
+        'site-header site-header--menu-end light-header site-header--sticky',
+      containerFluid: false,
+      buttonBlock: (
+        // eslint-disable-next-line react/no-children-prop
+        <HeaderButton
+          className="d-none d-sm-flex"
+          btnText={t('common.header')}
+          btnLink="https://www.localistars.app/register"
+        />
+      )
+    }}>
       <Head>
         <title>{frontMatter.title}</title>
         <meta name="description" content={frontMatter.description} />
@@ -36,6 +36,7 @@ export default function CCPA({ code, frontMatter }) {
         <Container>
           <Row className="justify-content-center">
             <Col className="col-xl-7 col-lg-8 col-md-11 text-center">
+              {!isInRequestedLanguage && <i style={{ color: '#fda931' }}>{t('common.onlyInDefaultLanguage')}</i>}
               <CCPAStyle.Box>
                 <CCPAStyle.Title as="h2">{frontMatter.title}</CCPAStyle.Title>
               </CCPAStyle.Box>

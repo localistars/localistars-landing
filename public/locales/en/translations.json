@@ -325,5 +325,9 @@
     "readTime": "readtime",
     "notFound": "No posts found",
     "share": "Share"
+  },
+  "common": {
+    "onlyInDefaultLanguage": "This content is not available in your requested language.",
+    "header": "Start now"
   }
 }
