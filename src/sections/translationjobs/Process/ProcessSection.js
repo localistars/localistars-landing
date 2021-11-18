@@ -3,8 +3,11 @@ import ProcessCard from './Components/Card';
 import Process from './style';
 import ProcessData from '~data/translationjobs/Process';
 import { Container, Row, Col } from 'react-bootstrap';
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function ProcessSection({ ...rest }) {
+  const { t } = useTranslation('translations');
+
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
@@ -24,11 +27,13 @@ export default function ProcessSection({ ...rest }) {
             id="get-started"
           >
             <Process.Subtitle mbLG="10px" as="h5" fontColor="#5034fc">
-              Get started
+              {t('creator.process.subTitle')}
             </Process.Subtitle>
             <Process.Title as="h2" mb="40px" mbLG="80px">
-              It's very easy to start
-              <br className="d-none d-xxl-block" /> follow this process
+              <Trans i18nKey="creator.process.title">
+                It's very easy to start
+                <br className="d-none d-xxl-block" /> follow this process
+              </Trans>
             </Process.Title>
           </Col>
           <Col xs="12" className="col-xl-11">
@@ -42,7 +47,7 @@ export default function ProcessSection({ ...rest }) {
                         className="col-lg-3 col-md-4 col-xs-6"
                         key={index}
                       >
-                        <ProcessCard icon={icon} title={title} text={text} />
+                        <ProcessCard icon={icon} title={t(`creator.process.steps.${id}.title`, title)} text={t(`creator.process.steps.${id}.text`, text)} />
                       </Col>
                     );
                   }

@@ -243,6 +243,35 @@
         "menu": "Verwalten Sie Ihr Team",
         "tabTitle": "Fügen Sie Teammitglieder oder Mitarbeiter hinzu."
       }
+    },
+    "process": {
+      "subTitle": "Loslegen",
+      "title": "Es ist sehr einfach,<1/> diesem Vorgang zu folgen",
+      "steps": {
+        "sp1": {
+          "title": "Anmelden",
+          "text": "Schliessen Sie den Registrierungsprozess ab, indem Sie Ihre E-Mail-Adresse bestätigen. Klicken Sie auf den Link in der erhaltenen E-Mail."
+        },
+        "sp2": {
+          "title": "Wählen Sie Ihren Profiltyp",
+          "text": "Sie suchen neue Übersetzungsjobs!"
+        },
+        "sp3": {
+          "title": "Aktualisieren Sie Ihr persönliches Profil",
+          "text": "Um einen ersten Übersetzungsjob zu finden - geben Sie Ihre Suchkriterien ein. Ihre Sprachpaare."
+        },
+        "sp4": {
+          "title": "Eine Organisation haben",
+          "text": "Die Bereitstellung einer Organisation ist obligatorisch. Ein Vertrag besteht rechtlich zwischen Ihrer Organisation und der den Dienst anfordernden Organisation."
+        }
+      }
+    },
+    "cta": {
+      "subTitle": "Nächste Schritte",
+      "title": "Erfahren Sie mehr oder starten Sie kostenlos",
+      "text": "Sehen Sie, wie Kunden und Übersetzer auf unserer Plattform zusammenarbeiten können.",
+      "btnOne": "Wie funktioniert es",
+      "btnTwo": "Gratis registrieren"
     }
   },
   "hero": {

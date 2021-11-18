@@ -21,7 +21,7 @@ const ProcessData = [
     id: 'sp4',
     icon: '4',
     title: 'Having an organization',
-    text: 'Providing an organization is mandatory. A contract is legally between your organization and the service requesting organization..'
+    text: 'Providing an organization is mandatory. A contract is legally between your organization and the service requesting organization.'
   }
 ];
 export default ProcessData;

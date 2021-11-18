@@ -4,8 +4,11 @@ import Hero from './style';
 import Video from '~components/VideoModal';
 import { Link } from '~components';
 import prefix from '~lib/prefix';
+import { useTranslation } from 'next-i18next';
 
 export default function HeroSection({ ...rest }) {
+  const { t } = useTranslation('translations');
+
   return (
     <Hero backgroundColor="#e6f8f9" {...rest}>
       <Container>
@@ -13,12 +16,11 @@ export default function HeroSection({ ...rest }) {
           <Col className="col-xxl-5 col-xl-6 col-lg-7 col-md-9 col-xs-11 order-2 order-lg-1">
             <Hero.Content>
               <Hero.Subtitle as="h4" fontColor="#15cda8">
-                Next steps
+                {t('creator.cta.subTitle')}
               </Hero.Subtitle>
-              <Hero.Title as="h2">Find out more or start for free</Hero.Title>
+              <Hero.Title as="h2">{t('creator.cta.title')}</Hero.Title>
               <Hero.Text>
-                See how clients and translators can work together on our
-                platform.
+                {t('creator.cta.text')}
               </Hero.Text>
               <Hero.Buttons mt="30px" mtLG="50px">
                 <Hero.Button
@@ -26,10 +28,10 @@ export default function HeroSection({ ...rest }) {
                   to="/how-it-works"
                   as={Link}
                 >
-                  How does it work
+                  {t('creator.cta.btnOne')}
                 </Hero.Button>
-                <Hero.Button className="btn-outline-shark" to="/" as={Link}>
-                  Register free
+                <Hero.Button className="btn-outline-shark" to="https://www.localistars.app/register" as={Link}>
+                  {t('creator.cta.btnTwo')}
                 </Hero.Button>
               </Hero.Buttons>
             </Hero.Content>
