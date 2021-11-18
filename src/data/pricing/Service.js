@@ -17,7 +17,7 @@ const serviceData = {
       icon: `${prefix}/image/pricing/money-coins.svg`,
       iconColor: '#96f7d2',
       title: 'For translators',
-      text: 'Service fee on approved task.'
+      text: 'Small service fee on approved task.'
     }
   ]
 };

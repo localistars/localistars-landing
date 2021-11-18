@@ -50,8 +50,7 @@ export default function HomeApp() {
       <VideoSection />
       <ServiceSection />
       <FeatureSection />
-
-      <TestimonialSection />
+      {/*<TestimonialSection />*/}
       <PromoSection />
       <CtaSection />
       <FooterTwo />

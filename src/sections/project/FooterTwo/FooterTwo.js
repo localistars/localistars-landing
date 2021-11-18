@@ -90,7 +90,7 @@ export default function FooterTwo() {
                   <Footer.Widgets>
                     <Footer.Title>Follow us on social media</Footer.Title>
                     <Footer.Text>
-                      Get the latest trends updates right at your inbox.
+                      Get the latest and right at your inbox.
                     </Footer.Text>
                     <Footer.SocialShare>
                       <Footer.Box pt="11px" pb="30px">

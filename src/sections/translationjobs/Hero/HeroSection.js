@@ -20,8 +20,7 @@ export default function HeroSection() {
             <Hero.Content>
               <Hero.Title as="h2" fontColor="#fff">
                 Why should you become
-                <br className="d-none d-sm-block" />a localistar freelance
-                translator or agency?
+                <br className="d-none d-sm-block" />a localistars translator?
               </Hero.Title>
               <Hero.Text fontColor="#fff">
                 Our goal is to provide a platform that removes the tedious parts

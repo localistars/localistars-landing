@@ -14,7 +14,7 @@ export default function CtaSection({ ...rest }) {
                 HELP
               </Cta.Subtitle>
               <Cta.Title as="h2" fontColor="#fff">
-                Do you require some assistance before you register your company?
+                Do you require some assistance before you register?
               </Cta.Title>
               <Cta.Text fontColor="#fff">
                 Any question you may have about our pricing or platform will be

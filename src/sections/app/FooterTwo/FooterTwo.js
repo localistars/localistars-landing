@@ -4,11 +4,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Footer from './style';
 import i18nextConfig from '~next-i18next.config';
 import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
 import prefix from '~lib/prefix';
 
 export default function FooterTwo() {
   const router = useRouter();
   const currentLocale = router.query.locale || i18nextConfig.i18n.defaultLocale;
+  const { t } = useTranslation('translations');
 
   return (
     <Footer>
@@ -27,11 +29,7 @@ export default function FooterTwo() {
                     />
                   </Link>
                 </Footer.Box>
-                <Footer.Text mb="36px">
-                  We’re a translation marketplace for companies searching for a
-                  translatior as well as for freelance translators who are
-                  looking for a job
-                </Footer.Text>
+                <Footer.Text mb="36px">{t('footerDesc')}</Footer.Text>
               </Footer.Widgets>
             </Col>
             <Col xs="12" className="col-xl-8">
@@ -94,14 +92,14 @@ export default function FooterTwo() {
                   <Footer.Widgets>
                     <Footer.Title>Follow us on social media</Footer.Title>
                     <Footer.Text>
-                      Get the latest trends updates right at your inbox.
+                      Get the latest and right at your inbox.
                     </Footer.Text>
                     <Footer.SocialShare>
                       <Footer.Box pt="11px" pb="30px">
                         <Footer.SocialShareItem>
                           <a
                             target="_blank"
-                            href="https://twitter.com/localistars"
+                            href="https://twitter.com/localistars" rel="noreferrer"
                           >
                             Twitter
                           </a>
@@ -109,7 +107,7 @@ export default function FooterTwo() {
                         <Footer.SocialShareItem>
                           <a
                             target="_blank"
-                            href="https://www.instagram.com/localistars/"
+                            href="https://www.instagram.com/localistars/" rel="noreferrer"
                           >
                             Instagram
                           </a>
@@ -117,7 +115,7 @@ export default function FooterTwo() {
                         <Footer.SocialShareItem>
                           <a
                             target="_blank"
-                            href="https://www.youtube.com/channel/UCOpWH9CMj3t_yswl_uZb4lw"
+                            href="https://www.youtube.com/channel/UCOpWH9CMj3t_yswl_uZb4lw" rel="noreferrer"
                           >
                             Youtube
                           </a>

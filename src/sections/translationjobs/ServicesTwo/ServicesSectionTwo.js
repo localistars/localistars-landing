@@ -14,11 +14,8 @@ export default function ServicesSectionTwo() {
               {/* Section Title */}
               <SectionTitle
                 subTitle="Services"
-                title="Why should you become
-a localistar freelance translator or agency?"
-                text="Our goal is to provide a platform that removes the tedious parts of translations. Are you a freelance translator or a translation agency, then localistars is for you!
-
-"
+                title="Why should you become a localistars translator?"
+                text="Our goal is to provide a platform that removes the tedious parts of translations. Are you a freelance translator or a translation agency, then localistars is for you!"
                 titleProps={{ mb: '20px' }}
                 subTitleProps={{
                   mb: '10px',

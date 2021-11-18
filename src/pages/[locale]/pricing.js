@@ -30,7 +30,7 @@ export default function HomeApp() {
         <meta name="description" content="Pricing | localistars" />
       </Head>
       <ServiceSection />
-      <TestimonialSection />
+      {/*<TestimonialSection />*/}
       <Cta />
       <FooterTwo />
     </PageWrapper>

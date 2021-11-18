@@ -108,7 +108,7 @@ export default function FooterSection() {
                   <Footer.Widgets>
                     <Footer.Title>Newsletter</Footer.Title>
                     <Footer.Text>
-                      Get the latest trends updates right at your inbox.
+                      Get the latest and right at your inbox.
                     </Footer.Text>
                     {/* Newsletter */}
                     <Footer.Newsletter>

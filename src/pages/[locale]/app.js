@@ -29,7 +29,7 @@ export default function HomeApp() {
       <AboutSection />
       <ContentSectionOne />
       <PricingSection />
-      <TestimonialSection />
+      {/*<TestimonialSection />*/}
       <PromoSection />
       <CtaSection />
       <FooterFour />

@@ -12,13 +12,13 @@ const featureSectionData = {
       icon: `${prefix}/image/project-management/icon-grid.png`,
       iconBackground: '#ff8d52',
       title: 'Localistars',
-      text: "Order your translation online<br class='d-none d-xs-block'>for your project or website."
+      text: "Order your translations online<br class='d-none d-xs-block'>for your project or website."
     },
     {
       icon: `${prefix}/image/project-management/icon-message.png`,
       iconBackground: '#15cda8',
       title: 'Localization',
-      text: "Manage translation and development seperately <br class='d-none d-xs-block'> and enhance the internationalization of your company"
+      text: "Manage translation and development seperately <br class='d-none d-xs-block'> and enhance the internationalization of your company."
     }
   ]
 };
