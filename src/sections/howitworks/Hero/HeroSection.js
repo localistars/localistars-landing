@@ -1,23 +1,22 @@
 import React from 'react';
-import Image from 'next/image';
 import Hero from './style';
 import { Col, Container, Row } from 'react-bootstrap';
 import prefix from '~lib/prefix';
-import { Form, Link } from '~components';
-import { SuperTag } from '~components';
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function HeroSection() {
+  const { t } = useTranslation('translations');
+
   return (
     <Hero>
       <Container>
         <Row className="justify-content-center">
           <Col xs="12" className="col-xl-8 col-lg-11">
             <Hero.ContentBlock mb="35px">
-              <Hero.Title as="h1">Translation projects</Hero.Title>
-              <Hero.Title as="h2">How localistars works</Hero.Title>
+              <Hero.Title as="h1">{t('how.hero.title')}</Hero.Title>
+              <Hero.Title as="h2">{t('how.hero.title2')}</Hero.Title>
               <Hero.Text>
-                {' '}
-                <SuperTag value="Clients and translators welcome – <br className='d-none d-sm-block' />  together you get translation projects done." />
+                <Trans i18nKey="how.hero.text">"Clients and translators welcome – <br className='d-none d-sm-block' />  together you get translation projects done."</Trans>
               </Hero.Text>
               <Hero.TitleShape>
                 <img

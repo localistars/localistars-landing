@@ -26,9 +26,9 @@ export default function ManageSection() {
               {/* Section Title */}
               <About.Content>
                 <SectionTitle
-                  subTitle={t('client.manage.subTitle')}
-                  title={t('client.manage.title')}
-                  text={t('client.manage.text')}
+                  subTitle={t('consumer.manage.subTitle')}
+                  title={t('consumer.manage.title')}
+                  text={t('consumer.manage.text')}
                   subTitleProps={{
                     mb: '10px',
                     className: 'subline',

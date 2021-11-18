@@ -26,9 +26,9 @@ export default function AboutSection() {
           >
             <About.Content mt="40px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
               <SectionTitle
-                subTitle={t('client.about.subTitle')}
-                title={t('client.about.title')}
-                text={t('client.about.text')}
+                subTitle={t('consumer.about.subTitle')}
+                title={t('consumer.about.title')}
+                text={t('consumer.about.text')}
                 titleProps={{ mb: '30px' }}
                 subTitleProps={{ mb: '25px' }}
               />

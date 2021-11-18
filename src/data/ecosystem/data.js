@@ -6,17 +6,17 @@ const portfolioData = [
     image: Pone,
     titleSmall: 'Locize',
     title: 'Localization Management Platform',
-    id: '1',
+    id: 'p1',
     tagName: ['all', 'design', 'seo'],
-    href: 'https://locize.com/'
+    href: 'https://www.locize.com'
   },
   {
     image: Ptwo,
     titleSmall: 'i18next',
     title: 'Javascript Localization Framework',
-    id: '2',
+    id: 'p2',
     tagName: ['all', 'marketing', 'development'],
-    href: 'https://www.i18next.com/'
+    href: 'https://www.i18next.com'
   }
 ];
 export default portfolioData;

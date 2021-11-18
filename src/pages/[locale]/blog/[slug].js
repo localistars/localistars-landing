@@ -64,9 +64,21 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(ctx) {
-  const posts = await getAllFilesFrontMatter(
-    `locales/${ctx?.params?.locale}/blog`
-  );
+  const currentLocale = ctx?.params?.locale;
+  const posts = await getAllFilesFrontMatter(`locales/${currentLocale}/blog`);
+  if (currentLocale !== i18nConfig.i18n.defaultLocale) {
+    const defaultPosts = await getAllFilesFrontMatter(
+      `locales/${i18nConfig.i18n.defaultLocale}/blog`
+    );
+    if (posts.length < defaultPosts.length) {
+      defaultPosts.forEach((dp, i) => {
+        if (!posts.find((p) => p.slug === dp.slug)) {
+          posts.splice(i, 0, dp);
+        }
+      });
+    }
+  }
+
   return {
     props: {
       ...(await getI18nProps(ctx)),
@@ -75,7 +87,7 @@ export async function getStaticProps(ctx) {
         ctx?.params?.locale,
         `blog/${ctx?.params?.slug}`
       )),
-      allPosts: posts
+      allPosts: posts.filter((p) => p.slug !== ctx?.params?.slug)
     }
   };
 }

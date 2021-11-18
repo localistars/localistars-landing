@@ -23,11 +23,11 @@ export default function SideBarSection({ allPosts }) {
     <SideBar>
       {/* Single Widgets */}
       <SideBar.Widgets>
-        <SideBar.Title>{t('sidebar.title')}</SideBar.Title>
+        <SideBar.Title>{t('blog.sidebar.title')}</SideBar.Title>
 
         {!allPosts.length && (
           <p className="text-gray-600 dark:text-gray-400 mb-4">
-            No posts found.
+            {t('blog.notFound')}
           </p>
         )}
 
@@ -47,7 +47,7 @@ export default function SideBarSection({ allPosts }) {
 
       {/* Single Widgets */}
       <SideBar.Widgets>
-        <SideBar.Title>{t('sidebar.category')}</SideBar.Title>
+        <SideBar.Title>{t('blog.sidebar.category')}</SideBar.Title>
 
         {counts.map((x, index) => (
           <SideBar.CateGory>

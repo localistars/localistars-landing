@@ -14,13 +14,13 @@ export default function CtaSection({ ...rest }) {
           <Col className="col-xl-6 col-lg-8 col-md-10">
             <Cta.InnerWrapper className="text-center">
               <Cta.Subtitle fontColor="#ffce3e" as="span">
-                {t('client.help.subTitle')}
+                {t('consumer.help.subTitle')}
               </Cta.Subtitle>
               <Cta.Title as="h2" fontColor="#fff">
-                {t('client.help.title')}
+                {t('consumer.help.title')}
               </Cta.Title>
               <Cta.Text fontColor="#fff">
-                {t('client.help.text')}
+                {t('consumer.help.text')}
               </Cta.Text>
               <Cta.Button
                 className="btn-torch-red"
@@ -29,7 +29,7 @@ export default function CtaSection({ ...rest }) {
                 sizeX="180px"
                 sizeY="56px"
               >
-                {t('client.help.btn')}
+                {t('consumer.help.btn')}
               </Cta.Button>
             </Cta.InnerWrapper>
           </Col>

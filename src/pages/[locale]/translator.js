@@ -24,7 +24,7 @@ export default function Agency() {
       buttonBlock: (
         <HeaderButton
           className="ms-auto d-none d-xs-inline-flex"
-          btnText={t('client.header')}
+          btnText={t('consumer.header')}
           mr="15px"
           mrLG="0"
           btnLink="https://www.localistars.app/register"
@@ -32,10 +32,10 @@ export default function Agency() {
       )
     }}>
       <Head>
-        <title>{t('client.meta.title')}</title>
+        <title>{t('consumer.meta.title')}</title>
         <meta
           name="description"
-          content={t('client.meta.description')}
+          content={t('consumer.meta.description')}
         />
       </Head>
       <HeroSection1 />

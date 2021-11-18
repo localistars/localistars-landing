@@ -19,14 +19,14 @@ export default function ContentSectionOne() {
             >
               {/* Section Title */}
               <SectionTitle
-                subTitle={t('client.content.subTitle')}
-                title={t('client.content.title')}
-                text={t('client.content.text')}
+                subTitle={t('consumer.content.subTitle')}
+                title={t('consumer.content.title')}
+                text={t('consumer.content.text')}
                 titleProps={{ mb: '30px' }}
                 subTitleProps={{ mb: '25px' }}
               />
               <Content.Button background="#ff5722" rounded={true} mt="25px">
-                {t('client.content.btn')}
+                {t('consumer.content.btn')}
               </Content.Button>
             </Col>
             <Col xs="12" className="col-xxl-5 col-lg-4 col-md-6 col-xs-9">
@@ -59,10 +59,10 @@ export default function ContentSectionOne() {
                 {/* Single Services */}
                 <Content.Widget pb="10px">
                   <Content.WidgetTitle>
-                    {t('client.content.widget.title')}
+                    {t('consumer.content.widget.title')}
                   </Content.WidgetTitle>
                   <Content.WidgetText>
-                    {t('client.content.widget.text')}
+                    {t('consumer.content.widget.text')}
                   </Content.WidgetText>
                 </Content.Widget>
                 {/*/ .Single Services */}

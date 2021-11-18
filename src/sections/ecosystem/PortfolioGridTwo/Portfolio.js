@@ -4,13 +4,16 @@ import PortfolioCard from './Components/Card';
 import Portfolio from './style';
 import portfolioData from '~data/ecosystem/data';
 import { Link } from '~components';
+import { useTranslation } from 'next-i18next';
 
 export default function PortfolioSection({ gutters, containerFluid, ...rest }) {
+  const { t } = useTranslation('translations');
+
   return (
     <Portfolio {...rest}>
       <Container fluid={containerFluid}>
         <Row className={`justify-content-center ${!gutters ? 'gx-0' : null}`}>
-          {portfolioData.map(({ image, titleSmall, title, href }, index) => {
+          {portfolioData.map(({ image, titleSmall, title, href, id }, index) => {
             return (
               <Portfolio.Box
                 mb={gutters ? '25px' : null}
@@ -22,8 +25,8 @@ export default function PortfolioSection({ gutters, containerFluid, ...rest }) {
                   target="_blank"
                   href={href}
                   image={image}
-                  title={titleSmall}
-                  text={title}
+                  title={t(`ecosystem.portfolio.${id}.title`, titleSmall)}
+                  text={t(`ecosystem.portfolio.${id}.text`, title)}
                 />
               </Portfolio.Box>
             );

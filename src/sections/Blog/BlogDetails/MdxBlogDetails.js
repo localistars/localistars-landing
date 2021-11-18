@@ -57,12 +57,12 @@ export default function MdxBlogDetails({
                   <Details.Text>{date}</Details.Text>
 
                   <Details.Text>
-                    {readtime} {t(`blog.readTime`)}
+                    {readtime} {t('blog.readTime')}
                   </Details.Text>
 
                   <Details.Text>
                     <Link href={blogURL}>
-                      <a alt="Blog">Blog</a>
+                      <a alt="Blog">{t('blog.smallTitle')}</a>
                     </Link>{' '}
                     /{' '}
                     <Link href={blogURL}>

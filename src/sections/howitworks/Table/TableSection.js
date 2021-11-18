@@ -1,15 +1,17 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Link } from '~components';
 import Table from './style';
 import SectionTitle from './Components/SectionTitle';
 import prefix from '~lib/prefix';
+import { useTranslation } from 'next-i18next';
 
 const bg2 = {
   bg2: 'bg-athens-gray'
 };
 
 export default function AboutSection() {
+  const { t } = useTranslation('translations');
+
   return (
     <Table>
       <Container>
@@ -21,8 +23,8 @@ export default function AboutSection() {
           >
             <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
               <SectionTitle
-                title="Create a project and call for bids"
-                text="Create a new draft. Upload the files you need to be translated. Choose the target languages for the translation and call for bids. Done. Behind the scenes a translation project has been created. You can relax and wait for bids to show up."
+                title={t('how.process.consumer.two.title')}
+                text={t('how.process.consumer.two.text')}
                 titleProps={{ mb: '15px' }}
                 subTitleProps={{ mb: '5px' }}
               />
@@ -54,8 +56,8 @@ export default function AboutSection() {
           >
             <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
               <SectionTitle
-                title="Make an offer"
-                text="The new project shows up in your list of new job opportunities. You can bid based on the content and metrics provided. If there's something unclear or you need additional details, you can reach out to the potential client anytime."
+                title={t('how.process.creator.two.title')}
+                text={t('how.process.creator.two.text')}
                 titleProps={{ mb: '15px' }}
                 subTitleProps={{ mb: '5px' }}
               />
@@ -79,8 +81,8 @@ export default function AboutSection() {
           >
             <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
               <SectionTitle
-                title="Choose the right partner for your project"
-                text="Choose the offer with the lowest price or the partner with the best reputation. The choice is yours. The new partner will be added to your list of translators, so in future it's easy for you to work with the same people again."
+                title={t('how.process.consumer.three.title')}
+                text={t('how.process.consumer.three.text')}
                 titleProps={{ mb: '15px' }}
                 subTitleProps={{ mb: '5px' }}
               />
@@ -108,8 +110,8 @@ export default function AboutSection() {
           >
             <Table.Content mt="50px" mtLG="1" mb="50px" mbLG="0" mlLG="30px">
               <SectionTitle
-                title="Fund the project"
-                text="Before the translator may start working you'll need to fund the project. We hold back the money until you approve the provided translations. The translator can be sure the costs are covered while you can be sure to only be charged if you approve the content."
+                title={t('how.process.consumer.four.title')}
+                text={t('how.process.consumer.four.text')}
                 titleProps={{ mb: '15px' }}
                 subTitleProps={{ mb: '5px' }}
               />
@@ -142,8 +144,8 @@ export default function AboutSection() {
           >
             <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
               <SectionTitle
-                title="Get down to business"
-                text="Do what you're best at. When the translations are done, upload the files and submit the job. During the project you can reach out to your client at anytime."
+                title={t('how.process.creator.three.title')}
+                text={t('how.process.creator.three.text')}
                 titleProps={{ mb: '15px' }}
                 subTitleProps={{ mb: '5px' }}
               />
@@ -167,10 +169,8 @@ export default function AboutSection() {
           >
             <Table.Content mt="50px" mtLG="1" mb="50px" mbLG="0" mlLG="30px">
               <SectionTitle
-                title="Approve the work"
-                text="If you're happy with the work of your translator you approve the project.
-
-If there's something missing or in need of rework, give the translator a chance to improve the content. For disputes we introduced a special workflow as well."
+                title={t('how.process.consumer.five.title')}
+                text={t('how.process.consumer.five.text')}
                 titleProps={{ mb: '15px' }}
                 subTitleProps={{ mb: '5px' }}
               />
@@ -200,8 +200,8 @@ If there's something missing or in need of rework, give the translator a chance 
           >
             <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
               <SectionTitle
-                title="Be charged"
-                text="With approval of the project the provided funding will be paid out to the translator. You will get an invoice for your accounting. All past transactions can be viewed in the accounting section of your organisation."
+                title={t('how.process.consumer.six.title')}
+                text={t('how.process.consumer.six.text')}
                 titleProps={{ mb: '15px' }}
                 subTitleProps={{ mb: '5px' }}
               />
@@ -221,8 +221,8 @@ If there's something missing or in need of rework, give the translator a chance 
           >
             <Table.Content mt="0px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
               <SectionTitle
-                title="Get paid"
-                text="Time to get paid. The money will be transferred to your localistars-balance and can be withdrawn at any time. All necessary reports for your accounting (invoices, VAT-reports, etc.) are available in your organisation section."
+                title={t('how.process.creator.four.title')}
+                text={t('how.process.creator.four.text')}
                 titleProps={{ mb: '15px' }}
                 subTitleProps={{ mb: '5px' }}
               />

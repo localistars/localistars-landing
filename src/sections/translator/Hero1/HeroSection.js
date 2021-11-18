@@ -15,12 +15,12 @@ export default function HeroSection() {
           <Col xs="12" className="col-xl-8 col-lg-11">
             <Hero.ContentBlock mb="35px">
               <Hero.Title as="h1">
-                <Trans i18nKey="client.hero.title">
+                <Trans i18nKey="consumer.hero.title">
                   Why should you choose <br /> a localistar translator?
                 </Trans>
               </Hero.Title>
               <Hero.Text>
-                <SuperTag value={t('client.hero.description')} />
+                <SuperTag value={t('consumer.hero.description')} />
               </Hero.Text>
               <Hero.TitleShape>
                 <img

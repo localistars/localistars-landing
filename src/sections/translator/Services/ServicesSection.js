@@ -18,9 +18,9 @@ export default function ServiceSection() {
             className="col-xl-4 col-lg-6 col-md-6 col-sm-9 col-xs-10"
           >
             <SectionTitle
-              subTitle={t('client.service.subTitle')}
-              title={t('client.service.title')}
-              text={t('client.service.text')}
+              subTitle={t('consumer.service.subTitle')}
+              title={t('consumer.service.title')}
+              text={t('consumer.service.text')}
               subTitleProps={{ mb: '27px' }}
               titleProps={{ mb: '10px', as: 'h2' }}
               mb="20px"
@@ -34,8 +34,8 @@ export default function ServiceSection() {
                 key={id}
               >
                 <ServicesCard
-                  title={t(`client.service.services.${id}.title`, title)}
-                  text={t(`client.service.services.${id}.text`, text)}
+                  title={t(`consumer.service.services.${id}.title`, title)}
+                  text={t(`consumer.service.services.${id}.text`, text)}
                   icon={icon}
                   to="/"
                   iconBackground={iconColor}

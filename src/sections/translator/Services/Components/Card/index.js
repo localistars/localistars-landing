@@ -21,7 +21,7 @@ export default function ServicesCard({
       <Card.Title as="h4">{title}</Card.Title>
       <Card.Text>{text}</Card.Text>
       <Card.Button as={Link} to={to ? to : '/'}>
-        {t('client.service.learnMore')} <i className="fa fa-angle-right" />
+        {t('consumer.service.learnMore')} <i className="fa fa-angle-right" />
       </Card.Button>
     </Card>
   );

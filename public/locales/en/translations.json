@@ -84,7 +84,7 @@
       "btn": "Register for free"
     }
   },
-  "client": {
+  "consumer": {
     "header": "Start now",
     "meta": {
       "title": "Find a translator on our platform",
@@ -298,6 +298,89 @@
       "btn": "Register For Free"
     }
   },
+  "how": {
+    "meta": {
+      "title": "How it works",
+      "description": "How it works"
+    },
+    "hero": {
+      "title": "Translation projects",
+      "title2": "How localistars works",
+      "text": "Clients and translators welcome – <1/>  together you get translation projects done."
+    },
+    "process": {
+      "consumer": {
+        "one": {
+          "subTitle": "Looking for translator",
+          "title": "Client",
+          "text": "Make sure you have <1>set up your account.</1>"
+        },
+        "two": {
+          "title": "Create a project and call for bids",
+          "text": "Create a new draft. Upload the files you need to be translated. Choose the target languages for the translation and call for bids. Done. Behind the scenes a translation project has been created. You can relax and wait for bids to show up."
+        },
+        "three": {
+          "title": "Choose the right partner for your project",
+          "text": "Choose the offer with the lowest price or the partner with the best reputation. The choice is yours. The new partner will be added to your list of translators, so in future it's easy for you to work with the same people again."
+        },
+        "four": {
+          "title": "Fund the project",
+          "text": "Before the translator may start working you'll need to fund the project. We hold back the money until you approve the provided translations. The translator can be sure the costs are covered while you can be sure to only be charged if you approve the content."
+        },
+        "five": {
+          "title": "Approve the work",
+          "text": "If you're happy with the work of your translator you approve the project. If there's something missing or in need of rework, give the translator a chance to improve the content. For disputes we introduced a special workflow as well."
+        },
+        "six": {
+          "title": "Be charged",
+          "text": "With approval of the project the provided funding will be paid out to the translator. You will get an invoice for your accounting. All past transactions can be viewed in the accounting section of your organisation."
+        }
+      },
+      "creator": {
+        "one": {
+          "subTitle": "Looking for a job",
+          "title": "Translator",
+          "text": "Make sure you have <1>set up your account.</1>"
+        },
+        "two": {
+          "title": "Make an offer",
+          "text": "The new project shows up in your list of new job opportunities. You can bid based on the content and metrics provided. If there's something unclear or you need additional details, you can reach out to the potential client anytime."
+        },
+        "three": {
+          "title": "Get down to business",
+          "text": "Do what you're best at. When the translations are done, upload the files and submit the job. During the project you can reach out to your client at anytime."
+        },
+        "four": {
+          "title": "Get paid",
+          "text": "Time to get paid. The money will be transferred to your localistars-balance and can be withdrawn at any time. All necessary reports for your accounting (invoices, VAT-reports, etc.) are available in your organisation section."
+        }
+      }
+    },
+    "video": {
+      "subTitle": "Watch video",
+      "title": "localistars is also integrated in locize",
+      "text": "Check out how localistars can be integrated into our localization management platform locize visit the video or get more information about locize at the ecosystem overview.",
+      "learnMore": "Learn more",
+      "ecosystem": "Ecosystem"
+    }
+  },
+  "ecosystem": {
+    "meta": {
+      "title": "Ecosystem",
+      "description": "Ecosystem"
+    },
+    "title": "Localistars is part of this ecosystem",
+    "portfolio": {
+      "p1": {
+        "title": "locize",
+        "text": "Localization Management Platform"
+      },
+      "p2": {
+        "title": "i18next",
+        "text": "JavaScript Internationalization Framework"
+      }
+    }
+  },
   "hero": {
     "subTitle": "Translation Marketplace",
     "title": "We connect clients<1/>with translators",
@@ -345,10 +428,20 @@
     "rights": "All Rights Reserved"
   },
   "blog": {
+    "meta": {
+      "title": "Blog",
+      "description": "Blog"
+    },
     "title": "Latest posts",
+    "subTitle": "Localistars Blog",
+    "smallTitle": "Blog",
     "readTime": "readtime",
     "notFound": "No posts found",
-    "share": "Share"
+    "share": "Share",
+    "sidebar": {
+      "title": "Recent Posts",
+      "category": "Categories"
+    }
   },
   "common": {
     "onlyInDefaultLanguage": "This content is not available in your requested language.",

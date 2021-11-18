@@ -5,33 +5,35 @@ import BreadCrumb from '~sections/ecosystem/BreadCrumb';
 import FooterTwo from '~sections/index/FooterTwo';
 import HeaderButton from '~sections/ecosystem/Header';
 import Head from 'next/head';
-
+import { useTranslation } from 'next-i18next';
 import { getStaticPaths, makeStaticProps } from '~lib/getStatic';
 
-const header = {
-  headerClasses:
-    'site-header site-header--menu-end light-header site-header--sticky',
-  containerFluid: false,
-  buttonBlock: (
-    <HeaderButton
-      clasName="ms-auto d-none d-xs-inline-flex"
-      btnText="Login"
-      btnLink="https://www.localistars.app/login"
-      mr="15px"
-      mrLG="0"
-    />
-  )
-};
-
 export default function Agency() {
+  const { t } = useTranslation('translations');
+
   return (
-    <PageWrapper headerConfig={header}>
+    <PageWrapper headerConfig={{
+      headerClasses:
+        'site-header site-header--menu-end light-header site-header--sticky',
+      containerFluid: false,
+      buttonBlock: (
+        // eslint-disable-next-line react/no-children-prop
+        <HeaderButton
+          className="d-none d-sm-flex"
+          btnText={t('common.header')}
+          btnLink="https://www.localistars.app/register"
+        />
+      )
+    }}>
       <Head>
-        <title>Ecosystem | localistars</title>
-        <meta name="description" content="Ecosystem | localistars" />
+        <title>{t('ecosystem.meta.title')}</title>
+        <meta
+          name="description"
+          content={t('ecosystem.meta.description')}
+        />
       </Head>
 
-      <BreadCrumb title="Localistars is part of this ecosystem" />
+      <BreadCrumb title={t('ecosystem.title')} />
       <EcosystemSection />
       <FooterTwo />
     </PageWrapper>

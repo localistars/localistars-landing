@@ -4,8 +4,11 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from '~components';
 import Title from './style';
 import SectionTitle from './Components/SectionTitle';
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function AboutSection() {
+  const { t } = useTranslation('translations');
+
   return (
     <Title>
       <Container>
@@ -16,15 +19,15 @@ export default function AboutSection() {
           >
             <Title.Content mt="40px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
               <SectionTitle
-                subTitle="Looking for translator"
-                title="Client"
+                subTitle={t('how.process.consumer.one.subTitle')}
+                title={t('how.process.consumer.one.title')}
                 text={
-                  <>
-                    Make sure you have{' '}
+                  <Trans i18nKey="how.process.consumer.one.text">
+                    Make sure you have
                     <Link to="/translator#get-started">
                       set up your account.
                     </Link>
-                  </>
+                  </Trans>
                 }
                 titleProps={{ mb: '30px' }}
                 subTitleProps={{ mb: '25px' }}
@@ -38,15 +41,15 @@ export default function AboutSection() {
           >
             <Title.Content mt="40px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
               <SectionTitle
-                subTitle="Looking for a job"
-                title="Translator"
+                subTitle={t('how.process.creator.one.subTitle')}
+                title={t('how.process.creator.one.title')}
                 text={
-                  <>
-                    Make sure you have{' '}
+                  <Trans i18nKey="how.process.creator.one.text">
+                    Make sure you have
                     <Link to="/translationjob#get-started">
                       set up your account.
                     </Link>
-                  </>
+                  </Trans>
                 }
                 titleProps={{ mb: '30px' }}
                 subTitleProps={{ mb: '25px' }}

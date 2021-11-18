@@ -27,10 +27,10 @@ export default function ProcessSection({ ...rest }) {
             id="get-started"
           >
             <Process.Subtitle mbLG="10px" as="h5" fontColor="#5034fc">
-              {t('client.process.subTitle')}
+              {t('consumer.process.subTitle')}
             </Process.Subtitle>
             <Process.Title as="h2" mb="40px" mbLG="80px">
-              <Trans i18nKey="client.process.title">
+              <Trans i18nKey="consumer.process.title">
                 It's very easy to start
                 <br className="d-none d-xxl-block" /> follow this process
               </Trans>
@@ -47,7 +47,7 @@ export default function ProcessSection({ ...rest }) {
                         className="col-lg-3 col-md-4 col-xs-6"
                         key={index}
                       >
-                        <ProcessCard icon={icon} title={t(`client.process.steps.${id}.title`, title)} text={t(`client.process.steps.${id}.text`, text)} />
+                        <ProcessCard icon={icon} title={t(`consumer.process.steps.${id}.title`, title)} text={t(`consumer.process.steps.${id}.text`, text)} />
                       </Col>
                     );
                   }

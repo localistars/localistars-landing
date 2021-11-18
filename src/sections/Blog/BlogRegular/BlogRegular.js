@@ -28,7 +28,7 @@ export default function BlogRegular({ posts = [] }) {
               <Blog.Subtitle as="h6" fontColor="#5034fc">
                 {t('blog.title')}
               </Blog.Subtitle>
-              <Blog.Title as="h2">Localistars Blog</Blog.Title>
+              <Blog.Title as="h2">{t('blog.subTitle')}</Blog.Title>
             </Blog.Box>
           </Col>
         </Row>

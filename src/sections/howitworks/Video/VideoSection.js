@@ -6,8 +6,11 @@ import Video from './style';
 import SectionTitle from './Components/SectionTitle';
 import VideoFile from '~components/VideoModal';
 import prefix from '~lib/prefix';
+import { useTranslation } from 'next-i18next';
 
 export default function AboutSection() {
+  const { t } = useTranslation('translations');
+
   return (
     <Video>
       <Container>
@@ -31,9 +34,9 @@ export default function AboutSection() {
           >
             <Video.Content mt="40px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
               <SectionTitle
-                subTitle="Watch video"
-                title="localistars is also integrated in locize"
-                text="Check out how localistars can be integrated into our localization management platform locize visit the video or get more information about locize at the ecosystem overview."
+                subTitle={t('how.video.subTitle')}
+                title={t('how.video.title')}
+                text={t('how.video.text')}
                 titleProps={{ mb: '30px' }}
                 subTitleProps={{ mb: '25px' }}
               />
@@ -44,14 +47,14 @@ export default function AboutSection() {
                   target="_blank"
                   href="https://docs.locize.com/guides-tips-and-tricks/working-with-translators/localistars"
                 >
-                  Learn more
+                  {t('how.video.learnMore')}
                 </Video.Button>
                 <Video.Button
                   className="btn-electric-violet-2 btn-2"
                   as={Link}
                   to="/ecosystem"
                 >
-                  Ecosystem
+                  {t('how.video.ecosystem')}
                 </Video.Button>
               </Video.ButtonGroup>
             </Video.Content>
