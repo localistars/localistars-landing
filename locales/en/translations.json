@@ -27,5 +27,11 @@
   "blogTitle" : "Latest posts",
   "blogReadTime": "readtime",
   "blogNotFound" : "No posts found",
-  "blogShare" : "Teilen"
+  "blogShare" : "Teilen",
+  "about": {
+    "findBest": {
+      "title": "Find the best offer",
+      "text": "Client: Choose the best fitting translators.<br/>Translator: Bid for suitable translation jobs of clients.<br/>As client you accept bids based on price and experience of the translator. As translator you cherry-pick the projects you want to work on."
+    }
+  }
 }
