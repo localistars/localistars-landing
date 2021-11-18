@@ -15,7 +15,7 @@ return(
       <Col xs="12" className="col-xl-6 col-lg-6 col-md-8 col-xs-10">
         <Video.Image>
           <img className="w-100" src={`${prefix}/image/howitworks/thumbnail.png`} alt="thumbnail locize"/>
-          <VideoFile id="WobsZ_er0I4" className="video-btn sonar-emitter"> <i className="fa fa-play" /> </VideoFile>
+          <VideoFile id="T0giUsKS5KQ" className="video-btn sonar-emitter"> <i className="fa fa-play" /> </VideoFile>
         </Video.Image>
       </Col>
       <Col col="12" className="col-xxl-5 offset-xxl-1 col-lg-5 col-md-8 col-xs-10">
