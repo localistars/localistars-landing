@@ -607,7 +607,7 @@ export default function Privacy() {
                   The data controller of localistars is: inweso GmbH, a swiss
                   company with company number:{' '}
                   <a
-                    href="https://tg.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-100.947.029"
+                    href="https://tg.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-412.131.272"
                     target="__blank"
                   >
                     CHE‑412.131.272
