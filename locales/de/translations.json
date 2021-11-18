@@ -1,11 +1,9 @@
 {
   "index": {
+    "header": "Anmelden",
     "meta": {
       "title": "Übersetzungsbüro für Online-Übersetzungsdienste",
       "description": "Localistars ist eine Website, auf der Unternehmen hochwertige Online-Übersetzungsdienste finden, die von freiberuflichen Übersetzern durchgeführt werden."
-    },
-    "header": {
-      "login": "Anmelden"
     },
     "section": {
       "subTitle": "Uns geht es um Transparenz und Vertrauen.",
@@ -84,6 +82,93 @@
       "title": "Registrieren Sie sich als<br />Übersetzer oder als Übersetzungsbüro<br />kostenlos unten",
       "text": "*Keine Gebühren für Ausschreibungen oder Gebote! Keine Verpflichtungen!",
       "btn": "Kostenlos registrieren"
+    }
+  },
+  "client": {
+    "header": "Jetzt anfangen",
+    "meta": {
+      "title": "Finden Sie einen Übersetzer auf unserer Plattform",
+      "description": "Auf unserer Online-Plattform können Sie einen professionellen Übersetzer für das Sprachübersetzungsprojekt Ihres Unternehmens beauftragen."
+    },
+    "hero": {
+      "title": "Warum sollten Sie <br /> einen localistar-Übersetzer wählen?",
+      "description": "Wir bieten eine Plattform, die die mühsamen Teile der Übersetzungen entfernt."
+    },
+    "service": {
+      "subTitle": "Vorteile",
+      "title": "Für Unternehmen, die einen Übersetzer suchen",
+      "text": "Lassen Sie localistars Marketplace die mühsamen Teile Ihres Übersetzungsworkflows erledigen.",
+      "services": {
+        "as1": {
+          "title": "Finden Sie ganz einfach neue Übersetzer",
+          "text": "Behalten Sie den Überblick über Ihre Aufgabenlisten und bleiben Sie auf dem Laufenden. Insgesamt ist localistars Ihre Chance, Ihre Markteinführungszeit zu verkürzen."
+        },
+        "as2": {
+          "title": "Direkten Kontakt",
+          "text": "localistars handelt von dir. Sie stehen in direktem Kontakt mit dem Übersetzer – es ist Ihr Projekt, Sie haben die Zügel in der Hand. Im Gegensatz zu anderen Dienstleistungen legen wir KEINEN Preis fest und leiten den Auftrag daher NICHT an den günstigsten Übersetzer weiter, um unseren eigenen Gewinn zu maximieren. Sie wählen den Übersetzer für Ihre Projekte selbst aus, er ist Ihr Auftragnehmer."
+        },
+        "as3": {
+          "title": "Fakturierung",
+          "text": "Sie müssen keine Zeit mit der Verwaltung von Rechnungen verschwenden. Das alles geschieht automatisch und mehrwertsteuerkonform. Die Unterlagen für Ihre Buchhaltung können Sie jederzeit herunterladen. Konzentrieren Sie sich auf Ihren Job – nicht auf die Buchhaltung."
+        },
+        "as4": {
+          "title": "Behalte den Überblick",
+          "text": "Finden Sie alle Informationen an einem Ort. Sie müssen nicht durch endlose E-Mail-Listen blättern."
+        }
+      },
+      "learnMore": "Mehr erfahren"
+    },
+    "content": {
+      "subTitle": "Ein paar Klicks entfernt",
+      "title": "Finden Sie den richtigen Übersetzer für Ihren Bedarf",
+      "text": "Sie können Ihre Anfragen kostenlos in unserem Übersetzungsmarktplatz veröffentlichen und innerhalb weniger Stunden Angebote von Übersetzern erhalten. Dieser Service wird Ihnen kostenlos zur Verfügung gestellt.",
+      "btn": "Jetzt registrieren",
+      "widget": {
+        "title": "Freiberufliche oder Agenturübersetzer",
+        "text": "Innerhalb weniger Stunden können Sie eine qualitativ hochwertige Übersetzung von einem professionellen Übersetzer oder einem professionellen Übersetzungsunternehmen erhalten."
+      }
+    },
+    "manage": {
+      "subTitle": "Individuelle Verwaltung",
+      "title": "Verwalten Sie Ihr Team",
+      "text": "Sie können alle Ihre Teammitglieder zu Ihrer Organisation hinzufügen. Jedem Benutzer können individuelle Rechte gewährt werden, damit er Zugriff auf die relevanten Teile Ihres Workflows erhält. Arbeiten Sie weiterhin mit Partnern zusammen, denen Sie vertrauen."
+    },
+    "about": {
+      "subTitle": "Produktivitätssteigerung",
+      "title": "Versatile API",
+      "text": "Automatisieren Sie Ihren Prozess, um produktiver zu sein."
+    },
+    "process": {
+      "subTitle": "Loslegen",
+      "title": "Es ist sehr einfach, <1/> diesem Vorgang zu folgen",
+      "steps": {
+        "sp1": {
+          "title": "Anmelden",
+          "text": "Schließen Sie den Registrierungsprozess ab, indem Sie Ihre E-Mail-Adresse bestätigen. Klicken Sie auf den Link in der erhaltenen E-Mail."
+        },
+        "sp2": {
+          "title": "Wählen Sie Ihren Profiltyp",
+          "text": "Sie suchen einen Übersetzer! Wählen Sie den Clientprofiltyp aus."
+        },
+        "sp3": {
+          "title": "Aktualisieren Sie Ihr persönliches Profil",
+          "text": "Zeit, sich einen Namen zu machen – vervollständigen Sie Ihr persönliches Benutzerprofil."
+        },
+        "sp4": {
+          "title": "Eine Organisation haben",
+          "text": "Die Bereitstellung einer Organisation ist obligatorisch. Ein Vertrag besteht rechtlich zwischen Ihrer Organisation und der den Dienst anfordernden Organisation. Sie können entweder zu einer bestehenden Organisation eingeladen werden oder eine neue erstellen."
+        },
+        "sp5": {
+          "title": "Erstellen Sie ein Projekt und rufen Sie zur Angebotsabgabe auf",
+          "text": "Zeit, sich einen Namen zu machen – vervollständigen Sie Ihr persönliches Profil."
+        }
+      }
+    },
+    "help": {
+      "subTitle": "HILFE",
+      "title": "Benötigen Sie Unterstützung vor der Registrierung?",
+      "text": "Alle Fragen zu unseren Preisen oder unserer Plattform werden von einem unserer Teammitglieder beantwortet.",
+      "btn": "Kontaktiere uns"
     }
   },
   "hero": {
