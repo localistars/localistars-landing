@@ -325,5 +325,9 @@
     "readTime": "Lesezeit",
     "notFound": "Keine aktuellen Beiträge",
     "share": "Teilen"
+  },
+  "common": {
+    "onlyInDefaultLanguage": "Dieser Inhalt ist in der gewünschten Sprache nicht verfügbar.",
+    "header": "Jetzt starten"
   }
 }
