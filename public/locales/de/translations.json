@@ -274,6 +274,30 @@
       "btnTwo": "Gratis registrieren"
     }
   },
+  "pricing": {
+    "meta": {
+      "title": "Preise",
+      "description": "Preise"
+    },
+    "service": {
+      "title": "Preise",
+      "text": "Transparent.<1/>Keine Zwischenhändler.<3/>Keine versteckten Kosten.",
+      "services": {
+        "ms1": {
+          "title": "Für Kunden",
+          "text": "Kostenlos. Keine versteckten Kosten."
+        },
+        "ms2": {
+          "title": "Für Übersetzer",
+          "text": "Kleine Servicegebühr für genehmigte Aufgabe."
+        }
+      }
+    },
+    "cta": {
+      "title": "Kein Grund, <1/>eine Anmeldung jetzt zu verschieben",
+      "btn": "Kostenlos registrieren"
+    }
+  },
   "hero": {
     "subTitle": "Übersetzungsmarktplatz",
     "title": "Wir verbinden Kunden<1/>mit Übersetzer",

@@ -7,27 +7,31 @@ import Cta from '~sections/pricing/Cta';
 import FooterTwo from '~sections/index/FooterTwo';
 import Head from 'next/head';
 import { getStaticPaths, makeStaticProps } from '~lib/getStatic';
-
-const header = {
-  headerClasses:
-    'site-header site-header--menu-end light-header site-header--sticky',
-  containerFluid: false,
-  buttonBlock: (
-    // eslint-disable-next-line react/no-children-prop
-    <HeaderButton
-      className="d-none d-sm-flex"
-      btnText="Start now"
-      btnLink="https://www.localistars.app/login"
-    />
-  )
-};
+import { useTranslation } from 'next-i18next';
 
 export default function HomeApp() {
+  const { t } = useTranslation('translations');
+
   return (
-    <PageWrapper headerConfig={header}>
+    <PageWrapper headerConfig={{
+      headerClasses:
+        'site-header site-header--menu-end light-header site-header--sticky',
+      containerFluid: false,
+      buttonBlock: (
+        // eslint-disable-next-line react/no-children-prop
+        <HeaderButton
+          className="d-none d-sm-flex"
+          btnText={t('common.header')}
+          btnLink="https://www.localistars.app/register"
+        />
+      )
+    }}>
       <Head>
-        <title>Pricing | localistars </title>
-        <meta name="description" content="Pricing | localistars" />
+        <title>{t('pricing.meta.title')}</title>
+        <meta
+          name="description"
+          content={t('pricing.meta.description')}
+        />
       </Head>
       <ServiceSection />
       {/*<TestimonialSection />*/}

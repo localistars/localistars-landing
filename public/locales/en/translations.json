@@ -274,6 +274,30 @@
       "btnTwo": "Register free"
     }
   },
+  "pricing": {
+    "meta": {
+      "title": "Pricing",
+      "description": "Pricing"
+    },
+    "service": {
+      "title": "Pricing",
+      "text": "Transparent.<1/>No middleman.<3/>No hidden costs.",
+      "services": {
+        "ms1": {
+          "title": "For client",
+          "text": "Free. No hidden costs."
+        },
+        "ms2": {
+          "title": "For translators",
+          "text": "Small service fee on approved task."
+        }
+      }
+    },
+    "cta": {
+      "title": "No reason to postpone <1/>a registration now",
+      "btn": "Register For Free"
+    }
+  },
   "hero": {
     "subTitle": "Translation Marketplace",
     "title": "We connect clients<1/>with translators",

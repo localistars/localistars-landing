@@ -4,8 +4,11 @@ import { Form } from '~components';
 import Cta from './style';
 import { Link } from '~components';
 import prefix from '~lib/prefix';
+import { useTranslation, Trans } from 'next-i18next';
 
 const CtaSection = () => {
+  const { t } = useTranslation('translations');
+
   return (
     <>
       <Cta className="cta-section cta-section--l1">
@@ -22,8 +25,10 @@ const CtaSection = () => {
             <Col className="col-lg-7 col-md-8 text-center">
               <Cta.Box>
                 <Cta.Title as="h2">
-                  No reason to postpone <br className="d-none d-xs-block" />a
-                  registration now
+                  <Trans i18nKey="pricing.cta.title">
+                    No reason to postpone <br className="d-none d-xs-block" />a
+                    registration now
+                  </Trans>
                 </Cta.Title>
 
                 <Form.Button
@@ -32,7 +37,7 @@ const CtaSection = () => {
                   as={Link}
                   target="_blank"
                   href="https://www.localistars.app/login"
-                  value="Register For Free"
+                  value={t('pricing.cta.btn')}
                 />
               </Cta.Box>
             </Col>
