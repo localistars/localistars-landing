@@ -14,14 +14,12 @@ return(
       <Title.Content mt="40px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
           <SectionTitle 
             subTitle="Looking for translator" 
-            title="Client
-            "
-            text="Make sure you have set up your account."
+            title="Client"
+            text={<>Make sure you have <Link to="/translator#get-started">set up your account.</Link></>}
             titleProps={{mb:"30px"}}
             subTitleProps={{mb:"25px"}}
-            />
-            <hr></hr>
-          
+          />
+          <hr></hr>
         </Title.Content>
         
       </Col>
@@ -30,13 +28,11 @@ return(
           <SectionTitle 
             subTitle="Looking for a job"
             title="Translator"
-            text="Make sure you have set up your account."
+            text={<>Make sure you have <Link to="/translationjob#get-started">set up your account.</Link></>}
             titleProps={{mb:"30px"}}
             subTitleProps={{mb:"25px"}}
-            />
-
-            <hr></hr>
-          
+          />
+          <hr></hr>
         </Title.Content>
       </Col>
     </Row>
