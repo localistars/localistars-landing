@@ -10,7 +10,7 @@ export default function ImageGroup() {
               className="welcome-image--group-01__main"
               alt="hero image main"
             />
-             <div className=" welcome-image--group-01__img-1">
+            <div className=" welcome-image--group-01__img-1">
               <img
                 src="/image/marketing/l1-hero-img-1.png"
                 className="w-100"
