@@ -90,23 +90,22 @@ export default function FooterTwo() {
                         <Footer.SocialShare>
                             <Footer.Box  pt="11px" pb="30px">
                                 <Footer.SocialShare>
-            
-            <Footer.SocialShareItem>
-              <a href="https://twitter.com/localistars">
-                <i className="fab fa-twitter" />
-              </a>
-            </Footer.SocialShareItem>
-            <Footer.SocialShareItem>
-              <a href="https://www.instagram.com/localistars/">
-                <i className="fab fa-instagram" />
-              </a>
-            </Footer.SocialShareItem>
-            <Footer.SocialShareItem>
-              <a href="https://www.youtube.com/channel/UCOpWH9CMj3t_yswl_uZb4lw">
-                <i className="fab fa-linkedin" />
-              </a>
-            </Footer.SocialShareItem>
-          </Footer.SocialShare>
+                                    <Footer.SocialShareItem>
+                                    <a href="https://twitter.com/localistars">
+                                        <i className="fab fa-twitter" />
+                                    </a>
+                                    </Footer.SocialShareItem>
+                                    <Footer.SocialShareItem>
+                                    <a href="https://www.instagram.com/localistars/">
+                                        <i className="fab fa-instagram" />
+                                    </a>
+                                    </Footer.SocialShareItem>
+                                    <Footer.SocialShareItem>
+                                    <a href="https://www.youtube.com/channel/UCOpWH9CMj3t_yswl_uZb4lw">
+                                        <i className="fab fa-youtube" />
+                                    </a>
+                                    </Footer.SocialShareItem>
+                                </Footer.SocialShare>
                             </Footer.Box>
                         </Footer.SocialShare>
                         
