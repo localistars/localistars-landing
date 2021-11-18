@@ -27,21 +27,21 @@ const serviceData = {
       text: "No need to waste time writing invoices. It's all done automatically and VAT-compliant. You can download the documents for your accounting anytime. Focus on your job – not on bookkeeping."
     },
     {
-      id: 'ms3',
+      id: 'ms4',
       icon: `${prefix}/image/translationjobs/money-coins.svg`,
       iconColor: '#a9d2ff',
       title: 'Get paid',
       text: "A project has to be funded by your client upfront. We hold back the money until the job is done and the client approves the translations. Then we'll transfer the sum to your account."
     },
     {
-      id: 'ms3',
+      id: 'ms5',
       icon: `${prefix}/image/translationjobs/archery-target.svg`,
       iconColor: '#ffd166',
       title: 'Find new clients with ease',
       text: 'More time to do the meaningful work, less time wasted on searching and contracting. Overall localistars is your chance to increase your income.'
     },
     {
-      id: 'ms3',
+      id: 'ms6',
       icon: `${prefix}/image/translationjobs/money-coins.svg`,
       iconColor: '#a9d2ff',
       title: 'Keep the overview',

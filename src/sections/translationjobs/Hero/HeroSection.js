@@ -1,11 +1,13 @@
 import React from 'react';
 // import Image from 'next/image';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Form, Link } from '~components';
 import Hero from './style';
 import prefix from '~lib/prefix';
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function HeroSection() {
+  const { t } = useTranslation('translations');
+
   return (
     <Hero
       overlay={`${prefix}/image/translationjobs/hero-overlay.png`}
@@ -19,13 +21,13 @@ export default function HeroSection() {
           <Col className="col-xxl-7 col-xl-7 col-lg-9 col-md-10">
             <Hero.Content>
               <Hero.Title as="h2" fontColor="#fff">
-                Why should you become
-                <br className="d-none d-sm-block" />a localistars translator?
+                <Trans i18nKey="creator.hero.title">
+                  Why should you become
+                  <br className="d-none d-sm-block" />a localistars translator?
+                </Trans>
               </Hero.Title>
               <Hero.Text fontColor="#fff">
-                Our goal is to provide a platform that removes the tedious parts
-                of translations. Are you a freelance translator or a translation
-                agency, then localistars is for you!
+                {t('creator.hero.text')}
               </Hero.Text>
             </Hero.Content>
           </Col>

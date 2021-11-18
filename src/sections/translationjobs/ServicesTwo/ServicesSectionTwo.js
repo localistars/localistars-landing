@@ -3,8 +3,11 @@ import SectionTitle from './Components/SectionTitle';
 import { Col, Container, Row } from 'react-bootstrap';
 import Service from './style';
 import prefix from '~lib/prefix';
+import { useTranslation } from 'next-i18next';
 
 export default function ServicesSectionTwo() {
+  const { t } = useTranslation('translations');
+
   return (
     <Service backgroundColor="rgba(230, 248, 249, 0.4)">
       <Container>
@@ -13,9 +16,9 @@ export default function ServicesSectionTwo() {
             <Service.Box>
               {/* Section Title */}
               <SectionTitle
-                subTitle="Services"
-                title="Why should you become a localistars translator?"
-                text="Our goal is to provide a platform that removes the tedious parts of translations. Are you a freelance translator or a translation agency, then localistars is for you!"
+                subTitle={t('creator.service.subTitle')}
+                title={t('creator.service.title')}
+                text={t('creator.service.text')}
                 titleProps={{ mb: '20px' }}
                 subTitleProps={{
                   mb: '10px',
@@ -25,12 +28,7 @@ export default function ServicesSectionTwo() {
               />
               {/*/ .Section Title */}
               <Service.List mt="20px">
-                <li>Direct Contact</li>
-                <li>No risk</li>
-                <li>Invoicing</li>
-                <li>Get paid</li>
-                <li>Find new clients with ease</li>
-                <li>Keep the overview</li>
+                {t('creator.service.items', { returnObjects: true }).map((item, i) => <li key={i}>{item}</li>)}
               </Service.List>
             </Service.Box>
           </Col>

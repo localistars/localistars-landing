@@ -1,20 +1,22 @@
 import React from 'react';
 import FeatureWidget from '../FeatureWidget';
-import featureSectionData from '~data/translationjobs/Features';
+import { useTranslation } from 'next-i18next';
 
-const FeatureWidgetsBlock = ({ widgetData }) => {
+const FeatureWidgetsBlock = ({ widgetData, tabLabel }) => {
+  const { t } = useTranslation('translations');
+
   return (
     <>
       <div className="feature-area--l2-widgets">
-        {featureSectionData.tabWidget1.map(
-          ({ icon, iconBackground, title, text }, index) => {
+        {widgetData.map(
+          ({ id, icon, iconBackground, title, text }, index) => {
             return (
               <FeatureWidget
                 key={'pmftw' + index}
                 icon={icon}
                 iconBackground={iconBackground}
-                title={title}
-                text={text}
+                title={t(`creator.features.${tabLabel}.widgets.${id}.title`, title)}
+                text={t(`creator.features.${tabLabel}.widgets.${id}.text`, text)}
               />
             );
           }

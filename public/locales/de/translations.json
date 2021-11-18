@@ -171,6 +171,80 @@
       "btn": "Kontaktiere uns"
     }
   },
+  "creator": {
+    "header": "Finden Sie einen Übersetzungsjob",
+    "meta": {
+      "title": "Website für freiberufliche Übersetzer: Job finden",
+      "description": "Auf unserer Website finden Sie freiberufliche Möglichkeiten für Sprachübersetzungen. Bewerben Sie sich online für den nächsten Übersetzungsauftrag."
+    },
+    "hero": {
+      "title": "Warum sollten Sie<1/>Localistars-Übersetzer werden?",
+      "text": "Unser Ziel ist es, eine Plattform bereitzustellen, die die mühsamen Teile von Übersetzungen entfernt. Sind Sie ein freiberuflicher Übersetzer oder ein Übersetzungsbüro, dann ist localistars genau das Richtige für Sie!"
+    },
+    "service": {
+      "subTitle": "Dienstleistungen",
+      "title": "Warum sollten Sie Localistars-Übersetzer werden?",
+      "text": "Unser Ziel ist es, eine Plattform bereitzustellen, die die mühsamen Teile von Übersetzungen entfernt. Sind Sie ein freiberuflicher Übersetzer oder ein Übersetzungsbüro, dann ist localistars genau das Richtige für Sie!",
+      "items": [
+        "Direkten Kontakt",
+        "Kein Risiko",
+        "Fakturierung",
+        "Bezahlt werden",
+        "Einfach neue Kunden finden",
+        "Behalte den Überblick"
+      ],
+      "services": {
+        "ms1": {
+          "title": "Direkten Kontakt",
+          "text": "localistars handelt von dir. Sie stehen im direkten Kontakt mit dem Kunden – es ist Ihre Aufgabe, Sie haben die Zügel in der Hand. Im Gegensatz zu anderen Dienstleistungen legen wir KEINEN Preis fest und leiten den Auftrag daher NICHT an den günstigsten Übersetzer weiter, um unseren eigenen Gewinn zu maximieren. Sie machen ein Angebot, es ist Ihr Kunde – alles was wir verlangen ist ein kleines Servicehonorar bei Erfolg, um unsere eigenen Kosten (Transaktionen, Währungsumtausch und Entwicklung) zu decken."
+        },
+        "ms2": {
+          "title": "Kein Risiko",
+          "text": "Bei erfolgreicher Zahlung berechnen wir Ihnen lediglich eine geringe Servicegebühr. Keine versteckten Kosten."
+        },
+        "ms3": {
+          "title": "Fakturierung",
+          "text": "Sie müssen keine Zeit mit dem Schreiben von Rechnungen verschwenden. Das alles geschieht automatisch und mehrwertsteuerkonform. Die Unterlagen für Ihre Buchhaltung können Sie jederzeit herunterladen. Konzentrieren Sie sich auf Ihren Job – nicht auf die Buchhaltung."
+        },
+        "ms4": {
+          "title": "Bezahlt werden",
+          "text": "Ein Projekt muss von Ihrem Kunden im Voraus finanziert werden. Wir halten das Geld zurück, bis der Auftrag erledigt ist und der Kunde die Übersetzungen genehmigt. Dann überweisen wir den Betrag auf Ihr Konto."
+        },
+        "ms5": {
+          "title": "Einfach neue Kunden finden",
+          "text": "Mehr Zeit für sinnvolle Arbeit, weniger Zeit für Suche und Auftragsvergabe. Insgesamt ist localistars Ihre Chance, Ihr Einkommen zu steigern."
+        },
+        "ms6": {
+          "title": "Behalte den Überblick",
+          "text": "Finden Sie alle Informationen an einem Ort. Sie müssen nicht durch endlose E-Mail-Listen blättern."
+        }
+      }
+    },
+    "features": {
+      "first": {
+        "menu": "Neue Projekte finden",
+        "tabTitle": "Neue Jobmöglichkeiten",
+        "widgets": {
+          "w1": {
+            "title": "Ihr Sprachprofil",
+            "text": "Neue Stellenangebote passend zu Ihrem Sprachprofil warten auf Sie."
+          },
+          "w2": {
+            "title": "Marketing",
+            "text": "Erweitern Sie Ihre persönliche Reichweite <br class='d-none d-xs-block'> mit der kostenlosen Listungsmöglichkeit hier."
+          }
+        }
+      },
+      "second": {
+        "menu": "Erweitern Sie Ihr Kundennetzwerk",
+        "tabTitle": "Arbeiten Sie weiterhin mit Partnern zusammen, denen Sie vertrauen."
+      },
+      "third": {
+        "menu": "Verwalten Sie Ihr Team",
+        "tabTitle": "Fügen Sie Teammitglieder oder Mitarbeiter hinzu."
+      }
+    }
+  },
   "hero": {
     "subTitle": "Übersetzungsmarktplatz",
     "title": "Wir verbinden Kunden<1/>mit Übersetzer",

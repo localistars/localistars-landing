@@ -27,7 +27,7 @@ export default function Agency() {
           btnText={t('client.header')}
           mr="15px"
           mrLG="0"
-          btnLink="https://www.localistars.app/login"
+          btnLink="https://www.localistars.app/register"
         />
       )
     }}>

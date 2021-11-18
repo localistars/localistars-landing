@@ -7,12 +7,14 @@ const featureSectionData = {
 
   tabWidget1: [
     {
+      id: "w1",
       icon: `${prefix}/image/translationjobs/icon-grid.png`,
       iconBackground: '#ff8d52',
       title: 'Your language profile',
       text: 'New job opportunities matching your language profile are waiting for you.'
     },
     {
+      id: "w2",
       icon: `${prefix}/image/translationjobs/icon-message.png`,
       iconBackground: '#15cda8',
       title: 'Marketing',

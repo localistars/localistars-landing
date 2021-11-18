@@ -5,7 +5,11 @@ import FeatureImage from './Components/FeatureImages';
 import Feature from './style';
 import featureSectionData from '~data/translationjobs/Features';
 import FeatureWidgetsBlock from './Components/FeatureWidgetsBlock';
+import { useTranslation } from 'next-i18next';
+
 export default function FeatureSection() {
+  const { t } = useTranslation('translations');
+
   return (
     <Feature background="rgba(4, 105 , 117, 0.7)">
       <Container className="container">
@@ -15,14 +19,13 @@ export default function FeatureSection() {
               <Col className="col-xl-7 col-lg-8 col-md-10">
                 <Nav className="nav nav-tabs" id="myTab" role="tablist">
                   <Nav.Link eventKey="first" className="nav-link">
-                    Find new projects
+                    {t('creator.features.first.menu')}
                   </Nav.Link>
-
                   <Nav.Link eventKey="second" className="nav-link">
-                    Expand your client-network
+                    {t('creator.features.second.menu')}
                   </Nav.Link>
                   <Nav.Link eventKey="third" className="nav-link">
-                    Manage your team
+                    {t('creator.features.third.menu')}
                   </Nav.Link>
                 </Nav>
               </Col>
@@ -33,10 +36,11 @@ export default function FeatureSection() {
                   imageBlock={<FeatureImage />}
                   contentBlock={
                     <FeatureWidgetsBlock
+                      tabLabel="first"
                       widgetData={featureSectionData.tabWidget1}
                     />
                   }
-                  contentBlockTitle={featureSectionData.featureTabTitle1}
+                  contentBlockTitle={t('creator.features.first.tabTitle', featureSectionData.featureTabTitle1)}
                 />
               </Tab.Pane>
               <Tab.Pane eventKey="second">
@@ -44,10 +48,11 @@ export default function FeatureSection() {
                   imageBlock={<FeatureImage />}
                   contentBlock={
                     <FeatureWidgetsBlock
+                      tabLabel="second"
                       widgetData={featureSectionData.tabWidget1}
                     />
                   }
-                  contentBlockTitle={featureSectionData.featureTabTitle2}
+                  contentBlockTitle={t('creator.features.second.tabTitle', featureSectionData.featureTabTitle2)}
                 />
               </Tab.Pane>
               <Tab.Pane eventKey="third">
@@ -55,10 +60,11 @@ export default function FeatureSection() {
                   imageBlock={<FeatureImage />}
                   contentBlock={
                     <FeatureWidgetsBlock
+                      tabLabel="third"
                       widgetData={featureSectionData.tabWidget1}
                     />
                   }
-                  contentBlockTitle={featureSectionData.featureTabTitle3}
+                  contentBlockTitle={t('creator.features.third.tabTitle', featureSectionData.featureTabTitle3)}
                 />
               </Tab.Pane>
             </Tab.Content>

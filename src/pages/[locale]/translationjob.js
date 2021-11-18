@@ -9,33 +9,33 @@ import Process from '~sections/translationjobs/Process';
 import CtaSection from '~sections/translationjobs/CtaSpecial';
 import FooterTwo from '~sections/index/FooterTwo';
 import Head from 'next/head';
-
+import { useTranslation } from 'next-i18next';
 import { getStaticPaths, makeStaticProps } from '~lib/getStatic';
 
-const header = {
-  headerClasses:
-    'site-header site-header--menu-center site-header--services dark-header site-header--sticky site-header--service',
-  containerFluid: false,
-  darkLogo: false,
-  buttonBlock: (
-    <HeaderButton
-      className="ms-auto d-none d-xs-inline-flex"
-      btnLink="https://www.localistars.app/login"
-      btnText="Find a translation job"
-      mr="15px"
-      mrLG="0"
-    />
-  )
-};
-
 export default function HomeApp() {
+  const { t } = useTranslation('translations');
+
   return (
-    <PageWrapper headerConfig={header}>
+    <PageWrapper headerConfig={{
+      headerClasses:
+        'site-header site-header--menu-center site-header--services dark-header site-header--sticky site-header--service',
+      containerFluid: false,
+      darkLogo: false,
+      buttonBlock: (
+        <HeaderButton
+          className="ms-auto d-none d-xs-inline-flex"
+          btnLink="https://www.localistars.app/register"
+          btnText={t('creator.header')}
+          mr="15px"
+          mrLG="0"
+        />
+      )
+    }}>
       <Head>
-        <title>Freelance Translator Website: Find a job</title>
+        <title>{t('creator.meta.title')}</title>
         <meta
           name="description"
-          content="On our website you will find freelance opportunities for language translation. Apply for the next translation job online."
+          content={t('creator.meta.description')}
         />
       </Head>
       <HeroSection />

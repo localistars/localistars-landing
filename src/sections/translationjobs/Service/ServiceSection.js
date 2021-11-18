@@ -4,8 +4,11 @@ import serviceData from '~data/translationjobs/Service';
 import ServiceWidget from './Component/Widget';
 import Service from './style';
 import prefix from '~lib/prefix';
+import { useTranslation } from 'next-i18next';
 
 export default function ServiceSection() {
+  const { t } = useTranslation('translations');
+
   return (
     <>
       <Service className="border-top border-default-color-2 bg-default">
@@ -24,8 +27,8 @@ export default function ServiceSection() {
                     <Col className="col-lg-4 col-xs-6 col-10" key={id}>
                       <ServiceWidget
                         icon={icon}
-                        title={title}
-                        text={text}
+                        title={t(`creator.service.services.${id}.title`, title)}
+                        text={t(`creator.service.services.${id}.text`, text)}
                         iconColor={iconColor}
                         id={id}
                         mt="40px"
