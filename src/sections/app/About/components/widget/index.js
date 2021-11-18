@@ -8,7 +8,10 @@ export default function AboutWidget({title, text, icon, ...rest}) {
         </Widget.Icon>
         <Widget.Box>
         <Widget.Title as="h5">{title}</Widget.Title>
-        <Widget.Text>{text}</Widget.Text>
+        <Widget.Text>
+          {typeof text !== 'string' && <text />}
+          {typeof text === 'string' && text}
+        </Widget.Text>
         </Widget.Box>
   </Widget>
   )

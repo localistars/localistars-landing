@@ -19,9 +19,7 @@ import { FiArrowUp as MySVG } from 'react-icons/fi';
 import Link from "~components/Core/Link";
 
 const MyApp = ({ Component, pageProps }) => {
-
   const { t } = useTranslation('translations')
-
   const [enabled, enable] = useAnalytics();
   const [loader,setLoader] = useState(false)
   

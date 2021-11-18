@@ -4,8 +4,11 @@ import SectionTitle from "./components/SectionTitle";
 import Widget from "./components/widget";
 import About from "./style";
 import prefix from '~lib/prefix';
+import { useTranslation, Trans } from 'next-i18next'
 
 export default function AboutSection() {
+  const { t } = useTranslation('translations')
+
   return (
     <About backgroundColor="#f2f5fb">
       <Container>
@@ -23,9 +26,15 @@ export default function AboutSection() {
           <Col className="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-2 order-lg-1">
             <Widget
               directionXS="row-reverse"
-              title="Find the best offer"
+              title={t('about.findBest.title')}
               icon="fa fa-directions"
-              text="Client: Choose the best fitting translators. Translator: Bid for suitable translation jobs of clients. As client you accept bids based on price and experience of the translator. As translator you cherry-pick the projects you want to work on."
+              text={<Trans i18nKey="about.findBest.text">
+                Client: Choose the best fitting translators.
+                <br/>
+                Translator: Bid for suitable translation jobs of clients.
+                <br/>
+                As client you accept bids based on price and experience of the translator. As translator you cherry-pick the projects you want to work on.
+              </Trans>}
             />
             <Widget
               directionXS="row-reverse"
