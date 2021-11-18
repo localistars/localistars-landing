@@ -1,33 +1,53 @@
 {
-  "indexHeroTitle": "Translation Marketplace",
+  "hero": {
+    "subTitle": "Translation Marketplace",
+    "title": "We connect clients<1/>with translators",
+    "description": "localistars is the go-to marketplace for clients and translators to get translation jobs done. <1/> As client you'll find translators and as translator you'll find translation jobs. Direct contact, no middleman – just collaborating localistars!",
+    "text": "localistars is the go-to marketplace for clients and translators to get translation jobs done.<1/>As client you'll find translators and as translator you'll find translation jobs. Direct contact, no middleman – just localistars working together!",
+    "watchVideo": "Watch Video",
+    "register": "Sign Up Now",
+    "findTranslator": "Find a translator",
+    "findTranslationJob": "Find a translation job"
+  },
   "menu": {
     "translator": "Find a translator",
     "translationjob": "Find a translation job",
     "pricing": "Pricing"
   },
-  "errortitle": "Page not found",
-  "errortext": "The page you are looking for is not available or doesn't belong to this website!",
-  "errorbtn": "Back to online translation services",
-  "errorbtnsec": "Find a translator",
-  "cookieaccept": "Accept",
-  "cookiedecline": "Decline",
-  "cookietext": "This website uses cookies to ensure you get the best experience on our website. <1>learn more</1>",
-  "sidebarTitle": "Recent Posts",
-  "sidebarCategory": "Categories",
-  "footerDesc": "We’re a translation marketplace for companies and individuals searching for a translator as well as for freelance translators or translator agencies who are looking for a job.",
-  "footerPP": "Privacy Policy",
-  "footerTerms": "Terms & Conditions",
-  "footerPricing": "Pricing",
-  "footerSMText": "Get the latest trends and updates right at your inbox.",
-  "footerMore": "More",
-  "footerContact": "Contact",
-  "footerSMTitle": "Follow us on social media",
-  "footerSwiss": "Switzerland",
-  "footerRights": "All Rights Reserved",
-  "blogTitle": "Latest posts",
-  "blogReadTime": "readtime",
-  "blogNotFound": "No posts found",
-  "blogShare": "Teilen",
+  "error": {
+    "btn": "Back to online translation services",
+    "btnSecondary": "Find a translator",
+    "title": "Page not found",
+    "text": "The page you are looking for is not available or doesn't belong to this website!"
+  },
+  "cookie": {
+    "accept": "Accept",
+    "decline": "Decline",
+    "text": "This website uses cookies to ensure you get the best experience on our website. <1>learn more</1>"
+  },
+  "sidebar": {
+    "title": "Recent Posts",
+    "category": "Categories"
+  },
+  "footer": {
+    "desc": "We’re a translation marketplace for companies and individuals searching for a translator as well as for freelance translators or translator agencies who are looking for a job.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "socialText": "Get the latest trends and updates right at your inbox.",
+    "more": "More",
+    "contact": "Contact",
+    "socialTitle": "Follow us on social media",
+    "swiss": "Switzerland",
+    "rights": "All Rights Reserved"
+  },
+  "blog": {
+    "title": "Latest posts",
+    "readTime": "readtime",
+    "notFound": "No posts found",
+    "share": "Share"
+  },
   "about": {
     "findBest": {
       "title": "Find the best offer",

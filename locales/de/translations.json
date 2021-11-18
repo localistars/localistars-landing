@@ -1,31 +1,57 @@
 {
-  "indexHeroTitle": "Übersetzungsmarktplatz",
+  "hero": {
+    "subTitle": "Übersetzungsmarktplatz",
+    "title": "Wir verbinden Kunden<1/>mit Übersetzer",
+    "description": "localistars ist der Marktplatz für Kunden und Übersetzer, um Übersetzungsaufträge zu erledigen. <1/> Als Kunde finden Sie Übersetzer und als Übersetzer finden Sie Übersetzungsaufträge. Direkter Kontakt, kein Zwischenhändler – nur zusammenarbeitende Localistars!",
+    "text": "localistars ist der Marktplatz für Kunden und Übersetzer, um Übersetzungsaufträge zu erledigen.<1/>Als Kunde finden Sie Übersetzer und als Übersetzer finden Sie Übersetzungsaufträge. Direkter Kontakt, kein Zwischenhändler – nur Localistars arbeiten zusammen!",
+    "watchVideo": "Video ansehen",
+    "register": "Jetzt registrieren",
+    "findTranslator": "Finde einen Übersetzer",
+    "findTranslationJob": "Finde einen Übersetzungsauftrag"
+  },
   "menu": {
     "translator": "Finde einen Übersetzer",
     "translationjob": "Finde einen Übersetzungsauftrag",
     "pricing": "Preise"
   },
-  "errortitle": "Seite nicht gefunden",
-  "errortext": "Es tut uns Leid, die Webseite nach der Sie gesucht haben exisiert nicht.",
-  "errorbtn": "Zum Online Markplatz für Übersetzungen",
-  "errorbtnsec": "Finde einen Übersetzer",
-  "cookieaccept": "Akzeptieren",
-  "cookiedecline": "Ablehnen",
-  "cookietext": "Diese Website verwendet Cookies, um Ihnen die beste Erfahrung auf unserer Website zu ermöglichen. <1>mehr erfahren</1>",
-  "sidebarTitle": "Aktuelle Beiträge",
-  "sidebarCategory": "Kategorien",
-  "footerDesc": "Wir sind ein Übersetzungsmarktplatz für Unternehmen und Selbstständige, die einen Übersetzer suchen, sowie für freiberufliche Übersetzer oder Übersetzungsbüros, welche einen Job suchen.",
-  "footerPP": "Datenschutz",
-  "footerTerms": "AGB",
-  "footerPricing": "Preise",
-  "footerSMText": "Holen Sie sich die neuesten Trends direkt in Ihren Posteingang.",
-  "footerMore": "Mehr",
-  "footerContact": "Kontakt",
-  "footerSMTitle": "Folge uns auf Social Media",
-  "footerSwiss": "Schweiz",
-  "footerRights": "Alle Rechte vorbehalten",
-  "blogTitle": "Aktuelle Beiträge",
-  "blogReadTime": "Lesezeit",
-  "blogNotFound": "Keine aktuellen Beiträge",
-  "blogShare": "Teilen"
+  "error": {
+    "btn": "Zum Online Markplatz für Übersetzungen",
+    "btnSecondary": "Finde einen Übersetzer",
+    "title": "Seite nicht gefunden",
+    "text": "Es tut uns Leid, die Webseite nach der Sie gesucht haben exisiert nicht."
+  },
+  "cookie": {
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen",
+    "text": "Diese Website verwendet Cookies, um Ihnen die beste Erfahrung auf unserer Website zu ermöglichen. <1>mehr erfahren</1>"
+  },
+  "sidebar": {
+    "title": "Aktuelle Beiträge",
+    "category": "Kategorien"
+  },
+  "footer": {
+    "desc": "Wir sind ein Übersetzungsmarktplatz für Unternehmen und Selbstständige, die einen Übersetzer suchen, sowie für freiberufliche Übersetzer oder Übersetzungsbüros, welche einen Job suchen.",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "pricing": "Preise",
+    "blog": "Blog",
+    "socialText": "Holen Sie sich die neuesten Trends direkt in Ihren Posteingang.",
+    "more": "Mehr",
+    "contact": "Kontakt",
+    "socialTitle": "Folge uns auf Social Media",
+    "swiss": "Schweiz",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "blog": {
+    "title": "Aktuelle Beiträge",
+    "readTime": "Lesezeit",
+    "notFound": "Keine aktuellen Beiträge",
+    "share": "Teilen"
+  },
+  "about": {
+    "findBest": {
+      "title": "Finden Sie das beste Angebot",
+      "text": "Kunde: Wählen Sie die am besten geeigneten Übersetzer aus.<br/>Übersetzer: Bieten Sie auf geeignete Übersetzungsaufträge von Kunden.<br/>Als Kunde akzeptieren Sie Angebote basierend auf Preis und Erfahrung des Übersetzers. Als Übersetzer wählen Sie die Projekte aus, an denen Sie arbeiten möchten."
+    }
+  }
 }
