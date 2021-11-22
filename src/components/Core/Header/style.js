@@ -611,7 +611,7 @@ const SiteHeader = styled.div.attrs({
   &.site-header--services {
     .navbar-collapse {
       @media (min-width: 992px) {
-        margin-right: 55px;
+        margin-right: 45px;
       }
     }
   }
