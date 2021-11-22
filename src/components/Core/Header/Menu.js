@@ -17,8 +17,13 @@ const Menu = ({ ...rest }) => {
           aria-controls="responsive-navbar-nav"
           className="d-lg-none offcanvas-close"
         />
-        <Nav className="mr-auto site-menu-main">
-          {menuItems.map(
+        <Nav className="mr-auto site-menu-main menuadj">
+          <style>{"\
+        .menuadj{\
+          width:100%;\
+        }\
+      "}
+      </style>{menuItems.map(
             (
               {
                 label,

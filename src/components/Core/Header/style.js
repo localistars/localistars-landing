@@ -76,7 +76,15 @@ const SiteHeader = styled.div.attrs({
       }
     }
     .main-nav-item {
+      width:190px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0.5rem;
+      
       > .nav-link {
+        text-align: center;
+        width:100%;
         color: #000;
         font-size: 16px;
         font-weight: 400;
@@ -90,10 +98,8 @@ const SiteHeader = styled.div.attrs({
         }
         @media (min-width: 992px) {
           color: #fff;
-          padding-top: 12px !important;
-          padding-bottom: 15px !important;
-          padding-left: 24px !important;
-          padding-right: 24px !important;
+         
+          
         }
       }
       // &.show,{
