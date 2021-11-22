@@ -8,11 +8,6 @@ import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import StructureData from '~sections/Blog/BlogDetails/StructureData';
 import Head from 'next/head';
-import {
-  BlogQoute,
-  CommentsBoxSection,
-  CommentsFormSection
-} from './Component';
 
 export default function MdxBlogDetails({
   allPosts,
@@ -27,7 +22,10 @@ export default function MdxBlogDetails({
 }) {
   const router = useRouter();
   const site = 'https://localistars.com';
-  const currentURL = site + router.asPath;
+  let currentURL = site + router.asPath;
+  if (router.query.locale && router.asPath.startsWith(`/${router.query.locale}/`)) {
+    currentURL = site + router.asPath.substring(`/${router.query.locale}`.length); // locale unspecific share url
+  }
   const blogURL = '/blog';
   const twittershare =
     'https://twitter.com/intent/tweet?url=' + currentURL + '&text=';

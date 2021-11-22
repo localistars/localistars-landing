@@ -5,7 +5,7 @@ import languageDetector from './languageDetector';
 
 export const useRedirect = (to) => {
   const router = useRouter();
-  to = to || router.route;
+  to = to || router.asPath;
 
   const { locales, defaultLocale } = i18nextConfig.i18n;
   locales.splice(locales.indexOf(defaultLocale), 1);
