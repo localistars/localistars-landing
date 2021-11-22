@@ -15,7 +15,7 @@ export default function ManageSection() {
           <Col xs="12" className="col-xxl-6 col-lg-5 col-md-10">
             <About.Image>
               <img
-                src={`${prefix}/image/translator/about-us-l5-img.png`}
+                src={`${prefix}/image/translator/manage-your-team.png`}
                 alt="content"
                 className="w-100"
               />
