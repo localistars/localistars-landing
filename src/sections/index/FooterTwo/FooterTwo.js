@@ -51,17 +51,20 @@ export default function FooterTwo() {
                       <Footer.ListItems>
                         <Link to="/blog">{t('footer.blog')}</Link>
                       </Footer.ListItems>
-                      <hr />
-                      {i18nextConfig.i18n.locales.map((locale) => {
-                        if (locale === currentLocale) return null;
-                        return (
-                          <Footer.ListItems key={locale}>
-                            <LanguageSwitchLink key={locale} locale={locale}>
-                              {locale}
-                            </LanguageSwitchLink>
-                          </Footer.ListItems>
-                        );
-                      })}
+                      <Footer.SocialShare>
+                        <Footer.Box pt="11px" pb="30px">
+                          {i18nextConfig.i18n.locales.map((locale) => {
+                            if (locale === currentLocale) return null;
+                            return (
+                              <Footer.SocialShareItem key={locale}>
+                                <LanguageSwitchLink key={locale} locale={locale} fontSize="1rem">
+                                  {locale}
+                                </LanguageSwitchLink>
+                              </Footer.SocialShareItem>
+                            );
+                          })}
+                        </Footer.Box>
+                      </Footer.SocialShare>
                     </Footer.List>
                   </Footer.Widgets>
                 </Col>

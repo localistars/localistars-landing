@@ -19,8 +19,14 @@ const LanguageSwitchLink = ({ locale, ...rest }) => {
     href = rest.href ? `/${locale}${rest.href}` : pName;
   }
 
+  const style = {};
+  if (rest.fontSize) {
+    style.fontSize = rest.fontSize
+  }
+
   return (
     <Link
+      style={style}
       to={href}
       skipLocaleHandling
       onClick={() => languageDetector.cacheUserLanguage(locale)}
