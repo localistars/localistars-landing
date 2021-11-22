@@ -8,7 +8,7 @@ const FeatureImages = ({ mainImage }) => {
       <ImageGroup>
         <div className="main">
           <img
-            src={`${prefix}/image/index/locize-localistars.gif`}
+            src={`${prefix}/image/index/approve.gif`}
             alt="feature tab"
             className="w-100"
           />
