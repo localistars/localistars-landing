@@ -11,9 +11,11 @@ export const siteDescription = 'Translator | localistars';
 
 export default function Layout({ children }) {
   const router = useRouter();
-  const site = 'http://localhost:3000';
+  const site = 'https://localistars.com'
   const canonicalURL = site + router.asPath;
   const currentURL = canonicalURL;
+  const siteen = site + "/en"
+  const sitede = site + "/de"
 
   return (
     <>
@@ -31,8 +33,8 @@ export default function Layout({ children }) {
 
         {/* Canonical, hreflang */}
         <link rel="canonical" href={canonicalURL} />
-        <link rel="alternate" hrefLang="en-US" href="/en" />
-        <link rel="alternate" hrefLang="de-DE" href="/de" />
+        <link rel="alternate" hrefLang="en-US" href={siteen} />
+        <link rel="alternate" hrefLang="de-DE" href={sitede} />
 
         {/* Open Graph */}
         <meta property="og:url" content={currentURL} key="ogurl" />
