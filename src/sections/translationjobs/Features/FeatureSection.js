@@ -48,7 +48,7 @@ export default function FeatureSection() {
                   imageBlock={<FeatureImage />}
                   contentBlock={
                     <FeatureWidgetsBlock
-                      tabLabel="second"
+                      tabLabel="first"
                       widgetData={featureSectionData.tabWidget1}
                     />
                   }
@@ -60,7 +60,7 @@ export default function FeatureSection() {
                   imageBlock={<FeatureImage />}
                   contentBlock={
                     <FeatureWidgetsBlock
-                      tabLabel="third"
+                      tabLabel="first"
                       widgetData={featureSectionData.tabWidget1}
                     />
                   }
