@@ -144,7 +144,7 @@
       "steps": {
         "sp1": {
           "title": "Anmelden",
-          "text": "Schließen Sie den Registrierungsprozess ab, indem Sie Ihre E-Mail-Adresse bestätigen. Klicken Sie auf den Link in der erhaltenen E-Mail."
+          "text": "Schliessen Sie den Registrierungsprozess ab, indem Sie Ihre E-Mail-Adresse bestätigen. Klicken Sie auf den Link in der erhaltenen E-Mail."
         },
         "sp2": {
           "title": "Wählen Sie Ihren Profiltyp",
@@ -230,18 +230,38 @@
             "text": "Neue Stellenangebote passend zu Ihrem Sprachprofil warten auf Sie."
           },
           "w2": {
-            "title": "Marketing",
-            "text": "Erweitern Sie Ihre persönliche Reichweite <br class='d-none d-xs-block'> mit der kostenlosen Listungsmöglichkeit hier."
+            "title": "Benachrichtigungen",
+            "text": "Sie erhalten regelmässig Benachrichtigungen über neue Projekte."
+          },
+          "w3": {
+            "title": "Bezahlt werden",
+            "text": "Sie können Ihre Einnahmen ganz einfach aus Ihrem Organisationsbereich abheben."
           }
         }
       },
       "second": {
         "menu": "Erweitern Sie Ihr Kundennetzwerk",
-        "tabTitle": "Arbeiten Sie weiterhin mit Partnern zusammen, denen Sie vertrauen."
+        "tabTitle": "Arbeiten Sie weiterhin mit Partnern zusammen, denen Sie vertrauen.",
+        "widgets": {
+          "w1": {
+            "title": "Marketing",
+            "text": "Erweitern Sie Ihre persönliche Reichweite <br class='d-none d-xs-block'> mit der kostenlosen Listungsmöglichkeit hier."
+          }
+        }
       },
       "third": {
         "menu": "Verwalten Sie Ihr Team",
-        "tabTitle": "Fügen Sie Teammitglieder oder Mitarbeiter hinzu."
+        "tabTitle": "Fügen Sie Teammitglieder oder Mitarbeiter hinzu.",
+        "widgets": {
+          "w1": {
+            "title": "Teammitglieder einladen",
+            "text": "Insbesondere für Übersetzungsbüros können Sie alle Ihre Teammitglieder zu Ihrer Organisation hinzufügen."
+          },
+          "w2": {
+            "title": "Individuelle Rechte",
+            "text": "Jedem Benutzer können individuelle Rechte gewährt werden, damit er Zugriff auf die relevanten Teile Ihres Workflows erhält."
+          }
+        }
       }
     },
     "process": {

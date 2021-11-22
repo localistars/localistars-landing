@@ -33,7 +33,7 @@ export default function FeatureSection() {
             <Tab.Content className="tab-content">
               <Tab.Pane eventKey="first">
                 <FeatureTabPenLayout
-                  imageBlock={<FeatureImage />}
+                  imageBlock={<FeatureImage name="payout.gif" />}
                   contentBlock={
                     <FeatureWidgetsBlock
                       tabLabel="first"
@@ -45,11 +45,11 @@ export default function FeatureSection() {
               </Tab.Pane>
               <Tab.Pane eventKey="second">
                 <FeatureTabPenLayout
-                  imageBlock={<FeatureImage />}
+                  imageBlock={<FeatureImage name="partners.png" />}
                   contentBlock={
                     <FeatureWidgetsBlock
-                      tabLabel="first"
-                      widgetData={featureSectionData.tabWidget1}
+                      tabLabel="second"
+                      widgetData={featureSectionData.tabWidget2}
                     />
                   }
                   contentBlockTitle={t('creator.features.second.tabTitle', featureSectionData.featureTabTitle2)}
@@ -57,11 +57,11 @@ export default function FeatureSection() {
               </Tab.Pane>
               <Tab.Pane eventKey="third">
                 <FeatureTabPenLayout
-                  imageBlock={<FeatureImage />}
+                  imageBlock={<FeatureImage name="manage-team.png" />}
                   contentBlock={
                     <FeatureWidgetsBlock
-                      tabLabel="first"
-                      widgetData={featureSectionData.tabWidget1}
+                      tabLabel="third"
+                      widgetData={featureSectionData.tabWidget3}
                     />
                   }
                   contentBlockTitle={t('creator.features.third.tabTitle', featureSectionData.featureTabTitle3)}
