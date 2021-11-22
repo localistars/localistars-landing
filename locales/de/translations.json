@@ -79,7 +79,7 @@
       "cta": "Übersetzer suchen"
     },
     "cta": {
-      "title": "Registrieren Sie sich als<br />Übersetzer oder als Übersetzungsbüro<br />kostenlos unten",
+      "title": "Registrieren Sie sich kostenlos",
       "text": "*Keine Gebühren für Ausschreibungen oder Gebote! Keine Verpflichtungen!",
       "btn": "Kostenlos registrieren"
     }
@@ -120,7 +120,7 @@
     },
     "content": {
       "subTitle": "Ein paar Klicks entfernt",
-      "title": "Finden Sie den richtigen Übersetzer für Ihren Bedarf",
+      "title": "Den richtigen Übersetzer finden",
       "text": "Sie können Ihre Anfragen kostenlos in unserem Übersetzungsmarktplatz veröffentlichen und innerhalb weniger Stunden Angebote von Übersetzern erhalten. Dieser Service wird Ihnen kostenlos zur Verfügung gestellt.",
       "btn": "Jetzt registrieren",
       "widget": {
@@ -241,7 +241,7 @@
       },
       "second": {
         "menu": "Erweitern Sie Ihr Kundennetzwerk",
-        "tabTitle": "Arbeiten Sie weiterhin mit Partnern zusammen, denen Sie vertrauen.",
+        "tabTitle": "Arbeiten Sie mit Partnern, denen Sie bereits vertrauen.",
         "widgets": {
           "w1": {
             "title": "Marketing",
@@ -251,7 +251,7 @@
       },
       "third": {
         "menu": "Verwalten Sie Ihr Team",
-        "tabTitle": "Fügen Sie Teammitglieder oder Mitarbeiter hinzu.",
+        "tabTitle": "Verwalten Sie Teammitglieder oder Mitarbeiter.",
         "widgets": {
           "w1": {
             "title": "Teammitglieder einladen",
@@ -314,7 +314,7 @@
       }
     },
     "cta": {
-      "title": "Kein Grund, <1/>eine Anmeldung jetzt zu verschieben",
+      "title": "Es gibt keinen Grund, sich jetzt nicht anzumelden",
       "btn": "Kostenlos registrieren"
     }
   },
@@ -413,7 +413,7 @@
   },
   "menu": {
     "translator": "Finde einen Übersetzer",
-    "translationjob": "Finde einen Übersetzungsauftrag",
+    "translationjob": "Finde einen Auftrag als Übersetzer",
     "pricing": "Preise",
     "how-it-works": "Wie es funktioniert",
     "ecosystem": "Ökosystem",
