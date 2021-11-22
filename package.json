@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
     "server": "next start",
     "start": "npm run dev",
     "lint": "next lint",
@@ -23,6 +24,7 @@
     "next": "12.0.4",
     "next-i18next": "9.1.0",
     "next-images": "^1.8.2",
+    "next-sitemap": "^1.6.203",
     "polished": "^4.1.3",
     "react": "17.0.2",
     "react-bootstrap": "^1.6.4",
