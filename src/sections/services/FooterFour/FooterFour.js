@@ -15,7 +15,7 @@ export default function FooterFour() {
                 <Footer.Box mb="30px" mbMD="0">
                   <Link to="#">
                     <img
-                      src={`${prefix}/image/logo/logo-black.png`}
+                      src={`${prefix}/image/logo/logo-black.svg`}
                       alt="logo"
                     />
                   </Link>

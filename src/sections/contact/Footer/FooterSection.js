@@ -14,7 +14,7 @@ export default function FooterSection() {
                 {/* Brand Logo*/}
                 <Footer.Box mb="30px">
                   <Link to="#">
-                    <img src={Images.FooterSix.LogoBlack} alt="logo" />
+                    <img src={Images.FooterSix.LogoBlack} alt="logo" style={{ height: 21 }} />
                   </Link>
                 </Footer.Box>
                 <Footer.Text mb="36px">

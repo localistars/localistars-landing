@@ -1,7 +1,7 @@
 import { Link } from '~components';
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import LogoBlack from '../../../../public/image/logo/logo-black.png';
+import LogoBlack from '../../../../public/image/logo/logo-black.svg';
 import Footer from './style';
 export default function FooterFive() {
   return (
@@ -14,7 +14,7 @@ export default function FooterFive() {
                 {/* Brand Logo*/}
                 <Footer.Box mb="30px">
                   <Link to="#">
-                    <img src={LogoBlack.src} alt="logo" />
+                    <img src={LogoBlack.src} alt="logo" style={{ height: 21 }} />
                   </Link>
                 </Footer.Box>
               </Footer.Logo>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from 'react-bootstrap';
-// import siteBrandDark from "./image/logo/logo-black.png"
-// import siteBrandLight from "./image/logo/logo-white.png"
+// import siteBrandDark from "./image/logo/logo-black.svg"
+// import siteBrandLight from "./image/logo/logo-white.svg"
 import Menu from './Menu';
 import prefix from '~lib/prefix';
 
@@ -24,10 +24,11 @@ const SiteNavbar = ({ buttonBlock, darkLogo, customLogo, defaultLogo }) => {
             <img
               src={
                 darkLogo
-                  ? `${prefix}/image/logo/logo-black.png`
-                  : `${prefix}/image/logo/logo-white.png`
+                  ? `${prefix}/image/logo/logo-black.svg`
+                  : `${prefix}/image/logo/logo-white.svg`
               }
               alt="localistars logo"
+              style={{ height: 21 }}
             />
           )}
         </Navbar.Brand>

@@ -1,5 +1,5 @@
-import LogoBlack from '../../public/image/logo/logo-black.png';
-import LogoWhite from '../../public/image/logo/logo-white.png';
+import LogoBlack from '../../public/image/logo/logo-black.svg';
+import LogoWhite from '../../public/image/logo/logo-white.svg';
 import counDownImage from '../../public/image/mixed/pattern-img-1.png';
 import l2BrandLogoLine1 from '../../public/image/brand-logo/brand-line-1.png';
 import l2BrandLogoLine2 from '../../public/image/brand-logo/brand-line-2.png';

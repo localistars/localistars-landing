@@ -3,7 +3,7 @@ import { Link } from '~components';
 import { Container, Row, Col } from 'react-bootstrap';
 // import { Images } from '~data'
 import Footer from './style';
-import LogoWhite from '../../../../public/image/logo/logo-white.png';
+import LogoWhite from '../../../../public/image/logo/logo-white.svg';
 export default function FooterOne() {
   return (
     <Footer backgroundColor="#6a26da">
@@ -15,7 +15,7 @@ export default function FooterOne() {
                 {/* Brand Logo*/}
                 <Footer.Box mb="30px">
                   <Link to="#">
-                    <img src={LogoWhite.src} alt="logo" />
+                    <img src={LogoWhite.src} alt="logo" style={{ height: 21 }} />
                   </Link>
                 </Footer.Box>
                 <Footer.Text mb="36px">

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from '~components';
 import { Col, Container, Row } from 'react-bootstrap';
 import ErrorPage from './style';
-import errorImage from '../../../../public/image/logo/logo-black.png';
+import errorImage from '../../../../public/image/logo/logo-black.svg';
 import { useTranslation } from 'next-i18next';
 
 export default function Error() {
