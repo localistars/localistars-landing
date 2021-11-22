@@ -16,7 +16,7 @@ export default function HomeApp() {
   const { t } = useTranslation('translations');
 
   return (
-    <PageWrapper headerConfig={{
+    /*<PageWrapper headerConfig={{
       headerClasses:
         'site-header site-header--menu-center site-header--services dark-header site-header--sticky site-header--service',
       containerFluid: false,
@@ -30,7 +30,8 @@ export default function HomeApp() {
           mrLG="0"
         />
       )
-    }}>
+    }}>*/
+    <PageWrapper>
       <Head>
         <title>{t('creator.meta.title')}</title>
         <meta

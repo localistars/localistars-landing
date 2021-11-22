@@ -14,19 +14,7 @@ export default function Agency() {
   const { t } = useTranslation('translations');
 
   return (
-    <PageWrapper headerConfig={{
-      headerClasses:
-        'site-header site-header--menu-end light-header site-header--sticky',
-      containerFluid: false,
-      buttonBlock: (
-        // eslint-disable-next-line react/no-children-prop
-        <HeaderButton
-          className="d-none d-sm-flex"
-          btnText={t('common.header')}
-          btnLink="https://www.localistars.app/register"
-        />
-      )
-    }}>
+    <PageWrapper>
       <Head>
         <title>{t('how.meta.title')}</title>
         <meta

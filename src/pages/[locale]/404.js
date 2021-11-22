@@ -7,7 +7,7 @@ import { getStaticPaths, makeStaticProps } from '~lib/getStatic';
 
 export default function errorPage() {
   return (
-    <PageWrapper innerPage={true}>
+    <PageWrapper>
       <Error />
       <FooterTwo />
     </PageWrapper>

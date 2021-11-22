@@ -11,7 +11,7 @@ export default function BlogsReqular({ posts }) {
   const { t } = useTranslation('translations');
 
   return (
-    <PageWrapper innerPage={true}>
+    <PageWrapper>
       <Head>
         <title>{t('blog.meta.title')}</title>
         <meta

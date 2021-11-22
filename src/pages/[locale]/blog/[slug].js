@@ -15,7 +15,7 @@ export default function Blog({ code, frontMatter, allPosts }) {
   const Component = useMemo(() => getMDXComponent(code), [code]);
 
   return (
-    <PageWrapper innerPage={true}>
+    <PageWrapper>
       <Head>
         <title>{frontMatter.title}</title>
         <meta name="description" content={frontMatter.description} />
