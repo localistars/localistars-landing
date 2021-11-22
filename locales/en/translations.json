@@ -230,18 +230,38 @@
             "text": "New job opportunities matching your language profile are waiting for you."
           },
           "w2": {
-            "title": "Marketing",
-            "text": "Expand your personal reach <br class='d-none d-xs-block'> with the free possibility to list here."
+            "title": "Notifications",
+            "text": "You periodically receive notifications for new projects."
+          },
+          "w3": {
+            "title": "Get paid",
+            "text": "You can easily withdraw your earnings from your organisation section."
           }
         }
       },
       "second": {
         "menu": "Expand your client-network",
-        "tabTitle": "Keep working with partners you trust."
+        "tabTitle": "Keep working with partners you trust.",
+        "widgets": {
+          "w1": {
+            "title": "Marketing",
+            "text": "Expand your personal reach <br class='d-none d-xs-block'> with the free possibility to be listed on localistars."
+          }
+        }
       },
       "third": {
         "menu": "Manage your team",
-        "tabTitle": "Add team members or collaborators."
+        "tabTitle": "Add team members or collaborators.",
+        "widgets": {
+          "w1": {
+            "title": "Invite team members",
+            "text": "Especially for translation agencies, you can add all your team members to your organisation."
+          },
+          "w2": {
+            "title": "Individual rights",
+            "text": "Each user can be granted individual rights so they get access to the relevant parts of your workflow."
+          }
+        }
       }
     },
     "process": {
