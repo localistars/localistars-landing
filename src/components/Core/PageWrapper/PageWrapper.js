@@ -9,16 +9,16 @@ import { useTranslation } from 'next-i18next';
 
 const PageWrapper = ({
   children,
-  headerConfig = {},
+  headerConfig = null,
   innerPage = false,
   innerPageFooter = false
 }) => {
   const { t } = useTranslation('translations');
   const defaultHeaderConfig = {
-    headerClasses: headerConfig?.headerClasses || 'site-header site-header--menu-end light-header site-header--sticky',
-    containerFluid: headerConfig?.containerFluid || false,
-    darkLogo: headerConfig?.darkLogo || true,
-    buttonBlock: headerConfig?.buttonBlock || (
+    headerClasses: 'site-header site-header--menu-end light-header site-header--sticky',
+    containerFluid: false,
+    darkLogo: true,
+    buttonBlock: (
       // eslint-disable-next-line react/no-children-prop
       <HeaderButton
         className="d-none d-sm-flex"
@@ -49,7 +49,7 @@ const PageWrapper = ({
 
   React.useEffect(() => {
     sitectx.changeHeader({ ...activeHeader, ...headerConfig });
-  }, []);
+  }, [headerConfig]);
   return (
     <>
       {/* <Header/> */}
