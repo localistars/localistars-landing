@@ -18,10 +18,13 @@ const PageWrapper = ({
     headerClasses:
       'site-header site-header--menu-end light-header site-header--sticky',
     containerFluid: false,
+    darkLogo: true,
     buttonBlock: (
       // eslint-disable-next-line react/no-children-prop
       <HeaderButton
         className="d-none d-sm-flex"
+        as={Link}
+        target="_blank"
         btnText={t('common.header')}
         btnLink="https://www.localistars.app/register"
       />
