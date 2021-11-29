@@ -49,7 +49,7 @@ const PageWrapper = ({
   const sitectx = React.useContext(GlobalHeaderContext);
 
   React.useEffect(() => {
-    sitectx.changeHeader({ ...activeHeader, ...defaultHeaderConfig, ...headerConfig });
+    sitectx.changeHeader({ ...activeHeader, ...headerConfig });
   }, []);
   return (
     <>

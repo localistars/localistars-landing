@@ -22,7 +22,6 @@ export default function HomeApp() {
     <PageWrapper headerConfig={{
       headerClasses:
         'site-header site-header--menu-end dark-header site-header--sticky',
-      containerFluid: false,
       darkLogo: false,
       buttonBlock: (
         // eslint-disable-next-line react/no-children-prop
