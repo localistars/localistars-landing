@@ -24,8 +24,8 @@ const PageWrapper = ({
         className="d-none d-sm-flex"
         as={Link}
         target="_blank"
-        btnText={t('common.header')}
-        btnLink="https://www.localistars.app/register"
+        btnText={t((headerConfig && headerConfig.buttoni18nKey) || 'common.header')}
+        btnLink={(headerConfig && headerConfig.buttonLink) || 'https://www.localistars.app/register'}
       />
     )
   }

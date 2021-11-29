@@ -23,16 +23,8 @@ export default function HomeApp() {
       headerClasses:
         'site-header site-header--menu-end dark-header site-header--sticky',
       darkLogo: false,
-      buttonBlock: (
-        // eslint-disable-next-line react/no-children-prop
-        <HeaderButton
-          className="d-none d-sm-flex"
-          as={Link}
-          target="_blank"
-          btnText={t('index.header')}
-          btnLink="https://www.localistars.app/login"
-        />
-      )
+      buttoni18nKey: 'index.header',
+      buttonLink: 'https://www.localistars.app/login'
     }}>
       <Head>
         <title>{t('index.meta.title')}</title>
