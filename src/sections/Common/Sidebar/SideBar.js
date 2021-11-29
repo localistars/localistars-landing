@@ -7,7 +7,7 @@ import { Link } from '~components';
 import SearchContext from '~context/SearchContext';
 import { useTranslation } from 'next-i18next';
 
-export default function SideBarSection({ allPosts }) {
+export default function SideBarSection({ allPosts = [], otherPosts = [] }) {
   const categories = allPosts
     .map((category) => category.category)
     .filter((x, index, array) => array.indexOf(x) === index);
@@ -25,13 +25,13 @@ export default function SideBarSection({ allPosts }) {
       <SideBar.Widgets>
         <SideBar.Title>{t('blog.sidebar.title')}</SideBar.Title>
 
-        {!allPosts.length && (
+        {!otherPosts.length && (
           <p className="text-gray-600 dark:text-gray-400 mb-4">
             {t('blog.notFound')}
           </p>
         )}
 
-        {allPosts.map((post, index) => (
+        {otherPosts.map((post, index) => (
           <SideBar.RecentPost>
             <SideBar.RecentPostList>
               <Link key={index} to={`/blog/${post.slug}`}>

@@ -11,6 +11,7 @@ import Head from 'next/head';
 
 export default function MdxBlogDetails({
   allPosts,
+  otherPosts,
   mdxComponent,
   title,
   date,
@@ -128,7 +129,7 @@ export default function MdxBlogDetails({
               </Details.Box>
             </Col>
             <Col xs="12" className="col-xl-4 offset-xl-1 col-lg-5">
-              <Sidebar allPosts={allPosts} />
+              <Sidebar allPosts={allPosts} otherPosts={otherPosts} />
             </Col>
           </Row>
         </Container>

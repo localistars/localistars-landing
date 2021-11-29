@@ -11,7 +11,7 @@ import FooterSection from '~sections/index/FooterTwo';
 import Head from 'next/head';
 import { getI18nProps } from '~lib/getStatic';
 
-export default function Blog({ code, frontMatter, allPosts }) {
+export default function Blog({ code, frontMatter, allPosts, otherPosts }) {
   const Component = useMemo(() => getMDXComponent(code), [code]);
 
   return (
@@ -28,6 +28,7 @@ export default function Blog({ code, frontMatter, allPosts }) {
           />
         }
         allPosts={allPosts}
+        otherPosts={otherPosts}
       />
       <FooterSection />
     </PageWrapper>
@@ -87,7 +88,8 @@ export async function getStaticProps(ctx) {
         ctx?.params?.locale,
         `blog/${ctx?.params?.slug}`
       )),
-      allPosts: posts.filter((p) => p.slug !== ctx?.params?.slug)
+      otherPosts: posts.filter((p) => p.slug !== ctx?.params?.slug),
+      allPosts: posts
     }
   };
 }
