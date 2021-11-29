@@ -333,7 +333,7 @@
         },
         "ms2": {
           "title": "Für Übersetzer",
-          "text": "Kleine Servicegebühr für genehmigte Aufgabe."
+          "text": "Kleine Servicegebühr für den genehmigten Auftrag."
         }
       }
     },
@@ -365,7 +365,7 @@
         },
         "three": {
           "title": "Wählen Sie den richtigen Partner für Ihr Projekt",
-          "text": "Wählen Sie das Angebot mit dem niedrigsten Preis oder den Partner mit dem besten Ruf. Es ist deine Entscheidung. Der neue Partner wird Ihrer Übersetzerliste hinzugefügt, sodass Sie in Zukunft problemlos wieder mit denselben Personen zusammenarbeiten können."
+          "text": "Wählen Sie das Angebot mit dem niedrigsten Preis oder den Partner mit dem besten Ruf. Es ist Ihre Entscheidung. Der neue Partner wird Ihrer Übersetzerliste hinzugefügt, sodass Sie in Zukunft problemlos wieder mit denselben Personen zusammenarbeiten können."
         },
         "four": {
           "title": "Das Projekt finanzieren",
@@ -376,19 +376,19 @@
           "text": "Wenn Sie mit der Arbeit Ihres Übersetzers zufrieden sind, genehmigen Sie das Projekt. Wenn etwas fehlt oder überarbeitet werden muss, geben Sie dem Übersetzer die Möglichkeit, den Inhalt zu verbessern. Auch für Streitigkeiten haben wir einen speziellen Workflow eingeführt."
         },
         "six": {
-          "title": "Aufgeladen werden",
-          "text": "Bei Bewilligung des Projekts werden die bereitgestellten Fördermittel an den Übersetzer ausgezahlt. Sie erhalten eine Rechnung für Ihre Buchhaltung. Alle vergangenen Transaktionen können im Buchhaltungsbereich Ihrer Organisation eingesehen werden."
+          "title": "Bestätigte Bezahlung",
+          "text": "Bei Einverständnis des Projekts werden die bereitgestellten Fördermittel an den Übersetzer ausgezahlt. Sie erhalten eine Rechnung für Ihre Buchhaltung. Alle vergangenen Transaktionen können im Buchhaltungsbereich Ihrer Organisation eingesehen werden."
         }
       },
       "creator": {
         "one": {
-          "subTitle": "Auf der Suche nach einem Job",
+          "subTitle": "Auf der Suche nach einem Übersetzungsauftrag",
           "title": "Übersetzer",
           "text": "Stellen Sie sicher, dass Sie <1>Ihr Konto eingerichtet haben.</1>"
         },
         "two": {
           "title": "Machen Sie ein Angebot",
-          "text": "Das neue Projekt wird in Ihrer Liste neuer Stellenangebote angezeigt. Sie können basierend auf den bereitgestellten Inhalten und Messwerten bieten. Wenn etwas unklar ist oder Sie zusätzliche Details benötigen, können Sie sich jederzeit an den potenziellen Kunden wenden."
+          "text": "Das neue Projekt wird in Ihrer Liste neuer Übersetzungsaufträgen angezeigt. Sie können basierend auf den bereitgestellten Inhalten und Messwerten ein Angebot machen. Wenn etwas unklar ist oder Sie zusätzliche Details benötigen, können Sie sich jederzeit an den potenziellen Kunden wenden."
         },
         "three": {
           "title": "Kommen Sie zur Sache",
@@ -403,7 +403,7 @@
     "video": {
       "subTitle": "Schau Video",
       "title": "localistars ist auch in locize integriert",
-      "text": "Sehen Sie sich an, wie localistars in unsere Lokalisierungsmanagement-Plattform locize integriert werden können, besuchen Sie das Video oder erfahren Sie mehr über locize in der Ökosystemübersicht.",
+      "text": "Sehen Sie sich an, wie localistars in unsere Lokalisierungsmanagement-Plattform locize integriert werden kann. Schauen Sie sich das Video an oder erfahren Sie mehr über locize in der Ökosystemübersicht.",
       "learnMore": "Mehr erfahren",
       "ecosystem": "Ökosystem"
     }
