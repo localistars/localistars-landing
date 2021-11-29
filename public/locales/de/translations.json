@@ -19,7 +19,7 @@
     },
     "contentCentric": {
       "title": "Inhaltsorientiert",
-      "text": "Es geht um den Inhalt. Projekte werden inhaltsorientiert aufgesetzt, damit die Localistars effektiv zusammenarbeiten können. Kunden möchten ihr globales Publikum erreichen, während Übersetzer aus vielfältigen Aufgaben wählen möchten. Wir haben euch beide gehört."
+      "text": "Es geht um den Inhalt. Projekte werden inhaltsorientiert aufgesetzt, damit die Localistars effektiv zusammenarbeiten können. Kunden möchten ihr globales Publikum erreichen, während Übersetzer aus vielfältigen Aufgaben wählen möchten. Wir haben euch beiden zugehört."
     },
     "riskFree": {
       "title": "Risikofreie Zahlung",
@@ -33,7 +33,7 @@
     },
     "service": {
       "title": "Effiziente Übersetzung<1/>Services & Plattform",
-      "text": "Localistars ist ein benutzerfreundliches Übersetzungsunternehmen,<1/>das es Unternehmen jeder Grösse ermöglicht, über ihre Übersetzungsplattform kostengünstige Übersetzungen zu erwerben.",
+      "text": "Localistars ist ein benutzerfreundlicher Übersetzungsmarktplatz,<1/>welcher es Unternehmen jeder Grösse ermöglicht, über die Übersetzungsplattform kostengünstige Übersetzungen zu erwerben.",
       "services": {
         "ms1": {
           "title": "Wettbewerbsfähige Preise",
@@ -41,7 +41,7 @@
         },
         "ms2": {
           "title": "Definiere dein Sprachpaar",
-          "text": "Sie können ganz einfach ein Projekt erstellen, bei dem sich Übersetzer bewerben können, und dann wählen Sie einfach das Sprachpaar und localistars benachrichtigen die entsprechenden Übersetzer für Sie."
+          "text": "Sie können ganz einfach ein Projekt erstellen, bei dem sich Übersetzer bewerben können, und dann wählen Sie einfach das Sprachpaar und localistars benachrichtigt die entsprechenden Übersetzer für Sie."
         },
         "ms3": {
           "title": "Hohe Qualität",
@@ -75,7 +75,7 @@
     },
     "promo": {
       "subTitle": "Jetzt loslegen",
-      "title": "Finden Sie den besten Übersetzer, der Ihren Anforderungen entspricht<br className='d-none d-lg-block'/>",
+      "title": "Finden Sie den besten Übersetzer, welcher Ihren Anforderungen entspricht<br className='d-none d-lg-block'/>",
       "cta": "Übersetzer suchen"
     },
     "cta": {
@@ -91,13 +91,13 @@
       "description": "Auf unserer Online-Plattform können Sie einen professionellen Übersetzer für das Sprachübersetzungsprojekt Ihres Unternehmens beauftragen."
     },
     "hero": {
-      "title": "Warum sollten Sie <br /> einen localistar-Übersetzer wählen?",
-      "description": "Wir bieten eine Plattform, die die mühsamen Teile der Übersetzungen entfernt."
+      "title": "Warum sollten Sie <br /> einen Localistar-Übersetzer wählen?",
+      "description": "Wir bieten eine Plattform, welche die mühsamen Teile der Übersetzungen entfernt."
     },
     "service": {
       "subTitle": "Vorteile",
       "title": "Für Unternehmen, welche einen Übersetzer suchen",
-      "text": "Lassen Sie localistars Marketplace die mühsamen Teile Ihres Übersetzungsworkflows erledigen.",
+      "text": "Lassen Sie localistars die mühsamen Teile Ihres Übersetzungsworkflows erledigen.",
       "services": {
         "as1": {
           "title": "Finden Sie ganz einfach neue Übersetzer",
@@ -105,7 +105,7 @@
         },
         "as2": {
           "title": "Direkten Kontakt",
-          "text": "localistars handelt von dir. Sie stehen in direktem Kontakt mit dem Übersetzer – es ist Ihr Projekt, Sie haben die Zügel in der Hand. Im Gegensatz zu anderen Dienstleistungen legen wir KEINEN Preis fest und leiten den Auftrag daher NICHT an den günstigsten Übersetzer weiter, um unseren eigenen Gewinn zu maximieren. Sie wählen den Übersetzer für Ihre Projekte selbst aus, er ist Ihr Auftragnehmer."
+          "text": "Bei localistars geht es um Sie und Ihr Partner. Sie stehen in direktem Kontakt mit dem Übersetzer – es ist Ihr Projekt, Sie haben die Zügel in der Hand. Im Gegensatz zu anderen Dienstleistungen legen wir KEINEN Preis fest und leiten den Auftrag daher NICHT an den günstigsten Übersetzer weiter, um unseren eigenen Gewinn zu maximieren. Sie wählen den Übersetzer für Ihre Projekte selbst aus, er ist Ihr Auftragnehmer."
         },
         "as3": {
           "title": "Fakturierung",
@@ -196,7 +196,7 @@
       "services": {
         "ms1": {
           "title": "Direkten Kontakt",
-          "text": "localistars handelt von dir. Sie stehen im direkten Kontakt mit dem Kunden – es ist Ihre Aufgabe, Sie haben die Zügel in der Hand. Im Gegensatz zu anderen Dienstleistungen legen wir KEINEN Preis fest und leiten den Auftrag daher NICHT an den günstigsten Übersetzer weiter, um unseren eigenen Gewinn zu maximieren. Sie machen ein Angebot, es ist Ihr Kunde – alles was wir verlangen ist ein kleines Servicehonorar bei Erfolg, um unsere eigenen Kosten (Transaktionen, Währungsumtausch und Entwicklung) zu decken."
+          "text": "localistars handelt von dir. Sie stehen im direkten Kontakt mit dem Kunden – es ist Ihre Aufgabe, Sie haben die Zügel in der Hand. Im Gegensatz zu anderen Diensten legen wir KEINEN Preis fest und leiten den Auftrag daher NICHT an den günstigsten Übersetzer weiter, um unseren eigenen Gewinn zu maximieren. Sie machen ein Angebot, es ist Ihr Kunde – alles was wir verlangen ist ein kleines Servicehonorar bei Erfolg, um unsere eigenen Kosten (Transaktionen, Währungsumtausch und Entwicklung) zu decken."
         },
         "ms2": {
           "title": "Kein Risiko",
@@ -404,16 +404,16 @@
   "hero": {
     "subTitle": "Übersetzungsmarktplatz",
     "title": "Wir verbinden Kunden<1/>mit Übersetzer",
-    "description": "localistars ist der Marktplatz für Kunden und Übersetzer, um Übersetzungsaufträge zu erledigen. <1/> Als Kunde finden Sie Übersetzer und als Übersetzer finden Sie Übersetzungsaufträge. Direkter Kontakt, kein Zwischenhändler – nur zusammenarbeitende Localistars!",
-    "text": "localistars ist der Marktplatz für Kunden und Übersetzer, um Übersetzungsaufträge zu erledigen.<1/>Als Kunde finden Sie Übersetzer und als Übersetzer finden Sie Übersetzungsaufträge. Direkter Kontakt, kein Zwischenhändler – nur Localistars arbeiten zusammen!",
+    "description": "localistars ist der Marktplatz für Kunden und Übersetzer, um Übersetzungsaufträge zu erledigen. <1/> Als Kunde finden Sie Übersetzer und als Übersetzer finden Sie Übersetzungsaufträge. Direkter Kontakt, kein Zwischenhändler – einfach mit Localistars zusammen arbeiten!",
+    "text": "localistars ist der Marktplatz für Kunden und Übersetzer, um Übersetzungsaufträge zu erledigen.<1/>Als Kunde finden Sie Übersetzer und als Übersetzer finden Sie Übersetzungsaufträge. Direkter Kontakt, kein Zwischenhändler – einfach mit Localistars zusammen arbeiten!",
     "watchVideo": "Video ansehen",
     "register": "Jetzt registrieren",
-    "findTranslator": "Finde einen Übersetzer",
-    "findTranslationJob": "Finde einen Übersetzungsauftrag"
+    "findTranslator": "Übersetzer finden",
+    "findTranslationJob": "Übersetzungsauftrag finden"
   },
   "menu": {
-    "translator": "Finde einen Übersetzer",
-    "translationjob": "Finde einen Auftrag als Übersetzer",
+    "translator": "Übersetzer finden",
+    "translationjob": "Übersetzungsauftrag finden",
     "pricing": "Preise",
     "how-it-works": "Wie es funktioniert",
     "ecosystem": "Ökosystem",
@@ -421,7 +421,7 @@
   },
   "error": {
     "btn": "Zum Online Markplatz für Übersetzungen",
-    "btnSecondary": "Finde einen Übersetzer",
+    "btnSecondary": "Übersetzer finden",
     "title": "Seite nicht gefunden",
     "text": "Es tut uns Leid, die Webseite nach der Sie gesucht haben exisiert nicht."
   },
@@ -431,7 +431,7 @@
     "text": "Diese Website verwendet Cookies, um Ihnen die beste Erfahrung auf unserer Website zu ermöglichen. <1>mehr erfahren</1>"
   },
   "footer": {
-    "desc": "Wir sind ein Übersetzungsmarktplatz für Unternehmen und Selbstständige, welche einen Übersetzer suchen, sowie für freiberufliche Übersetzer oder Übersetzungsbüros, welche einen Job suchen.",
+    "desc": "Wir sind ein Übersetzungsmarktplatz für Unternehmen und Selbstständige, welche einen Übersetzer suchen, sowie für freiberufliche Übersetzer oder Übersetzungsbüros, welche einen Übersetzungsauftrag suchen.",
     "privacy": "Datenschutz",
     "terms": "AGB",
     "pricing": "Preise",

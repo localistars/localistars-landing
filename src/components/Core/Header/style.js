@@ -76,7 +76,7 @@ const SiteHeader = styled.div.attrs({
       }
     }
     .main-nav-item {
-      width:190px;
+      //width:190px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -98,8 +98,9 @@ const SiteHeader = styled.div.attrs({
         }
         @media (min-width: 992px) {
           color: #fff;
-         
-          
+        }
+        &:hover {
+          text-decoration: underline;
         }
       }
       // &.show,{
