@@ -96,7 +96,7 @@
     },
     "service": {
       "subTitle": "Vorteile",
-      "title": "Für Unternehmen, die einen Übersetzer suchen",
+      "title": "Für Unternehmen, welche einen Übersetzer suchen",
       "text": "Lassen Sie localistars Marketplace die mühsamen Teile Ihres Übersetzungsworkflows erledigen.",
       "services": {
         "as1": {
@@ -431,7 +431,7 @@
     "text": "Diese Website verwendet Cookies, um Ihnen die beste Erfahrung auf unserer Website zu ermöglichen. <1>mehr erfahren</1>"
   },
   "footer": {
-    "desc": "Wir sind ein Übersetzungsmarktplatz für Unternehmen und Selbstständige, die einen Übersetzer suchen, sowie für freiberufliche Übersetzer oder Übersetzungsbüros, welche einen Job suchen.",
+    "desc": "Wir sind ein Übersetzungsmarktplatz für Unternehmen und Selbstständige, welche einen Übersetzer suchen, sowie für freiberufliche Übersetzer oder Übersetzungsbüros, welche einen Job suchen.",
     "privacy": "Datenschutz",
     "terms": "AGB",
     "pricing": "Preise",
