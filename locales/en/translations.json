@@ -164,7 +164,7 @@
     },
     "process": {
       "subTitle": "Get started",
-      "title": "It's very easy to start <1/> follow this process",
+      "title": "It's very easy to start!<1/>Follow this process...",
       "steps": {
         "sp1": {
           "title": "Sign up",
@@ -184,14 +184,14 @@
         },
         "sp5": {
           "title": "Create a project and call for bids",
-          "text": "Time to make yourself a name - complete your personal profile."
+          "text": "Here you can see how it works."
         }
       }
     },
     "help": {
       "subTitle": "HELP",
       "title": "Do you require some assistance before you register?",
-      "text": "Any question you may have about our pricing or platform will be answered by one of our team members.",
+      "text": "Any question you may have about our platform will be answered by one of our team members.",
       "btn": "Contact us"
     }
   },
