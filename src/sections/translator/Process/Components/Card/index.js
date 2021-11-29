@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from '~components';
 
 import Card from './style';
 export default function ProcessCard({
@@ -7,6 +8,7 @@ export default function ProcessCard({
   image,
   icon,
   iconBackground,
+  link,
   ...rest
 }) {
   return (
@@ -15,7 +17,8 @@ export default function ProcessCard({
         <span>{icon}</span>
       </Card.Icon>
       <Card.Title as="h3">{title}</Card.Title>
-      <Card.Text as="p">{text}</Card.Text>
+      {!link && <Card.Text as="p">{text}</Card.Text>}
+      {link && <Card.Text as="p"><Link to={link}>{text}</Link></Card.Text>}
     </Card>
   );
 }

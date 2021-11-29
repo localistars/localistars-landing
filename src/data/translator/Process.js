@@ -27,7 +27,8 @@ const ProcessData = [
     id: 'sp5',
     icon: '5',
     title: 'Create a project and call for bids',
-    text: 'Time to make yourself a name - complete your personal profile.'
+    text: 'Time to make yourself a name - complete your personal profile.',
+    link: '/how-it-works'
   }
 ];
 export default ProcessData;

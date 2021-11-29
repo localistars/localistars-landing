@@ -155,16 +155,16 @@
     "manage": {
       "subTitle": "Individuelle Verwaltung",
       "title": "Verwalten Sie Ihr Team",
-      "text": "Sie können alle Ihre Teammitglieder zu Ihrer Organisation hinzufügen. Jedem Benutzer können individuelle Rechte gewährt werden, damit er Zugriff auf die relevanten Teile Ihres Workflows erhält. Arbeiten Sie weiterhin mit Partnern zusammen, denen Sie vertrauen."
+      "text": "Sie können alle Ihre Teammitglieder zu Ihrer Organisation hinzufügen. Jedem Benutzer können individuelle Rechte gewährt werden, damit er oder sie Zugriff auf die relevanten Teile des Workflows erhält. Arbeiten Sie weiterhin mit Partnern zusammen, denen Sie vertrauen."
     },
     "about": {
       "subTitle": "Produktivitätssteigerung",
-      "title": "Versatile API",
+      "title": "Vielseitiges API",
       "text": "Automatisieren Sie Ihren Prozess, um produktiver zu sein."
     },
     "process": {
       "subTitle": "Loslegen",
-      "title": "Es ist sehr einfach, <1/> diesem Vorgang zu folgen",
+      "title": "Es ist sehr einfach!<1/>Starte mit diesen Schritten...",
       "steps": {
         "sp1": {
           "title": "Anmelden",
@@ -172,27 +172,27 @@
         },
         "sp2": {
           "title": "Wählen Sie Ihren Profiltyp",
-          "text": "Sie suchen einen Übersetzer! Wählen Sie den Clientprofiltyp aus."
+          "text": "Sie suchen einen Übersetzer! Wählen Sie den \"Client\" Profiltyp aus."
         },
         "sp3": {
           "title": "Aktualisieren Sie Ihr persönliches Profil",
-          "text": "Zeit, sich einen Namen zu machen – vervollständigen Sie Ihr persönliches Benutzerprofil."
+          "text": "Zeit, sich einen Namen zu geben – vervollständigen Sie Ihr persönliches Benutzerprofil."
         },
         "sp4": {
-          "title": "Eine Organisation haben",
-          "text": "Die Bereitstellung einer Organisation ist obligatorisch. Ein Vertrag besteht rechtlich zwischen Ihrer Organisation und der den Dienst anfordernden Organisation. Sie können entweder zu einer bestehenden Organisation eingeladen werden oder eine neue erstellen."
+          "title": "Eine Organisation aufsetzen",
+          "text": "Die Bereitstellung einer Organisation ist obligatorisch. Ein Vertrag besteht rechtlich zwischen Ihrer Organisation und der Organisation, welche die Dienstleistung anbietet. Sie können entweder zu einer bestehenden Organisation eingeladen werden oder eine neue erstellen."
         },
         "sp5": {
           "title": "Erstellen Sie ein Projekt und rufen Sie zur Angebotsabgabe auf",
-          "text": "Zeit, sich einen Namen zu machen – vervollständigen Sie Ihr persönliches Profil."
+          "text": "Hier können Sie sehen, wie es funktioniert."
         }
       }
     },
     "help": {
       "subTitle": "HILFE",
       "title": "Benötigen Sie Unterstützung vor der Registrierung?",
-      "text": "Alle Fragen zu unseren Preisen oder unserer Plattform werden von einem unserer Teammitglieder beantwortet.",
-      "btn": "Kontaktiere uns"
+      "text": "Alle Fragen zu unserer Plattform werden von einem unserer Teammitglieder beantwortet.",
+      "btn": "uns kontaktieren"
     }
   },
   "creator": {
@@ -283,7 +283,7 @@
           },
           "w2": {
             "title": "Individuelle Rechte",
-            "text": "Jedem Benutzer können individuelle Rechte gewährt werden, damit er Zugriff auf die relevanten Teile Ihres Workflows erhält."
+            "text": "Jedem Benutzer können individuelle Rechte gewährt werden, damit er oder sie Zugriff auf die relevanten Teile des Workflows erhält."
           }
         }
       }

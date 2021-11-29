@@ -40,14 +40,14 @@ export default function ProcessSection({ ...rest }) {
             <Process.Box as="div" className="widgets">
               <Row className="justify-content-center justify-content-xl-between">
                 {ProcessData.map(
-                  ({ title, text, icon, iconBackground, id }, index) => {
+                  ({ title, text, icon, iconBackground, id, link }, index) => {
                     return (
                       <Col
                         xs="12"
                         className="col-lg-3 col-md-4 col-xs-6"
                         key={index}
                       >
-                        <ProcessCard icon={icon} title={t(`consumer.process.steps.${id}.title`, title)} text={t(`consumer.process.steps.${id}.text`, text)} />
+                        <ProcessCard icon={icon} title={t(`consumer.process.steps.${id}.title`, title)} text={t(`consumer.process.steps.${id}.text`, text)} link={link} />
                       </Col>
                     );
                   }
