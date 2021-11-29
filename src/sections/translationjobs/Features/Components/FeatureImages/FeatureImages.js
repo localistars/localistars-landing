@@ -9,7 +9,7 @@ const FeatureImages = ({ mainImage, name = 'payout.gif' }) => {
         <div className="main">
           <img
             src={`${prefix}/image/translationjobs/${name}`}
-            alt="feature tab"
+            alt={name}
             className="w-100"
           />
         </div>

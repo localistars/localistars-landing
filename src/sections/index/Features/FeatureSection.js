@@ -33,7 +33,7 @@ export default function FeatureSection() {
             <Tab.Content className="tab-content">
               <Tab.Pane eventKey="first">
                 <FeatureTabPenLayout
-                  imageBlock={<FeatureImage />}
+                  imageBlock={<FeatureImage name="bid.png" />}
                   contentBlock={
                     <FeatureWidgetsBlock
                       tabLabel="first"
@@ -45,7 +45,7 @@ export default function FeatureSection() {
               </Tab.Pane>
               <Tab.Pane eventKey="second">
                 <FeatureTabPenLayout
-                  imageBlock={<FeatureImage />}
+                  imageBlock={<FeatureImage name="fast_order.png" />}
                   contentBlock={
                     <FeatureWidgetsBlock
                       tabLabel="first"
@@ -57,7 +57,7 @@ export default function FeatureSection() {
               </Tab.Pane>
               <Tab.Pane eventKey="third">
                 <FeatureTabPenLayout
-                  imageBlock={<FeatureImage />}
+                  imageBlock={<FeatureImage name="chart.png" />}
                   contentBlock={
                     <FeatureWidgetsBlock
                       tabLabel="first"
