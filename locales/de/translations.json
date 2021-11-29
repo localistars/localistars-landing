@@ -66,11 +66,35 @@
       },
       "second": {
         "menu": "Professionelle Übersetzungen",
-        "tabTitle": "Unsere Plattform verarbeitet<br className='d-none d-xs-block' />alles für Sie<br className='d-none d-xs-block' />"
+        "tabTitle": "Unsere Plattform verarbeitet<br className='d-none d-xs-block' />alles für Sie",
+        "widgets": {
+          "w1": {
+            "title": "Partner-Matching",
+            "text": "Entspannen Sie sich, während localistars die Übersetzer benachrichtigt, die Ihren Anforderungen entsprechen."
+          },
+          "w2": {
+            "title": "Einfache Buchhaltung",
+            "text": "Sie müssen keine Zeit mit der Verwaltung von Rechnungen verschwenden. Egal, ob Sie immer mit dem gleichen Partner oder mit unterschiedlichen Partnern arbeiten, der Zahlungsablauf bleibt gleich."
+          }
+        }
       },
       "third": {
         "menu": "Für jedes Geschäft",
-        "tabTitle": "Verwenden Sie Localistars für <br className='d-none d-xs-block' />jede Art von Geschäft<br className='d-none d-xs-block' />"
+        "tabTitle": "Verwenden Sie Localistars für <br className='d-none d-xs-block' />jede Art von Geschäft",
+        "widgets": {
+          "w1": {
+            "title": "Websites und Apps",
+            "text": "Verwenden Sie Localistars für Websites, Anwendungen, mobile Apps usw. jeglicher Art."
+          },
+          "w2": {
+            "title": "Videospiele",
+            "text": "Bringen Sie Ihr Spiel auf die nächste Stufe. Verwalten Sie Ihre Spielsprache einfach und vermeiden Sie unnötige Kommunikation in Ihrem Team."
+          },
+          "w3": {
+            "title": "Dokumente",
+            "text": "Nicht nur Software, sondern jede Art von Dokument kann übersetzt werden."
+          }
+        }
       }
     },
     "promo": {
