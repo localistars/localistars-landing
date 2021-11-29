@@ -203,12 +203,12 @@
     },
     "hero": {
       "title": "Warum sollten Sie<1/>Localistars-Übersetzer werden?",
-      "text": "Unser Ziel ist es, eine Plattform bereitzustellen, die die mühsamen Teile von Übersetzungen entfernt. Sind Sie ein freiberuflicher Übersetzer oder ein Übersetzungsbüro, dann ist localistars genau das Richtige für Sie!"
+      "text": "Unser Ziel ist es, eine Plattform bereitzustellen, welche die mühsamen Teile von Übersetzungen entfernt."
     },
     "service": {
       "subTitle": "Dienstleistungen",
-      "title": "Warum sollten Sie Localistars-Übersetzer werden?",
-      "text": "Unser Ziel ist es, eine Plattform bereitzustellen, die die mühsamen Teile von Übersetzungen entfernt. Sind Sie ein freiberuflicher Übersetzer oder ein Übersetzungsbüro, dann ist localistars genau das Richtige für Sie!",
+      "title": "Deshalb sollten Sie localistars-Übersetzer werden!",
+      "text": "Sind Sie ein freiberuflicher Übersetzer oder ein Übersetzungsbüro, dann ist localistars genau das Richtige für Sie!",
       "items": [
         "Direkten Kontakt",
         "Kein Risiko",
@@ -220,7 +220,7 @@
       "services": {
         "ms1": {
           "title": "Direkten Kontakt",
-          "text": "localistars handelt von dir. Sie stehen im direkten Kontakt mit dem Kunden – es ist Ihre Aufgabe, Sie haben die Zügel in der Hand. Im Gegensatz zu anderen Diensten legen wir KEINEN Preis fest und leiten den Auftrag daher NICHT an den günstigsten Übersetzer weiter, um unseren eigenen Gewinn zu maximieren. Sie machen ein Angebot, es ist Ihr Kunde – alles was wir verlangen ist ein kleines Servicehonorar bei Erfolg, um unsere eigenen Kosten (Transaktionen, Währungsumtausch und Entwicklung) zu decken."
+          "text": "Bei localistars geht es um Sie und Ihr Partner. Sie stehen im direkten Kontakt mit dem Kunden – es ist Ihre Aufgabe, Sie haben die Zügel in der Hand. Im Gegensatz zu anderen Diensten legen wir KEINEN Preis fest und leiten den Auftrag daher NICHT an den günstigsten Übersetzer weiter, um unseren eigenen Gewinn zu maximieren. Sie machen ein Angebot, es ist Ihr Kunde – alles was wir verlangen ist ein kleines Servicehonorar bei Erfolg, um unsere eigenen Kosten (Transaktionen, Währungsumtausch und Entwicklung) zu decken."
         },
         "ms2": {
           "title": "Kein Risiko",
@@ -232,7 +232,7 @@
         },
         "ms4": {
           "title": "Bezahlt werden",
-          "text": "Ein Projekt muss von Ihrem Kunden im Voraus finanziert werden. Wir halten das Geld zurück, bis der Auftrag erledigt ist und der Kunde die Übersetzungen genehmigt. Dann überweisen wir den Betrag auf Ihr Konto."
+          "text": "Ein Projekt muss von Ihrem Kunden im Voraus finanziert werden. Wir halten das Geld zurück, bis der Auftrag erledigt ist und der Kunde die Übersetzungen genehmigt. Dann kann der Betrag auf Ihr Konto übertragen werden."
         },
         "ms5": {
           "title": "Einfach neue Kunden finden",
@@ -259,7 +259,7 @@
           },
           "w3": {
             "title": "Bezahlt werden",
-            "text": "Sie können Ihre Einnahmen ganz einfach aus Ihrem Organisationsbereich abheben."
+            "text": "Sie können Ihre Einnahmen ganz einfach aus Ihrem Organisationsbereich auf Ihr Konto auszahlen."
           }
         }
       },
@@ -269,7 +269,7 @@
         "widgets": {
           "w1": {
             "title": "Marketing",
-            "text": "Erweitern Sie Ihre persönliche Reichweite <br class='d-none d-xs-block'> mit der kostenlosen Listungsmöglichkeit hier."
+            "text": "Erweitern Sie Ihre persönliche Reichweite <br class='d-none d-xs-block'> mit der kostenlosen Listungsmöglichkeit auf localistars."
           }
         }
       },
@@ -290,7 +290,7 @@
     },
     "process": {
       "subTitle": "Loslegen",
-      "title": "Es ist sehr einfach,<1/> diesem Vorgang zu folgen",
+      "title": "Es ist sehr einfach!<1/>Starte mit diesen Schritten...",
       "steps": {
         "sp1": {
           "title": "Anmelden",
@@ -298,15 +298,15 @@
         },
         "sp2": {
           "title": "Wählen Sie Ihren Profiltyp",
-          "text": "Sie suchen neue Übersetzungsjobs!"
+          "text": "Sie suchen neue Übersetzungsjobs! Wählen Sie den \"Translator\" Profiltyp aus."
         },
         "sp3": {
           "title": "Aktualisieren Sie Ihr persönliches Profil",
           "text": "Um einen ersten Übersetzungsjob zu finden - geben Sie Ihre Suchkriterien ein. Ihre Sprachpaare."
         },
         "sp4": {
-          "title": "Eine Organisation haben",
-          "text": "Die Bereitstellung einer Organisation ist obligatorisch. Ein Vertrag besteht rechtlich zwischen Ihrer Organisation und der den Dienst anfordernden Organisation."
+          "title": "Eine Organisation aufsetzen",
+          "text": "Die Bereitstellung einer Organisation ist obligatorisch. Ein Vertrag besteht rechtlich zwischen Ihrer Organisation und der Organisation, welche die Dienstleistung anfordert. Sie können entweder zu einer bestehenden Organisation eingeladen werden oder eine neue erstellen."
         }
       }
     },

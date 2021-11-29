@@ -172,7 +172,7 @@
         },
         "sp2": {
           "title": "Select your profile type",
-          "text": "You are searching for a translator! Choose the client profile type."
+          "text": "You are searching for a translator! Choose the \"Client\" profile type."
         },
         "sp3": {
           "title": "Update your personal profile",
@@ -203,12 +203,12 @@
     },
     "hero": {
       "title": "Why should you become<1/>a localistars translator?",
-      "text": "Our goal is to provide a platform that removes the tedious parts of translations. Are you a freelance translator or a translation agency, then localistars is for you!"
+      "text": "Our goal is to provide a platform that removes the tedious parts of translations."
     },
     "service": {
       "subTitle": "Services",
-      "title": "Why should you become a localistars translator?",
-      "text": "Our goal is to provide a platform that removes the tedious parts of translations. Are you a freelance translator or a translation agency, then localistars is for you!",
+      "title": "That's why should you become a localistars translator!",
+      "text": "Are you a freelance translator or a translation agency, then localistars is for you!",
       "items": [
         "Direct Contact",
         "No risk",
@@ -290,7 +290,7 @@
     },
     "process": {
       "subTitle": "Get started",
-      "title": "It's very easy to start<1/> follow this process",
+      "title": "It's very easy to start!<1/>Follow this process...",
       "steps": {
         "sp1": {
           "title": "Sign up",
@@ -298,7 +298,7 @@
         },
         "sp2": {
           "title": "Select your profile type",
-          "text": "You are looking for new translation jobs!"
+          "text": "You are looking for new translation jobs! Choose the \"Translator\" profile type."
         },
         "sp3": {
           "title": "Update your personal profile",
