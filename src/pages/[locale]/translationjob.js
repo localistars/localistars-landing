@@ -17,19 +17,8 @@ export default function HomeApp() {
 
   return (
     <PageWrapper headerConfig={{
-      headerClasses:
-        'site-header site-header--menu-center site-header--services dark-header site-header--sticky site-header--service',
-      containerFluid: false,
-      darkLogo: false,
-      buttonBlock: (
-        <HeaderButton
-          className="ms-auto d-none d-xs-inline-flex"
-          btnLink="https://www.localistars.app/register"
-          btnText={t('common.header')}
-          mr="15px"
-          mrLG="0"
-        />
-      )
+      headerClasses: 'site-header site-header--menu-center site-header--services dark-header site-header--sticky site-header--service',
+      darkLogo: false
     }}>
       <Head>
         <title>{t('creator.meta.title')}</title>

@@ -9,7 +9,7 @@ import { useTranslation } from 'next-i18next';
 
 const PageWrapper = ({
   children,
-  headerConfig = null,
+  headerConfig = {},
   innerPage = false,
   innerPageFooter = false
 }) => {
@@ -49,8 +49,8 @@ const PageWrapper = ({
   const sitectx = React.useContext(GlobalHeaderContext);
 
   React.useEffect(() => {
-    sitectx.changeHeader({ ...activeHeader, ...headerConfig });
-  }, []);
+    sitectx.changeHeader({ ...activeHeader, ...defaultHeaderConfig, ...headerConfig });
+  }, [headerConfig]);
   return (
     <>
       {/* <Header/> */}
