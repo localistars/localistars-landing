@@ -66,11 +66,35 @@
       },
       "second": {
         "menu": "Professional online translations",
-        "tabTitle": "Our platform handles<br className='d-none d-xs-block' />everything for you<br className='d-none d-xs-block' />"
+        "tabTitle": "Our platform handles<br className='d-none d-xs-block' />everything for you",
+        "widgets": {
+          "w1": {
+            "title": "Partner matching",
+            "text": "Relax while localistars notifies the translators that matches your needs."
+          },
+          "w2": {
+            "title": "Easy accounting",
+            "text": "No need to waste time managing invoices. No matter if you work always with the same partner or with different partners, the payment workflow is still the same."
+          }
+        }
       },
       "third": {
         "menu": "For any business",
-        "tabTitle": "Use localistars for <br className='d-none d-xs-block' />any kind of business<br className='d-none d-xs-block' />"
+        "tabTitle": "Use localistars for <br className='d-none d-xs-block' />any kind of business",
+        "widgets": {
+          "w1": {
+            "title": "Websites and apps",
+            "text": "Use localistars for websites, applications, mobile apps, etc. of any kind."
+          },
+          "w2": {
+            "title": "Video game",
+            "text": "Take your game to next level. Manage your game language easily and eliminate unnecessary communication in your team."
+          },
+          "w3": {
+            "title": "Documents",
+            "text": "Not only software, but any kind of document can be translated."
+          }
+        }
       }
     },
     "promo": {

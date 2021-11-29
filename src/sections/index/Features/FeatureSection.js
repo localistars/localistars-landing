@@ -48,8 +48,8 @@ export default function FeatureSection() {
                   imageBlock={<FeatureImage name="fast_order.png" />}
                   contentBlock={
                     <FeatureWidgetsBlock
-                      tabLabel="first"
-                      widgetData={featureSectionData.tabWidget1}
+                      tabLabel="second"
+                      widgetData={featureSectionData.tabWidget2}
                     />
                   }
                   contentBlockTitle={t('index.features.second.tabTitle', featureSectionData.featureTabTitle2)}
@@ -57,11 +57,11 @@ export default function FeatureSection() {
               </Tab.Pane>
               <Tab.Pane eventKey="third">
                 <FeatureTabPenLayout
-                  imageBlock={<FeatureImage name="chart.png" />}
+                  imageBlock={<FeatureImage name="file_upload.png" />}
                   contentBlock={
                     <FeatureWidgetsBlock
-                      tabLabel="first"
-                      widgetData={featureSectionData.tabWidget1}
+                      tabLabel="third"
+                      widgetData={featureSectionData.tabWidget3}
                     />
                   }
                   contentBlockTitle={t('index.features.third.tabTitle', featureSectionData.featureTabTitle3)}
