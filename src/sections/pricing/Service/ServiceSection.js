@@ -11,7 +11,7 @@ export default function ServiceSection() {
 
   return (
     <>
-      <Service className="border-top border-default-color-2 bg-default">
+      <Service className="border-default-color-2 bg-default">
         <Service.Shape className="service-shape service-shape--l1">
           <img
             src={`${prefix}/image/pricing/localistars-pricing.png`}
