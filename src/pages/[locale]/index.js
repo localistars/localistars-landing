@@ -30,10 +30,9 @@ export default function HomeApp() {
           className="d-none d-sm-flex"
           as={Link}
           target="_blank"
-          href="https://www.localistars.app/login"
-        >
-          {t('index.header')}
-        </HeaderButton>
+          btnText={t('index.header')}
+          btnLink="https://www.localistars.app/login"
+        />
       )
     }}>
       <Head>
