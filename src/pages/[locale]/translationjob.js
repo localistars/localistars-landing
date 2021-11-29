@@ -16,7 +16,7 @@ export default function HomeApp() {
   const { t } = useTranslation('translations');
 
   return (
-    /*<PageWrapper headerConfig={{
+    <PageWrapper headerConfig={{
       headerClasses:
         'site-header site-header--menu-center site-header--services dark-header site-header--sticky site-header--service',
       containerFluid: false,
@@ -25,13 +25,12 @@ export default function HomeApp() {
         <HeaderButton
           className="ms-auto d-none d-xs-inline-flex"
           btnLink="https://www.localistars.app/register"
-          btnText={t('creator.header')}
+          btnText={t('common.header')}
           mr="15px"
           mrLG="0"
         />
       )
-    }}>*/
-    <PageWrapper>
+    }}>
       <Head>
         <title>{t('creator.meta.title')}</title>
         <meta
