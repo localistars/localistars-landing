@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "NEXT_TELEMETRY_DISABLED=1 next build && NEXT_TELEMETRY_DISABLED=1 next export",
-    "postbuild": "next-sitemap --config next-sitemap.config.js && ls out/sitemap.xml",
+    "postbuild": "next-sitemap --config next-sitemap.config.js && ls public && ls out",
     "postinstall": "node modifySitemapMod.js",
     "server": "next start",
     "start": "npm run dev",
