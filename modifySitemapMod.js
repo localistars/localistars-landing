@@ -13,4 +13,8 @@ cliContent = cliContent.replace('const allSitemaps = [];', `const allSitemaps = 
         sitemapChunks
     });`)
 
+
+cliContent = cliContent.replace('generateSitemap_1.generateSitemap(chunk);', `generateSitemap_1.generateSitemap(chunk);
+    console.log(chunk);`)
+
 fs.writeFileSync(path.join(__dirname, 'node_modules/next-sitemap/dist/cjs/cli.js'), cliContent)
