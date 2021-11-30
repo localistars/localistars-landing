@@ -15,6 +15,11 @@ export const useRedirect = (to) => {
   useEffect(() => {
     const detectedLng = languageDetector.detect();
     for (const locale of locales) {
+      if (to.startsWith('/' + locale) && router.route === '/404') {
+        router.replace('/' + locale + router.route);
+        return;
+      }
+
       // eslint-disable-next-line no-undef
       if (detectedLng.startsWith(locale)) {
         languageDetector.cacheUserLanguage(detectedLng);
