@@ -1,20 +1,9 @@
 const fs = require('fs')
 const path = require('path')
 
-let cliContent = fs.readFileSync(path.join(__dirname, 'node_modules/next-sitemap/dist/cjs/cli.js')).toString()
+let content = fs.readFileSync(path.join(__dirname, 'node_modules/next-sitemap/dist/cjs/file/index.js')).toString()
 
-cliContent = cliContent.replace('const allSitemaps = [];', `const allSitemaps = [];
-    console.log({
-        configFilePath,
-        config,
-        manifest,
-        chunks,
-        SITEMAP_FILE: runtimePaths.SITEMAP_FILE,
-        sitemapChunks
-    });`)
+content = content.replace('fs_1.default.writeFileSync(filePath, content);', `fs_1.default.writeFileSync(filePath, content);
+    console.log(filePath);`)
 
-
-cliContent = cliContent.replace('generateSitemap_1.generateSitemap(chunk);', `generateSitemap_1.generateSitemap(chunk);
-    console.log(chunk);`)
-
-fs.writeFileSync(path.join(__dirname, 'node_modules/next-sitemap/dist/cjs/cli.js'), cliContent)
+fs.writeFileSync(path.join(__dirname, 'node_modules/next-sitemap/dist/cjs/file/index.js'), content)
