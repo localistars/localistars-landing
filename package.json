@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "postbuild": "pwd && ls && next-sitemap --config next-sitemap.config.js && ls out/sitemap.xml",
+    "build": "NEXT_TELEMETRY_DISABLED=1 next build && NEXT_TELEMETRY_DISABLED=1 next export",
+    "postbuild": "next-sitemap --config next-sitemap.config.js && ls out/sitemap.xml",
+    "postinstall": "node modifySitemapMod.js",
     "server": "next start",
     "start": "npm run dev",
     "lint": "next lint",
