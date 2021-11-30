@@ -13,7 +13,8 @@ export const useRedirect = (to) => {
 
   // language detection
   useEffect(() => {
-    const detectedLng = languageDetector.detect();
+    const detectedLngs = languageDetector.detect();
+    const detectedLng = languageDetector.services.languageUtils.getBestMatchFromCodes(detectedLngs);
     for (const locale of locales) {
       if (to.startsWith('/' + locale) && router.route === '/404') {
         router.replace('/' + locale + router.route);
