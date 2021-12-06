@@ -41,7 +41,7 @@ const getLanguagePartFromCode = (code) => {
 const makeGetBestMatchFromCodes = ({ supportedLngs, fallbackLng }) => (codes) => {
   if (!codes) return null
 
-  const isSupportedCode = (code) => supportedLngs.indexOf(code) > -1
+  const isSupportedCode = (code) => !supportedLngs || !supportedLngs.length || supportedLngs.indexOf(code) > -1
 
   let found
 
@@ -50,7 +50,7 @@ const makeGetBestMatchFromCodes = ({ supportedLngs, fallbackLng }) => (codes) =>
     if (found) return
     let cleanedLng = formatLanguageCode(code)
     if (!supportedLngs || isSupportedCode(cleanedLng)) found = cleanedLng
-  });
+  })
 
   // if we got no match in supportedLngs yet - check for similar locales
   // first  de-CH --> de
@@ -60,9 +60,12 @@ const makeGetBestMatchFromCodes = ({ supportedLngs, fallbackLng }) => (codes) =>
       if (found) return
 
       let lngOnly = getLanguagePartFromCode(code)
-      if (isSupportedCode(lngOnly)) return (found = lngOnly)
+      if (isSupportedCode(lngOnly)) {
+        found = lngOnly
+        return
+      }
 
-      found = locales.find((supportedLng) => {
+      found = supportedLngs.find((supportedLng) => {
         if (supportedLng.indexOf(lngOnly) === 0) return supportedLng
       })
     })
