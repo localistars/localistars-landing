@@ -1,4 +1,4 @@
-import languageDetector from '~lib/languageDetector';
+import lngDetector from '~lib/lngDetector';
 // import i18nextConfig from '~next-i18next.config'
 import { useRouter } from 'next/router';
 import Link from './';
@@ -29,7 +29,7 @@ const LanguageSwitchLink = ({ locale, ...rest }) => {
       style={style}
       to={href}
       skipLocaleHandling
-      onClick={() => languageDetector.cacheUserLanguage(locale)}
+      onClick={() => lngDetector.cache(locale)}
     >
       {locale}
     </Link>
