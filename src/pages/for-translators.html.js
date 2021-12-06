@@ -1,6 +1,2 @@
-import { useRedirect } from '~lib/redirect';
-const Redirect = () => {
-  useRedirect('/translationjob');
-  return <></>;
-};
-export default Redirect;
+import { getRedirect } from '~lib/redirect';
+export default getRedirect('/translationjob');

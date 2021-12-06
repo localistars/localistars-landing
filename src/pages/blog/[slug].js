@@ -1,11 +1,6 @@
-import { useRedirect } from '~lib/redirect';
+import { Redirect } from '~lib/redirect';
 import i18nConfig from '~next-i18next.config';
 import { getFiles } from '~lib/mdx';
-
-const Redirect = () => {
-  useRedirect();
-  return <></>;
-};
 
 export default Redirect;
 

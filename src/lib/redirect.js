@@ -20,3 +20,14 @@ export const useRedirect = (to) => {
 
   return <></>;
 };
+
+export const Redirect = () => {
+  useRedirect();
+  return <></>;
+};
+
+// eslint-disable-next-line react/display-name
+export const getRedirect = (to) => () => {
+  useRedirect(to);
+  return <></>;
+};

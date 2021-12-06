@@ -1,7 +1,13 @@
-import { getLocaleFile } from './mdx';
-import { getI18nPaths } from './getI18nPaths';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-// import i18nextConfig from '~next-i18next.config' // used as current next-i18next workaround for next.js > v10.2
+import i18nextConfig from '~next-i18next.config'
+import { getLocaleFile } from './mdx';
+
+export const getI18nPaths = () =>
+  i18nextConfig.i18n.locales.map((lng) => ({
+    params: {
+      locale: lng
+    }
+  }));
 
 export const getStaticPaths = () => ({
   fallback: false,
