@@ -32,7 +32,7 @@ export default function SideBarSection({ allPosts = [], otherPosts = [] }) {
         )}
 
         {otherPosts.map((post, index) => (
-          <SideBar.RecentPost>
+          <SideBar.RecentPost key={index}>
             <SideBar.RecentPostList>
               <Link key={index} to={`/blog/${post.slug}`}>
                 <SideBar.RecentPostTitle>{post.title}</SideBar.RecentPostTitle>

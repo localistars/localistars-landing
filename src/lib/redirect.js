@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import lngDetector from './lngDetector';
+import languageDetector from './languageDetector';
 
 export const useRedirect = (to) => {
   const router = useRouter();
@@ -8,13 +8,13 @@ export const useRedirect = (to) => {
 
   // language detection
   useEffect(() => {
-    const detectedLng = lngDetector.detect();
+    const detectedLng = languageDetector.detect();
     if (to.startsWith('/' + detectedLng) && router.route === '/404') {
       router.replace('/' + detectedLng + router.route);
       return;
     }
 
-    lngDetector.cache(detectedLng);
+    languageDetector.cache(detectedLng);
     router.replace('/' + detectedLng + to);
   });
 
