@@ -14,20 +14,13 @@ export const useRedirect = (to) => {
   // language detection
   useEffect(() => {
     const detectedLng = lngDetector.detect();
-    for (const locale of locales) {
-      if (to.startsWith('/' + locale) && router.route === '/404') {
-        router.replace('/' + locale + router.route);
-        return;
-      }
-
-      // eslint-disable-next-line no-undef
-      if (detectedLng.startsWith(locale)) {
-        lngDetector.cache(detectedLng);
-        router.replace('/' + locale + to);
-        return;
-      }
+    if (to.startsWith('/' + detectedLng) && router.route === '/404') {
+      router.replace('/' + detectedLng + router.route);
+      return;
     }
-    router.replace('/' + defaultLocale + to);
+
+    lngDetector.cache(detectedLng);
+    router.replace('/' + detectedLng + to);
   }, []);
 
   return <></>;
