@@ -12,11 +12,10 @@ import {
 import { SearchProvider } from '~context/SearchContext';
 import { useEffect, useState } from 'react';
 import Loader from '~components/Preloader';
-import { appWithTranslation } from 'next-i18next';
 import CookieConsent from 'react-cookie-consent';
 import { useAnalytics } from '~lib/analytics';
 import Head from 'next/head';
-import { useTranslation, Trans } from 'next-i18next';
+import { appWithTranslation, useTranslation, Trans } from 'next-i18next';
 import ScrollToTop from 'react-scroll-to-top';
 import { FiArrowUp as MySVG } from 'react-icons/fi';
 import Link from '~components/Core/Link';
