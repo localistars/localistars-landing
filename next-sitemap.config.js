@@ -4,8 +4,11 @@ module.exports = {
   priority: 1.0,
   generateRobotsTxt: true, // (optional)
   exclude: [
-    '/dpa', 
-    '/ccpa', 
+    '*/dpa',
+    '*/ccpa',
+    '*/privacy',
+    '*/terms',
+    '*/404'
   ],
   alternateRefs: [
     {
