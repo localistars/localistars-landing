@@ -1,0 +1,80 @@
+---
+title: 'Kontinuierliche Lokalisierung vs. Kontinuierliche Lokalisierung'
+description: 'Continuous Localization vs. Continuous Localization 🤔'
+category: 'Client'
+date: '02-11-2022'
+modified: '02-11-2022'
+thumbnail: '/image/blogs/modern-continuous-localization/continuous-localization.jpg'
+image: '/image/blogs/modern-continuous-localization/title.jpg'
+alt: 'continuous localization'
+---
+
+## Warum kontinuierliche Lokalisierung?
+
+Die Softwareentwicklung endet nie mit der Veröffentlichung der ersten Version eines Produkts (Fehlerbehebungen, kleinere Updates und irgendwann grössere neue Versionen und Releases) – kontinuierlich. Ihr Lokalisierungs- und Übersetzungsprozess sollte dem gleichen Muster folgen wie Ihre Softwareentwicklung.
+
+>Sie nutzen bereits agile Konzepte in Ihrer Softwareentwicklung, oder?
+
+Fügen Sie auch Ihrem Lokalisierungsprozess etwas Agilität hinzu!
+<br />
+Übersetzungen sollten parallel zu agilen Sprints und in kleineren Batches erfolgen. Das bedeutet, nur einen Teil eines Softwareprodukts zu übersetzen und nicht das Ganze auf einmal. Noch besser, kontinuierlich übersetzen.
+
+Der Vorteil für Entwickler liegt auf der Hand: Richten Sie die Lokalisierungsbemühungen am Entwicklungszyklus aus, indem Sie die beteiligten Schritte automatisieren und beschleunigen. Auf diese Weise können sie ihre Lokalisierungsprozesse nahtlos in ihren Entwicklungszyklus integrieren.
+<br />
+Sie lokalisieren als normalen Teil des Entwicklungsprozesszyklus. Keine separate Lokalisierungstestphase. Das Testen von Übersetzungen ist Teil der normalen Softwaretestaktivitäten.
+<br />
+Die Übersetzer können an Texten arbeiten, die die Entwickler gerade hinzugefügt haben. Es gibt kein Warten auf einen bestimmten Meilenstein.
+<br />
+Übersetzungen synchron mit der Entwicklung zu halten, reduziert die Projektkomplexität drastisch. Das Projektmanagement freut sich darüber, weil es den Produktmanagern viel lästige Arbeit abnimmt, die sie sonst leisten müssten.
+
+>**zusammengefasst; Kürzere, schnellere Entwicklungszyklen, schnellere Time-to-Market.**
+
+
+## Wie funktioniert kontinuierliche Lokalisierung
+
+### Der klassische Ansatz
+
+Die folgenden Teamrollen sind mindestens in einem typischen Inhouse-Lokalisierungsteam enthalten:
+
+- Software-Ingenieur – Verantwortlich für die Implementierung des kontinuierlichen Lokalisierungs-Workflows.
+- Lokalisierungs-QA / Übersetzer – Verantwortlich für die Qualität des lokalisierten Produkts.
+- Produktmanager – Jemand, der den gesamten Prozess überwacht, mit Ingenieuren und Übersetzern zusammenarbeitet und für Fristen verantwortlich ist.
+
+<img alt="classic continuous localization" src="/image/blogs/modern-continuous-localization/classic-continuous-localization.png" width="640" height="480" />
+
+Nach einer erfolgreichen Implementierung für den kontinuierlichen Lokalisierungsworkflow sieht der Prozess ungefähr so aus:
+
+1. Die Entwickler erstellen neue Texte in der Referenzsprache und speichern sie in ihr Code-Repository.
+2. Die Texte werden mit dem Übersetzungsverwaltungssystem synchronisiert.
+3. Die Übersetzer arbeiten an neuen Übersetzungen.
+4. Die Übersetzungen werden zurück zum Code-Repository synchronisiert.
+5. Die CI/CD-Pipeline wählt den aktuellen (oder definierten) Zustand des Code-Repositorys und baut, testet usw.
+6. Das Ergebnis wird bereitgestellt.
+7. Der Endbenutzer kann sich an den neuen Funktionen und neuen Übersetzungen erfreuen.
+
+*Während dieser Ansatz zusammen mit den meisten Übersetzungsmanagementsystemen implementiert werden kann, gibt es auch einen moderneren Ansatz...*
+
+### Der moderne Ansatz
+
+Sie sollten in der Lage sein, Ihre Übersetzungsdateien getrennt von Ihrer Software bereitzustellen, damit Sie sie unabhängig voneinander aktualisieren und verwalten können. So etwas wie eine Plattform, in die sich jeder direkt integrieren kann.
+
+<img alt="real continuous localization" src="/image/blogs/modern-continuous-localization/real-continuous-localization.png" width="640" height="480" />
+
+Der Ablauf könnte wie folgt aussehen:
+
+1. Die Entwickler arbeiten wie gewohnt an ihren Features und erstellen on-the-fly Texte. Diese neuen Schlüssel werden automatisch als fehlende Texte an das Übersetzungsverwaltungssystem (TMS) übertragen.
+2. Die Übersetzer arbeiten an neuen Übersetzungen und können die Übersetzungen sofort validieren.
+3. Da Übersetzungen direkt mit Ihrem Softwareprodukt „verbunden“ sind, können sie jederzeit freigegeben werden. Auf diese Weise können Sie auch Übersetzungen Ihres zuvor veröffentlichten Produkts korrigieren, ohne es erneut bereitstellen zu müssen.
+
+Wenn Sie dies tun, müssen Sie sicherstellen, dass Sie mehr als eine Version Ihrer Übersetzungen haben können; mindestens eine für die aktuell freigegebene Version und eine für den aktuellen Entwicklungszweig. So können sich Ihre Technischen Redakteure und Übersetzer vom ersten Tag an um die Übersetzungen kümmern und problemlos mit Änderungen Schritt halten. Auf diese Weise ist es sogar möglich, Übersetzungen zu ändern oder hinzuzufügen, ohne eine neue Version Ihrer Software zu versenden!
+Vielleicht möchten Sie auch einen Überarbeitungs-Workflow, eine Rechnungsprüfung, eine integrierte Bestellung externer Übersetzungen usw.
+
+>Cool, aber ist das nicht ein wenig übertrieben... ein zusätzliches Tooling und eine zusätzliche Bereitstellung – fügt all dies nicht nur mehr Komplexität und Aufwand hinzu?
+
+#### Das musst du nicht selber bauen!!! - Wir schlagen [locize](https://locize.com) vor!
+
+Sehen Sie sich das Demo-Video an, um mehr zu erfahren:
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ds-yEEYP1Ks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
+[locize](https://locize.com) beseitigt den Schmerz im Übersetzungsprozess. Keine Verzögerungen mehr beim Versand Ihrer Software aufgrund fehlender Übersetzungen. Übersetzer können vom ersten Tag an mit Änderungen Schritt halten. Der kontinuierliche Lokalisierungsprozess hält mit Ihrem anspruchsvollen Geschäft Schritt.
+

@@ -5,6 +5,7 @@ import 'node_modules/react-modal-video/css/modal-video.min.css';
 import '~fonts/fontawesome-5/css/all.min.css';
 import '~styled/scss/bootstrap.scss';
 import '~styled/scss/global.scss';
+import '~styled/scss/custom.scss';
 import {
   GlobalHeaderProvider,
   GlobalHeaderContext

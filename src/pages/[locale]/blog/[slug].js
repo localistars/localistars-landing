@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { getMDXComponent } from 'mdx-bundler/client';
-// import components from '~components/MDXComponents';
+import components from '~components/MDXComponents';
 // import BlogLayout from '~layouts/blog';
 import { getFiles, getLocaleFile } from '~lib/mdx';
 import { getAllFilesFrontMatter } from '~lib/mdx';
@@ -24,7 +24,7 @@ export default function Blog({ code, frontMatter, allPosts, otherPosts }) {
         {...frontMatter}
         mdxComponent={
           <Component
-          /*components={components} */
+            components={components}
           />
         }
         allPosts={allPosts}

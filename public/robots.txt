@@ -7,3 +7,4 @@ Host: https://localistars.com
 
 # Sitemaps
 Sitemap: https://localistars.com/sitemap.xml
+Sitemap: https://localistars.com/sitemap-0.xml
