@@ -50,7 +50,7 @@ export default function SideBarSection({ allPosts = [], otherPosts = [] }) {
         <SideBar.Title>{t('blog.sidebar.category')}</SideBar.Title>
 
         {counts.map((x, index) => (
-          <SideBar.CateGory>
+          <SideBar.CateGory key={index}>
             <SideBar.CateGorySingle>
               <SideBar.CateGoryWrapper>
                 <SideBar.CateGoryTitle>{x.type}</SideBar.CateGoryTitle>

@@ -60,12 +60,12 @@ export default function MdxBlogDetails({
                   </Details.Text>
 
                   <Details.Text>
-                    <Link href={blogURL}>
-                      <a alt="Blog">{t('blog.smallTitle')}</a>
+                    <Link alt="Blog" href={blogURL}>
+                      {t('blog.smallTitle')}
                     </Link>{' '}
                     /{' '}
-                    <Link href={blogURL}>
-                      <a alt="{title}">{title}</a>
+                    <Link alt="{title}" href={blogURL}>
+                      {title}
                     </Link>
                   </Details.Text>
                 </Details.MetaInfo>
