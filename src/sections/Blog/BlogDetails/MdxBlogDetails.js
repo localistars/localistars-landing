@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Sidebar from '~sections/Common/Sidebar';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
-import StructureData from '~sections/Blog/BlogDetails/StructureData';
+import getStructureData from '~sections/Blog/BlogDetails/getStructureData';
 import Head from 'next/head';
 
 export default function MdxBlogDetails({
@@ -38,11 +38,9 @@ export default function MdxBlogDetails({
   return (
     <Details backgroundColor="#f9fafc" className="blog-details">
       <Head>
-        <StructureData
-          headline={title}
-          img={image}
-          date={date}
-          modified={modified}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={getStructureData({ headline: title, img: image, date, modified })}
         />
       </Head>
 
