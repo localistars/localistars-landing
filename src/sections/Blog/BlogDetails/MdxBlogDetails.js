@@ -36,7 +36,7 @@ export default function MdxBlogDetails({
   const readtime = minutes.toFixed(0) + 'min';
 
   return (
-    <Details backgroundColor="#f9fafc">
+    <Details backgroundColor="#f9fafc" className="blog-details">
       <Head>
         <StructureData
           headline={title}
