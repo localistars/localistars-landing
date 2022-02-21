@@ -55,7 +55,7 @@ export default function SideBarSection({ allPosts = [], otherPosts = [] }) {
               <SideBar.CateGoryWrapper>
                 <SideBar.CateGoryTitle>{x.type}</SideBar.CateGoryTitle>
                 <SideBar.CateGoryCount as="span">
-                  {x.count} {(x.count = 1 ? 'post' : posts)}
+                  {x.count} {(x.count === 1 ? 'post' : 'posts')}
                 </SideBar.CateGoryCount>
               </SideBar.CateGoryWrapper>
             </SideBar.CateGorySingle>
