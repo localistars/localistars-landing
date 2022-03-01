@@ -1,5 +1,6 @@
 // import Link from './Core/Link';
 import Video from './VideoModal/index'
+import Hint from './Hint/index'
 
 // const CustomLink = (props) => {
 //   const href = props.href;
@@ -18,7 +19,8 @@ import Video from './VideoModal/index'
 
 const MDXComponents = {
   // a: CustomLink,
-  Video
+  Video,
+  Hint
 };
 
 export default MDXComponents;
