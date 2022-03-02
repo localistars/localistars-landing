@@ -49,7 +49,8 @@ export async function getFileBySlug(type, slug) {
       .replace(/href="\//g, `href="${prefix}/`);
   }
 
-  const { code, frontmatter } = await bundleMDX(source, {
+  const { code, frontmatter } = await bundleMDX({
+    source,
     xdmOptions(options) {
       options.remarkPlugins = [...(options?.remarkPlugins ?? []), remarkGfm];
       options.rehypePlugins = [
