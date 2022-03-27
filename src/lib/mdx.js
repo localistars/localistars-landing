@@ -105,5 +105,5 @@ export async function getAllFilesFrontMatter(type) {
       },
       ...allPosts
     ];
-  }, []);
+  }, []).sort((a, b) => new Date(b.date) - new Date(a.date));
 }
