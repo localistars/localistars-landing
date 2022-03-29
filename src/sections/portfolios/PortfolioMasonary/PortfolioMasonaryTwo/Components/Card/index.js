@@ -4,7 +4,7 @@ import Card from './style';
 export default function PortfolioCard({ to, image, title, text, ...rest }) {
   return (
     <Card as={Link} to={to ? to : '/'} {...rest}>
-      <img className="w-100" src={image.src} alt="portfolio" />
+      <img className="w-100" src={image.src} alt="portfolio" loading="lazy" />
       <Card.InnerBlock backgroundColor="#fd346e">
         <Card.InnerIcon fontColor="#fff">
           <i className="fas fa-external-link-square-alt" />

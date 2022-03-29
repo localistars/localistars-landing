@@ -33,7 +33,7 @@ export default function BlogDetails() {
               </Details.Box>
               <Details.Box>
                 <Details.Image mb="35px" mbLG="55px">
-                  <img src={blogImage.src} alt="content" class="w-100" />
+                  <img src={blogImage.src} alt="content" className="w-100" loading="lazy" />
                 </Details.Image>
                 <Details.Text>
                   Doubling my 9–5 salary several times in my career is something

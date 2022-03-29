@@ -15,7 +15,7 @@ export default function BlogCard({
   return (
     <Card>
       <Card.Image>
-        <img src={image.src} alt="Blog" />
+        <img src={image.src} alt="Blog" loading="lazy" />
       </Card.Image>
       <Card.OvaerlayBlock>
         <Card.Top mb="20px">

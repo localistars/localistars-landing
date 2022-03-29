@@ -7,7 +7,7 @@ export default function SlimBlogCard({ title, date, summary, slug, locale }) {
   return (
     <Card>
       <Card.Image>
-        <img src={BlogsImg7.src} alt="Blog" />
+        <img src={BlogsImg7.src} alt="Blog" loading="lazy" />
       </Card.Image>
       <Card.OvaerlayBlock>
         <Card.Top mb="20px">

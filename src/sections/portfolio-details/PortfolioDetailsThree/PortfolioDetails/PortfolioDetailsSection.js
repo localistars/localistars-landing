@@ -12,7 +12,7 @@ export default function PortfolioDetailsSection() {
     <PortfolioDetails backgroundColor="#f3f4f6">
       <Container>
         <PortfolioDetails.Image>
-          <img src={portfolioFullImage.src} alt="portfolio" />
+          <img src={portfolioFullImage.src} alt="portfolio" loading="lazy" />
         </PortfolioDetails.Image>
         <Row className="align-items-center">
           <Col xs="12" className="col-xxl-7 col-xl-8 col-lg-7">
@@ -70,6 +70,7 @@ export default function PortfolioDetailsSection() {
                   alt="portfolio"
                   layout="constrained"
                   placeholder="blurred"
+                  loading="lazy"
                 />
               </a>
             </PortfolioDetails.BigImage>
@@ -82,7 +83,7 @@ export default function PortfolioDetailsSection() {
                 className="portfolio__single popup-img"
                 data-fancybox="images"
               >
-                <img src={portfolioFullImage3.src} alt="portfolio" />
+                <img src={portfolioFullImage3.src} alt="portfolio" loading="lazy" />
               </a>
             </PortfolioDetails.GridImage>
             {/*/ .Single Grid */}
@@ -95,7 +96,7 @@ export default function PortfolioDetailsSection() {
                 className="portfolio__single popup-img"
                 data-fancybox="images"
               >
-                <img src={portfolioFullImage4.src} alt="portfolio" />
+                <img src={portfolioFullImage4.src} alt="portfolio" loading="lazy" />
               </a>
             </PortfolioDetails.GridImage>
             {/*/ .Single Grid */}
@@ -108,7 +109,7 @@ export default function PortfolioDetailsSection() {
                 className="portfolio__single popup-img"
                 data-fancybox="images"
               >
-                <img src={portfolioFullImage5.src} alt="portfolio" />
+                <img src={portfolioFullImage5.src} alt="portfolio" loading="lazy" />
               </a>
             </PortfolioDetails.GridImage>
             {/*/ .Single Grid */}

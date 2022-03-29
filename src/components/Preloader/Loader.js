@@ -19,7 +19,7 @@ const LoaderWrapper = styled.div`
 const Loader = ({ show }) => {
   return (
     <LoaderWrapper display={show ? 'flex' : 'none'}>
-      <img src={`${prefix}/image/preloader.gif`} alt="img" />
+      <img src={`${prefix}/image/preloader.gif`} alt="img" loading="lazy" />
     </LoaderWrapper>
   );
 };

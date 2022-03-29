@@ -14,7 +14,7 @@ export default function FooterSix() {
                 {/* Brand Logo*/}
                 <Footer.Box mb="30px">
                   <Link to="#">
-                    <img src={LogoBlack.src} alt="logo" style={{ height: 21 }} />
+                    <img src={LogoBlack.src} alt="logo" style={{ height: 21 }} loading="lazy" />
                   </Link>
                 </Footer.Box>
                 <Footer.Text mb="36px">

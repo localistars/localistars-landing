@@ -138,7 +138,7 @@ export default function SideBarSection() {
       {/* Single Widgets */}
       <SideBar.Ads mb="50px" mbLG="0">
         <Link to="#">
-          <img src={offer.src} alt="content" className="w-100" />
+          <img src={offer.src} alt="content" className="w-100" loading="lazy" />
         </Link>
       </SideBar.Ads>
       {/*/ .Single Widgets */}

@@ -75,7 +75,7 @@ export async function getFileBySlug(type, slug) {
   const tweetIDs = tweetMatches?.map((tweet) => tweet.match(/[0-9]+/g)[0]);
 
   return {
-    code,
+    code: code.replace(/src:"\/image\//g, 'loading:"lazy",src:"/image/'), // lazy loading images
     tweetIDs: tweetIDs || [],
     frontMatter: {
       wordCount: source.split(/\s+/gu).length,

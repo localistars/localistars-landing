@@ -15,7 +15,7 @@ export default function FooterOne() {
                 {/* Brand Logo*/}
                 <Footer.Box mb="30px">
                   <Link to="#">
-                    <img src={LogoWhite.src} alt="logo" style={{ height: 21 }} />
+                    <img src={LogoWhite.src} alt="logo" style={{ height: 21 }} loading="lazy" />
                   </Link>
                 </Footer.Box>
                 <Footer.Text mb="36px">

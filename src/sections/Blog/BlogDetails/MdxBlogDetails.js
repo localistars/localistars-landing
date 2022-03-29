@@ -71,7 +71,7 @@ export default function MdxBlogDetails({
 
               <Details.Box mb="30px" mbLG="55px">
                 <Details.Image>
-                  <img src={image} alt={alt} />
+                  <img src={image} alt={alt} loading="lazy" />
                 </Details.Image>
               </Details.Box>
 

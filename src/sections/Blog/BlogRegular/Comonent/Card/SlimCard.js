@@ -19,7 +19,7 @@ export default function SlimBlogCard({
       <Card.Image>
         <Link href={`/blog/${slug}`}>
           <a alt="Blog">
-            <img src={`${prefix}${thumbnail}`} alt={alt} />
+            <img src={`${prefix}${thumbnail}`} alt={alt} loading="lazy" />
           </a>
         </Link>
       </Card.Image>

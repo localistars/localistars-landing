@@ -6,7 +6,7 @@ export default function ServiceWidget({ icon, title, text, ...rest }) {
     <Widget {...rest}>
       <Widget.Icon>
         <div>
-          <img src={icon} alt="service icon" />
+          <img src={icon} alt="service icon" loading="lazy" />
         </div>
       </Widget.Icon>
       <Widget.Body>

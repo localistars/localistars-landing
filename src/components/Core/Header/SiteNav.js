@@ -17,9 +17,9 @@ const SiteNavbar = ({ buttonBlock, darkLogo, customLogo, defaultLogo }) => {
       >
         <Navbar.Brand href={`${prefix}/`}>
           {defaultLogo ? (
-            <img src={defaultLogo} alt="site-brand" />
+            <img src={defaultLogo} alt="site-brand" loading="lazy" />
           ) : customLogo ? (
-            <img src={customLogo} alt="localistars logo" />
+            <img src={customLogo} alt="localistars logo" loading="lazy" />
           ) : (
             <img
               src={
@@ -29,6 +29,7 @@ const SiteNavbar = ({ buttonBlock, darkLogo, customLogo, defaultLogo }) => {
               }
               alt="localistars logo"
               style={{ height: 21 }}
+              loading="lazy"
             />
           )}
         </Navbar.Brand>

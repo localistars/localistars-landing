@@ -23,7 +23,7 @@ export default function BreadCrumbSection({
         </Row>
       </Container>
       <BreadCrumb.Image>
-        <img className="w-100" src={BreadcrumbImage.src} alt="shape" />
+        <img className="w-100" src={BreadcrumbImage.src} alt="shape" loading="lazy" />
       </BreadCrumb.Image>
     </BreadCrumb>
   );

@@ -10,7 +10,7 @@ export default function TestiomialCard({
   return (
     <Card backgroundColor="#fff">
       <Card.Image>
-        <img src={image} alt="Testimonial" />
+        <img src={image} alt="Testimonial" loading="lazy" />
       </Card.Image>
       <Card.Body fontColor="#262729">
         <Card.Text>{text}</Card.Text>

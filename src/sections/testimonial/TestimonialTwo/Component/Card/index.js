@@ -15,7 +15,7 @@ export default function TestimonialCard({
       <Card.Body>
         <Card.UserInfo>
           <Card.Image>
-            <img src={userImage} alt />
+            <img src={userImage} loading="lazy" />
           </Card.Image>
           <Card.UserBody>
             <Card.Title as="h3">{userName}</Card.Title>
@@ -23,7 +23,7 @@ export default function TestimonialCard({
           </Card.UserBody>
         </Card.UserInfo>
         <Card.Icon>
-          <i class="fa fa-quote-left"></i>
+          <i className="fa fa-quote-left"></i>
         </Card.Icon>
       </Card.Body>
       <Card.Text as="p">{text}</Card.Text>

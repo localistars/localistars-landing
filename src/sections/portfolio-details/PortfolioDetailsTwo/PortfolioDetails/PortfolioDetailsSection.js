@@ -86,19 +86,19 @@ export default function PortfolioDetailsSection() {
             {...sliderConfig1}
           >
             <PortfolioDetails.Slide>
-              <img src={pimageOne.src} />
+              <img src={pimageOne.src} loading="lazy" />
             </PortfolioDetails.Slide>
             <PortfolioDetails.Slide>
-              <img src={pimageTwo.src} />
+              <img src={pimageTwo.src} loading="lazy" />
             </PortfolioDetails.Slide>
             <PortfolioDetails.Slide>
-              <img src={pimageThree.src} />
+              <img src={pimageThree.src} loading="lazy" />
             </PortfolioDetails.Slide>
             <PortfolioDetails.Slide>
-              <img src={pimageThree.src} />
+              <img src={pimageThree.src} loading="lazy" />
             </PortfolioDetails.Slide>
             <PortfolioDetails.Slide>
-              <img src={pimageThree.src} />
+              <img src={pimageThree.src} loading="lazy" />
             </PortfolioDetails.Slide>
           </Slider>
         </PortfolioDetails.SliderWrapper>

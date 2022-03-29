@@ -5,7 +5,7 @@ export default function FeatureWidget({ icon, iconBackground, title, text }) {
   return (
     <Widget>
       <Widget.Icon background={iconBackground}>
-        <img src={icon} alt="icon" />
+        <img src={icon} alt="icon" loading="lazy" />
       </Widget.Icon>
       <Widget.Body>
         <Widget.Title as="h3">{title}</Widget.Title>

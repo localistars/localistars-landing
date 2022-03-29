@@ -14,7 +14,7 @@ export default function Error() {
         <Row className="justify-content-center">
           <Col xs="12" className="col-xl-6 col-lg-7 col-md-8 col-xs-10">
             <ErrorPage.Image className="error-page__image text-center">
-              <img src={errorImage.src} alt />
+              <img src={errorImage.src} loading="lazy" />
             </ErrorPage.Image>
             <ErrorPage.BigTitle as="h1">404</ErrorPage.BigTitle>
             <ErrorPage.Title>{t('error.title')}</ErrorPage.Title>

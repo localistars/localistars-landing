@@ -6,7 +6,7 @@ export default function CommentsWidgets({ UserName, UserImage, ...rest }) {
     <Widgets>
       <Widgets.MetaBox className="comment-meta-box d-flex">
         <Widgets.Image>
-          <img src={UserImage} alt="user" />
+          <img src={UserImage} alt="user" loading="lazy" />
         </Widgets.Image>
         <Widgets.Content>
           <Widgets.UserInfo>

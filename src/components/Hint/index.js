@@ -14,7 +14,7 @@ const Hint = ({ title, content, children, color = 'orange', img, imgUrl, imgTitl
         {!!imgUrl && <>
           <br />
           <a href={imgUrl} title={imgTitle}>
-            <img src={img} alt={imgTitle} style={imgStyle} />
+            <img src={img} alt={imgTitle} style={imgStyle} loading="lazy" />
           </a>
         </>}
       </p>

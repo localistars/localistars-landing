@@ -11,11 +11,12 @@ const FeatureImages = ({ mainImage, name = 'bid.gif' }) => {
             src={`${prefix}/image/index/${name}`}
             alt={name}
             className="w-100"
+            loading="lazy"
           />
         </div>
 
         <div className="shape">
-          <img src={`${prefix}/image/index/l2-feature-shape.png`} alt="shape" />
+          <img src={`${prefix}/image/index/l2-feature-shape.png`} alt="shape" loading="lazy" />
         </div>
       </ImageGroup>
     </>

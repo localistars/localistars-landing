@@ -21,7 +21,7 @@ export default function PortfolioDetailsSection() {
         <Row className="align-items-center justify-content-center">
           <Col xs="12" className="col-xl-5 col-lg-6 col-md-8 col-xs-10">
             <PortfolioDetails.Image mb="30px" mbLG="0">
-              <img src={PortfolioDetailsLeft.src} alt="portfolio" />
+              <img src={PortfolioDetailsLeft.src} alt="portfolio" loading="lazy" />
             </PortfolioDetails.Image>
           </Col>
           <Col xs="12" className="col-lg-6 offset-xl-1">
