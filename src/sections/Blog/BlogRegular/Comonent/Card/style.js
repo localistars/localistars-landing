@@ -62,10 +62,9 @@ Card.Date = styled(Paragraph)`
   position: relative;
   transition: 0.4s;
   position: relative;
- 
-  }
 `;
-Card.User = styled(Link)`
+// Card.User = styled(Link)`
+Card.User = styled(Paragraph)`
   color: #fff;
   font-size: 12px;
   font-weight: 500;
@@ -80,7 +79,7 @@ Card.User = styled(Link)`
     margin-right: 7px;
     color: #ff5722;
   }
-  &:before {
+  /*&:before {
     content: '';
     position: absolute;
     width: 1px;
@@ -89,14 +88,15 @@ Card.User = styled(Link)`
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-  }
+  }*/
 
-  &:hover {
+  /*&:hover {
     color: #ff5722;
-  }
-  @media (min-width: 576px) {
+  }*/
+
+  /*@media (min-width: 576px) {
     font-size: 15px;
-  }
+  }*/
 `;
 Card.Like = styled(Link)`
   font-size: 12px;
@@ -161,6 +161,7 @@ Card.Image = styled(Box)`
 Card.Top = styled(Box).attrs({ className: 'blog-top' })`
   display: flex;
   align-items: center;
+  justify-content: space-between;
 `;
 Card.Bottom = styled(Box)`
   display: flex;
@@ -168,7 +169,7 @@ Card.Bottom = styled(Box)`
   flex-wrap: wrap;
 `;
 
-Card.OvaerlayBlock = styled(Box).attrs({ className: 'blog-bgoverlay' })`
+Card.OverlayBlock = styled(Box).attrs({ className: 'blog-bgoverlay' })`
   width: 100%;
   border-radius: 15px;
   background-size: cover;

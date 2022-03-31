@@ -91,6 +91,17 @@ Details.Text = styled(Paragraph)`
   }
 `;
 
+Details.User = styled(Details.Text)`
+i {
+  font-weight: 500;
+  margin-right: 7px;
+  color: #ff5722;
+}
+@media (min-width: 576px) {
+  font-size: 15px;
+}
+`;
+
 Details.SubTitle = styled(Paragraph)`
   font-size: 21px;
   font-weight: 500;

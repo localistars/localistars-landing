@@ -12,6 +12,7 @@ export default function SlimBlogCard({
   slug,
   locale,
   thumbnail,
+  author,
   alt
 }) {
   return (
@@ -23,17 +24,22 @@ export default function SlimBlogCard({
           </a>
         </Link>
       </Card.Image>
-      <Card.OvaerlayBlock>
+      <Card.OverlayBlock>
         <Card.Title to={`/blog/${slug}`}>
           {' '}
           <SuperTag value={title} />
         </Card.Title>
         <Card.Top mb="20px">
           <Card.Date>{date}</Card.Date>
+          {!!author && (
+            <Card.User>
+              <i className="far fa-user"></i> <SuperTag value={author} />
+            </Card.User>
+          )}
         </Card.Top>
 
         <Card.Bottom></Card.Bottom>
-      </Card.OvaerlayBlock>
+      </Card.OverlayBlock>
     </Card>
   );
 }

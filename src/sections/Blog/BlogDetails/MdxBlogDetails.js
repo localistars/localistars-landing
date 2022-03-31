@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Link } from '~components';
+import { Link, SuperTag } from '~components';
 import Details from './style';
 import Image from 'next/image';
 import Sidebar from '~sections/Common/Sidebar';
@@ -18,6 +18,7 @@ export default function MdxBlogDetails({
   image,
   alt,
   category,
+  author,
   modified,
   readingTime
 }) {
@@ -53,11 +54,17 @@ export default function MdxBlogDetails({
                 <Details.MetaInfo>
                   <Details.Text>{date}</Details.Text>
 
+                  {!!author && (
+                    <Details.User>
+                      <i className="far fa-user"></i> {t('blog.guestPostBy')} <SuperTag value={author} />
+                    </Details.User>
+                  )}
+
                   <Details.Text>
                     {readtime} {t('blog.readTime')}
                   </Details.Text>
 
-                  <Details.Text>
+                  {/* <Details.Text>
                     <Link alt="Blog" href={blogURL}>
                       {t('blog.smallTitle')}
                     </Link>{' '}
@@ -65,7 +72,7 @@ export default function MdxBlogDetails({
                     <Link alt="{title}" href={blogURL}>
                       {title}
                     </Link>
-                  </Details.Text>
+                  </Details.Text> */}
                 </Details.MetaInfo>
               </Details.Box>
 
