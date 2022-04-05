@@ -15,12 +15,11 @@ export const useAnalytics = () => {
     if (process.env.NODE_ENV !== 'production') return;
 
     return new Promise((resolve, reject) => {
-      import('react-ga')
+      import('react-ga4')
         .then((module) => {
           const ReactGA = module.default;
-          ReactGA.initialize(process.env.NEXT_PUBLIC_GA_TRACKING_ID);
-          ReactGA.ga('set', 'anonymizeIp', true);
-          ReactGA.ga('send', 'pageview');
+          ReactGA.initialize(process.env.NEXT_PUBLIC_GA_TRACKING_ID, { gtagOptions: { 'anonymize_ip': true } });
+          ReactGA.send('pageview');
           resolve(ReactGA);
         })
         .catch(reject);
