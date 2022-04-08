@@ -158,7 +158,7 @@ Card.Image = styled(Box)`
     width: 100%;
   }
 `;
-Card.Top = styled(Box).attrs({ className: 'blog-top' })`
+Card.Top = styled(Card.Box).attrs({ className: 'blog-top' })`
   display: flex;
   align-items: center;
   justify-content: space-between;
