@@ -217,11 +217,11 @@ Details.Box = styled(Box)``;
 
 Details.Box = styled(Box)``;
 Details.Image = styled(Box)`
-  min-height: 200px;
+  min-height: 100px;
 
   img {
     width: 100%;
-    min-height: 200px;
+    min-height: 100px;
   }
 `;
 
