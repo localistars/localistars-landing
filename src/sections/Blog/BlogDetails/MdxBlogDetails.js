@@ -49,7 +49,7 @@ export default function MdxBlogDetails({
         <Container>
           <Row className="justify-content-center">
             <Col className="col-lg-7">
-              <Details.Box mb="30px" mbLG="55px">
+              <Details.Box mb="0px" mbLG="0px">
                 <Details.Title as="h1">{title}</Details.Title>
                 <Details.MetaInfo>
                   <Details.Text>{date}</Details.Text>
