@@ -19,6 +19,14 @@ export default function Blog({ code, frontMatter, allPosts, otherPosts }) {
       <Head>
         <title>{frontMatter.title}</title>
         <meta name="description" content={frontMatter.description} />
+        {/* Open Graph */}
+        <meta property="og:image" content={frontMatter.image} key="ogimage" />
+        <meta property="og:title" content={frontMatter.title} key="ogtitle" />
+        <meta
+          property="og:description"
+          content={frontMatter.description}
+          key="ogdesc"
+        />
       </Head>
       <MdxBlogDetails
         {...frontMatter}
