@@ -169,7 +169,7 @@ Card.Bottom = styled(Box)`
   flex-wrap: wrap;
 `;
 
-Card.OverlayBlock = styled(Box).attrs({ className: 'blog-bgoverlay' })`
+Card.OverlayBlock = styled(Card.Box).attrs({ className: 'blog-bgoverlay' })`
   width: 100%;
   border-radius: 15px;
   background-size: cover;
