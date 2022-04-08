@@ -78,7 +78,7 @@ Details.Text = styled(Paragraph)`
   font-weight: 400;
   letter-spacing: normal;
   line-height: 32px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   a {
     color: var(--lt-color-gray-500);
     &:hover {

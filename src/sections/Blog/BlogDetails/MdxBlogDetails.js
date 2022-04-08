@@ -48,7 +48,7 @@ export default function MdxBlogDetails({
       <Details.Box pb="60px" pbMD="80px" pbLG="130px">
         <Container>
           <Row className="justify-content-center">
-            <Col className="col-lg-7">
+            <Col className="col-lg-8">
               <Details.Box mb="0px" mbLG="0px">
                 <Details.Title as="h1">{title}</Details.Title>
                 <Details.MetaInfo>
@@ -133,7 +133,7 @@ export default function MdxBlogDetails({
                 </Details.Pagination>*/}
               </Details.Box>
             </Col>
-            <Col xs="12" className="col-xl-4 offset-xl-1 col-lg-5">
+            <Col xs="12" className="col-xl-4 col-lg-4">
               <Sidebar allPosts={allPosts} otherPosts={otherPosts} />
             </Col>
           </Row>
