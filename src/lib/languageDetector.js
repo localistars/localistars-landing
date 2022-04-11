@@ -1,4 +1,4 @@
 import languageDetector from 'next-language-detector'
-import i18nextConfig from '~next-i18next.config'
+import i18nConfig from '~next-i18next.config'
 
-export default languageDetector({ supportedLngs: i18nextConfig.i18n.locales, fallbackLng: i18nextConfig.i18n.defaultLocale })
+export default languageDetector({ supportedLngs: i18nConfig.i18n.locales, fallbackLng: i18nConfig.i18n.defaultLocale })

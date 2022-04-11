@@ -1,9 +1,9 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import i18nextConfig from '~next-i18next.config'
+import i18nConfig from '~next-i18next.config'
 import { getLocaleFile } from './mdx';
 
 export const getI18nPaths = () =>
-  i18nextConfig.i18n.locales.map((lng) => ({
+  i18nConfig.i18n.locales.map((lng) => ({
     params: {
       locale: lng
     }
@@ -18,7 +18,7 @@ export async function getI18nProps(ctx, { slug, ns = ['translations'] } = {}) {
   const locale = ctx?.params?.locale;
   let props = {
     // if using i18next here in react code
-    ...(await serverSideTranslations(locale, ns /*i18nextConfig*/))
+    ...(await serverSideTranslations(locale, ns /*i18nConfig*/))
   };
   if (slug) {
     // if using markdown

@@ -10,7 +10,7 @@ import rehypeCodeTitles from 'rehype-code-titles';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrism from 'rehype-prism-plus';
 
-import i18nextConfig from '~next-i18next.config';
+import i18nConfig from '~next-i18next.config';
 import prefix from '~lib/prefix';
 
 export async function getFiles(type) {
@@ -30,7 +30,7 @@ export async function getLocaleFile(locale, slug) {
   try {
     await accessSync(fPath, constants.R_OK);
   } catch (err) {
-    locale = i18nextConfig.i18n.defaultLocale;
+    locale = i18nConfig.i18n.defaultLocale;
     isInRequestedLanguage = false;
   }
   const f = await getFileBySlug(`locales/${locale}`, slug);

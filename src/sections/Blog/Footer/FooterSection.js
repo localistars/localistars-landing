@@ -3,12 +3,12 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import LogoBlack from '../../../../public/image/logo/logo-black.svg';
 import Footer from './style';
-import i18nextConfig from '~next-i18next.config';
+import i18nConfig from '~next-i18next.config';
 import { useRouter } from 'next/router';
 
 export default function FooterSection() {
   const router = useRouter();
-  const currentLocale = router.query.locale || i18nextConfig.i18n.defaultLocale;
+  const currentLocale = router.query.locale || i18nConfig.i18n.defaultLocale;
 
   return (
     <Footer>
@@ -109,7 +109,7 @@ export default function FooterSection() {
                       </Footer.ListItems>
                       <Footer.SocialShare>
                         <Footer.Box pt="11px" pb="30px">
-                          {i18nextConfig.i18n.locales.map((locale) => {
+                          {i18nConfig.i18n.locales.map((locale) => {
                             if (locale === currentLocale) return null;
                             return (
                               <Footer.SocialShareItem key={locale}>

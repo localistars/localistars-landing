@@ -1,5 +1,5 @@
 import languageDetector from '~lib/languageDetector';
-// import i18nextConfig from '~next-i18next.config'
+// import i18nConfig from '~next-i18next.config'
 import { useRouter } from 'next/router';
 import Link from './';
 

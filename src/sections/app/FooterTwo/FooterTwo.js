@@ -2,14 +2,14 @@ import React from 'react';
 import { Link, LanguageSwitchLink } from '~components';
 import { Container, Row, Col } from 'react-bootstrap';
 import Footer from './style';
-import i18nextConfig from '~next-i18next.config';
+import i18nConfig from '~next-i18next.config';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import prefix from '~lib/prefix';
 
 export default function FooterTwo() {
   const router = useRouter();
-  const currentLocale = router.query.locale || i18nextConfig.i18n.defaultLocale;
+  const currentLocale = router.query.locale || i18nConfig.i18n.defaultLocale;
   const { t } = useTranslation('translations');
 
   return (
@@ -54,7 +54,7 @@ export default function FooterTwo() {
                       </Footer.ListItems>
                       <Footer.SocialShare>
                         <Footer.Box pt="11px" pb="30px">
-                          {i18nextConfig.i18n.locales.map((locale) => {
+                          {i18nConfig.i18n.locales.map((locale) => {
                             if (locale === currentLocale) return null;
                             return (
                               <Footer.SocialShareItem key={locale}>
