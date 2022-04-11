@@ -26,12 +26,12 @@ const MyApp = ({ Component, pageProps }) => {
   const [enabled, enable] = useAnalytics();
   const [loader, setLoader] = useState(false);
 
-  useEffect(() => {
-    setTimeout(function () {
-      setLoader(false);
-      // console.log('finished');
-    }, 2000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(function () {
+  //     setLoader(false);
+  //     // console.log('finished');
+  //   }, 2000);
+  // }, []);
 
   Router.onRouteChangeStart = (url) => {
     // Some page has started loading
@@ -40,7 +40,8 @@ const MyApp = ({ Component, pageProps }) => {
 
   Router.onRouteChangeComplete = (url) => {
     // Some page has finished loading
-    setTimeout(setLoader(false), 1000); // set state to pass to loader prop
+    setLoader(false);
+    // setTimeout(setLoader(false), 1000); // set state to pass to loader prop
   };
 
   if (loader) return <Loader show={loader} />;
