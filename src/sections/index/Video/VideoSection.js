@@ -19,7 +19,7 @@ export default function AboutSection() {
             <Video.Image>
               <img
                 className="w-100"
-                src={`${prefix}/image/index/localistars-teaser.png`}
+                src={`${prefix}/image/index/localistars-teaser.jpg`}
                 alt="thumbnail locize"
               />
               <VideoFile id="e6Ede8hdU8c" className="video-btn sonar-emitter">
