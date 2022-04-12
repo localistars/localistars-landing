@@ -110,7 +110,8 @@ Hero.Button = styled(Button)`
     }
   }
 `;
-Hero.ImageGroup = styled(Box)`
+Hero.Box = styled(Box)``;
+Hero.ImageGroup = styled(Hero.Box)`
   display: flex !important;
   align-items: flex-end !important;
   margin-top: -60px !important;
@@ -131,7 +132,7 @@ Hero.ImageGroup = styled(Box)`
     margin-bottom: 0 !important;
   }
 `;
-Hero.ImageOne = styled(Box)`
+Hero.ImageOne = styled(Hero.Box)`
   position: relative;
   width: 95% !important;
   bottom: -80px !important;
@@ -144,7 +145,7 @@ Hero.ImageOne = styled(Box)`
     display: none;
   }
 `;
-Hero.ImageTwo = styled(Box)`
+Hero.ImageTwo = styled(Hero.Box)`
   width: 100% !important;
   margin-top: 5rem;
 
@@ -152,7 +153,5 @@ Hero.ImageTwo = styled(Box)`
     display: none;
   }
 `;
-
-Hero.Box = styled(Box)``;
 
 export default Hero;
