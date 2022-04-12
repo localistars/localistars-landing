@@ -1,7 +1,7 @@
 import React from 'react';
 import Cta from './style';
 import { Col, Container, Row } from 'react-bootstrap';
-import ctal5Img from '../../../../public/image/translator/signup.png';
+import ctal5Img from '../../../../public/image/translator/signup.jpg';
 import { useTranslation } from 'next-i18next';
 
 export default function CtaSection({ ...rest }) {

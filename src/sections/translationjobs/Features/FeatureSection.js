@@ -45,7 +45,7 @@ export default function FeatureSection() {
               </Tab.Pane>
               <Tab.Pane eventKey="second">
                 <FeatureTabPenLayout
-                  imageBlock={<FeatureImage name="partners.png" />}
+                  imageBlock={<FeatureImage name="partners.jpg" />}
                   contentBlock={
                     <FeatureWidgetsBlock
                       tabLabel="second"
@@ -57,7 +57,7 @@ export default function FeatureSection() {
               </Tab.Pane>
               <Tab.Pane eventKey="third">
                 <FeatureTabPenLayout
-                  imageBlock={<FeatureImage name="manage-team.png" />}
+                  imageBlock={<FeatureImage name="manage-team.jpg" />}
                   contentBlock={
                     <FeatureWidgetsBlock
                       tabLabel="third"
