@@ -48,7 +48,6 @@ const TestimonialSection = ({ ...rest }) => {
             ref={elSlider}
             className="testimonial-slider testimonial-slider--l1"
             {...sliderConfig1}
-            className="row"
           >
             {data.map((item, index) => {
               return (

@@ -68,7 +68,6 @@ export default function PortfolioDetailsSection() {
                 <img
                   src={portfolioFullImage2.src}
                   alt="portfolio"
-                  layout="constrained"
                   placeholder="blurred"
                   loading="lazy"
                 />
@@ -88,7 +87,7 @@ export default function PortfolioDetailsSection() {
             </PortfolioDetails.GridImage>
             {/*/ .Single Grid */}
           </Col>
-          <div xs="12" className="col-xl-4">
+          <Col xs="12" className="col-xl-4">
             {/* Single Grid */}
             <PortfolioDetails.GridImage mb="30px" mbLG="0">
               <a
@@ -100,7 +99,7 @@ export default function PortfolioDetailsSection() {
               </a>
             </PortfolioDetails.GridImage>
             {/*/ .Single Grid */}
-          </div>
+          </Col>
           <Col xs="12" className="col-xl-4">
             {/* Single Grid */}
             <PortfolioDetails.GridImage mb="30px" mbLG="0">
@@ -116,14 +115,14 @@ export default function PortfolioDetailsSection() {
           </Col>
         </Row>
         <PortfolioDetails.ButtonGroup mtLG="50px" mt="30px">
-          <a className="btn-link" as={Link} to="/">
+          {/* <a className="btn-link" as={Link} to="/">
             <i className="fa fa-arrow-left" />
             Previous project
           </a>
           <a className="btn-link" as={Link} to="/">
             Next project
             <i className="fa fa-arrow-right" />
-          </a>
+          </a> */}
         </PortfolioDetails.ButtonGroup>
       </Container>
     </PortfolioDetails>

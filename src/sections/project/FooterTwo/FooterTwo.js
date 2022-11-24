@@ -95,17 +95,17 @@ export default function FooterTwo() {
                     <Footer.SocialShare>
                       <Footer.Box pt="11px" pb="30px">
                         <Footer.SocialShareItem>
-                          <a target="_blank" href="https://www.facebook.com/">
+                          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/">
                             Facebook
                           </a>
                         </Footer.SocialShareItem>
                         <Footer.SocialShareItem>
-                          <a target="_blank" href="https://twitter.com/">
+                          <a target="_blank" rel="noreferrer" href="https://twitter.com/">
                             Twitter
                           </a>
                         </Footer.SocialShareItem>
                         <Footer.SocialShareItem>
-                          <a target="_blank" href="https://www.instagram.com/">
+                          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/">
                             Instagram
                           </a>
                         </Footer.SocialShareItem>

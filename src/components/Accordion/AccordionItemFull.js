@@ -6,7 +6,7 @@ import AccordionTrigger from './AccordionTriggerFull';
 const AccordionItem = ({ question, answer, accKey }) => {
   return (
     <AccordionTrigger className="accordion-item" eventKey={accKey}>
-      <span variant="link" className="accordion-trigger text-start">
+      <span className="accordion-trigger text-start">
         {question}
       </span>
       <Accordion.Collapse eventKey={accKey}>

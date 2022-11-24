@@ -36,7 +36,6 @@ export default function PricingCard({
           rounded={true}
           sizeX="180px"
           sizeY="56px"
-          rounded="true"
         >
           Get Started
         </Card.Button>

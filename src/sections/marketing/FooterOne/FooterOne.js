@@ -118,22 +118,22 @@ export default function FooterOne() {
           </Footer.CopyrightText>
           <Footer.SocialShare>
             <Footer.SocialShareItem>
-              <a target="_blank" href="https://www.facebook.com">
+              <a target="_blank" rel="noreferrer" href="https://www.facebook.com">
                 <i className="fab fa-facebook-square" />
               </a>
             </Footer.SocialShareItem>
             <Footer.SocialShareItem>
-              <a target="_blank" href="https://twitter.com">
+              <a target="_blank" rel="noreferrer" href="https://twitter.com">
                 <i className="fab fa-twitter" />
               </a>
             </Footer.SocialShareItem>
             <Footer.SocialShareItem>
-              <a target="_blank" href="https://www.instagram.com">
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com">
                 <i className="fab fa-instagram" />
               </a>
             </Footer.SocialShareItem>
             <Footer.SocialShareItem>
-              <a target="_blank" href="https://www.linkedin.com">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com">
                 <i className="fab fa-linkedin" />
               </a>
             </Footer.SocialShareItem>

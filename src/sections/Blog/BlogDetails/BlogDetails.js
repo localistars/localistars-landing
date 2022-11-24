@@ -181,9 +181,8 @@ export default function BlogDetails() {
         </Container>
       </Details.Box>
       <Details.Box
-        pt="60px"
-        pb="60px"
         pt="80px"
+        pb="60px"
         pbMD="80px"
         ptLG="120px"
         pbLG="60px"
