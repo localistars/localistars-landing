@@ -203,7 +203,8 @@
     },
     "hero": {
       "title": "Why should you become<1/>a localistars translator?",
-      "text": "Our goal is to provide a platform that removes the tedious parts of translations."
+      "text": "Our goal is to provide a platform that removes the tedious parts of translations.",
+      "microtranslate": "Check out also <1>Micro translate</1>!<3></3>The fastest way to offer translations."
     },
     "service": {
       "subTitle": "Services",
@@ -316,6 +317,35 @@
       "text": "See how clients and translators can work together on our platform.",
       "btnOne": "How does it work",
       "btnTwo": "Register free"
+    }
+  },
+  "microtranslate": {
+    "header": "Find a fast micro translation job",
+    "meta": {
+      "title": "Micro Translation: Find a fast job",
+      "description": "On our website you will find freelance opportunities for language translation. Apply for the next translation job online."
+    },
+    "hero": {
+      "title": "What is micro translate<1/>and how does it work?",
+      "description": "The fastest way provide translations and additionally removes the tedious parts of it."
+    },
+    "process": {
+      "subTitle": "Get started",
+      "title": "It's very easy to start as usual...<1/> prepare your account <3/> <4>(if not already done)</3>",
+      "steps": {
+        "sp5": {
+          "title": "Navigate",
+          "text": "Navigate to the micro translate page by clicking the \"Micro translate\" menu entry."
+        },
+        "sp6": {
+          "title": "Pick and work",
+          "text": "You will see the next possible translation job based on your previously defined language pairs."
+        },
+        "sp7": {
+          "title": "Get paid",
+          "text": "With every completed translation, your account balance will be increased. And by the end of the billing cycle you're able to payout your earnings."
+        }
+      }
     }
   },
   "pricing": {
