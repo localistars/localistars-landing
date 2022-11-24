@@ -4,6 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Hero from './style';
 import prefix from '~lib/prefix';
 import { useTranslation, Trans } from 'next-i18next';
+import { Link } from '~components';
 
 export default function HeroSection() {
   const { t } = useTranslation('translations');
@@ -29,6 +30,14 @@ export default function HeroSection() {
               <Hero.Text fontColor="#fff">
                 {t('creator.hero.text')}
               </Hero.Text>
+
+              <Hero.Subtitle style={{ paddingTop: 100 }} fontColor="#fff">
+                <Trans i18nKey="creator.hero.microtranslate">
+                  Check out also <Link to="/microtranslate">Micro translate</Link>!
+                  <br className="d-none d-sm-block" />
+                  The fastest way to offer translations.
+                </Trans>
+              </Hero.Subtitle>
             </Hero.Content>
           </Col>
           {/*/ .Welcome Content Area */}

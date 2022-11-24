@@ -3,19 +3,19 @@ import { Box, Heading, Button, Paragraph } from '~styled';
 
 const Hero = styled(Box)`
   padding-top: 125px;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
   background-size: cover;
   background-position: right top;
   position: relative;
   z-index: 1;
   @media (min-width: 768px) {
     padding-top: 145px;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: 992px) {
     padding-top: 260px;
-    padding-bottom: 195px;
+    padding-bottom: 105px;
   }
 
   @media (min-width: 1600px) {

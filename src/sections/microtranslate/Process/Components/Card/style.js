@@ -45,6 +45,9 @@ Widget.Icon = styled(Paragraph).attrs({ className: 'widgets-icon' })`
   transition: 0.4s;
   margin-bottom: 45px;
 `;
+Widget.IconAlternative = styled(Widget.Icon)`
+  background-color: #a1f2f4;
+`;
 Widget.Title = styled(Heading)`
   font-size: 21px;
   font-weight: 500;

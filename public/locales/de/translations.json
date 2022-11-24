@@ -203,7 +203,8 @@
     },
     "hero": {
       "title": "Warum sollten Sie<1/>Localistars-Übersetzer werden?",
-      "text": "Unser Ziel ist es, eine Plattform bereitzustellen, welche die mühsamen Teile von Übersetzungen entfernt."
+      "text": "Unser Ziel ist es, eine Plattform bereitzustellen, welche die mühsamen Teile von Übersetzungen entfernt.",
+      "microtranslate": "Schauen Sie auch <1>Mikroübersetzung</1> an!<3></3>Der schnellste Weg, Übersetzungen anzubieten."
     },
     "service": {
       "subTitle": "Dienstleistungen",
@@ -316,6 +317,35 @@
       "text": "Sehen Sie, wie Kunden und Übersetzer auf unserer Plattform zusammenarbeiten können.",
       "btnOne": "Wie funktioniert es",
       "btnTwo": "Gratis registrieren"
+    }
+  },
+  "microtranslate": {
+    "header": "Finden Sie schnell einen Mikroübersetzungsjob",
+    "meta": {
+      "title": "Mikroübersetzung: Finden Sie schnell einen Job",
+      "description": "Auf unserer Website finden Sie Möglichkeiten für Sprachübersetzungen. "
+    },
+    "hero": {
+      "title": "Was ist mikro übersetzen<1/>und wie funktioniert es?",
+      "description": "Der schnellste Weg, Übersetzungen bereitzustellen und zusätzlich die mühsamen Teile davon zu entfernen."
+    },
+    "process": {
+      "subTitle": "Loslegen",
+      "title": "Es ist sehr einfach, wie gewohnt loslegen ...<1/> Bereiten Sie Ihr Konto vor <3/> <4>(falls noch nicht geschehen)</3>",
+      "steps": {
+        "sp5": {
+          "title": "Navigieren",
+          "text": "Navigieren Sie zur Mikroübersetzungsseite, indem Sie auf den Menüeintrag \"Micro translate\" klicken."
+        },
+        "sp6": {
+          "title": "Wählen und arbeiten",
+          "text": "Sie sehen den nächstmöglichen Übersetzungsauftrag basierend auf Ihren zuvor definierten Sprachpaaren."
+        },
+        "sp7": {
+          "title": "Bezahlt werden",
+          "text": "Mit jeder abgeschlossenen Übersetzung wird Ihr Kontostand erhöht. "
+        }
+      }
     }
   },
   "pricing": {

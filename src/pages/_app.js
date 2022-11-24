@@ -13,17 +13,13 @@ import {
 import { SearchProvider } from '~context/SearchContext';
 import { useEffect, useState } from 'react';
 import Loader from '~components/Preloader';
-import CookieConsent from 'react-cookie-consent';
-import { useAnalytics } from '~lib/analytics';
+import Consenter from '~components/Consenter'
 import Head from 'next/head';
-import { appWithTranslation, useTranslation, Trans } from 'next-i18next';
+import { appWithTranslation } from 'next-i18next';
 import ScrollToTop from 'react-scroll-to-top';
 import { FiArrowUp as MySVG } from 'react-icons/fi';
-import Link from '~components/Core/Link';
 
 const MyApp = ({ Component, pageProps }) => {
-  const { t } = useTranslation('translations');
-  const [enabled, enable] = useAnalytics();
   const [loader, setLoader] = useState(false);
 
   // useEffect(() => {
@@ -53,27 +49,7 @@ const MyApp = ({ Component, pageProps }) => {
           <Head></Head>
           <Loader show={loader} />
           <Component {...pageProps} />
-          <CookieConsent
-            enableDeclineButton
-            declineButtonText={t('cookie.decline')}
-            location="bottom"
-            buttonText={t('cookie.accept')}
-            cookieName={process.env.NEXT_PUBLIC_COOKIE_CONSENT_NAME}
-            style={{ background: '#165c66' }}
-            buttonStyle={{
-              color: 'white',
-              fontSize: '15px',
-              backgroundColor: '#23a432'
-            }}
-            declineButtonStyle={{ backgroundColor: '#420d18' }}
-            expires={360}
-            onAccept={() => enable()}
-          >
-            <Trans i18nKey="cookie.text">
-              This website uses cookies to enhance the user experience.
-              <Link to="/privacy">learn more</Link>
-            </Trans>
-          </CookieConsent>
+          <Consenter />
           <ScrollToTop
             smooth
             style={{

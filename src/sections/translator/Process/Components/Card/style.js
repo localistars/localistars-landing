@@ -37,7 +37,7 @@ Widget.Icon = styled(Paragraph).attrs({ className: 'widgets-icon' })`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  ont-size: 21px;
+  font-size: 21px;
   font-weight: 500;
   line-height: 30px;
   color: #fff;
