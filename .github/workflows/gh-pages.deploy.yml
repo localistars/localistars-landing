@@ -8,12 +8,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    # env:
-    #   NEXT_PUBLIC_BASE_PATH: /localistars-landing-new
+    env:
+      NEXT_PUBLIC_BASE_PATH: /localistars-landing
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.x]
 
     steps:
       - name: Get files
